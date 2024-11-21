@@ -1,0 +1,63 @@
+% Results
+% The progression of the memory usage throughout the job can be shown by plotting the proportional set size (Figure \ref{fig: mc-prmon-pss} and Figure \ref{fig: data-prmon-pss}), resident set size (Figure \ref{fig: mc-prmon-rss} and Figure \ref{fig: data-prmon-rss}), and the virtual memory versus the wall time (Figure \ref{fig: mc-prmon-vmem} and Figure \ref{fig: data-prmon-vmem}.) 
+
+% % Graphs: Bad News
+% In Figure \ref{fig: mc-prmon-pss}, Athena \textit{default} uses less memory than any of the basket buffer limit configurations.
+% There increased memory usage is about $12.7\%$ in MC proportional set size or as little as  $2.8\%$ for Data as seen in Figure \ref{fig: data-prmon-pss}, see Appendix A. 
+% A similar trend persists for the other figures, where MC jobs are taking the greatest hit in memory usage for Figure \ref{fig: mc-prmon-rss} and Figure \ref{fig: mc-prmon-vmem}, when compared to the data derivation jobs in Figure \ref{fig: data-prmon-rss} and Figure \ref{fig: data-prmon-vmem}. 
+
+\subsection{Athena v22.0.16 testing}
+The results of this run of testing was done on a nightly build of Athena that is based on version 22.0.16 and looked at both the presence of an upper limit to the basket size (a ``basket-cap") and the presence of a minimum number of entries per branch, the default setting is 10 entries.
+PHYSLITE MC derivation production, from Table \ref{Tab: night-mc-outputfs}, sees a 9.9\% increase in output file size when compared to the $\textit{default}$ Athena configuration, and since this configuration only differs by the elimination of the ``min-number-entries" we assume the minimum number of entries per branch should be kept at 10 and left alone.
+Table \ref{Tab: night-mc-outputfs} also shows the potential for PHYSLITE MC DAOD output file size reduction by elminiating our ``basket-cap'' (basket buffer limit) altogether.
+\input{content/tables/nightly-tables.tex}
+
+\subsection{Athena v24.0.16 testing}
+Switching from the nightly build to the stable Athena version 24.0.16, pre-existing derivation jobs were ran for Data and MC to compare between configurations of differing basket size limits.
+The results for this set of testing are found from Table \ref{Tab: 24.0.16-data-outputfs} through Table \ref{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-compfs}. 
+The following tables are the DAOD output-file sizes of the various Athena configurations for PHYS/PHYSLITE over their respective Data/MC AOD input files.
+
+\input{content/tables/data-fs-tables}
+
+% -------------------------------------------------------------------------------------------------------------------------------
+
+\input{content/tables/mc-fs-tables}
+
+% -------------------------------------------------------------------------------------------------------------------------------
+
+
+\subsection{Highly compressible branches}
+% =====================
+% ====== TOP TEN ======
+% =====================
+
+Derivation production will produce branches that are initially very large and occupy memory and compress that down to a smaller size.
+One thing that we tend to want to avoid is having too much repetition resulting in high compression factors.
+If we have many highly compressible branches, more memory will be used, specifically within I/O buffers.
+The following tables are an investigation into the highly compressible branches (e.g., the branches with compression factor over $\mathcal{O}(1)$) and might possibly lead to some insight on the increase in memory among the decrease in disk space.
+
+% The tables start with Data PHYS, then move to Data PHYSLITE, then MC PHYS, and lastly MC PHYSLITE. For each, shown are the $\textit{default}$ Athena configuration and the $\textit{no-lim}$ configuration. 
+% % ======= DATA PHYS =======
+% \input{content/tables/top-ten/data/data-phys-CF.tex}
+% \input{content/tables/top-ten/data/data-phys-total.tex}
+% \input{content/tables/top-ten/data/data-phys-compressed.tex}
+% % ======= DATA PHYSLITE =======
+% \input{content/tables/top-ten/data/data-physlite-CF.tex}
+% \input{content/tables/top-ten/data/data-physlite-total.tex}
+% \input{content/tables/top-ten/data/data-physlite-compressed.tex}
+% % ======= MC PHYS =======
+% \input{content/tables/top-ten/mc/mc-phys-CF.tex}
+% \input{content/tables/top-ten/mc/mc-phys-total.tex}
+% \input{content/tables/top-ten/mc/mc-phys-compressed.tex}
+% ====== MC PHYSLITE =======
+
+\input{content/tables/top-ten/mc/mc-physlite-CF.tex}
+\input{content/tables/top-ten/mc/mc-physlite-total.tex}
+\input{content/tables/top-ten/mc/mc-physlite-compressed.tex}
+
+
+An immediate observation: with the omission of the basket limit, the compression factor increases--this is inline with the original expectation that increased buffer size limits correlate to better compression. 
+$\textit{PrimaryVerticesAuxDyn.trackParticleLinks}$ is a branch that consistently has the highest memory usage to disk-space usage ratio of any branch.
+I/O buffers are concerned with the total file size of each branch, as it is the uncompressed size of each branch that is held in memory. 
+$\textit{HLTNav\_Summary\_DAODSlimmedAuxDyn.linkColNames}$ and others show similar behavior and are consistent with the other DAOD jobs across data, MC, PHYS, and PHYSLITE (the tables of which were omitted for sake of brevity).
+Future work could investigate these branches for further optimization.

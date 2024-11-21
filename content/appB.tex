@@ -1,0 +1,71 @@
+mkdir athena-unchanged;
+mkdir athena-no-max-basket-size;
+mkdir athena-256k-max-basket;
+mkdir athena-512k-max-basket;
+
+cd athena-unchanged;
+git clone https://gitlab.cern.ch/akraus/athena.git;
+cd athena;
+git remote add upstream https://:@gitlab.cern.ch:8443/atlas/athena.git ;
+git fetch --all;
+git checkout release/24.0.16 ; 
+cd ..;
+git clone https://github.com/arthurkraus3/building-athena.git;
+rm athena/Database/AthenaPOOL/AthenaPoolCnvSvc/python/PoolWriteConfig.py;
+mv building-athena/PoolWriteConfig.py athena/Database/AthenaPOOL/AthenaPoolCnvSvc/python/;
+mv building-athena/package_filters.txt .;
+mkdir build && cd build ; 
+lsetup "asetup Athena,24.0.16" ; 
+cmake -DATLAS_PACKAGE_FILTER_FILE=../package_filters.txt ../athena/Projects/WorkDir/ >& cmakelog;
+make -j >& makelog;
+
+cd ../athena-no-max-basket-size;
+git clone https://gitlab.cern.ch/akraus/athena.git;
+cd athena;
+git remote add upstream https://:@gitlab.cern.ch:8443/atlas/athena.git ;
+git fetch --all;
+git checkout release/24.0.16 ; 
+cd ..;
+git clone https://github.com/arthurkraus3/building-athena.git;
+rm athena/Database/AthenaPOOL/AthenaPoolCnvSvc/python/PoolWriteConfig.py;
+mv building-athena/no-limit/PoolWriteConfig.py athena/Database/AthenaPOOL/AthenaPoolCnvSvc/python/;
+mv building-athena/package_filters.txt .;
+mkdir build && cd build ; 
+lsetup "asetup Athena,24.0.16" ; 
+cmake -DATLAS_PACKAGE_FILTER_FILE=../package_filters.txt ../athena/Projects/WorkDir/ >& cmakelog;
+make -j >& makelog;
+
+cd ../athena-256k-max-basket;
+git clone https://gitlab.cern.ch/akraus/athena.git;
+cd athena;
+git remote add upstream https://:@gitlab.cern.ch:8443/atlas/athena.git ;
+git fetch --all;
+git checkout release/24.0.16 ; 
+cd ..;
+git clone https://github.com/arthurkraus3/building-athena.git;
+rm athena/Database/AthenaPOOL/AthenaPoolCnvSvc/python/PoolWriteConfig.py;
+mv building-athena/256k-basket/PoolWriteConfig.py athena/Database/AthenaPOOL/AthenaPoolCnvSvc/python/;
+mv building-athena/package_filters.txt .;
+mkdir build && cd build ; 
+lsetup "asetup Athena,24.0.16" ; 
+cmake -DATLAS_PACKAGE_FILTER_FILE=../package_filters.txt ../athena/Projects/WorkDir/ >& cmakelog;
+make -j >& makelog;
+
+
+cd ../athena-512k-max-basket;
+git clone https://gitlab.cern.ch/akraus/athena.git;
+cd athena;
+git remote add upstream https://:@gitlab.cern.ch:8443/atlas/athena.git ;
+git fetch --all;
+git checkout release/24.0.16 ; 
+cd ..;
+git clone https://github.com/arthurkraus3/building-athena.git;
+rm athena/Database/AthenaPOOL/AthenaPoolCnvSvc/python/PoolWriteConfig.py;
+mv building-athena/package_filters.txt .;
+mkdir build && cd build ; 
+lsetup "asetup Athena,24.0.16" ; 
+cmake -DATLAS_PACKAGE_FILTER_FILE=../package_filters.txt ../athena/Projects/WorkDir/ >& cmakelog;
+make -j >& makelog;
+cd ..;
+
+

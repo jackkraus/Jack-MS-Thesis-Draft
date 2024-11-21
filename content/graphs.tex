@@ -1,0 +1,57 @@
+% graphs.tex doc created by Jack Kraus 01.15.2024
+% PRMON plots are taken from the prmon.full.Derivation file and sent through a python script to analyse them 
+% % CODE: 
+% % python3 prmon_plot.py --input prmon.full.Derivation-data-256k,prmon.full.Derivation-data-512k,prmon.full.Derivation-data-default,prmon.full.Derivation-data-no-lim --xvar wtime --yvar vmem --yunit GB --otype svg
+% ===============================================
+
+% MC PRMON Plots for PSS, RSS, and VMEM
+% Athena version: 24.0.16 
+% input file: # TODO
+% PHYS/PHYSLITE: # TODO
+
+
+% -==== PSS vs Wtime ====-
+\begin{figure}[ht]
+    \centering
+        \centering
+        \includegraphics[width=0.65\textwidth]{../images/12-prmon-all/mc-all-plots/PrMon_wtime_vs_pss.png}
+        \caption{ Athena v24.0.16, Monte Carlo, Proportional Set Size (PSS) vs Wall time}
+        \label{fig: mc-prmon-pss}
+\end{figure}
+\begin{figure}[ht]
+    \centering
+        \centering
+        \includegraphics[width=0.65\textwidth]{../images/12-prmon-all/data-all-plots/PrMon_wtime_vs_pss.png}
+        \caption{ Athena v24.0.16, Data, Proportional Set Size (PSS) vs Wall time}
+        \label{fig: data-prmon-pss}
+\end{figure}
+
+
+% -==== RSS vs Wtime ====-
+\begin{figure}[ht]
+        \centering
+        \includegraphics[width=0.65\textwidth]{../images/12-prmon-all/mc-all-plots/PrMon_wtime_vs_rss.png}
+        \caption{ Athena v24.0.16,  Monte Carlo, Resident Set Size (RSS) vs Wall time}
+        \label{fig: mc-prmon-rss}
+\end{figure}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.65\textwidth]{../images/12-prmon-all/data-all-plots/PrMon_wtime_vs_rss.png}
+    \caption{ Athena v24.0.16,  Data, Resident Set Size (RSS) vs Wall time}
+    \label{fig: data-prmon-rss}
+\end{figure}
+
+% -==== Vmem vs Wtime ====-
+\begin{figure}[ht]
+        \centering
+        \includegraphics[width=0.65\textwidth]{../images/12-prmon-all/mc-all-plots/PrMon_wtime_vs_vmem.png}
+        \caption{ Athena v24.0.16,  Monte Carlo, Virtual Memory (vmem) vs Wall time}
+        \label{fig: mc-prmon-vmem}
+\end{figure}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.65\textwidth]{../images/12-prmon-all/data-all-plots/PrMon_wtime_vs_vmem.png}
+    \caption{ Athena v24.0.16,  Data, Virtual Memory (vmem) vs Wall time}
+    \label{fig: data-prmon-vmem}
+\end{figure}
+

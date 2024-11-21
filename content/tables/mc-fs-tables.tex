@@ -1,0 +1,44 @@
+
+% mc-24.0.16 file sizes
+% Athena version 24.0.16
+% input file: # TODO
+% PHYS/PHYSLITE 
+
+
+\begin{table}[!ht]
+    \centering
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+                Athena v24.0.16 configurations (MC) & Max PSS (MB) ($\Delta$\% default) & PHYS outFS (GB) ($\Delta$\% default) & PHYSLITE outFS (GB) ($\Delta$\% default) \\ \hline
+                With basket-cap and min-num-entries (default)  & 15.00 ( + 0.00 \%) & 5.88 ( + 0.00 \%) & 2.59 ( + 0.00 \%) \\ \hline
+                Without both basket-cap and min-num-entries & 16.90 ( + 11.27 \%) & 5.72 ( - 2.80 \%) & 2.45 ( - 5.55 \%) \\ \hline
+                Without basket-cap but with min-num-entries & 15.28  ( + 1.87 \%) & 5.80 ( - 1.35 \%) & 2.51 ( - 3.11 \%) \\ \hline
+                With basket-cap but without min-num-entries & 16.41 ( + 8.60 \%) & 5.74 ( - 2.46 \%) & 2.46 ( - 5.11 \%) \\ \hline
+            \end{tabular}
+    }
+    \caption{Athena v24.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for MC jobs over various Athena configurations for 140000 entries.}
+    \label{Tab: 24.0.16-mc-outputfs}
+\end{table}
+
+% mc-24.0.16 file sizes
+% Athena version 24.0.16
+% input file: # TODO
+% PHYS/PHYSLITE: PHYSLITE
+
+
+% \begin{table}[!ht]
+%     \centering
+%     \resizebox{\textwidth}{!}{
+%         \begin{tabular}{|l|l|l|l|l|l|}
+%             \hline
+%                 Athena configurations - PHYS-LITE (MC) - File sizes & Max PSS (MB) & \% of MaxPSS from default & nentries & Output File Size (GB) & \% of outputfs from default \\ \hline
+%                 mc-test-athena-default & 15.00 & 0.00\% & 140000 & 2.59 & 0.00\% \\ \hline
+%                 mc-test-athena-no-limit & 16.90 & 11.27\% & 140000 & 2.45 & -5.55\% \\ \hline
+%                 mc-test-athena-256k-basket & 15.28 & 1.87\% & 140000 & 2.51 & -3.11\% \\ \hline
+%                 mc-test-athena-512k-basket & 16.41 & 8.60\% & 140000 & 2.46 & -5.11\% \\ \hline
+%             \end{tabular}
+%     }
+%      \caption{Athena v24.0.16 MC PHYSLITE output file size}
+%     \label{Tab: 24.0.16-mc-physlite-outputfs}
+% \end{table}

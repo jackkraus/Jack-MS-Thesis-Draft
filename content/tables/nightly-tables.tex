@@ -1,0 +1,91 @@
+
+% Data file sizes 
+% Athena version: Nightly from v22.0.16 
+% input file: # TODO
+% PHYS/PHYSLITE
+
+\begin{table}[!ht]
+    \centering
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+                Athena v22.0.16 configurations (Data) & Max PSS (MB) ($\Delta$\% default) & PHYS outFS (GB) ($\Delta$\% default) & PHYSLITE outFS (GB) ($\Delta$\% default) \\ \hline
+                With basket-cap and min-num-entries (default)  & 27.109 ( + 0.00 \%) & 3.216 ( + 0.00 \%) & 1.034 ( + 0.00 \%) \\ \hline
+                Without both basket-cap and min-num-entries & 27.813 ( + 2.53 \%) & 3.222 ( + 0.20 \%) & 1.036 ( + 0.21 \%) \\ \hline
+                Without basket-cap but with min-num-entries & 27.814  ( + 2.53 \%) & 3.216 ( - 0.00 \%) & 1.030 ( - 0.39 \%) \\ \hline
+                With basket-cap but without min-num-entries & 27.298 ( + 0.69 \%) & 3.221 ( + 0.15 \%) & 1.042 ( + 0.71 \%) \\ \hline
+            \end{tabular}
+    }
+    \caption{Athena v22.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for data jobs over various Athena configurations for 160327 entries.}
+    \label{Tab: night-data-outputfs}
+\end{table}
+
+% Data file sizes 
+% Athena version: Nightly v22.0.16 
+% input file: # TODO
+% PHYS/PHYSLITE: PHYSLITE
+
+% \begin{table}[!ht]
+%     \centering
+%     \resizebox{\textwidth}{!}{
+%         \begin{tabular}{|l|l|l|l|l|l|}
+%             \hline
+%                 Athena configurations - PHYS-LITE (data) - File sizes & Max PSS (MB)  & \% of MaxPSS from default & nentries & Output File Size (GB) & \% of output from default \\ \hline
+%                 (default) With basket-cap and min-num-entries & 27.109 & 0.00\% & 160327 & 1.034 & 0.00\% \\ \hline
+%                 Without both basket-cap and min-num-entries & 27.813 & 2.53\% & 160327 & 1.036 & 0.21\% \\ \hline
+%                 No basket-cap but with min-num-entries & 27.814 & 2.53\% & 160327 & 1.030 & -0.39\% \\ \hline
+%                 With basket-cap but without min-num-entries & 27.298 & 0.69\% & 160327 & 1.042 & 0.71\% \\ \hline
+%             \end{tabular}
+%     }
+%     \caption{Athena v22.0.16: Comparing the difference in PHYSLITE derivation jobs and their Athena configurations and results of output file size}
+%     \label{Tab: night-data-physlite-outputfs}
+% \end{table}
+
+% -------------------------------------------------------------------------------------------------------------------------------
+
+
+
+% mc file sizes 
+% Athena version: Nightly v22.0.16 
+% input file: # TODO
+% PHYS/PHYSLITE: PHYS
+\begin{center}
+    \begin{table}[!ht]
+        \centering
+        \resizebox{\textwidth}{!}{
+            \begin{tabular}{|c|c|c|c|}
+                \hline
+                    Athena v22.0.16 configurations (MC) & Max PSS (MB) ($\Delta$\% default) & PHYS outFS (GB) ($\Delta$\% default) & PHYSLITE outFS (GB) ($\Delta$\% default) \\ \hline
+                    With basket-cap and min-num-entries (default)  & 14.13 ( + 0.00 \%) & 5.83 ( + 0.00 \%) & 2.59 ( + 0.00 \%) \\ \hline
+                    Without both basket-cap and min-num-entries & 16.08 ( + 12.13 \%) & 6.00 ( + 2.93 \%) & 2.72 ( + 5.06 \%) \\ \hline
+                    Without basket-cap but with min-num-entries & 15.97  ( + 11.51 \%) & 5.67 ( - 2.80 \%) & 2.45 ( - 5.58 \%) \\ \hline
+                    With basket-cap but without min-num-entries & 14.19 ( + 0.42 \%) & 6.16 ( + 5.35 \%) & 2.87 ( + 9.90 \%) \\ \hline
+                \end{tabular}
+        }
+        \caption{Athena v22.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for MC jobs over various Athena configurations for 140000 entries.}
+        \label{Tab: night-mc-outputfs}
+    \end{table}
+\end{center}
+
+% mc file sizes 
+% Athena version: Nightly v22.0.16 
+% input file: # TODO
+% PHYS/PHYSLITE: PHYS
+
+% \begin{center}
+%     \begin{table}[!ht]
+%         \centering
+%         \resizebox{\textwidth}{!}{
+%             \begin{tabular}{|l|l|l|l|l|l|}
+%                 \hline
+%                     Athena configurations - PHYS-LITE (mc) - File sizes & Max PSS (MB) & \% of MaxPSS from default & nentries & Output File Size (GB) & \% of outputfs from default \\ \hline
+%                     (default) With basket-cap and min-num-entries & 14.13 & 0.00\% & 160327 & 2.59 & 0.00\% \\ \hline
+%                     Without both basket-cap and min-num-entries & 16.08 & 12.13\% & 160327 & 2.72 & 5.06\% \\ \hline
+%                     No basket-cap but with min-num-entries & 15.97 & 11.51\% & 160327 & 2.45 & -5.58\% \\ \hline
+%                     With basket-cap but without min-num-entries & 14.19 & 0.42\% & 160327 & 2.87 & 9.90\% \\ \hline
+%                 \end{tabular}
+%         }
+%         \caption{Athena v22.0.16: Comparing the difference in PHYSLITE derivation jobs and their Athena configurations and results of output file size}
+%         \label{Tab: night-mc-physlite-outputfs}
+%     \end{table}
+% \end{center}

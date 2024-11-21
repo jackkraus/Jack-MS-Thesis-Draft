@@ -1,0 +1,12 @@
+
+% Intro
+
+% Here, instead, you can say a few words about the fact that DAODs are used in physics analyses and they take bulk of the disk-space usage. 
+%  The jobs that produce them also suffer from high memory usage. So, we'd like to a) lower the memory usage to ease the stress on the GRID and b) lower the disk-space usage. 
+Derivation production jobs suffer from high memory usage, and DAODs make up the bulk of disk-space usage. 
+DAODs are used in physics analyses and ought to be optimized to alleviate the stress on the GRID and to lower disk-space usage. 
+%  You can also say that these are typically at odds, increasing output buffer size typically result in lower disk-space usage due to better compression but means the job will need more memory.
+Optimizing both disk-space and memory usage is a tricky balance as they are typically at odds with one another.
+For example, increasing output memory buffers results in lower disk-space usage due to better compression but the memory usage will increase. 
+% We'd like to study the DAODs and better optimize things.
+The route we opted to take is by optimizing for disk-space and memory by testing various basket limits and viewing the effects of the branches on both data and Monte Carlo (MC) simulated AODs.  
