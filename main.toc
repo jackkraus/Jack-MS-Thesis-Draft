@@ -1,0 +1,28 @@
+\hspace *{\fill }Page\par 
+\contentsline {chapter}{List of Tables}{vi}{chapter*.4}%
+\noindent Chapter\par 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Particle Physics and the Large Hadron Collider}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}ATLAS I/O}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Athena and ROOT}{2}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}What is Athena}{2}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}What is ROOT}{2}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}How do they work together}{3}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}What is a derivation job}{3}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}xAOD Event Data Model}{3}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}What is an Event Data Model}{3}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Why do we need an EDM}{3}{subsection.2.2.2}%
+\contentsline {chapter}{\numberline {3}Toy Model Derivation Production}{4}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Building the Toy Model}{4}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Toy Model Derivation Production}{4}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Data and Monte Carlo Derivation Production}{5}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Current Derivation Framework}{5}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Performance Metrics and Benchmarking}{5}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Results}{6}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Presence of basket-cap and presence of minimum number of entries}{6}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Comparing different basket sizes}{7}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Monte Carlo PHYSLITE branch comparison}{8}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Conclusion}{9}{subsection.4.3.4}%
+\contentsline {chapter}{\numberline {5}Modernizing I/O CI Unit-Tests}{10}{chapter.5}%
+\contentsline {chapter}{Appendix: Appendix One}{12}{appendix.A}%
+\contentsfinish 

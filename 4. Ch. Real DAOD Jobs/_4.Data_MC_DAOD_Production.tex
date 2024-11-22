@@ -14,7 +14,7 @@ As we'll see in the following section, we then opted to keep the minimum number 
 
 For both the nightly and the release testing, the data derivation job comes from a 2022 dataset with four input files 160327 events. 
 The MC job comes from a 2023 $t\bar{t}$ standard sample simulation job with six input files with 140k events. 
-The specific datasets for both are noted in Appendix \ref{sec: deriv job dataset}. 
+The specific datasets for both are noted in Appendix \ref{sec: deriv job dataset}.
 
 The corresponding input files for both data and MC jobs were ran with various configurations of Athena (version 24.0.16) and its specified basket buffer limit. 
 The four configurations tested all kept minimum 10 entries per basket and modified the basket limitation in the following ways: 
@@ -27,18 +27,20 @@ The four configurations tested all kept minimum 10 entries per basket and modifi
 \end{enumerate}
 
 Interesting results come from the comparison of "no-lim" and "default" configuration. The "256k" and "512k" configurations were included for completeness and provided to be a helpful sanity check throughout. 
-Building and running these configurations of Athena are illustrated in a GitHub repository. \ref{kraus}
+Building and running these configurations of Athena are illustrated in a GitHub repository. \cite{Kraus}
 
 \section{Results}
 \subsection{Presence of basket-cap and presence of minimum number of entries}
 
-First batch testing was for data and MC simulation derivation production jobs with and without presence of an upper limit to the basket size and presence of the minimum number of entires per branch. PHYSLITE MC derivation production, from Table 2, sees a 9.9\% increase in output file size when compared to the default Athena configuration. Since this configuration only differs by the elimination of the "min-number-entries" we assume the minimum number of entries per branch should be kept at 10 and left alone. Table 2 also shows the potential for a PHYSLITE MC DAOD output file size reduction by eliminating our upper basket buffer limit altogether.  
+First batch testing was for data and MC simulation derivation production jobs with and without presence of an upper limit to the basket size and presence of the minimum number of entires per branch. PHYSLITE MC derivation production, from Table 2, sees a 9.9\% increase in output file size when compared to the default Athena configuration. Since this configuration only differs by the elimination of the "min-number-entries" we assume the minimum number of entries per branch should be kept at 10 and left alone. Table \ref{Tab: 24.0.16-data-outputfs} also shows the potential for a PHYSLITE MC DAOD output file size reduction by eliminating our upper basket buffer limit altogether.  
 
-[Table 1 and 2 from the Int note]
+\input{content/tables/nightly-tables}
 
 \subsection{Comparing different basket sizes}
 
 Pre-existing derivation jobs were ran for data and MC simulations to compare between configurations of differing basket sizes limits. The results for this set of testing are found from Table 3 through Table 10. The following tables are the DAOD output-file sizes of the various Athena configurations for PHYS/PHYSLITE over their respective data/MC AOD input files. 
+
+\input{content/tables/data-fs-tables}
 
 \subsection{Monte Carlo PHYSLITE branch comparison}
 

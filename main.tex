@@ -1,8 +1,19 @@
 \documentclass[12pt]{niuthesis}
 \usepackage[utf8]{inputenc}
+% \usepackage{graphicx}
+% \usepackage{amsmath}
+% \usepackage{physics}
+% \usepackage{caption}
+% \usepackage{subcaption}
+% \usepackage{multirow}
+% \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{braket}
 \usepackage{hyperref}
+\usepackage{pdflscape}
+
+\usepackage{biblatex}
+\addbibresource{main.bib}
 
 
 \title{Optimization of derivation jobs and modernization of nightly CI build I/O tests for the ATLAS Experiment}
@@ -55,19 +66,16 @@ The ATLAS experiment's Software Performance Optimization Team has efforts in dev
 % -- 
 \chapter{Data and Monte Carlo Derivation Production}
 \input{4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production}
+
+%---
+% 4. Real DAOD Jobs 
+% -- 
+\chapter{Modernizing I/O CI Unit-Tests}
+\input{5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing}
 %---
 
-
-\begin{thebibliography}{10}
-
-\bibitem{sAndC_run3} ATLAS Collaboration \textit{ATLAS S\&C for Run 3}. Addison-Wesley, Reading, Massachusetts, 1993.
-
-
-\bibitem{krausGithub} A.Kraus, \textit{GitHub Repository: building-athena}, \href{https://github.com/arthurkraus3/building-athena.git}{https://github.com/arthurkraus3/building-athena.git}, 2023
-
-\bibitem{einstein} Albert Einstein. \textit{Zur Elektrodynamik bewegter K{\"o}rper}. (German) [\textit{On the electrodynamics of moving bodies}]. Annalen der Physik, 322(10):891–921, 1905.
-
-\end{thebibliography}
+% ===== PRINT BIBLIOGRAPHY =====  
+\printbibliography
 
 %-------------------------------------------------------------------------------
 \clearpage

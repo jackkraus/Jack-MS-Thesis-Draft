@@ -1,6 +1,6 @@
 % niuthesis.cls --- LaTeX class for NIU theses
 
-% Copyright (C) 2007, 2008, 2010 Roland Winkler <rwinkler@niu.edu>
+% Copyright (C) 2007, 2008, 2010, 2015 Roland Winkler <rwinkler@niu.edu>
 %
 % This LaTeX class file is free software: you can redistribute it
 % and/or modify it under the terms of the GNU General Public License
@@ -25,7 +25,7 @@
 %  - ulem (underlining)
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{niuthesis}[2010/10/16]
+\ProvidesClass{niuthesis}[2015/03/26]
 
 % options handled by report.cls
 \DeclareOption{10pt} {\PassOptionsToClass{10pt}{report}}
@@ -94,7 +94,7 @@
 \fi
 
 %%%%% SET THE OVERALL DOCUMENT PROPERTIES, such as page numbering,
-% textwidth = 8.5in - 1.6in - 1.0in = 5.9in
+% textwidth = 8.5in - 1.0in - 1.0in = 6.5in
 \RequirePackage[letterpaper, lmargin=1.0in, rmargin=1.0in, tmargin=1.0in,%
                 bmargin=1.0in, ignorefoot, includehead, dvips %, showframe
                 ]{geometry}
@@ -141,7 +141,7 @@
 
 \RequirePackage[newlinetospace]{titlesec}
 \titleformat{\chapter}[display] % top level 1
- {\thispagestyle{empty}%
+ {\thispagestyle{}%
   \filcenter\normalsize\normalfont}%
  {\MakeUppercase{\@chapapp}\ \thechapter}{0pt}{\MakeUppercase}
 \titleformat{\section} % level 2
@@ -170,8 +170,8 @@
 \contentsmargin[0.6pc]{2.5em} % set right margin
 \titlecontents
   {chapter} [1.5em] {}                  % {<section>} [left] {<above>}
-  {\contentslabel{1.5em}\MakeUppercase} % {<before with lablel>}
-  {\hspace*{-1.5em}\MakeUppercase}      % {<before without label>}
+  {\contentslabel{1.5em}\thMakeUppercase} % {<before with lablel>}
+  {\hspace*{-1.5em}\thMakeUppercase}      % {<before without label>}
   {\titlerule*[0.6pc]{.}\contentspage}  % {<filler and page>}
 % \dottedcontents{section}[<left>]{<above>}{<label width>}{<leader width>}
 % The difference (<left> - <label width>) is <left> for the next-upper level
@@ -187,7 +187,7 @@
 % Suppress entry `toc' in toc.
 \RequirePackage[nottoc]{tocbibind}
 % \tocfile is command in tocbibind for new listings
-\newcommand{\listofappend}{\tocfile{List of Appendices}{loa}}
+\newcommand{\listofappend}{\tocfile{LIST OF APPENDICES}{loa}}
 
 % extend the definition of \appendix in report.cls
 \def\appendix{\par
@@ -223,7 +223,7 @@
   %
   % If we have more than one appendix, they do not appear in the regular
   % table of contents, but in a separate list of appendices. So we
-  % redefine \@chapter such that it writes into file loa instead of toc.
+  % redefine \@chapter such that it writes iƒnto file loa instead of toc.
   % Code adapted from report.cls
   \def\@chapter[##1]##2{%
     \refstepcounter{chapter}%
@@ -247,8 +247,6 @@
   \def\ttl@addcontentsline##1##2{\ifnum\th@loacount>1%
    \addcontentsline{loa}{##1}{\ifttl@toclabel\ttl@a\fi##2}\fi}}
 
-   
-
 %%%%%%%%%%% ADDITIONAL FORMATTING STUFF:
 \pagenumbering{arabic}
 \pagestyle{myheadings} % no page headings
@@ -266,7 +264,7 @@
 % Set up some titles on the table of contents page.
 \renewcommand*{\contentsname}{Table of Contents}
 \renewcommand*{\bibname}{References}
-\newcommand*{\listofappendname}{List of Appendices}
+\newcommand*{\listofappendname}{LIST OF APPENDICES}
 
 %%%%%%%%%% COMMANDS CHANGED FOR THIS CLASS
 % Unavailable commands
@@ -328,14 +326,7 @@
 % The base commands that make all of the prologue pages.
 
 \newcommand{\th@Abstractpage}{%
-  % The Abstract page has a left margin of 1.5in
-  % (as compared to 1.6in in the rest of the document)
-  {\addtolength{\oddsidemargin}{-0.0in}
-   \addtolength{\evensidemargin}{-0.0in}
-   \addtolength{\linewidth}{0.1in}
-   \addtolength{\textwidth}{0.1in}
-   \addtolength{\columnwidth}{0.1in}
-   \setlength{\hsize}{\linewidth}
+  {\setlength{\hsize}{\linewidth}
    % no head line for abstract
    \addtolength{\textheight}{\headheight + \headsep}
    \setlength{\headheight}{0pt}
@@ -360,7 +351,6 @@
        \th@director, Director
      \end{center}
      \vspace*{0.5in}
-     
      \begin{doublespace}
        \unvbox\absbox
      \end{doublespace}
@@ -415,11 +405,12 @@
   \else
    \clearpage
   \fi}
+
 \newcommand{\th@Dedicationpage}{
   \ifhbox\dedibox
    \thispagestyle{empty}
    % centered
-   \noindent\hspace*{-0.1in}
+   \noindent
    \begin{minipage}{6.5in}
      \vspace*{\topskip}
      \chapter*{Dedication}
@@ -469,10 +460,10 @@
     \end{singlespace}}}
 
 % Redefinition of the \listofxxx commands
-\th@renewlox{\tableofcontents}{\contentsname}{toc}{Chapter}
-\th@renewlox{\listoftables}{\listtablename}{lot}{Table}
-\th@renewlox{\listoffigures}{\listfigurename}{lof}{Figure}
-\th@renewlox{\listofappend}{\listofappendname}{loa}{Appendix}
+\th@renewlox{\tableofcontents}{\contentsname}{toc}{CHAPTER}
+\th@renewlox{\listoftables}{\listtablename}{lot}{TABLE}
+\th@renewlox{\listoffigures}{\listfigurename}{lof}{FIGURE}
+\th@renewlox{\listofappend}{\listofappendname}{loa}{APPENDIX}
 
 \def\th@loxheader#1#2{%
  \par\penalty-100
@@ -481,10 +472,10 @@
 
 % Use these commands for the appropriate headers on the second /
 % third etc. page of a table of contents / list of figures etc.
-\newcommand*{\tocheader}{\th@loxheader{toc}{Chapter}}
-\newcommand*{\lotheader}{\th@loxheader{lot}{Table}}
-\newcommand*{\lofheader}{\th@loxheader{lof}{Figure}}
-\newcommand*{\loaheader}{\th@loxheader{loa}{Appendix}}
+\newcommand*{\tocheader}{\th@loxheader{toc}{CHAPTER}}
+\newcommand*{\lotheader}{\th@loxheader{lot}{TABLE}}
+\newcommand*{\lofheader}{\th@loxheader{lof}{FIGURE}}
+\newcommand*{\loaheader}{\th@loxheader{loa}{APPENDIX}}
 
 %%%%%%%%% USER COMMANDS FOR CONTROLLING THE PROLOGUE:
 \renewcommand*{\title}[1]{\gdef\th@title{#1}}
@@ -514,7 +505,7 @@
 
 \newbox\dedibox
 \newenvironment{dedication}{%
- % dedication goes cenetere
+ % dedication goes centered
   \global\setbox\dedibox\hbox\bgroup
   \color@begingroup}%
  {\par\unskip
@@ -550,11 +541,11 @@
   %
   \ifth@loxheaderflag
     \addtocontents{toc}{\hspace*{\fill}Page\par}
-    \lox@header{lot}{Table}
-    \lox@header{lof}{Figure}
-    \lox@header{loa}{Appendix}
+    \lox@header{lot}{TABLE}
+    \lox@header{lof}{FIGURE}
+    \lox@header{loa}{APPENDIX}
   \else
-    \lox@header{toc}{Chapter}
+    \lox@header{toc}{CHAPTER}
   \fi
   % ToC Page
   \tocpdfbookmark
