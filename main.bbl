@@ -51,6 +51,93 @@
       \verb https://arxiv.org/abs/2404.06335
       \endverb
     \endentry
+    \entry{athena}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
+           family={group},
+           familyi={g\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod},
+           prefix={software},
+           prefixi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \field{extraname}{1}
+      \field{sortinit}{g}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Athena}
+      \verb{urlraw}
+      \verb https://doi.org/10.5281/zenodo.2641997
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.5281/zenodo.2641997
+      \endverb
+    \endentry
+    \entry{athenadocs_CIbuild}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
+           family={group},
+           familyi={g\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod},
+           prefix={software},
+           prefixi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \field{extraname}{2}
+      \field{sortinit}{g}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Athena Continuous Integration}
+      \verb{urlraw}
+      \verb https://atlassoftwaredocs.web.cern.ch/athena/git/continuous-integration/
+      \endverb
+      \verb{url}
+      \verb https://atlassoftwaredocs.web.cern.ch/athena/git/continuous-integration/
+      \endverb
+    \endentry
+    \entry{athenadocs}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
+           family={group},
+           familyi={g\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod},
+           prefix={software},
+           prefixi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \field{extraname}{3}
+      \field{sortinit}{g}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Athena Software Documentation}
+      \verb{urlraw}
+      \verb https://atlassoftwaredocs.web.cern.ch/athena/
+      \endverb
+      \verb{url}
+      \verb https://atlassoftwaredocs.web.cern.ch/athena/
+      \endverb
+    \endentry
     \entry{Kraus}{misc}{}
       \name{author}{1}{}{%
         {{hash=ee87e7fecb1cb491b7c0735016e0bb04}{%
@@ -76,6 +163,94 @@
       \field{journaltitle}{GitHub repository}
       \field{title}{GitHub Repository: building-athena}
       \field{year}{2023}
+    \endentry
+    \entry{LHC_faq_guide}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=d2819a6cc34bba5656b4460348b04dcc}{%
+           family={Lopes},
+           familyi={L\bibinitperiod},
+           given={Ana},
+           giveni={A\bibinitperiod}}}%
+        {{hash=70b8001c15d8abe036b2374607109ab8}{%
+           family={Perry},
+           familyi={P\bibinitperiod},
+           given={Melissa\bibnamedelima Loyse},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{92e5b56d42f7b071fc52842ff10049f1}
+      \strng{fullhash}{92e5b56d42f7b071fc52842ff10049f1}
+      \strng{bibnamehash}{92e5b56d42f7b071fc52842ff10049f1}
+      \strng{authorbibnamehash}{92e5b56d42f7b071fc52842ff10049f1}
+      \strng{authornamehash}{92e5b56d42f7b071fc52842ff10049f1}
+      \strng{authorfullhash}{92e5b56d42f7b071fc52842ff10049f1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{FAQ-LHC The guide}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://home.cern/resources/brochure/knowledge-sharing/lhc-facts-and-figures
+      \endverb
+      \verb{url}
+      \verb https://home.cern/resources/brochure/knowledge-sharing/lhc-facts-and-figures
+      \endverb
+    \endentry
+    \entry{ATLAS_Fact_Sheet}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=6df9005f733ddf0d66260994df1e339a}{%
+           family={Outreach},
+           familyi={O\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{fullhash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{bibnamehash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{authorbibnamehash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{authornamehash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{authorfullhash}{6df9005f733ddf0d66260994df1e339a}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ATLAS Fact Sheet : To raise awareness of the ATLAS detector and collaboration on the LHC}}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.17181/CERN.1LN2.J772
+      \endverb
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/1457044
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/1457044
+      \endverb
+    \endentry
+    \entry{ROOT_about}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8eb19af9389c25cec01b25123c309112}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={ROOT},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{fullhash}{8eb19af9389c25cec01b25123c309112}
+      \strng{bibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorbibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ROOT, About}
+      \verb{urlraw}
+      \verb https://root.cern/about/
+      \endverb
+      \verb{url}
+      \verb https://root.cern/about/
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

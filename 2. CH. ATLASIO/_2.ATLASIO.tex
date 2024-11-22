@@ -1,16 +1,22 @@
 At any given time, code changes to Athena or the LCG stack could break various core I/O functionality. \cite{atlascollaboration2024softwarecomputingrun3}
-A measure often taken to ensure stability and security of essential code functionality is the involvement of unit testing during continuous integration of new software. [Do I need to cite this ????] 
+A measure often taken to ensure stability and security of essential code functionality is the involvement of unit testing during continuous integration of new software. \cite{athenadocs_CIbuild}
 It's not always the case that new core I/O functionality is integrated into Athena with new unit tests. 
 
 \section{Athena and ROOT}
-\subsection{What is Athena}
-Athena is the open-source software framework for ATLAS. [Cite here]
-It relies on other software such as ROOT, Geant4 and other software as part of the LCG software stack. [cite here]
+% \subsection{What is Athena}
+Athena is the open-source software framework for the ATLAS experiment.\cite{athena}
+It relies on other software such as ROOT, Geant4 and other software as part of the LCG software stack. 
+Athena manages ATLAS production workflows which include event generation, simulation of data, reconstruction from hits, and derivation of reconstructed hits.\cite{athenadocs}
 
-\subsection{What is ROOT}
-ROOT is an 
 
-\subsection{How do they work together}
+% \subsection{What is ROOT}
+ROOT is an open-source software framework used for high-energy physics analysis at CERN.\cite{ROOT_about} 
+It uses C++ objects to save, access, and process data brought in by the various experiments based at the LHC, the ATLAS experiment uses it in conjunction with Athena.
+
+% \subsection{How do they work together}
+
+One of the ways Athena works with ROOT is by taking and manipulating ROOT files in such a way to make them smaller. 
+
 \subsection{What is a derivation job}
 
 \section{xAOD Event Data Model}
