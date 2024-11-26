@@ -4,14 +4,17 @@ There have been many efforts in experimentally probing for unique interactions, 
 The LHC is a 26.7-kilometer ring that crosses between the France-Switzerland border at a depth between 50 and 175 meters underground.\cite{LHC_faq_guide}
 
 
-\subsection{The ATLAS Experiment}
+\section{The ATLAS Detector}
 
 The ATLAS experiment is the largest LHC general purpose detector, and the largest detector ever made for particle collision experiments. 
 It's 46 meters long, 25 meters high and 25 meters wide.\cite{ATLAS_Fact_Sheet}
 The ATLAS detector is comprised of three main sections, the inner detector, calorimeters and the muon detector system. 
 
 The inner detector measures the direction, momentum and charge of electrically charged particles.
-The first point of contact for ATLAS is the pixel detector. It has over 92 million pixels to help determine the origin and momentum of the particle.
+It's main function is to measure the track of the charged particles without destroying the particle itself.
+The first point of contact for ATLAS is the pixel detector. 
+It has over 92 million pixels and is radiation hard to aid in particle track and vertex reconstruction.\cite{Hugging2006}
+When charged particles pass through a pixel sensor ionizes silicon which produces an electron-hole pair, and this generates an electric current that can be measured. \cite{Giangiacomi:2684079}
 Surrounding the pixel detector is the semiconductor tracker, which uses $4,088$ modules of 6 million implanted silicon readout strips.
 The semiconductor tracker helps measure the path particles take, called tracks, with precision up to $25\mu m$. 
 The final layer of the inner detector is the transition radiation tracker (TRT). 
@@ -21,3 +24,12 @@ Particles with relativistic velocities have higher Lorentz $\gamma$-factors, see
     \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
 \end{equation}
 
+There are two main calorimeters for ATLAS, the Liquid Argon (LAr) calorimeter and the Tile Hadronic calorimeter.
+The LAr calorimeter surrounds the inner detector and measures the energy deposits of electrons, photons and hadrons (quark bound states, such as baryons $qqq$ and mesons $q\bar{q}$). 
+It layers various metals to intercept the incoming particles to produce a shower of lower energy particles. 
+The lower energy particles then ionize the liquid argon that fill the barrier inbetween the metal layers to produce a current that can be read out.
+The Tile calorimeter surrounds the LAr calorimeter and is the largest part of the ATLAS detector weighing in around 2900 tons. 
+Particles then traverse through the layers of steel and plastic scintillating tiles. 
+If a particle hit the steel, they will then generate a new shower of particles and the plastic scintillators will produce photons whose current can be measured.
+
+\section{ATLAS Data Acquisition}
