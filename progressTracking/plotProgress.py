@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import seaborn as sns
-savedir = "/Users/jackkraus/Desktop/masters-thesis/Jack-MS-Thesis-Draft/progressTracking"
+savedir = "/Users/jackkraus/Desktop/masters-thesis/Jack-MS-Thesis-Draft/progressTracking/"
 
 df = pd.read_csv('/Users/jackkraus/Desktop/masters-thesis/Jack-MS-Thesis-Draft/progressTracking/progress.csv')
 
@@ -18,12 +18,12 @@ current_wordcount = df["wordcount"].iloc[-1]
 wc_color="orangered"
 pc_color="royalblue"
 
-def add_watermark(text='Jack Kraus'):
+def add_watermark(text="Jack Kraus"):
     """
     adds watermark to lower left corner of matplotlib plot
-
     """
-    plt.annotate(s=text, xy=(.01,.007), xycoords='figure fraction',
+    print(f"Adding watermark: {text}")  # Debugging print statement
+    plt.annotate(text, xy=(.01,.007), xycoords='figure fraction',
                  textcoords='figure fraction', color='grey',alpha=0.7, fontsize=14)
 
 # Plot 1
@@ -47,7 +47,7 @@ plt.close()
 # Combined Plot
 months = mdates.MonthLocator()  # every month
 days = mdates.DayLocator()  # every dat
-date_fmt = mdates.DateFormatter('%b %Y')
+date_fmt = mdates.DateFormatter('%b %d')
 
 fig, ax = plt.figure(), plt.gca()
 ax2= ax.twinx()

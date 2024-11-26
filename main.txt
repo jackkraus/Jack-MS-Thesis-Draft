@@ -1,0 +1,572 @@
+ABSTRACT
+
+OPTIMIZATION OF DERIVATION JOBS AND MODERNIZATION OF NIGHTLY CI
+BUILD I/O TESTS FOR THE ATLAS EXPERIMENT
+
+Arthur C. Kraus, M.S.
+Department of Physics
+Northern Illinois University, 2025
+Dr. Jahred Adelman, Director
+
+The ATLAS experiment’s Software Performance Optimization Team has efforts in developing the Athena software framework that is scalable in performance and ready for widespread use during Run-3 and HL-LHC data ready to be used for Run-4. It’s been shown
+that the storage bias for TTree’s during derivation production jobs can be improved upon
+compression and stored to disk by about 4-5% by eliminating the basket capping, with a
+simultaneous increase in memory usage by about 11%. Additionally, job configuration allows
+opportunity to improve many facets of the ATLAS I/O framework.
+
+NORTHERN ILLINOIS UNIVERSITY
+DE KALB, ILLINOIS
+MAY 2025
+
+OPTIMIZATION OF DERIVATION JOBS AND MODERNIZATION OF NIGHTLY CI
+BUILD I/O TESTS FOR THE ATLAS EXPERIMENT
+
+BY
+ARTHUR C. KRAUS
+© 2025 Arthur C. Kraus
+
+A DISSERTATION SUBMITTED TO THE GRADUATE SCHOOL
+IN PARTIAL FULFILLMENT OF THE REQUIREMENTS
+FOR THE DEGREE
+MASTER OF SCIENCE
+
+DEPARTMENT OF PHYSICS
+
+Dissertation Director:
+Dr. Jahred Adelman
+
+ACKNOWLEDGEMENTS
+
+Here’s where you acknowledge folks who helped. Here’s where you acknowledge folks
+who helped. Here’s where you acknowledge folks who helped. Here’s where you acknowledge
+folks who helped.
+
+DEDICATION
+
+To all of the fluffy kitties. To all of the fluffy kitties. To all of the fluffy kitties. To all of
+the fluffy kitties.
+
+TABLE OF CONTENTS
+
+Page
+LIST OF TABLES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+vi
+
+Chapter
+1 INTRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.1
+
+1
+
+Particle Physics and the Large Hadron Collider . . . . . . . . . . . . . . . . . . . . .
+
+1
+
+1.1.1
+
+The ATLAS Experiment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+1
+
+2 ATLAS I/O . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+
+2.1
+
+Athena and ROOT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+
+2.1.1
+
+TTree . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+4
+
+2.1.2
+
+Derivation Production Jobs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+4
+
+Event Data Models . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+4
+
+2.2.1
+
+Transient/Persistent EDM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+4
+
+3 TOY MODEL DERIVATION PRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . .
+
+6
+
+2.2
+
+3.1
+
+Building the Toy Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+6
+
+3.2
+
+Toy Model Derivation Production . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+6
+
+4 DATA AND MONTE CARLO DERIVATION PRODUCTION . . . . . . . . . . . . .
+
+7
+
+4.1
+
+Current Derivation Framework . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+7
+
+4.2
+
+Performance Metrics and Benchmarking . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+7
+
+4.3
+
+Results. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+8
+
+4.3.1
+
+Presence of basket-cap and presence of minimum number of entries. .
+
+8
+
+4.3.2
+
+Comparing different basket sizes . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+9
+
+4.3.3
+
+Monte Carlo PHYSLITE branch comparison . . . . . . . . . . . . . . . . . .
+
+10
+
+v
+Chapter
+
+Page
+4.3.4
+
+Conclusion to derivation job optimzation . . . . . . . . . . . . . . . . . . . .
+
+11
+
+5 MODERNIZING I/O CI UNIT-TESTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+12
+
+5.1
+
+Continuous integration unit tests . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+12
+
+APPENDIX: APPENDIX ONE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+14
+
+LIST OF TABLES
+
+Table
+4.1
+
+4.2
+
+4.3
+
+Page
+Athena v22.0.16: Comparing the maximum proportional set size (PSS) and
+PHYS/PHYSLITE output file sizes (outFS) for data jobs over various Athena
+configurations for 160327 entries. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+9
+
+Athena v22.0.16: Comparing the maximum proportional set size (PSS) and
+PHYS/PHYSLITE output file sizes (outFS) for MC jobs over various Athena
+configurations for 140000 entries. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+9
+
+Athena v24.0.16: Comparing the maximum proportional set size (PSS) and
+PHYS/PHYSLITE output file sizes (outFS) for Data jobs over various Athena
+configurations for 160327 entries. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+10
+
+CHAPTER 1
+INTRODUCTION
+
+1.1 Particle Physics and the Large Hadron Collider
+
+Particle physics is the branch of physics that seeks out the origins of the universe by
+probing the smallest interactions at high energies. It has roots in electromagnetism, with
+the discovery of the electron and other particles, and quantum mechanics, that include
+descriptions of atoms, particles, and their interactions both relativistic and non-relativistic
+speeds. There have been many efforts in experimentally probing for unique interactions,
+and the Large Hadron Collider (LHC) at CERN has been at the forefront in revealing new
+insights. The LHC is a 26.7-kilometer ring that crosses between the France-Switzerland
+border at a depth between 50 and 175 meters underground.[6]
+
+1.1.1 The ATLAS Experiment
+
+The ATLAS experiment is the largest LHC general purpose detector, and the largest
+detector ever made for particle collision experiments. It’s 46 meters long, 25 meters high
+and 25 meters wide.[8] The ATLAS detector is comprised of three main sections, the inner
+detector, calorimeters and the muon detector system.
+The inner detector measures the direction, momentum and charge of electrically charged
+particles. The first point of contact for ATLAS is the pixel detector. It has over 92 million
+pixels to help determine the origin and momentum of the particle. Surrounding the pixel
+detector is the semiconductor tracker, which uses 4, 088 modules of 6 million implanted
+
+2
+silicon readout strips. The semiconductor tracker helps measure the path particles take,
+called tracks, with precision up to 25µm. The final layer of the inner detector is the transition
+radiation tracker (TRT). The TRT is made of a collection of tubes made with many layers
+of different materials with varying indices of refraction. Particles with relativistic velocities
+have higher Lorentz γ-factors, see Eq. (1.1), the TRT uses varying materials to discriminate
+between heavier particles (with low γ and radiate less) and lighter particles (higher γ and
+radiate more). [7]
+1
+γ=q
+2
+1 − vc2
+
+(1.1)
+
+CHAPTER 2
+ATLAS I/O
+
+At any given time, code changes to Athena or the LCG stack could break various core
+I/O functionality. [1] A measure often taken to ensure stability and security of essential code
+functionality is the involvement of unit testing during continuous integration of new software.
+[3] It’s not always the case that new core I/O functionality is integrated into Athena with
+new unit tests.
+
+2.1 Athena and ROOT
+
+Athena is the open-source software framework for the ATLAS experiment.[2] It relies on
+other software such as ROOT, Geant4 and other software as part of the LCG software stack.
+Athena manages ATLAS production workflows which include event generation, simulation
+of data, reconstruction from hits, and derivation of reconstructed hits.[4]
+ROOT is an open-source software framework used for high-energy physics analysis at
+CERN.[9] It uses C++ objects to save, access, and process data brought in by the various
+experiments based at the LHC, the ATLAS experiment uses it in conjunction with Athena.
+One of the ways Athena works with ROOT is by taking and manipulating ROOT files
+in such a way to make them smaller.
+
+4
+
+2.1.1 TTree
+
+2.1.2 Derivation Production Jobs
+
+A derivation job is that process that takes Analysis Object Data (AODs), which comes
+from the reconstruction step at O(1 MB) per event, and creates a Derived Analysis Object
+Data (DAOD) which sits at O(10 kB) per event.
+
+2.2 Event Data Models
+
+An Event Data Model (EDM) is a collection of classes and their relationships to each
+other that provide a representation of an event detected with the goal of making it easier
+to use and manipulate by developers. An EDM is how particles and jets are represented in
+memory, stored to disk, and manipulated in analysis. It’s useful to have an EDM because
+it brings a commonality to the code, which is useful when developers reside in different
+groups with various backgrounds. An EDM allows those developers to more easily debug
+and communicate issues when they arise.
+
+2.2.1 Transient/Persistent EDM
+
+One of the previous EDMs used by ATLAS concerned a dual transient/persistent nature
+of data. The transient data was present in memory and could have information attatched to
+the object, this data could gain complexity the more it was used. Persistent data needed to
+be simplified before it could be persistified into long-term storage (sent to disk). ROOT had
+trouble handling the complex inheritance models that would come up the more developers
+
+5
+used this EDM. Additionally, converting from transient to persistent data was an extraneous
+step which was eventually removed by the adoption of using an EDM that blends the two
+stages of data together, this was dubbed the xAOD EDM.
+
+CHAPTER 3
+TOY MODEL DERIVATION PRODUCTION
+
+Building a toy model for derivation production jobs provides a schema by which it makes
+using real data and Monte Carlo simulated data much simpler. One general principle about
+both data and Monte Carlo is the branch data within both is made up a mixture of randomized floats and repeated integer-like data. If we test the ideas behind limiting basket sizes
+to see how it affects compression, effects should be evident.
+
+3.1 Building the Toy Model
+
+The first toy model example that was investigated was filling up a TTree
+
+3.2 Toy Model Derivation Production
+
+CHAPTER 4
+DATA AND MONTE CARLO DERIVATION PRODUCTION
+
+4.1 Current Derivation Framework
+
+Derivation production jobs suffer from high memory usage, and DAODs make up a bulk
+of disk-space usage. DAODs are used in physics analyses and ought to be optimized to
+alleviate stress on the GRID and to lower disk-space usage. Optimizing both disk-space
+and memory usage is a tricky balance as they are typically at odds with one another. For
+example, increasing memory output memory buffers results in lower disk-space usage due to
+better compression but the memory usage will increase since one will have to load a larger
+buffer into memory. The route we opted to take is by optimizing for disk-space and memory
+by testing various basket limits and viewing the effects of the branches on both data and
+Monte Carlo (MC) simulated analysis object data (AODs)
+
+4.2 Performance Metrics and Benchmarking
+
+Our initial focus was on the inclusion of a minimum number of entries per buffer and the
+maximum basket buffer limit. As we’ll see in the following section, we then opted to keep
+the minimum number of entries set to its default setting (10 entries per buffer).
+For both the nightly and the release testing, the data derivation job comes from a 2022
+dataset with four input files 160327 events. The MC job comes from a 2023 tt̄ standard
+sample simulation job with six input files with 140k events. The specific datasets for both
+are noted in Appendix A.1.
+
+8
+The corresponding input files for both data and MC jobs were ran with various configurations of Athena (version 24.0.16) and its specified basket buffer limit. The four configurations
+tested all kept minimum 10 entries per basket and modified the basket limitation in the following ways:
+1. “default” - Athena’s default setting, and basket limit of 128 × 1024 bytes
+2. “no-lim” - Removing the Athena basket limit, the ROOT imposed 1.3 MB limit still
+remains
+3. “256k” - Limit basket buffer to 256 × 1024 bytes
+4. “512k” - Limit basket buffer to 512 × 1024 bytes
+Interesting results come from the comparison of ”no-lim” and ”default” configuration.
+The ”256k” and ”512k” configurations were included for completeness and provided to be
+a helpful sanity check throughout. Building and running these configurations of Athena are
+illustrated in a GitHub repository. [5]
+
+4.3 Results
+
+4.3.1 Presence of basket-cap and presence of minimum number of entries
+
+First batch testing was for data and MC simulation derivation production jobs with and
+without presence of an upper limit to the basket size and presence of the minimum number
+of entires per branch. PHYSLITE MC derivation production, from Table 2, sees a 9.9%
+increase in output file size when compared to the default Athena configuration. Since this
+configuration only differs by the elimination of the ”min-number-entries” we assume the
+
+9
+minimum number of entries per branch should be kept at 10 and left alone. Table 4.3 also
+shows the potential for a PHYSLITE MC DAOD output file size reduction by eliminating
+our upper basket buffer limit altogether.
+Athena v22.0.16 configurations (Data)
+With basket-cap and min-num-entries (default)
+Without both basket-cap and min-num-entries
+Without basket-cap but with min-num-entries
+With basket-cap but without min-num-entries
+
+Max PSS (MB) (∆% default)
+27.109 ( + 0.00 %)
+27.813 ( + 2.53 %)
+27.814 ( + 2.53 %)
+27.298 ( + 0.69 %)
+
+PHYS outFS (GB) (∆% default)
+3.216 ( + 0.00 %)
+3.222 ( + 0.20 %)
+3.216 ( - 0.00 %)
+3.221 ( + 0.15 %)
+
+PHYSLITE outFS (GB) (∆% default)
+1.034 ( + 0.00 %)
+1.036 ( + 0.21 %)
+1.030 ( - 0.39 %)
+1.042 ( + 0.71 %)
+
+Table 4.1: Athena v22.0.16: Comparing the maximum proportional set size (PSS) and
+PHYS/PHYSLITE output file sizes (outFS) for data jobs over various Athena configurations
+for 160327 entries.
+
+Athena v22.0.16 configurations (MC)
+With basket-cap and min-num-entries (default)
+Without both basket-cap and min-num-entries
+Without basket-cap but with min-num-entries
+With basket-cap but without min-num-entries
+
+Max PSS (MB) (∆% default)
+14.13 ( + 0.00 %)
+16.08 ( + 12.13 %)
+15.97 ( + 11.51 %)
+14.19 ( + 0.42 %)
+
+PHYS outFS (GB) (∆% default)
+5.83 ( + 0.00 %)
+6.00 ( + 2.93 %)
+5.67 ( - 2.80 %)
+6.16 ( + 5.35 %)
+
+PHYSLITE outFS (GB) (∆% default)
+2.59 ( + 0.00 %)
+2.72 ( + 5.06 %)
+2.45 ( - 5.58 %)
+2.87 ( + 9.90 %)
+
+Table 4.2: Athena v22.0.16: Comparing the maximum proportional set size (PSS) and
+PHYS/PHYSLITE output file sizes (outFS) for MC jobs over various Athena configurations
+for 140000 entries.
+
+4.3.2 Comparing different basket sizes
+
+Pre-existing derivation jobs were ran for data and MC simulations to compare between
+configurations of differing basket sizes limits. The results for this set of testing are found
+from Table 3 through Table 10. The following tables are the DAOD output-file sizes of the
+various Athena configurations for PHYS/PHYSLITE over their respective data/MC AOD
+input files.
+
+10
+Athena v24.0.16 configurations (Data)
+With basket-cap and min-num-entries (default)
+Without both basket-cap and min-num-entries
+Without basket-cap but with min-num-entries
+With basket-cap but without min-num-entries
+
+Max PSS (MB) (∆% default)
+27.8591 ( + 0.00 %)
+28.6432 ( + 2.74 %)
+28.2166 ( + 1.27 %)
+28.4852 ( + 2.20 %)
+
+PHYS outFS (GB) (∆% default)
+3.2571 ( + 0.00 %)
+3.2552 ( - 0.06 %)
+3.2553 ( - 0.05 %)
+3.2571 ( + 0.00 %)
+
+PHYSLITE outFS (GB) (∆% default)
+1.0334 ( + 0.00 %)
+1.0302 ( - 0.31 %)
+1.0303 ( - 0.30 %)
+1.0307 ( - 0.26 %)
+
+Table 4.3: Athena v24.0.16: Comparing the maximum proportional set size (PSS) and
+PHYS/PHYSLITE output file sizes (outFS) for Data jobs over various Athena configurations
+for 160327 entries.
+
+4.3.3 Monte Carlo PHYSLITE branch comparison
+
+Derivation production jobs work with initially large, memory-consuming branches, compressing them to a reduced size. These derivation jobs are memory intensive because they
+first have to load the uncompressed branches into readily-accessed memory. Once they’re
+loaded, only then are they able to be compressed. The compression factor is the ratio of prederivation branch size (Total-file-size) to post-derivation branch size (Compressed-file-size).
+The compressed file size is the size of the branch that is permanently saved into the DAOD.
+Branches with highly repetitive data are better compressed than non-repetitive data,
+leading to high compression factors–the initial size of the branch contains more data than it
+needs pre-derivation. If pre-derivation branches are larger than necessary, there should be
+an opportunity to save memory usage during the derivation job.
+The following tables look into some highly compressible branches and might lead to areas
+where simulation might save some space. (AOD pre compression?)
+[Table 5 from the int note]
+An immediate observation: with the omission of the Athena basket limit (solely relying
+on ROOTs 1.3 MB basket limit), the compression factor increases. This is inline with
+the original expectation that an increased buffer size limit correlate to better compression.
+*PrimaryVerticesAuxDyn.trackParticleLinks* is a branch where, among each configuration
+of Athena MC derivation, has the highest compression factor of any branch in this dataset.
+
+11
+Some branches, like *HLTNav Summary DAODSlimmedAuxDyn.linkColNames* show
+highly compressible behavior and are consistent with the other job configurations (data,
+MC, PHYS, and PHYSLITE). Further work could investigate these branches for further
+optimization
+
+4.3.4 Conclusion to derivation job optimzation
+
+Initially, limiting the basket buffer size looked appealing; after 128kB basket buffer size
+the compression ratio would begin to plateau, increasing the memory-usage without saving
+much in disk-usage. The optimal balance could be the basket buffer limit of 128 kB.
+Instead, by removing the upper limit of the basket size, a greater decrease in DAOD
+output file size is achieved. The largest decrease in file size came from the PHYSLITE
+MC derivation jobs without setting an upper limit to the basket buffer size. While similar
+decreases in file size appear for derivation jobs using data, it is not as apparent for data as
+it is for MC jobs. With the removal of an upper-limit to the basket size, ATLAS stands to
+gain a 5% decrease for PHYSLITE MC DAOD output file sizes, but an 11 - 12
+By looking at the branches per configuration, specifically in MC PHYSLITE output
+DAOD, highly compressible branches emerge. The branches inside the MC PHYSLITE
+DAOD are suboptimal as they do not conserve disk space; instead, they consume memory
+inefficiently. As seen from (Table 5) through (Table 10), we have plenty of branches in MC
+PHYSLITE that are seemingly empty–as indicated by the compression factor being O(10).
+Reviewing and optimizing the branch data could further reduce GRID load during DAOD
+production by reducing the increased memory-usage while keeping the effects of decreased
+disk-space.
+
+CHAPTER 5
+MODERNIZING I/O CI UNIT-TESTS
+
+5.1 Continuous integration unit tests
+
+Unit tests are programs that act as a catch during the continuous integration of a codebase
+and exhaust features that need to remain functional. Athena has a number of unit tests which
+check every new merge request and nightly build for issues in the new code that could break
+core I/O functionality, either at the level of Athena, ROOT, or any other software in the
+LCG stack. With the adoption of the xAOD EDM, there were no unit tests to cover core
+I/O functionality related to this new EDM.
+
+BIBLIOGRAPHY
+
+[1] ATLAS Collaboration. Software and computing for Run 3 of the ATLAS experiment at
+the LHC. 2024. arXiv: 2404.06335 [hep-ex]. url: https://arxiv.org/abs/2404.
+06335.
+[2] ATLAS software group. Athena. url: https://doi.org/10.5281/zenodo.2641997.
+[3] ATLAS software group. Athena Continuous Integration. url: https://atlassoftwaredocs.
+web.cern.ch/athena/git/continuous-integration/.
+[4] ATLAS software group. Athena Software Documentation. url: https://atlassoftwaredocs.
+web.cern.ch/athena/.
+[5] A.C. Kraus. GitHub Repository: building-athena. https://github.com/arthurkraus3/
+building-athena.git. 2023.
+[6] Ana Lopes and Melissa Loyse Perry. FAQ-LHC The guide. 2022. url: https://home.
+cern/resources/brochure/knowledge-sharing/lhc-facts-and-figures.
+[7] Bartosz Mindur. ATLAS Transition Radiation Tracker (TRT): Straw tubes for tracking
+and particle identification at the Large Hadron Collider. Geneva, 2017. doi: 10.1016/
+j.nima.2016.04.026. url: https://cds.cern.ch/record/2139567.
+[8] ATLAS Outreach. “ATLAS Fact Sheet : To raise awareness of the ATLAS detector
+and collaboration on the LHC”. 2010. doi: 10.17181/CERN.1LN2.J772. url: https:
+//cds.cern.ch/record/1457044.
+[9] ROOT Team. ROOT, About. url: https://root.cern/about/.
+
+APPENDIX
+APPENDIX ONE
+
+15
+
+A.1 Derivation production datasets
+
+For both the nightly and the release testing, the data derivation job, which comes from
+the dataset
+
+data22 13p6TeV : data22 13p6TeV . 0 0 4 2 8 8 5 5 . p h y s i c s M a i n . merge .AOD. r 1 4 1 9 0 p 5 4 4 9 t i d
+was ran with the input files
+AOD. 3 1 4 0 7 8 0 9 . 0 0 0 8 9 4 . p o o l . r o o t . 1
+AOD. 3 1 4 0 7 8 0 9 . 0 0 0 8 9 5 . p o o l . r o o t . 1
+AOD. 3 1 4 0 7 8 0 9 . 0 0 0 8 9 6 . p o o l . r o o t . 1
+AOD. 3 1 4 0 7 8 0 9 . 0 0 0 8 9 8 . p o o l . r o o t . 1
+Similarly, the MC derivation job, comes from the dataset
+
+mc23 13p6TeV : mc23 13p6TeV . 6 0 1 2 2 9 . PhPy8EG A14 ttbar hdamp258p75 SingleLep . merg
+was ran with input files
+AOD. 3 3 7 9 9 1 6 6 . 0 0 0 3 0 3 . p o o l . r o o t . 1
+AOD. 3 3 7 9 9 1 6 6 . 0 0 0 3 0 4 . p o o l . r o o t . 1
+AOD. 3 3 7 9 9 1 6 6 . 0 0 0 3 0 5 . p o o l . r o o t . 1
+AOD. 3 3 7 9 9 1 6 6 . 0 0 0 3 0 6 . p o o l . r o o t . 1
+AOD. 3 3 7 9 9 1 6 6 . 0 0 0 3 0 7 . p o o l . r o o t . 1
+AOD. 3 3 7 9 9 1 6 6 . 0 0 0 3 0 8 . p o o l . r o o t . 1
+
