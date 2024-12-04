@@ -13,11 +13,16 @@ ROOT is an open-source software framework used for high-energy physics analysis 
 It uses C++ objects to save, access, and process data brought in by the various experiments based at the LHC, the ATLAS experiment uses it in conjunction with Athena.
 
 
-\section{TTree Object}
+\section{TTree Object} \label{section: ATLASIO_TTreeObject}
 A TTree is a ROOT object that organizes physically distinct types of event data into branches.
 Branches hold data into dedicated contiguous memory buffers, and those memory buffers, upon compression, become baskets.
 These baskets can have a limited size and a set minimum number of entries. 
 The Athena default basket size at present is 128 kB, and the default minimum number of entries is 10. 
+
+One function relevant to TTree is $Fill()$. 
+$Fill()$ will loop over all of the branches in the TTree and compresses the baskets that make up the branch.
+This removes the basket from memory as it is then compressed and written to disk.
+It makes reading back branches faster as all of the baskets are stored near each other on the same disk region. \cite{ROOT_TTree}
  
 
 \section{Derivation Production Jobs}

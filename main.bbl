@@ -316,6 +316,7 @@
       \strng{authorbibnamehash}{8eb19af9389c25cec01b25123c309112}
       \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
       \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
+      \field{extraname}{1}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
@@ -326,6 +327,34 @@
       \endverb
       \verb{url}
       \verb https://root.cern/about/
+      \endverb
+    \endentry
+    \entry{ROOT_TTree}{software}{}
+      \name{author}{1}{}{%
+        {{hash=8eb19af9389c25cec01b25123c309112}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={ROOT},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{fullhash}{8eb19af9389c25cec01b25123c309112}
+      \strng{bibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorbibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ROOT, TTree Class}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://root.cern.ch/doc/master/classTTree.html
+      \endverb
+      \verb{url}
+      \verb https://root.cern.ch/doc/master/classTTree.html
       \endverb
     \endentry
   \enddatalist

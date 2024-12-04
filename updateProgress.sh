@@ -15,4 +15,4 @@ echo `date '+%Y-%m-%d %H:%M:%S'`,$WORDCOUNT,$PAGECOUNT >> $PROGRESSFILE
 echo "Done! Page count ${PAGECOUNT}, word count ${WORDCOUNT}"
 
 python3 /Users/jackkraus/Desktop/masters-thesis/Jack-MS-Thesis-Draft/progressTracking/plotProgress.py
-# Code from Tyler Burch
+# Code from Tyler Burch, thank you!!
