@@ -44,7 +44,7 @@ for (int j = 0; j < NEvents; j++) {
     // Fill vten2
     for(int a = 0, a < NEntries2; a++){
         f2 = gRandom->Rndm()*10;
-        vten2.emplace_back(f1);
+        vten2.emplace_back(f2);
     }
     // Fill vten3
     for(int b = 0, b < NEntries3; b++){

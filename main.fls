@@ -903,6 +903,10 @@ INPUT ./main.lot
 INPUT main.lot
 INPUT main.lot
 OUTPUT main.lot
+INPUT ./main.lof
+INPUT main.lof
+INPUT main.lof
+OUTPUT main.lof
 INPUT ./main.loa
 INPUT main.loa
 INPUT main.loa
@@ -919,6 +923,17 @@ INPUT ./3. CH. Toy Model/_3.Toy_Model.tex
 INPUT 3. CH. Toy Model/_3.Toy_Model.tex
 INPUT ./3. CH. Toy Model/_3.Toy_Model.tex
 INPUT 3. CH. Toy Model/_3.Toy_Model.tex
+INPUT ./content/toymodel_content/branch_compfacts_nomix.png
+INPUT ./content/toymodel_content/branch_compfacts_nomix.png
+INPUT content/toymodel_content/branch_compfacts_nomix.png
+INPUT ./content/toymodel_content/branch_compfacts_nomix.png
+INPUT ./content/toymodel_content/branch_compfacts_nomix.png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./content/toymodel_content/branch_fileSize_nomix.png
+INPUT ./content/toymodel_content/branch_fileSize_nomix.png
+INPUT content/toymodel_content/branch_fileSize_nomix.png
+INPUT ./content/toymodel_content/branch_fileSize_nomix.png
+INPUT ./content/toymodel_content/branch_fileSize_nomix.png
 INPUT ./4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
 INPUT 4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
 INPUT ./4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
@@ -978,6 +993,14 @@ INPUT ./7.Appendix/app2.tex
 INPUT 7.Appendix/app2.tex
 INPUT ./7.Appendix/app2.tex
 INPUT 7.Appendix/app2.tex
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT ./3. CH. Toy Model/toy_model_code-02-07-23.cxx
 INPUT 3. CH. Toy Model/toy_model_code-02-07-23.cxx
 INPUT ./3. CH. Toy Model/toy_model_code-02-07-23.cxx
@@ -992,11 +1015,18 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
+INPUT ./3. CH. Toy Model/toy_model_code-02-21-23.cxx
+INPUT 3. CH. Toy Model/toy_model_code-02-21-23.cxx
+INPUT ./3. CH. Toy Model/toy_model_code-02-21-23.cxx
+INPUT 3. CH. Toy Model/toy_model_code-02-21-23.cxx
+INPUT ./3. CH. Toy Model/toy_model_code-02-21-23.cxx
+INPUT 3. CH. Toy Model/toy_model_code-02-21-23.cxx
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
 INPUT main.run.xml
 OUTPUT main.run.xml
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
