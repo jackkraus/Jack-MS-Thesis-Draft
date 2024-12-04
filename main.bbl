@@ -19,36 +19,33 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{atlascollaboration2024softwarecomputingrun3}{misc}{}
+    \entry{Trigger-DAQ}{misc}{}
       \name{author}{1}{}{%
-        {{hash=a3364242a05dc5a80a93fa55804031af}{%
-           family={Collaboration},
+        {{hash=d29874d6591d70a9544f7bd286992acc}{%
+           family={CERN},
            familyi={C\bibinitperiod},
-           given={ATLAS},
-           giveni={A\bibinitperiod}}}%
+           given={ATLAS\bibnamedelima Experiment},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           prefix={at},
+           prefixi={a\bibinitperiod}}}%
       }
-      \strng{namehash}{a3364242a05dc5a80a93fa55804031af}
-      \strng{fullhash}{a3364242a05dc5a80a93fa55804031af}
-      \strng{bibnamehash}{a3364242a05dc5a80a93fa55804031af}
-      \strng{authorbibnamehash}{a3364242a05dc5a80a93fa55804031af}
-      \strng{authornamehash}{a3364242a05dc5a80a93fa55804031af}
-      \strng{authorfullhash}{a3364242a05dc5a80a93fa55804031af}
+      \strng{namehash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{fullhash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{bibnamehash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{authorbibnamehash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{authornamehash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{authorfullhash}{d29874d6591d70a9544f7bd286992acc}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprintclass}{hep-ex}
-      \field{eprinttype}{arXiv}
-      \field{title}{Software and computing for Run 3 of the ATLAS experiment at the LHC}
-      \field{year}{2024}
-      \verb{eprint}
-      \verb 2404.06335
-      \endverb
+      \field{journaltitle}{ATLAS Experiment at CERN}
+      \field{title}{Trigger and Data Acquisition}
       \verb{urlraw}
-      \verb https://arxiv.org/abs/2404.06335
+      \verb https://atlas.cern/Discover/Detector/Trigger-DAQ
       \endverb
       \verb{url}
-      \verb https://arxiv.org/abs/2404.06335
+      \verb https://atlas.cern/Discover/Detector/Trigger-DAQ
       \endverb
     \endentry
     \entry{Giangiacomi:2684079}{thesis}{}
@@ -111,35 +108,6 @@
       \verb https://doi.org/10.5281/zenodo.2641997
       \endverb
     \endentry
-    \entry{athenadocs_CIbuild}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
-           family={group},
-           familyi={g\bibinitperiod},
-           given={ATLAS},
-           giveni={A\bibinitperiod},
-           prefix={software},
-           prefixi={s\bibinitperiod}}}%
-      }
-      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \field{extraname}{2}
-      \field{sortinit}{g}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Athena Continuous Integration}
-      \verb{urlraw}
-      \verb https://atlassoftwaredocs.web.cern.ch/athena/git/continuous-integration/
-      \endverb
-      \verb{url}
-      \verb https://atlassoftwaredocs.web.cern.ch/athena/git/continuous-integration/
-      \endverb
-    \endentry
     \entry{athenadocs}{misc}{}
       \name{author}{1}{}{%
         {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
@@ -156,7 +124,7 @@
       \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
       \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
       \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \field{extraname}{3}
+      \field{extraname}{2}
       \field{sortinit}{g}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labelnamesource}{author}

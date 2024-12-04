@@ -1,28 +1,27 @@
-At any given time, code changes to Athena or the LCG stack could break various core I/O functionality. \cite{atlascollaboration2024softwarecomputingrun3}
-A measure often taken to ensure stability and security of essential code functionality is the involvement of unit testing during continuous integration of new software. \cite{athenadocs_CIbuild}
-It's not always the case that new core I/O functionality is integrated into Athena with new unit tests. 
+% CHAPTER START
+The Trigger/DAQ system sends and saves data from the detector to a persistent data storage solution.
+It's at this stage where the data isn't yet ready for an effective analysis, so what needs to happen is the data needs to be reconstructed and consolidated into physics objects, or Analysis Object Data files (AODs).
+Creating AODs from data requires significant computation power and Athena is the software framework that plays a significant role in this process.
 
 \section{Athena and ROOT}
 % \subsection{What is Athena}
 Athena is the open-source software framework for the ATLAS experiment.\cite{athena}
-It relies on other software such as ROOT, Geant4 and other software as part of the LCG software stack. 
+It uses on other software such as ROOT, Geant4 and other software as part of the LCG software stack. 
 Athena manages ATLAS production workflows which include event generation, simulation of data, reconstruction from hits, and derivation of reconstructed hits.\cite{athenadocs}
 
-
-% \subsection{What is ROOT}
 ROOT is an open-source software framework used for high-energy physics analysis at CERN.\cite{ROOT_about} 
 It uses C++ objects to save, access, and process data brought in by the various experiments based at the LHC, the ATLAS experiment uses it in conjunction with Athena.
 
-% \subsection{How do they work together}
 
-One of the ways Athena works with ROOT is by taking and manipulating ROOT files in such a way to make them smaller. 
+\section{TTree Object}
+A TTree is a ROOT object that organizes physically distinct types of event data into branches.
+Branches hold data into dedicated contiguous memory buffers, and those memory buffers, upon compression, become baskets.
+These baskets can have a limited size and a set minimum number of entries. 
+The Athena default basket size at present is 128 kB, and the default minimum number of entries is 10. 
+ 
 
-% \subsection{what are the steps to go from data taking to analysis?}
-
-\subsection{TTree}
-
-\subsection{Derivation Production Jobs}
-A derivation job is that process that takes Analysis Object Data (AODs), which comes from the reconstruction step at $\mathcal{O}(1 \text{ MB})$ per event, and creates a Derived Analysis Object Data (DAOD) which sits at $\mathcal{O}(10 \text{ kB})$ per event.
+\section{Derivation Production Jobs}
+A derivation job is that process that takes AODs, which comes from the reconstruction step at $\mathcal{O}(1 \text{ MB})$ per event, and creates a Derived Analysis Object Data (DAOD) which sits at $\mathcal{O}(10 \text{ kB})$ per event.
 % \subsection{Why do we need derivation jobs?}
 
 
@@ -39,3 +38,4 @@ The transient data was present in memory and could have information attatched to
 Persistent data needed to be simplified before it could be persistified into long-term storage (sent to disk). 
 ROOT had trouble handling the complex inheritance models that would come up the more developers used this EDM. 
 Additionally, converting from transient to persistent data was an excessive step which was eventually removed by the adoption of using an EDM that blends the two stages of data together, this was dubbed the xAOD EDM.
+

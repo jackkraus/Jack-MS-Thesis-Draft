@@ -1,11 +1,12 @@
 Particle physics is the branch of physics that seeks out the origins of the universe by probing the smallest interactions at high energies.
 It has roots in electromagnetism, with the discovery of the electron and other particles, and quantum mechanics, that include descriptions of atoms, particles, and their interactions both relativistic and non-relativistic speeds. 
-There have been many efforts in experimentally probing for unique interactions, and the Large Hadron Collider (LHC) at CERN has been at the forefront in revealing new insights.  
-The LHC is a 26.7-kilometer ring that crosses between the France-Switzerland border at a depth between 50 and 175 meters underground.\cite{LHC_faq_guide}
-
+There have been many efforts in experimentally probing for unique interactions, and the experiments at the Large Hadron Collider (LHC) at CERN has been at the forefront in revealing new insights.  
+This thesis looks into software performance optimization of the ATLAS experiment at CERN. 
+Specifically, ways to modernize and optimize the software framework Athena to improve input/output (I/O) during derivation production and create new tests that catch when specific core I/O functionality is broken.
 
 \section{The ATLAS Detector}
 
+The LHC is a 26.7-kilometer ring that crosses between the France-Switzerland border at a depth between 50 and 175 meters underground.\cite{LHC_faq_guide}
 The ATLAS experiment is the largest LHC general purpose detector, and the largest detector ever made for particle collision experiments. 
 It's 46 meters long, 25 meters high and 25 meters wide.\cite{ATLAS_Fact_Sheet}
 The ATLAS detector is comprised of three main sections, the inner detector, calorimeters and the muon detector system. 
@@ -34,4 +35,15 @@ If a particle hit the steel, they will then generate a new shower of particles a
 
 \section{ATLAS Trigger and Data Acquisition}
 
-The LHC produces $pp$-collisions at a rate of 40 MHz. 
+The LHC produces $pp$-collisions at a rate of 40 MHz, each collision is called an ``event". 
+% What is the ATLAS Trigger System
+The ATLAS Trigger system is what's responsible for quickly deciding what events are interesting.
+It's divided into the first- and second-level triggers and when a particle activates a trigger, the trigger has to make a decision to tell the Data Acquistion System (DAQ) to gather the data produced by the detector. 
+The first-level trigger is a hardware trigger that decides within $2.5 \mu s$ after the event occurs if it's a good event to put into a storage buffer for the second-level trigger.
+The second-level trigger is a software trigger that decides within $200 \mu s$ and uses $\mathcal{O}(40,000)$ CPU-cores and analyses the event to decide what is worth keeping. 
+The second-level trigger selects about 1000 events per second to keep and store long-term. \cite{Trigger-DAQ}
+
+The data taken by this Trigger/DAQ system is raw and not yet in a state that is ready for analysis, but it is ready for the reconstruction stage. 
+
+% How is this relevant to the thesis? 
+
