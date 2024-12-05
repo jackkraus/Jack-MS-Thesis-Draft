@@ -1,6 +1,6 @@
 % CHAPTER START
 The Trigger/DAQ system sends and saves data from the detector to a persistent data storage solution.
-It's at this stage where the data isn't yet ready for an effective analysis, so what needs to happen is the data needs to be reconstructed and consolidated into physics objects, or Analysis Object Data files (AODs).
+It's at this stage where the data isn't yet ready for an effective analysis, so what needs to happen is the data needs to be reconstructed and consolidated into physics objects, or Analysis Object Data (AOD) files.
 Creating AODs from data requires significant computation power and Athena is the software framework that plays a significant role in this process.
 
 \section{Athena and ROOT}
@@ -37,10 +37,17 @@ An EDM is how particles and jets are represented in memory, stored to disk, and 
 It's useful to have an EDM because it brings a commonality to the code, which is useful when developers reside in different groups with various backgrounds.
 An EDM allows those developers to more easily debug and communicate issues when they arise.  
 
-\subsection{Transient/Persistent EDM}
-One of the previous EDMs used by ATLAS concerned a dual transient/persistent nature of data.
+\subsection{Transient/Persistent (T/P) EDM}
+One of the previous EDM schemas used by ATLAS concerned a dual transient/persistent nature of AOD.
+The AOD at this point was converted into an ntuple based format called D3PDs. 
+While this conversion allowed for fast readability and partial read for effient analysis in ROOT, it left the files disconnected from the reconstruction tools found in Athena.\cite{Athena_xAOD_design}
 The transient data was present in memory and could have information attatched to the object, this data could gain complexity the more it was used.
 Persistent data needed to be simplified before it could be persistified into long-term storage (sent to disk). 
 ROOT had trouble handling the complex inheritance models that would come up the more developers used this EDM. 
 Additionally, converting from transient to persistent data was an excessive step which was eventually removed by the adoption of using an EDM that blends the two stages of data together, this was dubbed the xAOD EDM.
 
+\subsection{xAOD EDM}
+The xAOD EDM is the successor to the T/P EDM and brings a number of improvements.
+This EDM, unlike T/P, is usuable both on Athena and ROOT.
+It's easier to pick up for analysis and reconstruction. 
+xAOD EDM has the ability to add and remove variables at runtime, these variables are called ``decorations."

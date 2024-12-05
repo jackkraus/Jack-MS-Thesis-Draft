@@ -13,7 +13,7 @@ Specifics are illustrated in Appendix \ref{appendix:toy_model_no_mix_code}.
 Once the branches were filled, ROOT then will loop over each of the branches in the TTree and at regular intervals will remove the baskets from memory and write the baskets to disk (flushed), as was discussed in Section $\S \ref{section: ATLASIO_TTreeObject}$.
  the compression factor for each branch that was filled.
 Again, the goal was to create branches with data similar to what could be found in real post-reconstructed data samples.
-This would mean creating for branches with compression ratios on the order $\mathcal{5-10}$. 
+This would mean creating for branches with compression ratios on the order $\mathcal{O}(5)$. 
 In this case, a smaller branch has less varying information which made compression easier.
 
 

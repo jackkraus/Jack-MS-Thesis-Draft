@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  4 DEC 2024 14:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  5 DEC 2024 10:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -863,41 +863,41 @@ Chapter 3.
 (./3. CH. Toy Model/_3.Toy_Model.tex [7
 
 ]
-<content/toymodel_content/branch_compfacts_nomix.png, id=309, 566.115pt x 303.9
+<content/toymodel_content/branch_compfacts_nomix.png, id=317, 566.115pt x 303.9
 72pt>
 File: content/toymodel_content/branch_compfacts_nomix.png Graphic file (type pn
 g)
 <use content/toymodel_content/branch_compfacts_nomix.png>
 Package pdftex.def Info: content/toymodel_content/branch_compfacts_nomix.png  u
-sed on input line 34.
+sed on input line 33.
 (pdftex.def)             Requested size: 375.80544pt x 201.79095pt.
 
 
-Package caption Warning: \label without proper reference on input line 31.
+Package caption Warning: \label without proper reference on input line 30.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:toymodel_compF_rndm_vectors' on page 8 undefined 
-on input line 40.
+on input line 39.
 
-[8 <./content/toymodel_content/branch_compfacts_nomix.png>]
 
-Package caption Warning: \label without proper reference on input line 44.
+Package caption Warning: \label without proper reference on input line 43.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:toymodel_filesize_rndm_vectors' on page 9 undefin
-ed on input line 42.
+LaTeX Warning: Reference `fig:toymodel_filesize_rndm_vectors' on page 8 undefin
+ed on input line 41.
 
-<content/toymodel_content/branch_fileSize_nomix.png, id=318, 552.975pt x 310.98
+<content/toymodel_content/branch_fileSize_nomix.png, id=321, 552.975pt x 310.98
 pt>
 File: content/toymodel_content/branch_fileSize_nomix.png Graphic file (type png
 )
 <use content/toymodel_content/branch_fileSize_nomix.png>
 Package pdftex.def Info: content/toymodel_content/branch_fileSize_nomix.png  us
-ed on input line 47.
+ed on input line 46.
 (pdftex.def)             Requested size: 375.80544pt x 211.34496pt.
-) [9 <./content/toymodel_content/branch_fileSize_nomix.png>]
+[8 <./content/toymodel_content/branch_compfacts_nomix.png>]) [9 <./content/toym
+odel_content/branch_fileSize_nomix.png>]
 Chapter 4.
 (./4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex [10
 
@@ -987,16 +987,16 @@ Overfull \hbox (87.19402pt too wide) in paragraph at lines 5--6
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 63C68BD3ED7A1372950C946F3796F61D;5302.
+(rerunfilecheck)             Checksum: 905101C78CFE5830DF4C27BB1786BA7D;5446.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22665 strings out of 476025
- 387917 string characters out of 5790017
- 1883388 words of memory out of 5000000
- 42574 multiletter control sequences out of 15000+600000
+ 22671 strings out of 476025
+ 388127 string characters out of 5790017
+ 1884388 words of memory out of 5000000
+ 42578 multiletter control sequences out of 15000+600000
  518317 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,10n,77p,677b,2061s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1011,10 +1011,10 @@ cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loca
 l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local
 /texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (35 pages, 414472 bytes).
+Output written on main.pdf (35 pages, 415692 bytes).
 PDF statistics:
- 640 PDF objects out of 1000 (max. 8388607)
- 534 compressed objects within 6 object streams
- 206 named destinations out of 1000 (max. 500000)
- 235 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 650 PDF objects out of 1000 (max. 8388607)
+ 543 compressed objects within 6 object streams
+ 208 named destinations out of 1000 (max. 500000)
+ 243 words of extra memory for PDF output out of 10000 (max. 10000000)
 

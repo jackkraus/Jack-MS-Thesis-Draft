@@ -19,6 +19,63 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Athena_xAOD_design}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=2914a2575bda7d21604d8d93cbec8450}{%
+           family={Buckley},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=36f26e0c338475417702cfb205340058}{%
+           family={Eifert},
+           familyi={E\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=419c369760dd9dfd1eee84b37c333e21}{%
+           family={Elsing},
+           familyi={E\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e7646167b3cc11ba916490df0d4d84f7}{%
+           family={Gillberg},
+           familyi={G\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=151ebaa38ced3936fa5a69c9c053c6b4}{%
+           family={Köneke},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0d35a488929834faf44b72d3031ce1c}{%
+           family={Krasznahorkay},
+           familyi={K\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3efdec65543778c5361133e575eb989e}{%
+           family={Moyse},
+           familyi={M\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{fullhash}{ba32133e59725d3a04d1bde0f69fde4e}
+      \strng{bibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authorbibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authornamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authorfullhash}{ba32133e59725d3a04d1bde0f69fde4e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Report of the xAOD Design Group}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/1598793/files/ATL-COM-SOFT-2013-022.pdf
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/1598793/files/ATL-COM-SOFT-2013-022.pdf
+      \endverb
+    \endentry
     \entry{Trigger-DAQ}{misc}{}
       \name{author}{1}{}{%
         {{hash=d29874d6591d70a9544f7bd286992acc}{%
