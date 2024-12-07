@@ -16,7 +16,7 @@ It's main function is to measure the track of the charged particles without dest
 The first point of contact for ATLAS is the pixel detector. 
 It has over 92 million pixels and is radiation hard to aid in particle track and vertex reconstruction.\cite{Hugging2006}
 When charged particles pass through a pixel sensor ionizes silicon which produces an electron-hole pair, and this generates an electric current that can be measured. \cite{Giangiacomi:2684079}
-Surrounding the pixel detector is the semiconductor tracker, which uses $4,088$ modules of 6 million implanted silicon readout strips.
+Surrounding the pixel detector is the semiconductor tracker, which uses 4,088 modules of 6 million implanted silicon readout strips.
 The semiconductor tracker helps measure the path particles take, called tracks, with precision up to $25\mu m$. 
 The final layer of the inner detector is the transition radiation tracker (TRT). 
 The TRT is made of a collection of tubes made with many layers of different materials with varying indices of refraction.  
@@ -28,22 +28,24 @@ Particles with relativistic velocities have higher Lorentz $\gamma$-factors, see
 There are two main calorimeters for ATLAS, the Liquid Argon (LAr) calorimeter and the Tile Hadronic calorimeter.
 The LAr calorimeter surrounds the inner detector and measures the energy deposits of electrons, photons and hadrons (quark bound states, such as baryons $qqq$ and mesons $q\bar{q}$). 
 It layers various metals to intercept the incoming particles to produce a shower of lower energy particles. 
-The lower energy particles then ionize the liquid argon that fill the barrier inbetween the metal layers to produce a current that can be read out.
+The lower energy particles then ionize the liquid argon that fill the barrier in between the metal layers to produce a current that can be read out.
 The Tile calorimeter surrounds the LAr calorimeter and is the largest part of the ATLAS detector weighing in around 2900 tons. 
 Particles then traverse through the layers of steel and plastic scintillating tiles. 
 If a particle hit the steel, they will then generate a new shower of particles and the plastic scintillators will produce photons whose current can be measured.
 
 \section{ATLAS Trigger and Data Acquisition}
 
-The LHC produces $pp$-collisions at a rate of 40 MHz, each collision is called an ``event". 
+The LHC produces $pp$-collisions at a rate of 40 MHz, each collision is an ``event". 
 % What is the ATLAS Trigger System
-The ATLAS Trigger system is what's responsible for quickly deciding what events are interesting.
-It's divided into the first- and second-level triggers and when a particle activates a trigger, the trigger has to make a decision to tell the Data Acquistion System (DAQ) to gather the data produced by the detector. 
+The ATLAS Trigger system is what's responsible for quickly deciding what events are interesting for physics analysis.
+The Trigger system is divided into the first- and second-level triggers and when a particle activates a trigger, the trigger makes a decision to tell the Data Acquistion System (DAQ) to save the data produced by the detector. 
 The first-level trigger is a hardware trigger that decides within $2.5 \mu s$ after the event occurs if it's a good event to put into a storage buffer for the second-level trigger.
-The second-level trigger is a software trigger that decides within $200 \mu s$ and uses $\mathcal{O}(40,000)$ CPU-cores and analyses the event to decide what is worth keeping. 
+The second-level trigger is a software trigger that decides within $200 \mu s$ and uses around 40,000 CPU-cores and analyses the event to decide if it is worth keeping. 
 The second-level trigger selects about 1000 events per second to keep and store long-term. \cite{Trigger-DAQ}
-
 The data taken by this Trigger/DAQ system is raw and not yet in a state that is ready for analysis, but it is ready for the reconstruction stage. 
 
-% How is this relevant to the thesis? 
-
+% How is this relevant to the thesis?
+The amount of data taken at ATLAS is substantial.
+ATLAS sees more than 3.2 PB of raw data each year, each individual event being around 1.6 MB. \cite{ATLAS_Fact_Sheet} 
+Reconstructed data reduces the size per event to 1 MB. 
+Reconstructed AOD are then processed through derivation jobs that reduced AODs to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD). 

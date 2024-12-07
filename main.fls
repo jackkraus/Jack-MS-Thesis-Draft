@@ -915,6 +915,7 @@ INPUT ./1. Introduction/_1.Particle_PHYS_and_LHC.tex
 INPUT 1. Introduction/_1.Particle_PHYS_and_LHC.tex
 INPUT ./1. Introduction/_1.Particle_PHYS_and_LHC.tex
 INPUT 1. Introduction/_1.Particle_PHYS_and_LHC.tex
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./2. CH. ATLASIO/_2.ATLASIO.tex
 INPUT 2. CH. ATLASIO/_2.ATLASIO.tex
 INPUT ./2. CH. ATLASIO/_2.ATLASIO.tex
@@ -928,12 +929,6 @@ INPUT ./content/toymodel_content/branch_compfacts_nomix.png
 INPUT content/toymodel_content/branch_compfacts_nomix.png
 INPUT ./content/toymodel_content/branch_compfacts_nomix.png
 INPUT ./content/toymodel_content/branch_compfacts_nomix.png
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./content/toymodel_content/branch_fileSize_nomix.png
-INPUT ./content/toymodel_content/branch_fileSize_nomix.png
-INPUT content/toymodel_content/branch_fileSize_nomix.png
-INPUT ./content/toymodel_content/branch_fileSize_nomix.png
-INPUT ./content/toymodel_content/branch_fileSize_nomix.png
 INPUT ./4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
 INPUT 4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
 INPUT ./4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
@@ -959,8 +954,6 @@ INPUT ./5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
 INPUT 5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
 INPUT ./5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
 INPUT 5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT ./7.Appendix/app1.tex
 INPUT 7.Appendix/app1.tex
 INPUT ./7.Appendix/app1.tex
@@ -1027,7 +1020,6 @@ INPUT ./main.out
 INPUT main.run.xml
 OUTPUT main.run.xml
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
@@ -1035,5 +1027,4 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb

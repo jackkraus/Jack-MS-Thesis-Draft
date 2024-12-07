@@ -1,9 +1,11 @@
-\section{Random floats into branches}\label{appendix:toy_model_no_mix_code}
+\section{Random floats into branches}
+\label{appendix:toy_model_no_mix_code}
 
 This is a part of the code that was run on ROOT to fill up branches with entirely random float values into branches of sizes, 1, 10, 100, and 1000 entries.
 \lstinputlisting[language=C]{3. CH. Toy Model/toy_model_code-02-07-23.cxx}
 
-\section{Mixed compressible data in branches}\label{appendix:toy_model_WITH_mix_code}
+\section{Mixed compressible data in branches}
+\label{appendix:toy_model_WITH_mix_code}
 The mixture of floats stored in each vector needs to fill up both the vector and branch to resemble that of real or Monte Carlo simulated data to reach a comparable compression factor.
 The way this was done for the toy model stage of derivation job optimzation studies was by using code from Appendix \ref{appendix:toy_model_no_mix_code} and modifying the parts that filled in each vector.
 \lstinputlisting[language=C]{3. CH. Toy Model/toy_model_code-02-21-23.cxx}
