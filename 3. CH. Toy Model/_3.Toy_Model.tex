@@ -20,7 +20,7 @@ This would mean creating for branches with compression ratios on the order $\mat
 
 \subsection{All Random Float Branches}
 
-Upon reading back the ROOT file, the user would be able to see the original size of the file (Total-file-size), the compressed file size (File-size), the number of baskets per branch, the basket size, and other information. 
+Upon reading back the ROOT file, the user would be able to see the original size of the file (Total-file-size), the compressed file size (File-size), the ratio between Total-file-size and File-size (Compression Factor), the number of baskets per branch, the basket size, and other information. 
 Since the branches had vectors with exclusively random floats, it becomes apparent that the more randomization in the branches the harder it is to compress. 
 
 \begin{figure}[h]
@@ -42,4 +42,30 @@ This is the leading indication that there needs to be more compressible data wit
 
 \subsection{Mixed-Random Float Branches}
 The branches needed to have some balance between compressible and incompressible data to mimic the compression ratio found in real data.
-How this was achieved was by filling each vector with different ratios of random floats and repeating integers, see Appendix \ref{appendix:toy_model_WITH_mix_code}.
+How this was achieved was by filling each vector with different ratios of random floats and repeating integers, see code in Appendix \ref{appendix:toy_model_WITH_mix_code}.
+The first attempt creating branches with mixed amounts of randomization was having a mixture of 1/2 random data at $N=10^6$ events. 
+However that led to the larger branches still seeing poor compression, so a new mixture of 1/4 random data was introduced. 
+
+Figure \ref{fig:toymodel_compF_1e6_mix_random} shows the difference between compression between the two mixtures. 
+When the number of events is increased from $N=10^5$ to $N=10^6$, branches with only half of the mixture is random data become larger and the branches with more vectors per entry become more difficult to compress. 
+Figure \ref{fig:toymodel_compF_1e5_mix_random} shows a compression ratio hovering around 3 for the larger branches, whereas Figure \ref{fig:toymodel_compF_1e6_mix_random} shows the same branches hovering around 2. 
+
+\begin{figure}[h]
+    \caption{Compression Ratios for ($\frac{1}{2}$ random) and ($\frac{1}{4}$ random) branches at ($N=1,000,000$ events)}
+    \label{fig:toymodel_compF_1e6_mix_random}
+    \centering
+    \includegraphics[width=.8\textwidth]{content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=1,000,000 events).png}
+\end{figure}
+
+\begin{figure}[h]
+    \caption{Compression Ratios for ($\frac{1}{2}$ random) and ($\frac{1}{4}$ random) branches at ($N=100,000$ events)}
+    \label{fig:toymodel_compF_1e5_mix_random}
+    \centering
+    \includegraphics[width=.8\textwidth]{content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=100,000 events).png}
+\end{figure}
+
+Unlike the mixture of branches having 1/2 random data, the 1/4 mixture does not see the same compression effect, but with this mixture we see a compression ratio that is in-line with real data.
+Here is where tuning the basket size can begin to start.
+
+\section{Basket-Size Testing}
+

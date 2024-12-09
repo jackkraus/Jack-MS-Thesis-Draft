@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  7 DEC 2024 16:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  9 DEC 2024 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -908,7 +908,7 @@ Chapter 3.
 (./3. CH. Toy Model/_3.Toy_Model.tex [7
 
 ]
-<content/toymodel_content/branch_compfacts_nomix.png, id=303, 566.115pt x 303.9
+<content/toymodel_content/branch_compfacts_nomix.png, id=312, 566.115pt x 303.9
 72pt>
 File: content/toymodel_content/branch_compfacts_nomix.png Graphic file (type pn
 g)
@@ -916,32 +916,60 @@ g)
 Package pdftex.def Info: content/toymodel_content/branch_compfacts_nomix.png  u
 sed on input line 30.
 (pdftex.def)             Requested size: 375.80544pt x 201.79095pt.
-) [8 <./content/toymodel_content/branch_compfacts_nomix.png>] [9]
+ [8 <./content/toymodel_content/branch_compfacts_nomix.png>]
+<content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) 
+branches at (N=1,000,000 events).png, id=324, 602.25pt x 372.39125pt>
+File: content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 ran
+dom) branches at (N=1,000,000 events).png Graphic file (type png)
+<use content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 rand
+om) branches at (N=1,000,000 events).png>
+Package pdftex.def Info: content/toymodel_content/Compression Ratios for (1_2 r
+andom) and (1_4 random) branches at (N=1,000,000 events).png  used on input lin
+e 57.
+(pdftex.def)             Requested size: 375.80544pt x 232.3803pt.
+<content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) 
+branches at (N=100,000 events).png, id=325, 602.25pt x 372.39125pt>
+File: content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 ran
+dom) branches at (N=100,000 events).png Graphic file (type png)
+<use content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 rand
+om) branches at (N=100,000 events).png>
+Package pdftex.def Info: content/toymodel_content/Compression Ratios for (1_2 r
+andom) and (1_4 random) branches at (N=100,000 events).png  used on input line 
+64.
+(pdftex.def)             Requested size: 375.80544pt x 232.3803pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [9 <./content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 r
+andom) branches at (N=1,000,000 events).png>] [10 <./content/toymodel_content/C
+ompression Ratios for (1_2 random) and (1_4 random) branches at (N=100,000 even
+ts).png>]
 Chapter 4.
-(./4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex [10
+(./4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex [11
 
 ]
 
-LaTeX Warning: Citation 'Kraus' on page 11 undefined on input line 30.
+LaTeX Warning: Citation 'Kraus' on page 12 undefined on input line 30.
 
-(./content/tables/nightly-tables.tex [11]) (./content/tables/data-fs-tables.tex
-) [12]
+(./content/tables/nightly-tables.tex [12]) (./content/tables/data-fs-tables.tex
+) [13]
 Overfull \hbox (4.02786pt too wide) in paragraph at lines 69--71
 []\OT1/cmr/m/n/12 Some branches, like \OT1/cmr/m/it/12 HLT-Nav Sum-mary DAOD-Sl
 immedAux-Dyn.linkColNames \OT1/cmr/m/n/12 show highly
  []
 
-[13]) [14] [15]
+[14]) [15] [16]
 Chapter 5.
 (./5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex)
 
 LaTeX Warning: Empty bibliography on input line 83.
 
-[16
+[17
 
 ]
 Appendix A.
-[17
+[18
 
 
 ] (./7.Appendix/app1.tex
@@ -957,9 +985,9 @@ Overfull \hbox (481.99333pt too wide) in paragraph at lines 1--14
 [][][][][][][][][][][][][][] 
  []
 
-(./content/inputfiles-mc.txt)) [18]
+(./content/inputfiles-mc.txt)) [19]
 Appendix B.
-[19
+[20
 
 ] (./7.Appendix/app2.tex
 (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -977,7 +1005,7 @@ File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 2.
- [20]
+ [21]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
 6.
 
@@ -986,13 +1014,13 @@ File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
- [21])
+ [22])
 (./3. CH. Toy Model/toy_model_code-02-21-23.cxx
 Overfull \hbox (87.19402pt too wide) in paragraph at lines 5--6
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[22] [23])) [24] (./main.aux)
+[23] [24])) [25] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1008,10 +1036,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22576 strings out of 476025
- 385184 string characters out of 5790017
+ 22595 strings out of 476025
+ 386893 string characters out of 5790017
  1883388 words of memory out of 5000000
- 42500 multiletter control sequences out of 15000+600000
+ 42514 multiletter control sequences out of 15000+600000
  517847 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,10n,77p,677b,2061s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1021,13 +1049,14 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
 sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 /local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
-cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
-al/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loca
-l/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (33 pages, 250266 bytes).
+cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/t
+exlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (34 pages, 290490 bytes).
 PDF statistics:
- 586 PDF objects out of 1000 (max. 8388607)
- 487 compressed objects within 5 object streams
- 194 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 502 compressed objects within 6 object streams
+ 197 named destinations out of 1000 (max. 500000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 

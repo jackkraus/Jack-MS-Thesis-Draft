@@ -3,6 +3,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Compression factors of $N=1000$ entries per branch with random-valued vectors of varying size.\relax }}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=1,000,000$ events)\relax }}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=100,000$ events)\relax }}{10}{figure.caption.9}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
