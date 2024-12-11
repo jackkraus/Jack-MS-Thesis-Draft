@@ -18,16 +18,16 @@ This would mean creating for branches with compression ratios on the order $\mat
 
 \section{Toy Model Compression}
 
-\subsection{All Random Float Branches}
+\subsection{Random Float Branches}
 
 Upon reading back the ROOT file, the user would be able to see the original size of the file (Total-file-size), the compressed file size (File-size), the ratio between Total-file-size and File-size (Compression Factor), the number of baskets per branch, the basket size, and other information. 
 Since the branches had vectors with exclusively random floats, it becomes apparent that the more randomization in the branches the harder it is to compress. 
 
 \begin{figure}[h]
-    \caption{Compression factors of $N=1000$ entries per branch with random-valued vectors of varying size.}
-    \label{fig:toymodel_compF_rndm_vectors}
     \centering
     \includegraphics[width=.8\textwidth]{content/toymodel_content/branch_compfacts_nomix.png}
+    \caption{Compression factors of $N=1000$ entries per branch with random-valued vectors of varying size.}
+    \label{fig:toymodel_compF_rndm_vectors}
 \end{figure}
 
 % \begin{figure}[h]
@@ -51,21 +51,42 @@ When the number of events is increased from $N=10^5$ to $N=10^6$, branches with 
 Figure \ref{fig:toymodel_compF_1e5_mix_random} shows a compression ratio hovering around 3 for the larger branches, whereas Figure \ref{fig:toymodel_compF_1e6_mix_random} shows the same branches hovering around 2. 
 
 \begin{figure}[h]
-    \caption{Compression Ratios for ($\frac{1}{2}$ random) and ($\frac{1}{4}$ random) branches at ($N=1,000,000$ events)}
-    \label{fig:toymodel_compF_1e6_mix_random}
     \centering
     \includegraphics[width=.8\textwidth]{content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=1,000,000 events).png}
+    \caption{Compression Ratios for ($\frac{1}{2}$ random) and ($\frac{1}{4}$ random) branches at ($N=10^6$ events)}
+    \label{fig:toymodel_compF_1e6_mix_random}
 \end{figure}
 
 \begin{figure}[h]
-    \caption{Compression Ratios for ($\frac{1}{2}$ random) and ($\frac{1}{4}$ random) branches at ($N=100,000$ events)}
-    \label{fig:toymodel_compF_1e5_mix_random}
     \centering
     \includegraphics[width=.8\textwidth]{content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=100,000 events).png}
+    \caption{Compression Ratios for ($\frac{1}{2}$ random) and ($\frac{1}{4}$ random) branches at ($N=10^5$ events)}
+    \label{fig:toymodel_compF_1e5_mix_random}
 \end{figure}
 
 Unlike the mixture of branches having 1/2 random data, the 1/4 mixture does not see the same compression effect, but with this mixture we see a compression ratio that is in-line with real data.
+It was still worth testing the $N=10^6$ events for stress testing purposes.
 Here is where tuning the basket size can begin to start.
 
-\section{Basket-Size Testing}
+\section{Basket-Size Investigation}
 
+Investigating how compression is affected by the basket size requires us to change the basket size, refill the branch and read it out.
+The lower bound set for the basket size was 1 kB and the upper bound was 16 MB.
+The first branch looked at closely was the branch with a thousand vectors with half of them being random floats, see Figure \ref{fig:toymodel_CFvsBranchSize_1/2mixture}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{content/toymodel_content/Compression Factor vs. Branch Size (KB).png}
+    \caption{Compression Factors vs Branch Size (1/2 Mixture $N=10^6$ events)}
+    \label{fig:toymodel_CFvsBranchSize_1/2mixture}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{content/toymodel_content/Number of Baskets vs Branch Size.png}
+    \caption{Number of Baskets vs Branch Size (1/2 Mixture $N=10^6$ events)}
+    \label{fig:toymodel_NumBasketsvsBranchSize_1/2mixture}
+\end{figure}
+
+Figure \ref{fig:toymodel_CFvsBranchSize_1/2mixture} and Figure \ref{fig:toymodel_NumBasketsvsBranchSize_1/2mixture} is the first indication that the lower basket sizes are too small to effectively compress the data. 
+For the baskets under 16 kB, it is required to have as many baskets as events to effectively store all the data--this will cause problems later on with memory usage so these basket sizes can be ignored.

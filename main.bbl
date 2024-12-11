@@ -1,0 +1,420 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Athena_xAOD_design}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=2914a2575bda7d21604d8d93cbec8450}{%
+           family={Buckley},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=36f26e0c338475417702cfb205340058}{%
+           family={Eifert},
+           familyi={E\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=419c369760dd9dfd1eee84b37c333e21}{%
+           family={Elsing},
+           familyi={E\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e7646167b3cc11ba916490df0d4d84f7}{%
+           family={Gillberg},
+           familyi={G\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=151ebaa38ced3936fa5a69c9c053c6b4}{%
+           family={Köneke},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0d35a488929834faf44b72d3031ce1c}{%
+           family={Krasznahorkay},
+           familyi={K\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3efdec65543778c5361133e575eb989e}{%
+           family={Moyse},
+           familyi={M\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{fullhash}{ba32133e59725d3a04d1bde0f69fde4e}
+      \strng{bibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authorbibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authornamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authorfullhash}{ba32133e59725d3a04d1bde0f69fde4e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Report of the xAOD Design Group}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/1598793/files/ATL-COM-SOFT-2013-022.pdf
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/1598793/files/ATL-COM-SOFT-2013-022.pdf
+      \endverb
+    \endentry
+    \entry{Trigger-DAQ}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d29874d6591d70a9544f7bd286992acc}{%
+           family={CERN},
+           familyi={C\bibinitperiod},
+           given={ATLAS\bibnamedelima Experiment},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           prefix={at},
+           prefixi={a\bibinitperiod}}}%
+      }
+      \strng{namehash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{fullhash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{bibnamehash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{authorbibnamehash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{authornamehash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{authorfullhash}{d29874d6591d70a9544f7bd286992acc}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ATLAS Experiment at CERN}
+      \field{title}{Trigger and Data Acquisition}
+      \verb{urlraw}
+      \verb https://atlas.cern/Discover/Detector/Trigger-DAQ
+      \endverb
+      \verb{url}
+      \verb https://atlas.cern/Discover/Detector/Trigger-DAQ
+      \endverb
+    \endentry
+    \entry{Giangiacomi:2684079}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=8cbd725b2ef7296f8e3abda3da53e55c}{%
+           family={Giangiacomi},
+           familyi={G\bibinitperiod},
+           given={Nico},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Bologna U.}%
+      }
+      \strng{namehash}{8cbd725b2ef7296f8e3abda3da53e55c}
+      \strng{fullhash}{8cbd725b2ef7296f8e3abda3da53e55c}
+      \strng{bibnamehash}{8cbd725b2ef7296f8e3abda3da53e55c}
+      \strng{authorbibnamehash}{8cbd725b2ef7296f8e3abda3da53e55c}
+      \strng{authornamehash}{8cbd725b2ef7296f8e3abda3da53e55c}
+      \strng{authorfullhash}{8cbd725b2ef7296f8e3abda3da53e55c}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Presented 18 Mar 2019}
+      \field{title}{{ATLAS Pixel Detector and readout upgrades for the improved LHC performance}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2684079
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2684079
+      \endverb
+    \endentry
+    \entry{athena}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
+           family={group},
+           familyi={g\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod},
+           prefix={software},
+           prefixi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \field{extraname}{1}
+      \field{sortinit}{g}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Athena}
+      \verb{urlraw}
+      \verb https://doi.org/10.5281/zenodo.2641997
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.5281/zenodo.2641997
+      \endverb
+    \endentry
+    \entry{athenadocs}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
+           family={group},
+           familyi={g\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod},
+           prefix={software},
+           prefixi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \field{extraname}{2}
+      \field{sortinit}{g}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Athena Software Documentation}
+      \verb{urlraw}
+      \verb https://atlassoftwaredocs.web.cern.ch/athena/
+      \endverb
+      \verb{url}
+      \verb https://atlassoftwaredocs.web.cern.ch/athena/
+      \endverb
+    \endentry
+    \entry{Hugging2006}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=81a5a3c1ba314774b280c917959673a7}{%
+           family={Hugging},
+           familyi={H\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{81a5a3c1ba314774b280c917959673a7}
+      \strng{fullhash}{81a5a3c1ba314774b280c917959673a7}
+      \strng{bibnamehash}{81a5a3c1ba314774b280c917959673a7}
+      \strng{authorbibnamehash}{81a5a3c1ba314774b280c917959673a7}
+      \strng{authornamehash}{81a5a3c1ba314774b280c917959673a7}
+      \strng{authorfullhash}{81a5a3c1ba314774b280c917959673a7}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0018-9499}
+      \field{journaltitle}{IEEE Transactions on Nuclear Science}
+      \field{month}{6}
+      \field{number}{3}
+      \field{title}{The ATLAS pixel detector}
+      \field{volume}{53}
+      \field{year}{2006}
+      \field{pages}{1732\bibrangedash 1736}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/tns.2006.871506
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/TNS.2006.871506
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/TNS.2006.871506
+      \endverb
+    \endentry
+    \entry{Kraus}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ee87e7fecb1cb491b7c0735016e0bb04}{%
+           family={Kraus},
+           familyi={K\bibinitperiod},
+           given={A.C.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{ee87e7fecb1cb491b7c0735016e0bb04}
+      \strng{fullhash}{ee87e7fecb1cb491b7c0735016e0bb04}
+      \strng{bibnamehash}{ee87e7fecb1cb491b7c0735016e0bb04}
+      \strng{authorbibnamehash}{ee87e7fecb1cb491b7c0735016e0bb04}
+      \strng{authornamehash}{ee87e7fecb1cb491b7c0735016e0bb04}
+      \strng{authorfullhash}{ee87e7fecb1cb491b7c0735016e0bb04}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/arthurkraus3/building-athena.git}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{GitHub Repository: building-athena}
+      \field{year}{2023}
+    \endentry
+    \entry{LHC_faq_guide}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=d2819a6cc34bba5656b4460348b04dcc}{%
+           family={Lopes},
+           familyi={L\bibinitperiod},
+           given={Ana},
+           giveni={A\bibinitperiod}}}%
+        {{hash=70b8001c15d8abe036b2374607109ab8}{%
+           family={Perry},
+           familyi={P\bibinitperiod},
+           given={Melissa\bibnamedelima Loyse},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{92e5b56d42f7b071fc52842ff10049f1}
+      \strng{fullhash}{92e5b56d42f7b071fc52842ff10049f1}
+      \strng{bibnamehash}{92e5b56d42f7b071fc52842ff10049f1}
+      \strng{authorbibnamehash}{92e5b56d42f7b071fc52842ff10049f1}
+      \strng{authornamehash}{92e5b56d42f7b071fc52842ff10049f1}
+      \strng{authorfullhash}{92e5b56d42f7b071fc52842ff10049f1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{FAQ-LHC The guide}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://home.cern/resources/brochure/knowledge-sharing/lhc-facts-and-figures
+      \endverb
+      \verb{url}
+      \verb https://home.cern/resources/brochure/knowledge-sharing/lhc-facts-and-figures
+      \endverb
+    \endentry
+    \entry{Mindur:2139567}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a193ca1f969305c9d6026edbddf4560a}{%
+           family={Mindur},
+           familyi={M\bibinitperiod},
+           given={Bartosz},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{a193ca1f969305c9d6026edbddf4560a}
+      \strng{fullhash}{a193ca1f969305c9d6026edbddf4560a}
+      \strng{bibnamehash}{a193ca1f969305c9d6026edbddf4560a}
+      \strng{authorbibnamehash}{a193ca1f969305c9d6026edbddf4560a}
+      \strng{authornamehash}{a193ca1f969305c9d6026edbddf4560a}
+      \strng{authorfullhash}{a193ca1f969305c9d6026edbddf4560a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ATLAS Transition Radiation Tracker (TRT): Straw tubes for tracking and particle identification at the Large Hadron Collider}}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1016/j.nima.2016.04.026
+      \endverb
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2139567
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2139567
+      \endverb
+    \endentry
+    \entry{ATLAS_Fact_Sheet}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=6df9005f733ddf0d66260994df1e339a}{%
+           family={Outreach},
+           familyi={O\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{fullhash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{bibnamehash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{authorbibnamehash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{authornamehash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{authorfullhash}{6df9005f733ddf0d66260994df1e339a}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ATLAS Fact Sheet : To raise awareness of the ATLAS detector and collaboration on the LHC}}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.17181/CERN.1LN2.J772
+      \endverb
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/1457044
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/1457044
+      \endverb
+    \endentry
+    \entry{ROOT_about}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8eb19af9389c25cec01b25123c309112}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={ROOT},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{fullhash}{8eb19af9389c25cec01b25123c309112}
+      \strng{bibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorbibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ROOT, About}
+      \verb{urlraw}
+      \verb https://root.cern/about/
+      \endverb
+      \verb{url}
+      \verb https://root.cern/about/
+      \endverb
+    \endentry
+    \entry{ROOT_TTree}{software}{}
+      \name{author}{1}{}{%
+        {{hash=8eb19af9389c25cec01b25123c309112}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={ROOT},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{fullhash}{8eb19af9389c25cec01b25123c309112}
+      \strng{bibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorbibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ROOT, TTree Class}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://root.cern.ch/doc/master/classTTree.html
+      \endverb
+      \verb{url}
+      \verb https://root.cern.ch/doc/master/classTTree.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
