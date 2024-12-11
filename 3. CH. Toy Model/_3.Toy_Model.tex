@@ -114,3 +114,8 @@ Another instance looked into the same mixtures but decreasing the precision of t
     \caption{Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)}
     \label{fig:toymodel_418_compF_vs_basketsize}
 \end{figure}
+
+Each of these sets of tests indicate that after a certain basket size, i.e. 128 kB, there is no significant increase in compression. 
+Having an effective compression at 128 kB, it's useful to stick to that basket size to keep memory usage down. 
+Knowing that increasing the basket size beyond 128 kB yields diminishing returns, it's worth moving onto the next phase of testing with actual derivation production jobs.
+
