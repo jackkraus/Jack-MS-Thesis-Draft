@@ -7,6 +7,8 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^5$ events)\relax }}{10}{figure.caption.9}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Compression Factors vs Branch Size (1/2 Mixture $N=10^6$ events)\relax }}{11}{figure.caption.10}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Number of Baskets vs Branch Size (1/2 Mixture $N=10^6$ events)\relax }}{12}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Varying Mixtures in 8 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{14}{figure.caption.13}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -89,4 +89,28 @@ The first branch looked at closely was the branch with a thousand vectors with h
 \end{figure}
 
 Figure \ref{fig:toymodel_CFvsBranchSize_1/2mixture} and Figure \ref{fig:toymodel_NumBasketsvsBranchSize_1/2mixture} is the first indication that the lower basket sizes are too small to effectively compress the data. 
-For the baskets under 16 kB, it is required to have as many baskets as events to effectively store all the data--this will cause problems later on with memory usage so these basket sizes can be ignored.
+For the baskets under 16 kB, it is required to have as many baskets as events to effectively store all the data--this will cause problems later on with memory usage so many of these basket sizes can be ignored.
+
+There were more variations in the data that were looked at. 
+For instance, looking further into the types of mixtures and how those mixtures would affect compression are shown in Figure \ref{fig:toymodel_328_compF_vs_basketsize}. 
+Another instance looked into the same mixtures but decreasing the precision of the floating point values that we used from the standard 32 floating-point precision to 16 and 8 which made compression easier. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.5\textwidth]{content/toymodel_content/3.28/1_of_2.png}
+    \includegraphics[width=.5\textwidth]{content/toymodel_content/3.28/1_of_3.png}
+    \includegraphics[width=.5\textwidth]{content/toymodel_content/3.28/1_of_4.png}
+    \includegraphics[width=.5\textwidth]{content/toymodel_content/3.28/1_of_5.png}
+    \caption{Varying Mixtures in 8 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)}
+    \label{fig:toymodel_328_compF_vs_basketsize}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.5\textwidth]{content/toymodel_content/4.18/1_of_2.png}
+    \includegraphics[width=.5\textwidth]{content/toymodel_content/4.18/1_of_3.png}
+    \includegraphics[width=.5\textwidth]{content/toymodel_content/4.18/1_of_4.png}
+    \includegraphics[width=.5\textwidth]{content/toymodel_content/4.18/1_of_5.png}
+    \caption{Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)}
+    \label{fig:toymodel_328_compF_vs_basketsize}
+\end{figure}
