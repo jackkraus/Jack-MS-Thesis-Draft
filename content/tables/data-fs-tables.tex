@@ -6,14 +6,14 @@
 \begin{table}[!ht]
     \centering
     \resizebox{\textwidth}{!}{
-        \begin{tabular}{|c|c|c|c|}
-            \hline
-                Athena v24.0.16 configurations (Data) & Max PSS (MB) ($\Delta$\% default) & PHYS outFS (GB) ($\Delta$\% default) & PHYSLITE outFS (GB) ($\Delta$\% default) \\ \hline
-                With basket-cap and min-num-entries (default)  & 27.8591 ( + 0.00 \%) & 3.2571 ( + 0.00 \%) & 1.0334 ( + 0.00 \%) \\ \hline
-                Without both basket-cap and min-num-entries & 28.6432 ( + 2.74 \%) & 3.2552 ( - 0.06 \%) & 1.0302 ( - 0.31 \%) \\ \hline
-                Without basket-cap but with min-num-entries & 28.2166  ( + 1.27 \%) & 3.2553 ( - 0.05 \%) & 1.0303 ( - 0.30 \%) \\ \hline
-                With basket-cap but without min-num-entries & 28.4852 ( + 2.20 \%) & 3.2571 ( + 0.00 \%) & 1.0307 ( - 0.26 \%) \\ \hline
-            \end{tabular}
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+        Athena configurations (Data) & Max PSS (MB) ($\Delta$\% \text{default}) & PHYS outFS (GB) ($\Delta$\% ) & PHYSLITE outFS (GB) ($\Delta$\% ) \\ \hline
+        (default)  & 27.8591 ( + 0.00 \%) & 3.2571 ( + 0.00 \%) & 1.0334 ( + 0.00 \%) \\ \hline
+        no\_limit & 28.6432 ( + 2.74 \%) & 3.2552 ( - 0.06 \%) & 1.0302 ( - 0.31 \%) \\ \hline
+        256k\_basket & 28.2166  ( + 1.27 \%) & 3.2553 ( - 0.05 \%) & 1.0303 ( - 0.30 \%) \\ \hline
+        512k\_basket & 28.4852 ( + 2.20 \%) & 3.2571 ( + 0.00 \%) & 1.0307 ( - 0.26 \%) \\ \hline
+    \end{tabular}
     }
     \caption{Athena v24.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for Data jobs over various Athena configurations for 160327 entries.}
     \label{Tab: 24.0.16-data-outputfs}

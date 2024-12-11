@@ -69,6 +69,7 @@ It was still worth testing the $N=10^6$ events for stress testing purposes.
 Here is where tuning the basket size can begin to start.
 
 \section{Basket-Size Investigation}
+\label{sec: toy-model basket-size investigation}
 
 Investigating how compression is affected by the basket size requires us to change the basket size, refill the branch and read it out.
 The lower bound set for the basket size was 1 kB and the upper bound was 16 MB.
@@ -97,23 +98,66 @@ Another instance looked into the same mixtures but decreasing the precision of t
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=.5\textwidth]{content/toymodel_content/3.28/1_of_2.png}
-    \includegraphics[width=.5\textwidth]{content/toymodel_content/3.28/1_of_3.png}
-    \includegraphics[width=.5\textwidth]{content/toymodel_content/3.28/1_of_4.png}
-    \includegraphics[width=.5\textwidth]{content/toymodel_content/3.28/1_of_5.png}
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/toymodel_content/3.28/1_of_2.png}
+        \caption{A subfigure}
+        \label{fig:toymodel_328_compF_vs_basketsize_subA}
+      \end{subfigure}%     
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/toymodel_content/3.28/1_of_3.png}
+        \caption{B subfigure}
+        \label{fig:toymodel_328_compF_vs_basketsize_subB}
+      \end{subfigure}% 
+      \linebreak
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/toymodel_content/3.28/1_of_4.png}
+        \caption{C subfigure}
+        \label{fig:toymodel_328_compF_vs_basketsize_subC}
+      \end{subfigure}% 
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/toymodel_content/3.28/1_of_5.png}
+        \caption{D subfigure}
+        \label{fig:toymodel_328_compF_vs_basketsize_subD}
+      \end{subfigure}% 
     \caption{Varying Mixtures in 8 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)}
     \label{fig:toymodel_328_compF_vs_basketsize}
 \end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=.5\textwidth]{content/toymodel_content/4.18/1_of_2.png}
-    \includegraphics[width=.5\textwidth]{content/toymodel_content/4.18/1_of_3.png}
-    \includegraphics[width=.5\textwidth]{content/toymodel_content/4.18/1_of_4.png}
-    \includegraphics[width=.5\textwidth]{content/toymodel_content/4.18/1_of_5.png}
-    \caption{Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)}
-    \label{fig:toymodel_418_compF_vs_basketsize}
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/toymodel_content/4.18/1_of_2.png}
+        \caption{A subfigure}
+        \label{fig:toymodel_418_compF_vs_basketsize_subA}
+      \end{subfigure}%     
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/toymodel_content/4.18/1_of_3.png}
+        \caption{B subfigure}
+        \label{fig:toymodel_418_compF_vs_basketsize_subB}
+      \end{subfigure}% 
+      \linebreak
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/toymodel_content/4.18/1_of_4.png}
+        \caption{C subfigure}
+        \label{fig:toymodel_418_compF_vs_basketsize_subC}
+      \end{subfigure}% 
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/toymodel_content/4.18/1_of_5.png}
+        \caption{D subfigure}
+        \label{fig:toymodel_418_compF_vs_basketsize_subD}
+      \end{subfigure}% 
+      \caption{Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)}
+      \label{fig:toymodel_418_compF_vs_basketsize}
 \end{figure}
+
 
 Each of these sets of tests indicate that after a certain basket size, i.e. 128 kB, there is no significant increase in compression. 
 Having an effective compression at 128 kB, it's useful to stick to that basket size to keep memory usage down. 

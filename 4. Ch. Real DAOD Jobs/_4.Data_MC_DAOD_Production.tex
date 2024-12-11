@@ -1,4 +1,5 @@
 \section{Current Derivation Framework}
+\label{sec:DAODProd_Intro}
 Derivation production jobs suffer from high memory usage, and DAODs make up a bulk of disk-space usage. 
 DAODs are used in physics analyses and ought to be optimized to alleviate stress on the GRID and to lower disk-space usage. 
 Optimizing both disk-space and memory usage is a tricky balance as they are typically at odds with one another. 
@@ -6,15 +7,16 @@ For example, increasing memory output memory buffers results in lower disk-space
 The route we opted to take is by optimizing for disk-space and memory by testing various basket limits and viewing the effects of the branches on both data and Monte Carlo (MC) simulated analysis object data (AODs).
 
 \section{Performance Metrics and Benchmarking}
+\label{sec:DAODProd_Analysis}
 % RSS/PSS for memory usage and output file size for disk usage
 
 Our initial focus was on the inclusion of a minimum number of entries per buffer and the maximum basket buffer limit.
-As we'll see in the following section, we then opted to keep the minimum number of entries set to its default setting (10 entries per buffer). 
+As we'll see in Section $\S$\ref{sec:DAODProd_Results}, we then opted to keep the minimum number of entries set to its default setting (10 entries per buffer). 
 
 
 For both the nightly and the release testing, the data derivation job comes from a 2022 dataset with four input files 160327 events. 
 The MC job comes from a 2023 $t\bar{t}$ standard sample simulation job with six input files with 140k events. 
-The specific datasets for both are noted in Appendix \ref{sec: deriv job dataset}.
+The specific datasets for both are noted in Appendix \ref{app: deriv job dataset}.
 
 The corresponding input files for both data and MC jobs were ran with various configurations of Athena (version 24.0.16) and its specified basket buffer limit. 
 The four configurations tested all kept minimum 10 entries per basket and modified the basket limitation in the following ways: 
@@ -30,24 +32,31 @@ Interesting results come from the comparison of ``no-lim" and ``default" configu
 Building and running these configurations of Athena are illustrated in a GitHub repository. \cite{Kraus}
 
 \section{Results}
+\label{sec:DAODProd_Results}
+
 \subsection{Presence of basket-cap and presence of minimum number of entries}
+\label{sec:DAODProd_Results_presence}
+
 
 First batch testing was for data and MC simulation derivation production jobs with and without presence of an upper limit to the basket size and presence of the minimum number of entires per branch. 
-PHYSLITE MC derivation production, from Table 2, sees a 9.9\% increase in output file size when compared to the default Athena configuration. 
+PHYSLITE MC derivation production, from Table \ref{Tab: night-mc-outputfs}, sees a 9.9\% increase in output file size when compared to the default Athena configuration. 
 Since this configuration only differs by the elimination of the ``min-number-entries" we assume the minimum number of entries per branch should be kept at 10 and left alone. 
-Table \ref{Tab: 24.0.16-data-outputfs} also shows the potential for a PHYSLITE MC DAOD output file size reduction by eliminating our upper basket buffer limit altogether.  
+Table \ref{Tab: night-mc-outputfs} also shows the potential for a PHYSLITE MC DAOD output file size reduction by eliminating our upper basket buffer limit altogether.  
 
 \input{content/tables/nightly-tables}
 
 \subsection{Comparing different basket sizes}
+\label{sec:DAODProd_Results_comparing}
 
 Pre-existing derivation jobs were ran for data and MC simulations to compare between configurations of differing basket sizes limits. 
-The results for this set of testing are found from Table 3 through Table 10. 
+The results for this set of testing are found from Table \ref{Tab: 24.0.16-data-outputfs} through Table \ref{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-compfs}. 
 The following tables are the DAOD output-file sizes of the various Athena configurations for PHYS/PHYSLITE over their respective data/MC AOD input files. 
 
 \input{content/tables/data-fs-tables}
+\input{content/tables/mc-fs-tables.tex}
 
 \subsection{Monte Carlo PHYSLITE branch comparison}
+\label{sec:DAODProd_Results_Monte}
 
 Derivation production jobs work with initially large, memory-consuming branches, compressing them to a reduced size. 
 These derivation jobs are memory intensive because they first have to load the uncompressed branches into readily-accessed memory. 
@@ -60,7 +69,9 @@ If pre-derivation branches are larger than necessary, there should be an opportu
 
 The following tables look into some highly compressible branches and might lead to areas where simulation might save some space. (AOD pre compression?)
 
-[Table 5 from the int note]
+\input{content/tables/top-ten/mc/mc-physlite-CF}
+\input{content/tables/top-ten/mc/mc-physlite-total}
+\input{content/tables/top-ten/mc/mc-physlite-compressed}
 
 An immediate observation: with the omission of the Athena basket limit (solely relying on ROOTs $1.3 MB$ basket limit), the compression factor increases. 
 This is inline with the original expectation that an increased buffer size limit correlate to better compression. 
@@ -70,7 +81,7 @@ Some branches, like \textit{HLTNav Summary DAODSlimmedAuxDyn.linkColNames} show 
 Further work could investigate these branches for further optimization of derivation jobs.
 
 \subsection{Conclusion to derivation job optimzation}
-
+\label{sec:DAODProd_Results_conclusion}
 Initially, limiting the basket buffer size looked appealing; after the 128 kB basket buffer size limit was set, the compression ratio would begin to plateau, increasing the memory-usage without saving much in disk-usage. 
 The optimal balance is met with the setting of 128 kB basket buffers for derivation production. 
 

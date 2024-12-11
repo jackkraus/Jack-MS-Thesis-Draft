@@ -953,6 +953,7 @@ INPUT ./content/toymodel_content/3.28/1_of_2.png
 INPUT content/toymodel_content/3.28/1_of_2.png
 INPUT ./content/toymodel_content/3.28/1_of_2.png
 INPUT ./content/toymodel_content/3.28/1_of_2.png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT ./content/toymodel_content/3.28/1_of_3.png
 INPUT ./content/toymodel_content/3.28/1_of_3.png
 INPUT content/toymodel_content/3.28/1_of_3.png
@@ -1009,6 +1010,31 @@ INPUT content/tables/data-fs-tables.tex
 INPUT ./content/tables/data-fs-tables.tex
 INPUT ./content/tables/data-fs-tables.tex
 INPUT content/tables/data-fs-tables.tex
+INPUT ./content/tables/mc-fs-tables.tex
+INPUT content/tables/mc-fs-tables.tex
+INPUT ./content/tables/mc-fs-tables.tex
+INPUT content/tables/mc-fs-tables.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-CF.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-CF.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-CF.tex
+INPUT content/tables/top-ten/mc/mc-physlite-CF.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-CF.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-CF.tex
+INPUT content/tables/top-ten/mc/mc-physlite-CF.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-total.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-total.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-total.tex
+INPUT content/tables/top-ten/mc/mc-physlite-total.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-total.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-total.tex
+INPUT content/tables/top-ten/mc/mc-physlite-total.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-compressed.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-compressed.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-compressed.tex
+INPUT content/tables/top-ten/mc/mc-physlite-compressed.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-compressed.tex
+INPUT ./content/tables/top-ten/mc/mc-physlite-compressed.tex
+INPUT content/tables/top-ten/mc/mc-physlite-compressed.tex
 INPUT ./5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
 INPUT 5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
 INPUT ./5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
@@ -1087,6 +1113,7 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
