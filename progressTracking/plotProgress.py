@@ -47,7 +47,7 @@ plt.close()
 # Combined Plot
 months = mdates.MonthLocator()  # every month
 days = mdates.DayLocator()  # every dat
-date_fmt = mdates.DateFormatter('%b %d %Y')
+date_fmt = mdates.DateFormatter('%b %d')
 
 fig, ax = plt.figure(), plt.gca()
 ax2= ax.twinx()
@@ -63,7 +63,7 @@ ax2.set_ylim(ymin=0)
 plt.annotate("{:,d} Pages".format(current_pagecount), xy=(.05,.88), xycoords="axes fraction",color=pc_color, fontsize=12)
 plt.annotate("{:,d} Words".format(current_wordcount), xy=(.05,.8), xycoords="axes fraction",color=wc_color, fontsize=12)
 
-ax.xaxis.set_major_locator(months)
+# ax.xaxis.set_major_locator(months)
 ax.xaxis.set_minor_locator(days)
 ax.xaxis.set_major_formatter(date_fmt)
 
