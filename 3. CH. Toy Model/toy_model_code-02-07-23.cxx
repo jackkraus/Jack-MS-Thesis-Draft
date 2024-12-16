@@ -1,8 +1,10 @@
+// C++ Standard Library
 #include <iostream>
 #include <memory>
 #include <ostream>
 #include <vector>
 
+// Necessary ROOT Headers
 #include "TBranch.h"
 #include "TCanvas.h"
 #include "TFile.h"
@@ -59,13 +61,12 @@ void VectorTree() {
     float f2;
     float f3;
 
-    // INITIALIZING BRANCHES
+    // Initializing branches
     std::cout << "creating branches" << std::endl;
-
-    tree->Branch("bOnes", &vten0);
-    tree->Branch("bTens", &vten1);
-    tree->Branch("bHundreds", &vten2);
-    tree->Branch("bThousands", &vten3);
+    tree->Branch("branch_of_vectors_size_one", &vten0);
+    tree->Branch("branch_of_vectors_size_ten", &vten1);
+    tree->Branch("branch_of_vectors_size_hundred", &vten2);
+    tree->Branch("branch_of_vectors_size_thousand", &vten3);
 
     int bSize = 4000;
 
@@ -83,23 +84,23 @@ void VectorTree() {
         // Generating vector elements, filling vectors
         // Fill vten0
         for (int m = 0, m < NEntries0; m++) {
-        f0 = gRandom->Rndm() * 10; // Create random float value
-        vten0.emplace_back(f0);    // Emplace that float into vector
+            f0 = gRandom->Rndm() * 10; // Create random float value
+            vten0.emplace_back(f0);    // Emplace that float into vector
         }
         // Fill vten1
         for (int n = 0, n < NEntries1; n++) {
-        f1 = gRandom->Rndm() * 10;
-        vten1.emplace_back(f1);
+            f1 = gRandom->Rndm() * 10;
+            vten1.emplace_back(f1);
         }
         // Fill vten2
         for (int a = 0, a < NEntries2; a++) {
-        f2 = gRandom->Rndm() * 10;
-        vten2.emplace_back(f2);
+            f2 = gRandom->Rndm() * 10;
+            vten2.emplace_back(f2);
         }
         // Fill vten3
         for (int b = 0, b < NEntries3; b++) {
-        f3 = gRandom->Rndm() * 10;
-        vten3.emplace_back(f3);
+            f3 = gRandom->Rndm() * 10;
+            vten3.emplace_back(f3);
         }
         tree->Fill(); // Fill our TTree with all the new branches
     }
