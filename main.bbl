@@ -105,6 +105,35 @@
       \verb https://atlas.cern/Discover/Detector/Trigger-DAQ
       \endverb
     \endentry
+    \entry{LHC_Illustration}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f8bd0356e6dc1ca33bc342ada2117488}{%
+           family={CERN},
+           familyi={C\bibinitperiod},
+           given={Jean-Luc\bibnamedelima Caron},
+           giveni={J\bibinithyphendelim L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           prefix={for},
+           prefixi={f\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8bd0356e6dc1ca33bc342ada2117488}
+      \strng{fullhash}{f8bd0356e6dc1ca33bc342ada2117488}
+      \strng{bibnamehash}{f8bd0356e6dc1ca33bc342ada2117488}
+      \strng{authorbibnamehash}{f8bd0356e6dc1ca33bc342ada2117488}
+      \strng{authornamehash}{f8bd0356e6dc1ca33bc342ada2117488}
+      \strng{authorfullhash}{f8bd0356e6dc1ca33bc342ada2117488}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{LHC Illustration showing underground locations of detectors}
+      \field{year}{1998}
+      \verb{urlraw}
+      \verb https://research.princeton.edu/news/princeton-led-group-prepares-large-hadron-collider-bright-future
+      \endverb
+      \verb{url}
+      \verb https://research.princeton.edu/news/princeton-led-group-prepares-large-hadron-collider-bright-future
+      \endverb
+    \endentry
     \entry{Giangiacomi:2684079}{thesis}{}
       \name{author}{1}{}{%
         {{hash=8cbd725b2ef7296f8e3abda3da53e55c}{%
@@ -134,6 +163,38 @@
       \endverb
       \verb{url}
       \verb https://cds.cern.ch/record/2684079
+      \endverb
+    \endentry
+    \entry{ATLAS_Illustration}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=e52b0b1fccb9c002909cdd7fa31b43bd}{%
+           family={Girolamo},
+           familyi={G\bibinitperiod},
+           given={Beniamino\bibnamedelima Di},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=48579ef9b2b26d9fcdfc215cf1ec2ee7}{%
+           family={Nessi},
+           familyi={N\bibinitperiod},
+           given={Marzio},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e49f902bd551e762a0c6564a1439ebbb}
+      \strng{fullhash}{e49f902bd551e762a0c6564a1439ebbb}
+      \strng{bibnamehash}{e49f902bd551e762a0c6564a1439ebbb}
+      \strng{authorbibnamehash}{e49f902bd551e762a0c6564a1439ebbb}
+      \strng{authornamehash}{e49f902bd551e762a0c6564a1439ebbb}
+      \strng{authorfullhash}{e49f902bd551e762a0c6564a1439ebbb}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ATLAS undergoes some delicate gymnastics}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://cerncourier.com/a/atlas-undergoes-some-delicate-gymnastics/
+      \endverb
+      \verb{url}
+      \verb https://cerncourier.com/a/atlas-undergoes-some-delicate-gymnastics/
       \endverb
     \endentry
     \entry{athena}{misc}{}
