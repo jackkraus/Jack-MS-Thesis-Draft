@@ -1,8 +1,9 @@
-Particle physics is the branch of physics that seeks out the origins of the universe by probing the smallest interactions at high energies.
-It has roots in electromagnetism, with the discovery of the electron and other particles, and quantum mechanics, that include descriptions of atoms, particles, and their interactions both relativistic and non-relativistic speeds. 
-There have been many efforts in experimentally probing for unique interactions, and the experiments at the Large Hadron Collider (LHC) at CERN has been at the forefront in revealing new insights.  
-This thesis looks into software performance optimization of the ATLAS experiment at CERN. 
-Specifically, ways to modernize and optimize the software framework Athena to improve input/output (I/O) during derivation production and create new tests that catch when specific core I/O functionality is broken.
+Particle physics is the branch of physics that seeks out the origins of the universe by probing and searching for new interactions at the highest energies. 
+The field started as studies in electromagnetism, radiation, and further developed with the discovery of the electron.
+What followed was more experiments to search for new particles, new models to describe the results, and new search techniques which demanded more data.
+The balance in resources for an experiment bottlenecks how much data can be taken, so steps need to be taken to identify interesting interactions and optimize the storage and processing of this data.
+This thesis investigates software performance optimization of the ATLAS experiment at CERN. 
+Specifically, ways to modernize and optimize areas of the software framework, Athena, to improve input/output (I/O) during derivation production and create new tests that catch when specific core I/O functionality is broken.
 
 \section{LHC and The ATLAS Detector}
 
@@ -13,7 +14,7 @@ Specifically, ways to modernize and optimize the software framework Athena to im
     \label{fig:intro_LHC_sites}
 \end{figure}
 
-The LHC, shown in Figure \ref{fig:intro_LHC_sites}  is a 26.7-kilometer ring that crosses between the France-Switzerland border at a depth between 50 and 175 meters underground.\cite{LHC_faq_guide}
+The LHC, shown in Figure \ref{fig:intro_LHC_sites},  is a 26.7-kilometer ring that crosses between the France-Switzerland border at a depth between 50 and 175 meters underground.\cite{LHC_faq_guide}
 The ATLAS experiment, shown in Figure \ref{fig:intro_ATLAS_detector}, is the largest LHC general purpose detector, and the largest detector ever made for particle collision experiments. 
 It's 46 meters long, 25 meters high and 25 meters wide.\cite{ATLAS_Fact_Sheet}
 The ATLAS detector is comprised of three main sections, the inner detector, calorimeters and the muon detector system. 
@@ -47,7 +48,7 @@ It layers various metals to intercept the incoming particles to produce a shower
 The lower energy particles then ionize the liquid argon that fill the barrier in between the metal layers to produce a current that can be read out.
 The Tile calorimeter surrounds the LAr calorimeter and is the largest part of the ATLAS detector weighing in around 2900 tons. 
 Particles then traverse through the layers of steel and plastic scintillating tiles. 
-If a particle hit the steel, they will then generate a new shower of particles and the plastic scintillators will produce photons whose current can be measured.
+When a particle hits the steel, a new shower of particles is generated and the plastic scintillators will produce photons with a measurable current.
 
 \section{ATLAS Trigger and Data Acquisition}
 

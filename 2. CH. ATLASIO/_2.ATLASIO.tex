@@ -19,15 +19,18 @@ Branches hold data into dedicated contiguous memory buffers, and those memory bu
 These baskets can have a limited size and a set minimum number of entries. 
 The Athena default basket size at present is 128 kB, and the default minimum number of entries is 10. 
 
-One function relevant to TTree is $Fill()$. 
-$Fill()$ will loop over all of the branches in the TTree and compresses the baskets that make up the branch.
+One function relevant to TTree is \verb|Fill()|. 
+\verb|Fill()| will loop over all of the branches in the TTree and compresses the baskets that make up the branch.
 This removes the basket from memory as it is then compressed and written to disk.
 It makes reading back branches faster as all of the baskets are stored near each other on the same disk region. \cite{ROOT_TTree}
  
 
 \section{Derivation Production Jobs}
-A derivation job is that process that takes AODs, which comes from the reconstruction step at $\mathcal{O}(1 \text{ MB})$ per event, and creates a Derived Analysis Object Data (DAOD) which sits at $\mathcal{O}(10 \text{ kB})$ per event.
-% \subsection{Why do we need derivation jobs?}
+A derivation production job takes AODs, which comes from the reconstruction step at $\mathcal{O}(1 \text{ MB})$ per event, and creates a derived AOD (DAOD) which sits at $\mathcal{O}(10 \text{ kB})$ per event.
+ATLAS provides two types of output file from these derivation jobs, PHYS and PHYSLITE. 
+Derivation jobs are a necessary step so as to make all data accessible and useful for physicists doing analysis.
+There's a great push toward more simplified analysis tools based in Python, as it lowers the barrier to entry for physicists  
+These jobs can demand heavy resource usage on the GRID, so optimization of the AOD/DAODs for derivation jobs can be vital. 
 
 
 \section{Event Data Models}

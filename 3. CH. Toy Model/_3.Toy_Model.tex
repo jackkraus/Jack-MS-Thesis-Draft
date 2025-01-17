@@ -83,7 +83,17 @@ From here, initialize the branches so each one knows where its vector pair resid
     ...
   }
 \end{lstlisting}
-
+One extra step taken during this phase of testing is the disabling of \verb|AutoFlush|. 
+\begin{lstlisting}
+  void VectorTree() {
+    ...
+    tree->SetAutoFlush(0);
+    ...
+\end{lstlisting}
+\verb|AutoFlush| is a function that tells the \verb|Fill()| function after a designated number of entries to flush all branch buffers from memory and save them to disk. 
+Disabling \verb|AutoFlush| allows for more consistent compression across the various sizes of branches. 
+The toy model needed this consistency more than the later tests as these early tests were solely focused on mimicing data procured by the detector and event simulation. 
+Hence disabling of \verb|AutoFlush| later on is not practiced. 
 Following branch initialization comes the event loop where data is generated and emplaced into vectors.
 
 \begin{lstlisting}[language=C]  
@@ -102,7 +112,7 @@ Following branch initialization comes the event loop where data is generated and
         // Fill vec_ten0
         for (int m = 0, m < NEntries0; m++) {
             float_0 = gRandom->Rndm() * 10; // Create random float value
-            vec_ten0.emplace_back(float_0);    // Emplace that float into vector
+            vec_ten0.emplace_back(float_0);    // Emplace float into vector
         }
         // Fill vec_ten1
         for (int n = 0, n < NEntries1; n++) {

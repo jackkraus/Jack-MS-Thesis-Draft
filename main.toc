@@ -16,8 +16,8 @@
 \contentsline {chapter}{\numberline {3}Toy Model Branches}{8}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Toy Model Compression}{8}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Random Float Branches}{8}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Mixed-Random Float Branches}{13}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Basket-Size Investigation}{17}{section.3.2}%
+\contentsline {subsection}{\numberline {3.1.2}Mixed-Random Float Branches}{14}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Basket-Size Investigation}{18}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Data and Monte Carlo Derivation Production}{23}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Current Derivation Framework}{23}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Performance Metrics and Benchmarking}{23}{section.4.2}%
