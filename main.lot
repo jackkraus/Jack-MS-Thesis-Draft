@@ -3,16 +3,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Athena v22.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for data jobs over various Athena configurations for 160327 entries.\relax }}{25}{table.caption.15}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Athena v22.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for MC jobs over various Athena configurations for 140000 entries.\relax }}{25}{table.caption.16}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Athena v24.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for Data jobs over various Athena configurations for 160327 entries.\relax }}{26}{table.caption.17}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Athena v24.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for MC jobs over various Athena configurations for 140000 entries.\relax }}{26}{table.caption.18}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Top 10 branches sorted by compression factor, MC PHYSLITE [Athena v24.0.16 default configuration.]\relax }}{27}{table.caption.19}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Top 10 branches sorted by compression factor, MC PHYSLITE [Athena v24.0.16 without limit to the basket buffer.]\relax }}{27}{table.caption.20}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Top 10 branches sorted by total file size in bytes, MC PHYSLITE [Athena v24.0.16 default configuration.]\relax }}{27}{table.caption.21}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Top 10 branches sorted by total file size in bytes, MC PHYSLITE [Athena v24.0.16 without limit to the basket buffer.]\relax }}{27}{table.caption.22}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Top 10 branches sorted by compressed file size in bytes, MC PHYSLITE [Athena v24.0.16 default configuration.]\relax }}{28}{table.caption.23}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces Top 10 branches sorted by compressed file size in bytes, MC PHYSLITE [Athena v24.0.16 without limit to the basket buffer.]\relax }}{28}{table.caption.24}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Athena v22.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for data jobs over various Athena configurations for 160327 entries.\relax }}{26}{table.caption.15}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Athena v22.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for MC jobs over various Athena configurations for 140000 entries.\relax }}{26}{table.caption.16}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Athena v24.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for Data jobs over various Athena configurations for 160327 entries.\relax }}{27}{table.caption.17}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Athena v24.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for MC jobs over various Athena configurations for 140000 entries.\relax }}{27}{table.caption.18}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Top 10 branches sorted by compression factor, MC PHYSLITE [Athena v24.0.16 default configuration.]\relax }}{28}{table.caption.19}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Top 10 branches sorted by compression factor, MC PHYSLITE [Athena v24.0.16 without limit to the basket buffer.]\relax }}{28}{table.caption.20}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Top 10 branches sorted by total file size in bytes, MC PHYSLITE [Athena v24.0.16 default configuration.]\relax }}{28}{table.caption.21}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Top 10 branches sorted by total file size in bytes, MC PHYSLITE [Athena v24.0.16 without limit to the basket buffer.]\relax }}{28}{table.caption.22}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Top 10 branches sorted by compressed file size in bytes, MC PHYSLITE [Athena v24.0.16 default configuration.]\relax }}{29}{table.caption.23}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Top 10 branches sorted by compressed file size in bytes, MC PHYSLITE [Athena v24.0.16 without limit to the basket buffer.]\relax }}{29}{table.caption.24}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

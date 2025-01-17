@@ -8,13 +8,14 @@ Creating AODs from data requires significant computation power and Athena is the
 Athena is the open-source software framework for the ATLAS experiment.\cite{athena}
 It uses on other software such as ROOT, Geant4 and other software as part of the LCG software stack. 
 Athena manages ATLAS production workflows which include event generation, simulation of data, reconstruction from hits, and derivation of reconstructed hits.\cite{athenadocs}
+It also provides some in-house based analysis tools as well as tools for specifically ROOT based analysis.
 
 ROOT is an open-source software framework used for high-energy physics analysis at CERN.\cite{ROOT_about} 
 It uses C++ objects to save, access, and process data brought in by the various experiments based at the LHC, the ATLAS experiment uses it in conjunction with Athena.
-
+ROOT largely revolves around organization and manipulation of TFiles and TTrees into ROOT files 
 
 \section{TTree Object} \label{section: ATLASIO_TTreeObject}
-A TTree is a ROOT object that organizes physically distinct types of event data into branches.
+A TTree is a \verb|ROOT| object that organizes physically distinct types of event data into branches.
 Branches hold data into dedicated contiguous memory buffers, and those memory buffers, upon compression, become baskets.
 These baskets can have a limited size and a set minimum number of entries. 
 The Athena default basket size at present is 128 kB, and the default minimum number of entries is 10. 
@@ -27,9 +28,9 @@ It makes reading back branches faster as all of the baskets are stored near each
 
 \section{Derivation Production Jobs}
 A derivation production job takes AODs, which comes from the reconstruction step at $\mathcal{O}(1 \text{ MB})$ per event, and creates a derived AOD (DAOD) which sits at $\mathcal{O}(10 \text{ kB})$ per event.
-ATLAS provides two types of output file from these derivation jobs, PHYS and PHYSLITE. 
 Derivation jobs are a necessary step so as to make all data accessible and useful for physicists doing analysis.
-There's a great push toward more simplified analysis tools based in Python, as it lowers the barrier to entry for physicists  
+Athena can provide two types of output file from these derivation jobs, PHYS and PHYSLITE. 
+PHYSLITE being the smallest file of the two, sees the largest effect upon attempts of optimization. 
 These jobs can demand heavy resource usage on the GRID, so optimization of the AOD/DAODs for derivation jobs can be vital. 
 
 

@@ -8,25 +8,25 @@
 \contentsline {section}{\numberline {1.3}ATLAS Trigger and Data Acquisition}{4}{section.1.3}%
 \contentsline {chapter}{\numberline {2}ATLAS I/O}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Athena and ROOT}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}TTree Object}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.2}TTree Object}{6}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Derivation Production Jobs}{6}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Event Data Models}{6}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Event Data Models}{7}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Transient/Persistent (T/P) EDM}{7}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}xAOD EDM}{7}{subsection.2.4.2}%
-\contentsline {chapter}{\numberline {3}Toy Model Branches}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Toy Model Compression}{8}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Random Float Branches}{8}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Mixed-Random Float Branches}{14}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Basket-Size Investigation}{18}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Data and Monte Carlo Derivation Production}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Current Derivation Framework}{23}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Performance Metrics and Benchmarking}{23}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Results}{24}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Presence of basket-cap and presence of minimum number of entries}{24}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Comparing different basket sizes}{25}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Monte Carlo PHYSLITE branch comparison}{26}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Conclusion to derivation job optimzation}{29}{subsection.4.3.4}%
-\contentsline {chapter}{\numberline {5}Modernizing I/O CI Unit-Tests}{30}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Continuous integration unit tests}{30}{section.5.1}%
-\contentsline {chapter}{Appendix: Derivation Production Data}{33}{appendix.A}%
+\contentsline {subsection}{\numberline {2.4.2}xAOD EDM}{8}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {3}Toy Model Branches}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Toy Model Compression}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Random Float Branches}{9}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Mixed-Random Float Branches}{15}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Basket-Size Investigation}{19}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Data and Monte Carlo Derivation Production}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Current Derivation Framework}{24}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Performance Metrics and Benchmarking}{24}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Results}{25}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Presence of basket-cap and presence of minimum number of entries}{25}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Comparing different basket sizes}{26}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Monte Carlo PHYSLITE branch comparison}{27}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Conclusion to derivation job optimzation}{30}{subsection.4.3.4}%
+\contentsline {chapter}{\numberline {5}Modernizing I/O CI Unit-Tests}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Continuous integration unit tests}{31}{section.5.1}%
+\contentsline {chapter}{Appendix: Derivation Production Data}{34}{appendix.A}%
 \contentsfinish 
