@@ -1,4 +1,4 @@
-\noindent Figure\hfill Page\par 
+\noindent Figure\hfill Page\@@@par 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of the LHC experiment sites on the France-Switzerland border. \blx@tocontentsinit {0}\cite {LHC_Illustration}\relax }}{2}{figure.caption.6}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Overview of the ATLAS detectors main components. \blx@tocontentsinit {0}\cite {ATLAS_Illustration}\relax }}{3}{figure.caption.7}%
@@ -8,9 +8,9 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^6$ events)\relax }}{17}{figure.caption.9}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^5$ events)\relax }}{18}{figure.caption.10}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Compression Factors vs Branch Size (1/2 Mixture $N=10^6$ events)\relax }}{19}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Number of Baskets vs Branch Size (1/2 Mixture $N=10^6$ events)\relax }}{19}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Varying Mixtures in 8 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{20}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Number of Baskets vs Branch Size (1/2 Mixture $N=10^6$ events)\relax }}{20}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Varying Mixtures in 8 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{21}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{22}{figure.caption.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

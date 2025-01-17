@@ -1,18 +1,17 @@
-A toy model of AOD provides a simple-to-understand representation for how real and Monte Carlo simulated data will react under optimization conditions for derivation production jobs. 
+A toy model of AOD provides a simple-to-understand representation for how real data and Monte Carlo (MC) simulated data will react under optimization conditions for derivation production jobs. 
 One commonality between both data and MC is the branch data within both is made of a mixture between repeated integer-like data and randomized floating-point data (i.e. data that has both easily and difficult to compress.)
-Replicating this mixture of data in a branch would give us an effective model that would resemble how current derivation jobs would act on real and MC simulated data. 
-These toy model mixtures would provide an avenue to test opportunities for optimizing the demand on the GRID by first looking at limiting basket sizes and their effects on compression of branches. 
+Replicating this mixture of data in a branch give us an effective model that resemble how current derivation jobs act on real and MC simulated data. 
+These toy model mixtures provide an avenue to test opportunities for optimizing the demand on the GRID by first looking at limiting basket sizes and their effects on compression of branches. 
 
 
 \section{Toy Model Compression}
 
 \subsection{Random Float Branches} \label{sec:toy_compression_random_float_branches}
-There were a number of iterations to the toy model, but the first was constructed by filling up a TTree with branches that each have vectors with varying number of random floats written and read back.
+There were a number of iterations to the toy model, but the first was constructed by filling a TTree with branches that each have vectors with varying number of random floats to write and read.
 This original model had four distinct branches, each with a set number of events (\verb|N=1000|), and each event having a number of entries, vectors with 1, 10, 100, and 1000 floats each.
-Specifics of how this was done will now be illustrated.
 
 The script file can be compiled with \verb|gcc| and it requires all of the dependencies that come with \verb|ROOT|. 
-To begin this script, there are a number of included \verb|ROOT| and \verb|C++| standard library headers needed to be included. 
+To begin this script, there are a number of included \verb|ROOT| and \verb|C++| standard library headers. 
 \begin{lstlisting}[language=C]
   // C++ Standard Library
   #include <iostream>
@@ -45,7 +44,7 @@ What is needed first is an output file, which will be called \verb|VectorTreeFil
 
 Initializing variables can start with the total number of events (total number of vectors) in each branch, \verb|N|. 
 Additionally the branches have a number of floats per vector, this size will need to be defined as \verb|NEntries0|, \verb|NEntries1|, etc.  
-The actual vectors that are being stored into each branch need to be defined as well as the temporary placeholder variable for our randomized floats, \verb|vtenX| and \verb|fX| respectively. 
+The actual vectors that are being stored into each branch need to be defined as well as the temporary placeholder variable for our randomized floats, \verb|vec_tenX| and \verb|float_X| respectively. 
 \begin{lstlisting}[language=C]  
   void VectorTree() {
     ...
@@ -57,16 +56,16 @@ The actual vectors that are being stored into each branch need to be defined as 
     int NEntries3 = 1000;
 
     // vectors
-    std::vector<float> vten0; // 10^0 = 1 entry
-    std::vector<float> vten1; // 10^1 = 10 entries
-    std::vector<float> vten2; // 10^2 = 100 entries
-    std::vector<float> vten3; // 10^3 = 1000 entries
+    std::vector<float> vec_ten0; // 10^0 = 1 entry
+    std::vector<float> vec_ten1; // 10^1 = 10 entries
+    std::vector<float> vec_ten2; // 10^2 = 100 entries
+    std::vector<float> vec_ten3; // 10^3 = 1000 entries
 
     // variables
-    float f0;
-    float f1;
-    float f2;
-    float f3;
+    float float_0;
+    float float_1;
+    float float_2;
+    float float_3;
     ...
   }
 \end{lstlisting}
@@ -77,10 +76,10 @@ From here, initialize the branches so each one knows where its vector pair resid
     ...
     // Initializing branches
     std::cout << "creating branches" << std::endl;
-    tree->Branch("branch_of_vectors_size_one", &vten0);
-    tree->Branch("branch_of_vectors_size_ten", &vten1);
-    tree->Branch("branch_of_vectors_size_hundred", &vten2);
-    tree->Branch("branch_of_vectors_size_thousand", &vten3);
+    tree->Branch("branch_of_vectors_size_one", &vec_ten0);
+    tree->Branch("branch_of_vectors_size_ten", &vec_ten1);
+    tree->Branch("branch_of_vectors_size_hundred", &vec_ten2);
+    tree->Branch("branch_of_vectors_size_thousand", &vec_ten3);
     ...
   }
 \end{lstlisting}
@@ -94,31 +93,31 @@ Following branch initialization comes the event loop where data is generated and
     std::cout << "generating events..." << std::endl;
     for (int j = 0; j < N; j++) {
         // Clearing entries from previous iteration
-        vten0.clear();
-        vten1.clear();
-        vten2.clear();
-        vten3.clear();
+        vec_ten0.clear();
+        vec_ten1.clear();
+        vec_ten2.clear();
+        vec_ten3.clear();
 
         // Generating vector elements, filling vectors
-        // Fill vten0
+        // Fill vec_ten0
         for (int m = 0, m < NEntries0; m++) {
-            f0 = gRandom->Rndm() * 10; // Create random float value
-            vten0.emplace_back(f0);    // Emplace that float into vector
+            float_0 = gRandom->Rndm() * 10; // Create random float value
+            vec_ten0.emplace_back(float_0);    // Emplace that float into vector
         }
-        // Fill vten1
+        // Fill vec_ten1
         for (int n = 0, n < NEntries1; n++) {
-            f1 = gRandom->Rndm() * 10;
-            vten1.emplace_back(f1);
+            float_1 = gRandom->Rndm() * 10;
+            vec_ten1.emplace_back(float_1);
         }
-        // Fill vten2
+        // Fill vec_ten2
         for (int a = 0, a < NEntries2; a++) {
-            f2 = gRandom->Rndm() * 10;
-            vten2.emplace_back(f2);
+            float_2 = gRandom->Rndm() * 10;
+            vec_ten2.emplace_back(float_2);
         }
-        // Fill vten3
+        // Fill vec_ten3
         for (int b = 0, b < NEntries3; b++) {
-            f3 = gRandom->Rndm() * 10;
-            vten3.emplace_back(f3);
+            float_3 = gRandom->Rndm() * 10;
+            vec_ten3.emplace_back(float_3);
         }
         tree->Fill(); // Fill our TTree with all the new branches
     }
@@ -182,53 +181,53 @@ Mixing of random floats and repeated integer values takes the same script struct
     // Events Loop
     for (int j = 0; j < N; j++) {
         // Clearing entries from previous iteration
-        vten0.clear();
-        vten1.clear();
-        vten2.clear();
-        vten3.clear();
+        vec_ten0.clear();
+        vec_ten1.clear();
+        vec_ten2.clear();
+        vec_ten3.clear();
 
         // Generating vector elements, filling vectors
-        // Generating vten0
+        // Generating vec_ten0
         for (int a = 0; a < NEntries0; a++) {
             if (a < (NEntries0 / 2)) {
-              f0 = gRandom->Gaus(0, 1) * gRandom->Rndm();
-              vten0.emplace_back(f0);
+              float_0 = gRandom->Gaus(0, 1) * gRandom->Rndm();
+              vec_ten0.emplace_back(float_0);
             } else {
-              f0 = 1; 
-              vten0.emplace_back(f0);
+              float_0 = 1; 
+              vec_ten0.emplace_back(float_0);
             }
         }
 
-        // Generating vten1
+        // Generating vec_ten1
         for (int b = 0; b < NEntries1; b++) {
             if (b < NEntries1 / 2) {
-              f1 = gRandom->Rndm() * gRandom->Gaus(0, 1);
-              vten1.emplace_back(f1);
+              float_1 = gRandom->Rndm() * gRandom->Gaus(0, 1);
+              vec_ten1.emplace_back(float_1);
             } else {
-              f1 = 1;
-              vten1.emplace_back(f1);
+              float_1 = 1;
+              vec_ten1.emplace_back(float_1);
             }
         }
 
-        // Generating vten2
+        // Generating vec_ten2
         for (int c = 0; c < NEntries2; c++) {
             if (c < NEntries2 / 2) {
-              f2 = gRandom->Rndm() * gRandom->Gaus(0, 1);
-              vten2.emplace_back(f2);
+              float_2 = gRandom->Rndm() * gRandom->Gaus(0, 1);
+              vec_ten2.emplace_back(float_2);
             } else {
-              f2 = 1;
-              vten2.emplace_back(f2);
+              float_2 = 1;
+              vec_ten2.emplace_back(float_2);
             }
         }
 
-        // Generating vten3
+        // Generating vec_ten3
         for (int d = 0; d < NEntries3; d++) {
             if (d < NEntries3 / 2) {
-              f3 = gRandom->Rndm() * gRandom->Gaus(0, 1);
-              vten3.emplace_back(f3);
+              float_3 = gRandom->Rndm() * gRandom->Gaus(0, 1);
+              vec_ten3.emplace_back(float_3);
             } else {
-              f3 = 1;
-              vten3.emplace_back(f3);
+              float_3 = 1;
+              vec_ten3.emplace_back(float_3);
             }
         }
         tree->Fill(); // Fill our TTree with all the new branches
@@ -268,6 +267,12 @@ Here is where tuning the basket size can begin to start.
 \label{sec: toy-model basket-size investigation}
 
 Investigating how compression is affected by the basket size requires us to change the basket size, refill the branch and read it out.
+Changing the basket sizes was done at the script level with a simple setting after the branch initialization and before the event loop the following code:
+\begin{lstlisting}
+    int basketSize = 8192000;
+    tree->SetBasketSize("*",basketSize);
+\end{lstlisting}
+This \verb|ROOT|-level setting was sufficient for the case of a toy model; testing of the basket size setting both at the \verb|ROOT|- and Athena-level would take later.
 The lower bound set for the basket size was 1 kB and the upper bound was 16 MB.
 The first branch looked at closely was the branch with a thousand vectors with half of them being random floats, see Figure \ref{fig:toymodel_CFvsBranchSize_1/2mixture}.
 
@@ -297,26 +302,26 @@ Another instance looked into the same mixtures but decreasing the precision of t
     \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/toymodel_content/3.28/1_of_2.png}
-        \caption{A subfigure}
+        % \caption{A subfigure}
         \label{fig:toymodel_328_compF_vs_basketsize_subA}
       \end{subfigure}%     
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/toymodel_content/3.28/1_of_3.png}
-        \caption{B subfigure}
+        % \caption{B subfigure}
         \label{fig:toymodel_328_compF_vs_basketsize_subB}
       \end{subfigure}% 
       \linebreak
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/toymodel_content/3.28/1_of_4.png}
-        \caption{C subfigure}
+        % \caption{C subfigure}
         \label{fig:toymodel_328_compF_vs_basketsize_subC}
       \end{subfigure}% 
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/toymodel_content/3.28/1_of_5.png}
-        \caption{D subfigure}
+        % \caption{D subfigure}
         \label{fig:toymodel_328_compF_vs_basketsize_subD}
       \end{subfigure}% 
     \caption{Varying Mixtures in 8 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)}
@@ -328,26 +333,26 @@ Another instance looked into the same mixtures but decreasing the precision of t
     \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/toymodel_content/4.18/1_of_2.png}
-        \caption{A subfigure}
+        % \caption{A subfigure}
         \label{fig:toymodel_418_compF_vs_basketsize_subA}
       \end{subfigure}%     
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/toymodel_content/4.18/1_of_3.png}
-        \caption{B subfigure}
+        % \caption{B subfigure}
         \label{fig:toymodel_418_compF_vs_basketsize_subB}
       \end{subfigure}% 
       \linebreak
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/toymodel_content/4.18/1_of_4.png}
-        \caption{C subfigure}
+        % \caption{C subfigure}
         \label{fig:toymodel_418_compF_vs_basketsize_subC}
       \end{subfigure}% 
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/toymodel_content/4.18/1_of_5.png}
-        \caption{D subfigure}
+        % \caption{D subfigure}
         \label{fig:toymodel_418_compF_vs_basketsize_subD}
       \end{subfigure}% 
       \caption{Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)}
