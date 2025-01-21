@@ -14,7 +14,7 @@ Specifically, ways to modernize and optimize areas of the software framework, At
     \label{fig:intro_LHC_sites}
 \end{figure}
 
-The LHC, shown in Figure \ref{fig:intro_LHC_sites},  is a 26.7-kilometer ring that crosses between the France-Switzerland border at a depth between 50 and 175 meters underground.\cite{LHC_faq_guide}
+The Large Hadron Collider (LHC), shown in Figure \ref{fig:intro_LHC_sites},  is a particle accelerator spanning a 26.7-kilometer ring that crosses between the France-Switzerland border at a depth between 50 and 175 meters underground.\cite{LHC_faq_guide}
 The ATLAS experiment, shown in Figure \ref{fig:intro_ATLAS_detector}, is the largest LHC general purpose detector, and the largest detector ever made for particle collision experiments. 
 It's 46 meters long, 25 meters high and 25 meters wide.\cite{ATLAS_Fact_Sheet}
 The ATLAS detector is comprised of three main sections, the inner detector, calorimeters and the muon detector system. 
@@ -29,7 +29,7 @@ The ATLAS detector is comprised of three main sections, the inner detector, calo
 
 
 The inner detector measures the direction, momentum and charge of electrically charged particles.
-It's main function is to measure the track of the charged particles without destroying the particle itself.
+Its main function is to measure the track of the charged particles without destroying the particle itself.
 The first point of contact for ATLAS is the pixel detector. 
 It has over 92 million pixels and is radiation hard to aid in particle track and vertex reconstruction.\cite{Hugging2006}
 When charged particles pass through a pixel sensor ionizes silicon which produces an electron-hole pair, and this generates an electric current that can be measured. \cite{Giangiacomi:2684079}
@@ -54,9 +54,9 @@ When a particle hits the steel, a new shower of particles is generated and the p
 
 The LHC produces $pp$-collisions at a rate of 40 MHz, each collision is an ``event". 
 % What is the ATLAS Trigger System
-The ATLAS Trigger system is what's responsible for quickly deciding what events are interesting for physics analysis.
+The ATLAS Trigger system is responsible for quickly deciding what events are interesting for physics analysis.
 The Trigger system is divided into the first- and second-level triggers and when a particle activates a trigger, the trigger makes a decision to tell the Data Acquistion System (DAQ) to save the data produced by the detector. 
-The first-level trigger is a hardware trigger that decides within $2.5 \mu s$ after the event occurs if it's a good event to put into a storage buffer for the second-level trigger.
+The first-level trigger is a hardware trigger that decides, within $2.5 \mu s$ after the event, if it's a good event to put into a storage buffer for the second-level trigger.
 The second-level trigger is a software trigger that decides within $200 \mu s$ and uses around 40,000 CPU-cores and analyses the event to decide if it is worth keeping. 
 The second-level trigger selects about 1000 events per second to keep and store long-term. \cite{Trigger-DAQ}
 The data taken by this Trigger/DAQ system is raw and not yet in a state that is ready for analysis, but it is ready for the reconstruction stage. 
@@ -64,5 +64,6 @@ The data taken by this Trigger/DAQ system is raw and not yet in a state that is 
 % How is this relevant to the thesis?
 The amount of data taken at ATLAS is substantial.
 ATLAS sees more than 3.2 PB of raw data each year, each individual event being around 1.6 MB. \cite{ATLAS_Fact_Sheet} 
-Reconstructed data reduces the size per event to 1 MB. 
-Reconstructed AOD are then processed through derivation jobs that reduced AODs to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD). 
+All of the data produced by LHC experiments, especially ATLAS, has to be sent to the LHC Computing Grid (LCG). 
+The increase in data means more resources from the Grid will be needed, so optimization is an essential part of ensuring scalability of the data able to be taken in by the experiment.
+Reconstructed AOD are then processed through derivation jobs that reduced AODs from  $\mathcal{O}(1)$ MB per event to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD). 

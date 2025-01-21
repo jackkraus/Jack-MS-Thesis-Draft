@@ -1,13 +1,12 @@
 # Fdb version 4
-["biber main"] 1737143120 "main.bcf" "main.bbl" "main" 1737143122 0
+["biber main"] 1737143120 "main.bcf" "main.bbl" "main" 1737480035 0
   "./main.bib" 1734390635 4530 a403de5eb51f3c05432b15edddebe8ce ""
-  "main.bcf" 1737143120 108869 6cd079f3e76aefb8bbe163989dd26816 "pdflatex"
-  "main.bib" 1734390635 4530 a403de5eb51f3c05432b15edddebe8ce ""
+  "main.bcf" 1737480034 108869 6cd079f3e76aefb8bbe163989dd26816 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1737143118 "main.tex" "main.pdf" "main" 1737143122 0
+["pdflatex"] 1737480032 "main.tex" "main.pdf" "main" 1737480035 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -139,9 +138,9 @@
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "0.Preamble/acknowledgement.tex" 1732651585 899 d32676d931facfdbfe1720751ba16d26 ""
   "0.Preamble/dedication.tex" 1732651585 303 1831dc51cd4f943291b3461e2678a277 ""
-  "1. Introduction/_1.Particle_PHYS_and_LHC.tex" 1737141401 5966 66534ae189a1e356480650afd3214de8 ""
+  "1. Introduction/_1.Particle_PHYS_and_LHC.tex" 1737479906 6009 fff8dbf47e54f08c565cb8acacf67c56 ""
   "2. CH. ATLASIO/_2.ATLASIO.tex" 1737143058 4877 9ceeb1705f8adb14a144a5435b653255 ""
-  "3. CH. Toy Model/_3.Toy_Model.tex" 1737133426 18110 db81570e871224758c7abe313664dedf ""
+  "3. CH. Toy Model/_3.Toy_Model.tex" 1737474458 18110 db81570e871224758c7abe313664dedf ""
   "4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex" 1733946596 7803 5f990c037b556c095dea4aaafce92ebc ""
   "5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex" 1733335457 542 f3ed0269cd84a09f15ef0308a4be3398 ""
   "7.Appendix/app1.tex" 1733944924 470 b0778d0cf8b8614fcf30292f5da37696 ""
@@ -170,14 +169,14 @@
   "content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=100,000 events).png" 1733774568 19454 664f8169a54f4622f93edb9a9e4ee7de ""
   "content/toymodel_content/Number of Baskets vs Branch Size.png" 1733783353 37863 54506da3f941f322b24758d3a79bec16 ""
   "content/toymodel_content/branch_compfacts_nomix.png" 1733254549 150206 26242720335858505c570aafe8426241 ""
-  "main.aux" 1737143120 19851 3f197bde32a340016198ce75d0a3fea5 "pdflatex"
+  "main.aux" 1737480034 19851 fa73ac1187dcccc6b67e4be85e49876c "pdflatex"
   "main.bbl" 1737143122 18376 5daba7e4c190e9a66cfe96b32b1e8ac2 "biber main"
-  "main.lof" 1737143120 1814 3f72c8326978bba3b78bf3a7e929fad7 "pdflatex"
-  "main.lot" 1737143120 2433 4d26b039a2920ab78d5b2722dc68a3ef "pdflatex"
-  "main.out" 1737143120 5738 350c882d5125d0b60e6b3cac94788f04 "pdflatex"
-  "main.run.xml" 1737143120 2299 81988d3303a58f7ac525483192dfa2a1 "pdflatex"
-  "main.tex" 1737043250 3413 5cf921ac612b1db2a81bd1703011bc56 ""
-  "main.toc" 1737143120 2596 14bdb73bcd3115295d6d3f7f8db5635e "pdflatex"
+  "main.lof" 1737480034 1814 3f72c8326978bba3b78bf3a7e929fad7 "pdflatex"
+  "main.lot" 1737480034 2433 4d26b039a2920ab78d5b2722dc68a3ef "pdflatex"
+  "main.out" 1737480034 5738 575144040c14f12899480f0a10481472 "pdflatex"
+  "main.run.xml" 1737480034 2299 81988d3303a58f7ac525483192dfa2a1 "pdflatex"
+  "main.tex" 1737479425 3413 9bc43c6a438eaa82fa2a0d05a9990012 ""
+  "main.toc" 1737480034 2596 ad9dfbe724eb8b03fb1d239f472e77d0 "pdflatex"
   "niuthesis.cls" 1733244687 19841 383f0cf852e034f4cf8a04d6217b83a7 ""
   (generated)
   "main.aux"
