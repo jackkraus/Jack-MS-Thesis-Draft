@@ -32,15 +32,19 @@ The inner detector measures the direction, momentum and charge of electrically c
 Its main function is to measure the track of the charged particles without destroying the particle itself.
 The first point of contact for particles emerging from $pp$-collisions from the center of the ATLAS detector is the pixel detector.\cite{PixelDetector_2008}
 It has over 92 million pixels and is radiation hard to aid in particle track and vertex reconstruction.
-When charged particles pass through a pixel sensor, it ionizes silicon to produce an excited electron will then occupy the conduction band of a semiconductor producing an electron-hole pair, leaving the valence band empty.\cite{KnollRadDetection}
+When charged particles pass through a pixel sensor, it ionizes the one-sided doped-silicon wafer to produce an excited electron will then occupy the conduction band of the semiconductor producing an electron-hole pair, leaving the valence band empty.\cite{KnollRadDetection}
 This hole in the valence band together with the excited electron in the conduction band is called an electron-hole pair.
-The electron-hole pair is in the presence of an electric field, which will induce drifting of the electron-hole pair 
+The electron-hole pair is in the presence of an electric field, which will induce drifting of the electron-hole pair, drifting that will generate the electric current to be measured.
 
+Surrounding the pixel detector is the SemiConductor Tracker (SCT), which uses 4,088 modules of 6 million implanted silicon readout strips.\cite{ABDESSELAM2006642}
+Both the pixel detector and SCT measure the path particles take, called tracks.
+While the pixel detector has measurement precision up to $10 \mu m$, the SCT has precision up to $25\mu m$. 
 
-Surrounding the pixel detector is the semiconductor tracker, which uses 4,088 modules of 6 million implanted silicon readout strips.\cite{ABDESSELAM2006642}
-The semiconductor tracker helps measure the path particles take, called tracks, with precision up to $25\mu m$. 
 The final layer of the inner detector is the transition radiation tracker (TRT). 
-The TRT is made of a collection of tubes made with many layers of different materials with varying indices of refraction.  
+The TRT is made of a collection of tubes made with many layers of different materials with varying indices of refraction.
+The TRT's straw walls are made of two $35\mu m$ layers comprised of $6\mu m$ carbon-polymide, $0.20 \mu m$ aluminum, and a $25\mu m$ Kapton film reflected back.\cite{TRT_2008}
+The straws are filled with a gas mixture of $70\% \text{Xe} + 27\% \text{CO}_2 + 3\% \text{O}_2$. 
+Its measurement precision is around $170 \mu m$. 
 Particles with relativistic velocities have higher Lorentz $\gamma$-factors, see Eq. \eqref{lorentzGamma}, the TRT uses varying materials to discriminate between heavier particles (with low $\gamma$ and radiate less) and lighter particles (higher $\gamma$ and radiate more). \cite{Mindur:2139567}
 \begin{equation}\label{lorentzGamma}
     \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
