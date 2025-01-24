@@ -2367,17 +2367,18 @@
     <bcf:citekey order="8" intorder="1">ATLAS_Fact_Sheet</bcf:citekey>
     <bcf:citekey order="9" intorder="1">ATLAS_Illustration</bcf:citekey>
     <bcf:citekey order="10" intorder="1">ATLAS_Illustration</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Hugging2006</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">Giangiacomi:2684079</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">Mindur:2139567</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Trigger-DAQ</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">ATLAS_Fact_Sheet</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">athena</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">athenadocs</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">ROOT_about</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">ROOT_TTree</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">Athena_xAOD_design</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">Kraus</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">PixelDetector_2008</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">KnollRadDetection</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">ABDESSELAM2006642</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Mindur:2139567</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Trigger-DAQ</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">ATLAS_Fact_Sheet</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">athena</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">athenadocs</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">ROOT_about</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">ROOT_TTree</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Athena_xAOD_design</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Kraus</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -66,7 +66,14 @@
 
 
 \begin{abstract}
-The ATLAS experiment's Software Performance Optimization Team has efforts in developing the Athena software framework that is scalable in performance and ready for wide-spread use during Run-3 and HL-LHC data ready to be used for Run-4. It's been shown that the storage bias for TTree's during derivation production jobs can be improved upon compression and stored to disk by about 4-5\% by eliminating the basket capping, with a simultaneous increase in memory usage by about 11\%. Additionally, job configuration allows opportunity to improve many facets of the ATLAS I/O framework. 
+High-Luminosity LHC (HL-LHC) is a phase of the LHC that is expected to run toward the end of the decade. With this comes an increase in data taken per year that current software and computing infrastructure, including I/O, is not prepared to handle. 
+The ATLAS experiment's Software Performance Optimization Team has efforts in developing the Athena software framework that is scalable in performance and ready for wide-spread use during Run-3 and HL-LHC data ready to be used for Run-4. 
+It's been shown that the storage bias for TTree's during derivation production jobs can be improved upon compression and stored to disk by about 4-5\% by eliminating the basket capping, with a simultaneous increase in memory usage by about 11\%. 
+Additionally, job configuration allows opportunity to improve many facets of the ATLAS I/O framework.
+
+Athena and software it depends on are updated frequently, and to synthesize changes cohesively there are scripts, unit tests, that run which test core I/O functionality. 
+This thesis also addresses a project to add a handful of I/O unit tests that exercise features exclusive to the new xAOD Event Data Model (EDM) such as writing and reading object data from the previous EDM using transient and persistent data. 
+These new unit tests also include and omit select dynamic attributes to object data. 
 \end{abstract}
 
 \begin{dedication}

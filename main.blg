@@ -1,15 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[27] biber-darwin:340> INFO - === Fri Jan 17, 2025, 13:45:22
+[27] biber-darwin:340> INFO - === Fri Jan 24, 2025, 14:08:05
 [34] Biber.pm:419> INFO - Reading 'main.bcf'
-[64] Biber.pm:979> INFO - Found 14 citekeys in bib section 0
-[71] Biber.pm:4419> INFO - Processing section 0
+[64] Biber.pm:979> INFO - Found 15 citekeys in bib section 0
+[70] Biber.pm:4419> INFO - Processing section 0
 [75] Biber.pm:4610> INFO - Looking for bibtex file 'main.bib' for section 0
 [76] bibtex.pm:1713> INFO - LaTeX decoding ...
-[80] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
-[119] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[119] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[119] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[119] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[127] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[129] bbl.pm:763> INFO - Output to main.bbl
+[87] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
+[379] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[379] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[379] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[379] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[394] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[528] bbl.pm:763> INFO - Output to main.bbl
+[528] Biber.pm:131> WARN - legacy month field 'jul' in entry 'PixelDetector_2008' is not an integer - this will probably not sort properly.
+[528] Biber.pm:133> INFO - WARNINGS: 1
