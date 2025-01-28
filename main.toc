@@ -17,17 +17,17 @@
 \contentsline {section}{\numberline {3.1}Toy Model Compression}{10}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Random Float Branches}{10}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Mixed-Random Float Branches}{16}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Basket-Size Investigation}{20}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Data and Monte Carlo Derivation Production}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Current Derivation Framework}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Performance Metrics and Benchmarking}{25}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Results}{26}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Presence of basket-cap and presence of minimum number of entries}{26}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Comparing different basket sizes}{27}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Monte Carlo PHYSLITE branch comparison}{28}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Conclusion to derivation job optimzation}{31}{subsection.4.3.4}%
-\contentsline {chapter}{\numberline {5}Modernizing I/O CI Unit-Tests}{32}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Continuous integration unit tests}{32}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Conclusion}{33}{chapter.6}%
-\contentsline {chapter}{Appendix: Derivation Production Data}{36}{appendix.A}%
+\contentsline {section}{\numberline {3.2}Basket-Size Investigation}{19}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Data and Monte Carlo Derivation Production}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Current Derivation Framework}{26}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Performance Metrics and Benchmarking}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Results}{27}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Presence of basket-cap and presence of minimum number of entries}{27}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Comparing different basket sizes}{28}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Monte Carlo PHYSLITE branch comparison}{29}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Conclusion to derivation job optimzation}{32}{subsection.4.3.4}%
+\contentsline {chapter}{\numberline {5}Modernizing I/O CI Unit-Tests}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Continuous integration unit tests}{33}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Conclusion}{34}{chapter.6}%
+\contentsline {chapter}{Appendix: Derivation Production Data}{37}{appendix.A}%
 \contentsfinish 

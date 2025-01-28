@@ -12,7 +12,9 @@ It also provides some in-house based analysis tools as well as tools for specifi
 
 ROOT is an open-source software framework used for high-energy physics analysis at CERN.\cite{ROOT_about} 
 It uses C++ objects to save, access, and process data brought in by the various experiments based at the LHC, the ATLAS experiment uses it in conjunction with Athena.
-ROOT largely revolves around organization and manipulation of TFiles and TTrees into ROOT files 
+ROOT largely revolves around organization and manipulation of TFiles and TTrees into ROOT files.
+
+
 
 \section{TTree Object} \label{section: ATLASIO_TTreeObject}
 A TTree is a \verb|ROOT| object that organizes physically distinct types of event data into branches.
@@ -24,7 +26,10 @@ One function relevant to TTree is \verb|Fill()|.
 \verb|Fill()| will loop over all of the branches in the TTree and compresses the baskets that make up the branch.
 This removes the basket from memory as it is then compressed and written to disk.
 It makes reading back branches faster as all of the baskets are stored near each other on the same disk region. \cite{ROOT_TTree}
- 
+
+% AutoFlush
+\verb|AutoFlush| is a function that tells the \verb|Fill()| function after a designated number of entries of the branch, in this case vectors, to flush all branch buffers from memory and save them to disk. 
+
 
 \section{Derivation Production Jobs}
 A derivation production job takes AODs, which comes from the reconstruction step at $\mathcal{O}(1 \text{ MB})$ per event, and creates a derived AOD (DAOD) which sits at $\mathcal{O}(10 \text{ kB})$ per event.
