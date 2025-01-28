@@ -13,7 +13,7 @@ Vectors are used in this toy model, as opposed to arrays, because vectors are dy
 This original model had four distinct branches, each with a set number of events (\verb|N=1000|), and each event having a number of entries, vectors with 1, 10, 100, and 1000 floats each.
 
 The script can be compiled with \verb|gcc| or \verb|g++| and it requires all of the dependencies that come with \verb|ROOT|. 
-Alternatively, the script can be run with \verb|root| and the \verb|ROOT| interpreter.
+Alternatively, the script can be run direclty within \verb|ROOT|.
 % To begin this script, there are a number of included \verb|ROOT| and \verb|C++| standard library headers. 
 % \begin{lstlisting}[language=C]
 %   // C++ Standard Library
@@ -324,7 +324,7 @@ The first branch looked at closely was the branch with a thousand vectors with h
 Figure \ref{fig:toymodel_CFvsBranchSize_1/2mixture} and Figure \ref{fig:toymodel_NumBasketsvsBranchSize_1/2mixture} is the first indication that the lower basket sizes are too small to effectively compress the data. 
 For baskets smaller than 16 kB, it is necessary to have as many baskets as events to store all the data effectively.
 For a mixed-content vector with one thousand entries, containing 500 floats and 500 integers (both are 4 bytes each), its size is approximately 4 kB.
-As a result for these smaller baskets, ROOT creates baskets of at least this size, as it can only store one basket per vector.
+ROOT creates baskets of at least the size of the smallest branch entry, in this case the size of a single vector.
 So even though the basket size was set to 1 or 2 kB, ROOT created baskets of 4 kB.
 These baskets $\leq 4$kB have a significantly worse compression than the baskets $\geq 4$kB in size, so the focus was shifted toward baskets  
 Once the basket size is larger than the size of a single vector, more than one vector can be stored in a single basket and the total number of baskets is reduced.
