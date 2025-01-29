@@ -4076,6 +4076,62 @@
       \field{title}{GitHub Repository: building-athena}
       \field{year}{2023}
     \endentry
+    \entry{DAOD_Laycock_2014}{article}{}
+      \name{author}{5}{}{%
+        {{hash=1b54b3cfe8357400c8bc8ab406ca3ce6}{%
+           family={Laycock},
+           familyi={L\bibinitperiod},
+           given={P\bibnamedelima J},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=04d41327386688ff04f6c660fa86da0d}{%
+           family={Ozturk},
+           familyi={O\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f93928ef46dad0c39f151b95f7381f5b}{%
+           family={Beckingham},
+           familyi={B\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=001b00cc0f8871ac3b6836fa8e815b0b}{%
+           family={Henderson},
+           familyi={H\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2007e48a9d3ec189d6f0ce8b4c93569a}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3dba564d726ca4b069011388d922122b}
+      \strng{fullhash}{a4afaf028ecb1e6926bdc05470a7a6f9}
+      \strng{bibnamehash}{3dba564d726ca4b069011388d922122b}
+      \strng{authorbibnamehash}{3dba564d726ca4b069011388d922122b}
+      \strng{authornamehash}{3dba564d726ca4b069011388d922122b}
+      \strng{authorfullhash}{a4afaf028ecb1e6926bdc05470a7a6f9}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physics: Conference Series}
+      \field{month}{6}
+      \field{number}{3}
+      \field{title}{Derived Physics Data Production in ATLAS: Experience with Run 1 and Looking Ahead}
+      \field{volume}{513}
+      \field{year}{2014}
+      \field{pages}{032052}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/513/3/032052
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1742-6596/513/3/032052
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1742-6596/513/3/032052
+      \endverb
+    \endentry
     \entry{LHC_faq_guide}{misc}{}
       \name{author}{2}{}{%
         {{hash=d2819a6cc34bba5656b4460348b04dcc}{%
@@ -4172,6 +4228,56 @@
       \endverb
       \verb{url}
       \verb https://cds.cern.ch/record/1457044
+      \endverb
+    \endentry
+    \entry{PHYSLITE_A_new_2024}{article}{}
+      \name{author}{7}{}{%
+        {{hash=79df4bd2759e68860d9feffa6d702346}{%
+           family={{Schaarschmidt, Jana}},
+           familyi={S\bibinitperiod}}}%
+        {{hash=81b37370c85d96cdf63732825c4821d5}{%
+           family={{Catmore, James}},
+           familyi={C\bibinitperiod}}}%
+        {{hash=9e2c7de3335cba9158254c6782e1cfe5}{%
+           family={{Elmsheuser, Johannes}},
+           familyi={E\bibinitperiod}}}%
+        {{hash=0e5996ee13eed80cdaa6ec4f512a1fed}{%
+           family={{Heinrich, Lukas}},
+           familyi={H\bibinitperiod}}}%
+        {{hash=d846216c76fead20cfee19663c98bb03}{%
+           family={{Krumnack, Nils}},
+           familyi={K\bibinitperiod}}}%
+        {{hash=e6b006b5dd84e673d1248f408d1f9b27}{%
+           family={{Mete, Serhan}},
+           familyi={M\bibinitperiod}}}%
+        {{hash=fdc7562f255e0b2d5447aa10e4d7ac35}{%
+           family={{Ozturk, Nurcan}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc521da4b53e83da276a2b1a531bc4a7}
+      \strng{fullhash}{9b54328134bb7ec3f4128b56d4813cdb}
+      \strng{bibnamehash}{bc521da4b53e83da276a2b1a531bc4a7}
+      \strng{authorbibnamehash}{bc521da4b53e83da276a2b1a531bc4a7}
+      \strng{authornamehash}{bc521da4b53e83da276a2b1a531bc4a7}
+      \strng{authorfullhash}{9b54328134bb7ec3f4128b56d4813cdb}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EPJ Web of Conf.}
+      \field{title}{PHYSLITE - A new reduced common data format for ATLAS}
+      \field{volume}{295}
+      \field{year}{2024}
+      \field{pages}{06017}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1051/epjconf/202429506017
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1051/epjconf/202429506017
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1051/epjconf/202429506017
       \endverb
     \endentry
     \entry{ROOT_about}{misc}{}

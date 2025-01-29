@@ -941,6 +941,11 @@ INPUT 2. CH. ATLASIO/_2.ATLASIO.tex
 INPUT ./2. CH. ATLASIO/_2.ATLASIO.tex
 INPUT 2. CH. ATLASIO/_2.ATLASIO.tex
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT ./content/img/catmore-derivation.png
+INPUT ./content/img/catmore-derivation.png
+INPUT content/img/catmore-derivation.png
+INPUT ./content/img/catmore-derivation.png
+INPUT ./content/img/catmore-derivation.png
 INPUT ./3. CH. Toy Model/_3.Toy_Model.tex
 INPUT 3. CH. Toy Model/_3.Toy_Model.tex
 INPUT ./3. CH. Toy Model/_3.Toy_Model.tex
