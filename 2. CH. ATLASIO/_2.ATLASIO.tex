@@ -44,10 +44,31 @@ It makes reading back branches faster as all of the baskets are stored near each
 
 \section{Derivation Production Jobs}
 A derivation production job takes AODs, which comes from the reconstruction step at $\mathcal{O}(1 \text{ MB})$ per event, and creates a derived AOD (DAOD) which sits at $\mathcal{O}(10 \text{ kB})$ per event.
-Derivation production is a necessary step to make all data accessible and useful for physicists doing analysis.
+Derivation production is a necessary step to make all data accessible for physicists doing analysis as well as reducing the amount of data that needs to be processed.
 While derivations are reduced AODs, they often contain additional information useful for analysis, such as jet collections and high-level discriminants.\cite{PHYSLITE_A_new_2024}
 Athena provides two types of output files from a derivation job, PHYS and PHYSLITE. 
-PHYSLITE being the smallest file of the two, sees the largest effect upon attempts of optimization. 
+Figure \ref{fig:IO_tt_PHYS_vs_PHYSLITE} shows the object composition of a PHYS and PHYSLITE $t\bar{t}$ sample. 
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/img/tt_PHYS.png}
+        % \caption{A subfigure}
+        \label{fig:IO_tt_PHYS_subA}
+      \end{subfigure}%     
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/img/tt_PHYSLITE.png}
+        % \caption{B subfigure}
+        \label{fig:IO_tt_PHYSLITE_subB}
+      \end{subfigure}% 
+    \caption{Object composition of a PHYS and PHYSLITE $t\bar{t}$ sample from Run 3.}
+    \label{fig:IO_tt_PHYS_vs_PHYSLITE}
+\end{figure}
+PHYS output files, at 40.0 kB per event, is prodominantly made of jet collections, while PHYSLITE, at 16.1 kB per event, has more trigger and track information.
+There is ongoing work to reduce the amount of Trigger information in PHYSLITE which would help to reduce the file size.
+
+PHYSLITE, being the smallest file of the two, sees the largest effect upon attempts of optimization. 
 These jobs can demand heavy resource usage on the GRID, so optimization of the AOD/DAODs for derivation jobs can be vital. 
 
 \begin{figure}[h]

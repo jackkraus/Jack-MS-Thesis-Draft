@@ -273,8 +273,8 @@ As shown in the \verb|if|-statements in lines \verb|14|, \verb|25|, \verb|36| an
 Having a mixture of half random floats and half integer \verb|1| led to the larger branches still seeing poor compression, so a new mixture of 1/4 random data was introduced. 
 Even though $N=10^5$ had the larger branches closer to the desired compression ratio, testing at $N=10^6$ events improves the accuracy of the overall file size to more closely resemble real data.
 
-Figure \ref{fig:toymodel_compF_1e6_mix_random} shows the difference between compression between the two mixtures. 
-When the number of events is increased from $N=10^5$ to $N=10^6$, branches where only half of the mixture is random data become larger and the branches with more vectors per entry become more difficult to compress. 
+Figure \ref{fig:toymodel_compF_1e6_mix_random} shows the difference between compression between the two mixtures at $N=10^6$ events. 
+When the number of events is increased from $N=10^5$ to $N=10^6$, at the 1/2 random-mixture, the branches with more than one entry per vector see their compression factor worsen. 
 Figure \ref{fig:toymodel_compF_1e5_mix_random} shows a compression ratio hovering around 3 for the larger branches, whereas Figure \ref{fig:toymodel_compF_1e6_mix_random} shows the same branches hovering around 2. 
 
 \begin{figure}[h]
@@ -292,7 +292,8 @@ Figure \ref{fig:toymodel_compF_1e5_mix_random} shows a compression ratio hoverin
 \end{figure}
 
 Unlike the mixture of branches having 1/2 random data, the 1/4 mixture does not see the same compression effect, but with this mixture we see a compression ratio that is in-line with real data.
-Here is where tuning the basket size can begin to start.
+This is inline with expectation, more repeated integers within the mixture makes the branch more compressible, and the more random floats in the mixture will make the branch more difficult to compress.
+With these mixtures added to the toy model, we can start looking at varying the basket sizes to see how they affect compression.
 
 \section{Basket-Size Investigation}
 \label{sec: toy-model basket-size investigation}
@@ -321,7 +322,7 @@ The first branch looked at closely was the branch with a thousand vectors with h
     \label{fig:toymodel_NumBasketsvsBranchSize_1/2mixture}
 \end{figure}
 
-Figure \ref{fig:toymodel_CFvsBranchSize_1/2mixture} and Figure \ref{fig:toymodel_NumBasketsvsBranchSize_1/2mixture} is the first indication that the lower basket sizes are too small to effectively compress the data. 
+Figure \ref{fig:toymodel_CFvsBranchSize_1/2mixture} and Figure \ref{fig:toymodel_NumBasketsvsBranchSize_1/2mixture} are the first indication that the lower basket sizes are too small to effectively compress the data. 
 For baskets smaller than 16 kB, it is necessary to have as many baskets as events to store all the data effectively.
 For a mixed-content vector with one thousand entries, containing 500 floats and 500 integers (both are 4 bytes each), its size is approximately 4 kB.
 ROOT creates baskets of at least the size of the smallest branch entry, in this case the size of a single vector.
@@ -331,7 +332,7 @@ Once the basket size is larger than the size of a single vector, more than one v
 
 There were more variations in the data that were looked at. 
 For instance, looking further into the types of mixtures and how those mixtures would affect compression are shown in Figure \ref{fig:toymodel_328_compF_vs_basketsize}. 
-Another instance looked into the same mixtures but decreasing the precision of the floating point values that we used from the standard 32 floating-point precision to 16 and 8 which made compression easier. 
+Another study looked into the same mixtures but decreasing the precision of the floating point values that we used from the standard 32 floating-point precision to 16 and 8 which made compression easier. 
 
 \begin{figure}[h]
     \centering
