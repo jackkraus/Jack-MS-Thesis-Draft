@@ -3,16 +3,16 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of the LHC experiment sites on the France-Switzerland border. \blx@tocontentsinit {0}\cite {LHC_Illustration}\relax }}{2}{figure.caption.6}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Overview of the ATLAS detectors main components. \blx@tocontentsinit {0}\cite {ATLAS_Illustration}\relax }}{3}{figure.caption.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Object composition of a PHYS and PHYSLITE $t\bar {t}$ sample from Run 3.\relax }}{8}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Derivation production from Reconstruction to Final N-Tuple\blx@tocontentsinit {0}\cite {DAOD_Laycock_2014}\relax }}{9}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Object composition of a PHYS and PHYSLITE $t\bar {t}$ sample from Run 3.\relax }}{10}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Derivation production from Reconstruction to Final N-Tuple\blx@tocontentsinit {0}\cite {DAOD_Laycock_2014}\relax }}{10}{figure.caption.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Compression factors of $N=1000$ entries per branch with random-valued vectors of varying size.\relax }}{18}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^6$ events)\relax }}{21}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^5$ events)\relax }}{22}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Compression Factors vs Branch Size (1/2 Mixture $N=10^6$ events)\relax }}{23}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Number of Baskets vs Branch Size (1/2 Mixture $N=10^6$ events)\relax }}{24}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Varying Mixtures in 8 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{25}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{26}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Compression factors of $N=1000$ entries per branch with random-valued vectors of varying size.\relax }}{19}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^6$ events)\relax }}{22}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^5$ events)\relax }}{23}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Compression Factors vs Branch Size (1000 entries per vector, 1/2 Mixture $N=10^6$ events)\relax }}{24}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Number of Baskets vs Branch Size (1000 entries per vector, 1/2 Mixture $N=10^6$ events)\relax }}{25}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Varying Mixtures in 8 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{26}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{27}{figure.caption.16}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

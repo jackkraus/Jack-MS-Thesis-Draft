@@ -11,9 +11,55 @@ It uses on other software such as ROOT, Geant4 and other software as part of the
 Athena manages ATLAS production workflows which include event generation, simulation of data, reconstruction from hits, and derivation of reconstructed hits.\cite{athenadocs}
 It also provides some in-house based analysis tools as well as tools for specifically ROOT based analysis.
 
+% How we used it
+% % Athena POOL
+AthenaPOOL is data storage architecture suite of packages within Athena that provide conversion services between the various data formats. 
+
+% % SharedWriter
+
+
+% % Component Accumulator
+These unit tests are component accumulator (CA) scripts written in Python and call upon algorithms written in C++. 
+The python scripts are also used to set the job options for the algorithms added to the component accumulator, job options like flag definitions, input and output file names, and other algorithm specific options.
+A CA script written in pseudocode would take the form: 
+\begin{lstlisting}[language=Python]
+    # Import Packages
+    from AthenaConfiguration.AllConfigFlags import initConfigFlags
+    from AthenaConfiguration.ComponentFactory import CompFactory
+    from OutputStreamAthenaPool.OutputStreamConfig import OutputStreamCfg, outputStreamName
+
+    # Set Job Options
+    outputStreamName = "StreamA"
+    outputFileName = "output.root"
+
+    # Setup flags
+    flags = initConfigFlags()
+    flags.Input.Files = ["input.root"]
+    flags.addFlag(f"Output.{streamName}FileName", outputFileName)
+    # Other flags
+    flags.lock()
+
+    # Main services
+    from AthenaConfiguration.MainServicesConfig import MainServicesCfg
+    acc = MainServicesCfg( flags )
+
+    # Add algorithms
+    acc.addEventAlgo( CompFactory.MyAlgorithm(MyParameters) )
+
+    # Run
+    import sys
+    sc = acc.run(flags.Exec.MaxEvents)
+    sys.exit(sc.isFailure())
+\end{lstlisting}
+
+
+
+% What is ROOT
 ROOT is an open-source software framework used for high-energy physics analysis at CERN.\cite{ROOT_about} 
 It uses C++ objects to save, access, and process data brought in by the various experiments based at the LHC, the ATLAS experiment uses it in conjunction with Athena.
 ROOT largely revolves around organization and manipulation of TFiles and TTrees into ROOT files.
+
+% What we looked at/How we used it
 
 \subsection{Continuous Integration (CI) and Development}
 CI is a software development practice where new code is tested and validated upon each merge to the main branch of a repository. 
@@ -92,11 +138,11 @@ It's useful to have an EDM because it brings a commonality to the code, which is
 An EDM allows those developers to more easily debug and communicate issues when they arise.  
 
 \subsection{Transient/Persistent (T/P) EDM}
-One of the previous EDM schemas used by ATLAS concerned a dual transient/persistent nature of AOD.
-The AOD at this point was converted into an ntuple based format called D3PDs. 
+One of the previous EDM schemas used by ATLAS concerned a dual transient/persistent status of AOD.
+With this EDM, the AOD was converted into an ntuple based format called D3PDs. 
 While this conversion allowed for fast readability and partial read for effient analysis in ROOT, it left the files disconnected from the reconstruction tools found in Athena.\cite{Athena_xAOD_design}
-The transient data was present in memory and could have information attatched to the object, this data could gain complexity the more it was used.
-Persistent data needed to be simplified before it could be persistified into long-term storage (sent to disk). 
+When transient data was present in memory, it could have information attatched to the object and gain in complexity the more it was used.
+Transient data needed to be simplified before it could become persistent into long-term storage (sent to disk). 
 ROOT had trouble handling the complex inheritance models that would come up the more developers used this EDM. 
 Before the successor to the T/P EDM was created, ATLAS physicists would convert data samples using the full EDM to a simpler one that would be directly readable by ROOT.
 This would lead to duplication of data and made it challenging to develop and maintain the analysis tools to be used on both the full EDM and the reduced ones.
@@ -109,5 +155,5 @@ Additionally, converting from transient to persistent data was an excessive step
 The xAOD EDM is the successor to the T/P EDM and brings a number of improvements.
 This EDM, unlike T/P, is usuable both on Athena and ROOT.
 It's easier to pick up for analysis and reconstruction. 
-xAOD EDM has the ability to add and remove variables at runtime, these variables are called ``decorations."
+The xAOD EDM has the ability to add and remove variables at runtime, these variables are called ``decorations."
 
