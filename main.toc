@@ -1,6 +1,6 @@
 \hspace *{\fill }Page\@@@par 
 \contentsline {chapter}{List of Tables}{vi}{chapter*.4}%
-\contentsline {chapter}{List of Figures}{vii}{chapter*.5}%
+\contentsline {chapter}{List of Figures}{viii}{chapter*.5}%
 \noindent Chapter\@@@par 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Particle Physics and the Large Hadron Collider}{1}{section.1.1}%
@@ -9,26 +9,29 @@
 \contentsline {chapter}{\numberline {2}I/O Tools}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Athena and ROOT}{6}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Continuous Integration (CI) and Development}{8}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}TTree Object}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Derivation Production Jobs}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.2}TTree Object}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Derivation Production Jobs}{10}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Event Data Models}{11}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Transient/Persistent (T/P) EDM}{11}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.1}Transient/Persistent (T/P) EDM}{12}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}xAOD EDM}{12}{subsection.2.4.2}%
-\contentsline {chapter}{\numberline {3}Toy Model Branches}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Toy Model Compression}{13}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Random Float Branches}{13}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Mixed-Random Float Branches}{19}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Basket-Size Investigation}{23}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Data and Monte Carlo Derivation Production}{28}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Current Derivation Framework}{28}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Performance Metrics and Benchmarking}{28}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Results}{29}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Presence of basket-cap and presence of minimum number of entries}{29}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Comparing different basket sizes}{30}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Monte Carlo PHYSLITE branch comparison}{31}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Conclusion to derivation job optimzation}{34}{subsection.4.3.4}%
-\contentsline {chapter}{\numberline {5}Modernizing I/O CI Unit-Tests}{35}{chapter.5}%
-\contentsline {section}{\numberline {5.1}CI Unit Tests}{35}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Conclusion}{36}{chapter.6}%
-\contentsline {chapter}{Appendix: Derivation Production Data}{40}{appendix.A}%
+\contentsline {chapter}{\numberline {3}Toy Model Branches}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Toy Model Compression}{14}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Random Float Branches}{14}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Mixed-Random Float Branches}{20}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Basket-Size Investigation}{24}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Data and Monte Carlo Derivation Production}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Current Derivation Framework}{29}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Performance Metrics and Benchmarking}{29}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Results}{30}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Presence of basket-cap and presence of minimum number of entries}{30}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Comparing different basket sizes}{31}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Monte Carlo PHYSLITE branch comparison}{32}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Conclusion to derivation job optimzation}{35}{subsection.4.3.4}%
+\contentsline {chapter}{\numberline {5}Modernizing I/O CI Unit-Tests}{36}{chapter.5}%
+\contentsline {section}{\numberline {5.1}CI Unit Tests}{36}{section.5.1}%
+\contentsline {section}{\numberline {5.2}xAOD Test Object}{37}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Unit Test}{38}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Results}{38}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Conclusion}{39}{chapter.6}%
+\contentsline {chapter}{Appendix: Derivation Production Data}{43}{appendix.A}%
 \contentsfinish 

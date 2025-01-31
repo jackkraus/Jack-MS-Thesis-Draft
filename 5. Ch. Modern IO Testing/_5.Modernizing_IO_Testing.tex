@@ -4,6 +4,69 @@ This project took in track information from a unit test using the T/P EDM, write
 
 \section{CI Unit Tests}
 Unit tests are programs that act as a catch during the continuous integration of a codebase and exhaust features that need to remain functional. 
-Athena has a number of unit tests which check every new merge request and nightly build for issues in the new code that could break core I/O functionality, either at the level of Athena, ROOT, or any other software in the LCG stack.
+Athena has a number of unit tests which check every merge request and nightly build for issues in the new code that could break core I/O functionality, either at the level of Athena, ROOT, or any other software in the LCG stack.
 With the adoption of the xAOD EDM, there were no unit tests to cover core I/O functionality related to this new EDM. 
 
+Specifically there were no unit tests to handle selection of dynamic attributes, or decorations, on xAOD objects created during writing and read back.
+To address this, a new xAOD test object needed to be created and written during a new unit test that fit into the existing unit tests.
+The list of unit tests that are currently executed during a nightly build can be found in Table \ref{tab:CI_Unit_Tests}.
+
+
+\begin{table}[h]
+    \centering
+    % \resizebox{\textwidth}{!}{
+    \begin{tabular}{|c|c|}
+        \hline
+        $\textbf{Unit Test}$ & $\textbf{Employed Algorithms}$ \\
+        \hline
+        Write & WriteData \\
+        \hline
+        ReadWrite & ReadData \\
+        \hline
+        Read & ReadData \\
+        \hline
+        Copy & None \\
+        \hline
+        ReadWriteNext & ReadData, ReWriteData \\
+        \hline
+        WritexAODElectron & ReadData, WriteExampleElectron \\
+        \hline
+        ReadxAODElectron & ReadExampleElectron \\
+        \hline
+        ReadAgan & ReadData \\
+        \hline
+        WriteConcat & WriteData, ReWriteData \\
+        \hline
+        ReadConcat & ReadData \\
+        \hline
+        WriteCond & ReadData, WriteCond \\
+        \hline
+        ReadCond & ReadData, ReadCond \\
+        \hline
+        WriteMeta & WriteData, WriteCond \\
+        \hline
+        ReadMeta & ReadData \\
+        \hline
+    \end{tabular}
+    % }
+    \caption{List of unit tests in the AthenaPoolExample package that are currently executed during a nightly build.}
+    \label{tab:CI_Unit_Tests}
+\end{table}
+
+
+The mechanism for passing a unit test done automatically by building the framework, running the unit tests, and comparing the diff of the output file to the unit test with a reference file associated with that particular unit test. 
+If the unit test passes, then the diff will be empty and the unit test will be marked as passing.
+Conversely, if the unit test fails, then the diff will be non-empty and the unit test will be marked as failing.
+
+\section{xAOD Test Object}
+
+The object used to employ the new unit test is the xAOD::ExampleElectron object, where the "xAOD::" is a declaration of the namespace and simply identifies the object as an xAOD object.
+An individual xAOD::ExampleElectron object only has a few parameters for sake of testing, its transvese momentum, \verb|pt|, and its charge, \verb|charge|.
+A collection of xAOD::ExampleElectron objects are stored in the xAOD::ExampleElectronContainer object, which is just a DataVector of xAOD::ExampleElectron objects.
+The xAOD EDM permits the use of an AuxStore
+
+\section{Unit Test}
+
+The way the xAOD::ExampleElectron object is accessed in the unit test is by utilizing StoreGate. 
+
+\section{Results}
