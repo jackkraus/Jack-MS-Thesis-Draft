@@ -178,5 +178,11 @@ The xAOD EDM use two types of objects handle data, interface objects and payload
 Interfaces act as an interface for the user to access the object but without its stored data. 
 This differs from T/P where the user would have to load an object into memory to access the object. 
 If the user wanted to delay the loading of data into memory, they could use the interface object to do so. 
-The payload object contains the data for the interface object and is allocating continuous memory. 
+The payload object contains the data for the interface object and is allocating contiguous blocks of memory. 
 Payload classes are often referred to as auxiliary storage. 
+
+The specific data structure used by ATLAS is the ROOT TTree, but the EDM is agnostic to the type of data structure used. 
+ATLAS specific libraries are not required to handle files written in the xAOD format since the payload can be read directly from the contiguous allocation of memory, a central tenent of the xAOD EDM.
+This allows for the separation of ATLAS specific analysis frameworks and the preferred analysis tool of the user.
+More information on how the xAOD EDM is deployed into unit tests in $\S$ \ref{sec:Mod_utests_xAOD_object}.
+

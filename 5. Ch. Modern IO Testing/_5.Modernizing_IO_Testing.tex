@@ -3,6 +3,7 @@ Many of the I/O tests were originally created for the old EDM and haven't been u
 This project took in track information from a unit test using the T/P EDM, writes the data into an example xAOD object to file and reads it back.
 
 \section{CI Unit Tests}
+\label{sec:Mod_utests_CI}
 Unit tests are programs that act as a catch during the continuous integration of a codebase and exhaust features that need to remain functional. 
 Athena has a number of unit tests which check every merge request and nightly build for issues in the new code that could break core I/O functionality, either at the level of Athena, ROOT, or any other software in the LCG stack.
 With the adoption of the xAOD EDM, there were no unit tests to cover core I/O functionality related to this new EDM. 
@@ -59,11 +60,17 @@ If the unit test passes, then the diff will be empty and the unit test will be m
 Conversely, if the unit test fails, then the diff will be non-empty and the unit test will be marked as failing.
 
 \section{xAOD Test Object}
+\label{sec:Mod_utests_xAOD_object}
 
-The object used to employ the new unit test is the xAOD::ExampleElectron object, where the "xAOD::" is a declaration of the namespace and simply identifies the object as an xAOD object.
-An individual xAOD::ExampleElectron object only has a few parameters for sake of testing, its transvese momentum, \verb|pt|, and its charge, \verb|charge|.
-A collection of xAOD::ExampleElectron objects are stored in the xAOD::ExampleElectronContainer object, which is just a DataVector of xAOD::ExampleElectron objects.
-The xAOD EDM permits the use of an AuxStore
+The object used to employ the new unit test is the \verb|xAOD::ExampleElectron| object, where the \verb|xAOD::| is a declaration of the namespace and simply identifies the object as an xAOD object.
+An individual \verb|xAOD::ExampleElectron| object only has a few parameters for sake of testing, its transvese momentum, \verb|pt|, and its charge, \verb|charge|.
+A collection of \verb|xAOD::ExampleElectron| objects are stored in the \verb|xAOD::ExampleElectronContainer| object, which is just a \verb|DataVector| of \verb|xAOD::ExampleElectron| objects.
+This \verb|DataVector<xAOD::ExampleElectron>| acts similar to a \verb|std::vector<xAOD::ExampleElectron>|, but has additional code to handle the separation of interface and auxiliary data storage. 
+
+
+The xAOD EDM uses an abstract interface connecting between the \verb|DataVector| and the auxiliary data, this is the \verb|AuxStore|. 
+
+
 
 \section{Unit Test}
 
