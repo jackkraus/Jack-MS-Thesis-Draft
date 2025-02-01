@@ -1099,6 +1099,11 @@ INPUT ./5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
 INPUT 5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT ./content/img/auxstore.png
+INPUT ./content/img/auxstore.png
+INPUT content/img/auxstore.png
+INPUT ./content/img/auxstore.png
+INPUT ./content/img/auxstore.png
 INPUT ./6. Conclusion/_6.Conclusion.tex
 INPUT 6. Conclusion/_6.Conclusion.tex
 INPUT ./6. Conclusion/_6.Conclusion.tex

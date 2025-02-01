@@ -63,13 +63,23 @@ Conversely, if the unit test fails, then the diff will be non-empty and the unit
 \label{sec:Mod_utests_xAOD_object}
 
 The object used to employ the new unit test is the \verb|xAOD::ExampleElectron| object, where the \verb|xAOD::| is a declaration of the namespace and simply identifies the object as an xAOD object.
-An individual \verb|xAOD::ExampleElectron| object only has a few parameters for sake of testing, its transvese momentum, \verb|pt|, and its charge, \verb|charge|.
-A collection of \verb|xAOD::ExampleElectron| objects are stored in the \verb|xAOD::ExampleElectronContainer| object, which is just a \verb|DataVector| of \verb|xAOD::ExampleElectron| objects.
+An individual \verb|ExampleElectron| object only has a few parameters for sake of testing, its transvese momentum, \verb|pt|, and its charge, \verb|charge|.
+A collection of \verb|ExampleElectron| objects are stored in the \verb|ExampleElectronContainer| object, which is just a \verb|DataVector| of \verb|ExampleElectron| objects.\cite{Buckley_2015}
 This \verb|DataVector<xAOD::ExampleElectron>| acts similar to a \verb|std::vector<xAOD::ExampleElectron>|, but has additional code to handle the separation of interface and auxiliary data storage. 
 
 
 The xAOD EDM uses an abstract interface connecting between the \verb|DataVector| and the auxiliary data, this is the \verb|AuxStore|. 
+The function \verb|setStore| is responsible for ensuring the auxillary data store is matched with it's corresponding \verb|DataVector|.
+Another feature to the xAOD EDM is the ability to have a dynamic store of auxiliary data.
+This separates the auxiliary data between static and dynamic, where the static aux data stores data of known variables and the dynamic counterpart stores data of variables not declared but still might be needed by the user. 
+Figure \ref{fig:Mod_utests_aux_store} illustrates how a simple setup of storing a \verb|DataVector| of electrons that hold some specific parameters into one \verb|AuxStore| while also having a separate \verb|AuxStore| specifically for the dynamic attributes. 
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{content/img/auxstore.png}
+    \caption{The static and dynamic auxiliary data store for a collection of electrons.}
+    \label{fig:Mod_utests_aux_store}
+\end{figure}
 
 
 \section{Unit Test}

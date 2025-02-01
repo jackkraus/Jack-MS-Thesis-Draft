@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1738346136 "main.bcf" "main.bbl" "main" 1738349895 0
-  "./main.bib" 1738176747 19898 d1a877904c4662c0da8097ed180edd18 ""
-  "main.bcf" 1738349895 109234 62bff4452ed1e1e0add6094bc71367a9 "pdflatex"
+["biber main"] 1738360514 "main.bcf" "main.bbl" "main" 1738360543 0
+  "./main.bib" 1738359523 21498 9fbdfcfc35f04edce8262e206e298239 ""
+  "main.bcf" 1738360543 109302 1f47785d707a765184429b4ddc6a7c6a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1738349893 "main.tex" "main.pdf" "main" 1738349895 0
+["pdflatex"] 1738360540 "main.tex" "main.pdf" "main" 1738360543 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -143,16 +143,17 @@
   "0.Preamble/acknowledgement.tex" 1732651585 899 d32676d931facfdbfe1720751ba16d26 ""
   "0.Preamble/dedication.tex" 1732651585 303 1831dc51cd4f943291b3461e2678a277 ""
   "1. Introduction/_1.Particle_PHYS_and_LHC.tex" 1737773103 7196 231877dac982af67bba2149d9b56fc8c ""
-  "2. CH. ATLASIO/_2.ATLASIO.tex" 1738349885 11718 5659d8644a6f762c79afb6fd4c5498e1 ""
+  "2. CH. ATLASIO/_2.ATLASIO.tex" 1738350851 12274 1db3ca6923fc4c2fc4fbcfbb549431a3 ""
   "3. CH. Toy Model/_3.Toy_Model.tex" 1738194010 20467 15228842aab557ed5c6067baf7ba2525 ""
   "4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex" 1733946596 7803 5f990c037b556c095dea4aaafce92ebc ""
-  "5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex" 1738349381 3610 80fba20b69c06c9f45d549c2a5360de8 ""
+  "5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex" 1738360533 4957 7b4b672f488ab664f85cff646c91de12 ""
   "6. Conclusion/_6.Conclusion.tex" 1737498117 1373 c5457c3489719fa5ad6fc0ea1434e4d3 ""
   "7.Appendix/app1.tex" 1733944924 470 b0778d0cf8b8614fcf30292f5da37696 ""
   "content/dataset-data.txt" 1733937528 94 8f96ad9a2a8d229e798b1057ba8caa12 ""
   "content/dataset-mc.txt" 1733937551 145 a0b9db3255c240d45e93f71762967094 ""
   "content/img/ATLAS_Detector.jpg" 1734388820 186784 f54d4d772604d0132fa99cedcbca3fac ""
   "content/img/LHC illustration.jpg" 1734388231 95095 51a06610f06a638ba0b5728a03c0cd6d ""
+  "content/img/auxstore.png" 1738359798 152950 462d34ef1f359a8a7186418114102445 ""
   "content/img/catmore-derivation.png" 1738172360 83516 84f7d7b71573ad8380c15e2a9595293d ""
   "content/img/tt_PHYS.png" 1738177272 59993 ce944a6d5b2c4cf9d9e713afb4253715 ""
   "content/img/tt_PHYSLITE.png" 1738177286 73309 d856fa969533e00ddac1cb3592e2df8a ""
@@ -177,14 +178,14 @@
   "content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=100,000 events).png" 1733774568 19454 664f8169a54f4622f93edb9a9e4ee7de ""
   "content/toymodel_content/Number of Baskets vs Branch Size.png" 1738104846 295283 6fb5595f46c8ea91f309608e5b32415c ""
   "content/toymodel_content/branch_compfacts_nomix.png" 1733254549 150206 26242720335858505c570aafe8426241 ""
-  "main.aux" 1738349895 23081 e6e6740d0bc52f88d45045cb8733a840 "pdflatex"
-  "main.bbl" 1738346139 163313 44ee6753f186814b4b466645bd1624a4 "biber main"
-  "main.lof" 1738349895 2240 a9d3d472f59468e2cbde8ee1f84b4929 "pdflatex"
-  "main.lot" 1738349895 2643 dd6b550965290b7d585d3b012691d67b "pdflatex"
-  "main.out" 1738349895 6358 6a5e155be2c080fd3c55a7ffa63dbe8c "pdflatex"
-  "main.run.xml" 1738349895 2299 81988d3303a58f7ac525483192dfa2a1 "pdflatex"
+  "main.aux" 1738360543 23724 e14d05d5c268382be91309ac39cce257 "pdflatex"
+  "main.bbl" 1738360517 167821 98f7a4d82e17f89554ce14b606c85d3d "biber main"
+  "main.lof" 1738360543 2403 f790689a31233a81ace3e5a31029c7d7 "pdflatex"
+  "main.lot" 1738360543 2643 dd6b550965290b7d585d3b012691d67b "pdflatex"
+  "main.out" 1738360543 6358 6a5e155be2c080fd3c55a7ffa63dbe8c "pdflatex"
+  "main.run.xml" 1738360543 2299 81988d3303a58f7ac525483192dfa2a1 "pdflatex"
   "main.tex" 1738102770 4293 96a5ad5087545b30c3ec6875d86ab9e8 ""
-  "main.toc" 1738349895 2979 863403f7577c809892990a51258e14c8 "pdflatex"
+  "main.toc" 1738360543 2979 863403f7577c809892990a51258e14c8 "pdflatex"
   "niuthesis.cls" 1733244687 19841 383f0cf852e034f4cf8a04d6217b83a7 ""
   (generated)
   "main.aux"
