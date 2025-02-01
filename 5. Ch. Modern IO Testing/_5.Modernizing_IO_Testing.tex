@@ -6,12 +6,13 @@ This project took in track information from a unit test using the T/P EDM, write
 \section{xAOD Test Object}
 \label{sec:Mod_utests_xAOD_object}
 
+% Overview
 The object used to employ the new unit test is the \verb|xAOD::ExampleElectron| object, where the \verb|xAOD::| is a declaration of the namespace and simply identifies the object as an xAOD object.
 An individual \verb|ExampleElectron| object only has a few parameters for sake of testing, its transvese momentum, \verb|pt|, and its charge, \verb|charge|.
 A collection of \verb|ExampleElectron| objects are stored in the \verb|ExampleElectronContainer| object, which is just a \verb|DataVector| of \verb|ExampleElectron| objects.\cite{Buckley_2015}
 This \verb|DataVector<xAOD::ExampleElectron>| acts similar to a \verb|std::vector<xAOD::ExampleElectron>|, but has additional code to handle the separation of interface and auxiliary data storage. 
 
-
+% Aux Store
 The xAOD EDM uses an abstract interface connecting between the \verb|DataVector| and the auxiliary data, this is the \verb|AuxStore|. 
 The function \verb|setStore| is responsible for ensuring the auxillary data store is matched with it's corresponding \verb|DataVector|.
 Another feature to the xAOD EDM is the ability to have a dynamic store of auxiliary data.
@@ -21,10 +22,12 @@ Figure \ref{fig:Mod_utests_aux_store} illustrates how a simple setup of storing 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{content/img/auxstore.png}
-    \caption{The static and dynamic auxiliary data store for a collection of electrons.}
+    \includegraphics[width=\textwidth]{content/img/aux_store_better.png}
+    \caption{The static and dynamic auxiliary data store for a collection of xAOD::ExampleElectrons.}
     \label{fig:Mod_utests_aux_store}
 \end{figure}
+
+
 
 
 
@@ -83,10 +86,14 @@ The mechanism for passing a unit test done automatically by building the framewo
 If the unit test passes, then the diff will be empty and the unit test will be marked as passing.
 Conversely, if the unit test fails, then the diff will be non-empty and the unit test will be marked as failing.
 
-
 These tests are executed in this order, as the objects created in one might be used in proceeding test.
-The two new tests were \verb|WritexAODElectron| and \verb|ReadxAODElectron|
+The two new tests were \verb|WritexAODElectron| and \verb|ReadxAODElectron|. 
+During the \verb|WritexAODElectron| unit test, the first call is to the \verb|ReadData| algorithm to read off all of the \verb|ExampleTrack| objects stored in one of the files produced by the \verb|ReadWrite| unit-test.
+Then the \verb|WriteExampleElectron| algorithm is called and takes \verb|ExampleTracks|, creates an \verb|ExampleElectron| object and sets the electrons \verb|pt| to the tracks \verb|pt|. 
+Within the same algorithm, the next step is to loop over each of the newly produced \verb|ExampleElectrons|, accessing the decorations \verb|decor1| and \verb|decor2|, and setting each to an arbitrary float value that are easily identifiable later.
+The \verb|ReadxAODElectron| unit test will attempt to show the xAOD function of accessing one dynamic variable, in this case \verb|decor1|, while not accessing the other, \verb|decor2|.
 
-The way the xAOD::ExampleElectron object is accessed in the unit test is by utilizing StoreGate. 
+
+The way the xAOD::ExampleElectron object is accessed in the unit test is by utilizing StoreGate and its WriteHandleKey.
 
 \section{Results}

@@ -954,7 +954,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./content/img/tt_PHYS.png
 INPUT ./content/img/tt_PHYS.png
 INPUT content/img/tt_PHYS.png
@@ -997,6 +996,7 @@ INPUT ./content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 ra
 INPUT content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=100,000 events).png
 INPUT ./content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=100,000 events).png
 INPUT ./content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=100,000 events).png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT ./content/toymodel_content/Compression Factor vs. Branch Size (KB).png
@@ -1099,11 +1099,11 @@ INPUT ./5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
 INPUT 5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
 INPUT ./5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
 INPUT 5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
-INPUT ./content/img/auxstore.png
-INPUT ./content/img/auxstore.png
-INPUT content/img/auxstore.png
-INPUT ./content/img/auxstore.png
-INPUT ./content/img/auxstore.png
+INPUT ./content/img/aux_store_better.png
+INPUT ./content/img/aux_store_better.png
+INPUT content/img/aux_store_better.png
+INPUT ./content/img/aux_store_better.png
+INPUT ./content/img/aux_store_better.png
 INPUT ./6. Conclusion/_6.Conclusion.tex
 INPUT 6. Conclusion/_6.Conclusion.tex
 INPUT ./6. Conclusion/_6.Conclusion.tex

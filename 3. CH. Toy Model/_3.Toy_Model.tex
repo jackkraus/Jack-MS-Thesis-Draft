@@ -12,9 +12,9 @@ There were a number of iterations to the toy model, but the first was constructe
 Vectors are used in this toy model, as opposed to arrays, because vectors are dynamically allocated and deallocated, which allows for more flexibility when synthesizing AOD. 
 This original model had four distinct branches, each with a set number of events (\verb|N=1000|), and each event having a number of entries, vectors with 1, 10, 100, and 1000 floats each.
 
-The script can be compiled with \verb|gcc| or \verb|g++| and it requires all of the dependencies that come with \verb|ROOT|. 
-Alternatively, the script can be run direclty within \verb|ROOT|.
-% To begin this script, there are a number of included \verb|ROOT| and \verb|C++| standard library headers. 
+The script can be compiled with \verb|gcc| or \verb|g++| and it requires all of the dependencies that come with ROOT. 
+Alternatively, the script can be run direclty within ROOT.
+% To begin this script, there are a number of included ROOT and \verb|C++| standard library headers. 
 % \begin{lstlisting}[language=C]
 %   // C++ Standard Library
 %   #include <iostream>
@@ -149,7 +149,7 @@ Following branch initialization comes the event loop where data is generated and
     ...
   }
 \end{lstlisting}
-Once the branches were filled, \verb|ROOT| then will loop over each of the branches in the TTree and at regular intervals will remove the baskets from memory, compress, and write the baskets to disk (flushed), as was discussed in Section $\S \ref{section: ATLASIO_TTreeObject}$.
+Once the branches were filled, ROOT then will loop over each of the branches in the TTree and at regular intervals will remove the baskets from memory, compress, and write the baskets to disk (flushed), as was discussed in Section $\S \ref{section: ATLASIO_TTreeObject}$.
 
 As illustrated, the \verb|TTree| is written to the file which allows for the last steps within this script. 
 
@@ -171,7 +171,7 @@ As illustrated, the \verb|TTree| is written to the file which allows for the las
   } 
 \end{lstlisting}
 
-Upon reading back the \verb|ROOT| file, the user can view the original size of the file (Total-file-size), the compressed file size (File-size), the ratio between Total-file-size and File-size (Compression Factor), the number of baskets per branch, the basket size, and other information. 
+Upon reading back the ROOT file, the user can view the original size of the file (Total-file-size), the compressed file size (File-size), the ratio between Total-file-size and File-size (Compression Factor), the number of baskets per branch, the basket size, and other information. 
 Filling vectors with entirely random values was believed to yield compression ratios close to real data, but the results in Figure \ref{fig:toymodel_compF_rndm_vectors} show changes needed to be made to bring the branches closer to a compression ratio of $\mathcal{O}(5)$.  
 It is evident that branches containing vectors with purely random floats are more difficult to compress due to the high level of randomization.
 
@@ -304,7 +304,7 @@ Changing the basket sizes was done at the script level with a simple setting aft
     int basketSize = 8192000;
     tree->SetBasketSize("*",basketSize);
 \end{lstlisting}
-This \verb|ROOT|-level setting was sufficient for the case of the toy model; testing of the basket size setting both at the \verb|ROOT|- and Athena-level would be done later using derivation production jobs in Section $\S\ref{sec:DAODProd_Intro}$.
+This ROOT-level setting was sufficient for the case of the toy model; testing of the basket size setting both at the ROOT- and Athena-level would be done later using derivation production jobs in Section $\S\ref{sec:DAODProd_Intro}$.
 The lower bound set for the basket size was 1 kB and the upper bound was 16 MB.
 The first branch looked at closely was the branch with a thousand vectors with half of them being random floats, see Figure \ref{fig:toymodel_CFvsBranchSize_1/2mixture}.
 
