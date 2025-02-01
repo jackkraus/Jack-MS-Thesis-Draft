@@ -14,7 +14,7 @@
 \contentsline {table}{\numberline {4.9}{\ignorespaces Top 10 branches sorted by compressed file size in bytes, MC PHYSLITE [Athena v24.0.16 default configuration.]\relax }}{34}{table.caption.25}%
 \contentsline {table}{\numberline {4.10}{\ignorespaces Top 10 branches sorted by compressed file size in bytes, MC PHYSLITE [Athena v24.0.16 without limit to the basket buffer.]\relax }}{34}{table.caption.26}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces List of unit tests in the AthenaPoolExample package that are currently executed during a nightly build.\relax }}{37}{table.caption.27}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces List of unit tests in the AthenaPoolExample package that are currently executed during a nightly build.\relax }}{38}{table.caption.28}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

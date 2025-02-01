@@ -330,9 +330,9 @@ So even though the basket size was set to 1 or 2 kB, ROOT created baskets of 4 k
 These baskets $\leq 4$kB have a significantly worse compression than the baskets $\geq 4$kB in size, so the focus was shifted toward baskets  
 Once the basket size is larger than the size of a single vector, more than one vector can be stored in a single basket and the total number of baskets is reduced.
 
-There were more variations in the data that were looked at. 
-For instance, looking further into the types of mixtures and how those mixtures would affect compression are shown in Figure \ref{fig:toymodel_328_compF_vs_basketsize}. 
-Another study looked into the same mixtures but decreasing the precision of the floating point values that we used from the standard 32 floating-point precision to 16 and 8 which made compression easier. 
+There were different types of configuration to the toy model investigated by this study. 
+Looking further into the types of mixtures and how they would affect compression are shown in Figure \ref{fig:toymodel_328_compF_vs_basketsize} and \ref{fig:toymodel_418_compF_vs_basketsize}. 
+Here the same mixtures were used but the precision of the floating point numbers was decreased from the standard 32 floating-point precision to 16 and 8, making compression easier. 
 
 \begin{figure}[h]
     \centering

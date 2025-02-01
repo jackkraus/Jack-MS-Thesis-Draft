@@ -20,18 +20,16 @@
 \contentsline {subsection}{\numberline {3.1.2}Mixed-Random Float Branches}{20}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}Basket-Size Investigation}{24}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Data and Monte Carlo Derivation Production}{29}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Current Derivation Framework}{29}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Performance Metrics and Benchmarking}{29}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Results}{30}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Presence of basket-cap and presence of minimum number of entries}{30}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Comparing different basket sizes}{31}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Monte Carlo PHYSLITE branch comparison}{32}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Conclusion to derivation job optimzation}{35}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.1}Basket-size Configuration}{29}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Results}{30}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Presence of basket-cap and presence of minimum number of entries}{30}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Comparing different basket sizes}{31}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Monte Carlo PHYSLITE branch comparison}{32}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Conclusion to derivation job optimization}{35}{subsection.4.2.4}%
 \contentsline {chapter}{\numberline {5}Modernizing I/O CI Unit-Tests}{36}{chapter.5}%
-\contentsline {section}{\numberline {5.1}CI Unit Tests}{36}{section.5.1}%
-\contentsline {section}{\numberline {5.2}xAOD Test Object}{37}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Unit Test}{38}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Results}{38}{section.5.4}%
+\contentsline {section}{\numberline {5.1}xAOD Test Object}{36}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Unit Tests}{37}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Results}{38}{section.5.3}%
 \contentsline {chapter}{\numberline {6}Conclusion}{39}{chapter.6}%
 \contentsline {chapter}{Appendix: Derivation Production Data}{43}{appendix.A}%
 \contentsfinish 

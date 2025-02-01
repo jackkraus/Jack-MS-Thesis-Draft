@@ -1,24 +1,22 @@
-\section{Current Derivation Framework}
-\label{sec:DAODProd_Intro}
-Derivation production jobs suffer from high memory usage, and DAODs make up a bulk of disk-space usage. 
+Derivation production demands high memory usage, and DAODs make up a bulk of disk-space usage. 
 DAODs are used in physics analyses and ought to be optimized to alleviate stress on the GRID and to lower disk-space usage. 
 Optimizing both disk-space and memory usage is a tricky balance as they are typically at odds with one another. 
-For example, increasing memory output memory buffers results in lower disk-space usage due to better compression but the memory usage will increase since one will have to load a larger buffer into memory. 
-The route we opted to take is by optimizing for disk-space and memory by testing various basket limits and viewing the effects of the branches on both data and Monte Carlo (MC) simulated analysis object data (AODs).
+For example, increasing memory output memory buffers results in lower disk-space usage due to better compression but the memory usage will increase since the user will load a larger buffer into memory. 
+This project opted to take is by optimizing for disk-space and memory by testing various basket limits and viewing the effects of the branches on both data and Monte Carlo (MC) simulated analysis object data (AODs).
 
-\section{Performance Metrics and Benchmarking}
+\section{Basket-size Configuration}
 \label{sec:DAODProd_Analysis}
 % RSS/PSS for memory usage and output file size for disk usage
 
 Our initial focus was on the inclusion of a minimum number of entries per buffer and the maximum basket buffer limit.
-As we'll see in Section $\S$\ref{sec:DAODProd_Results}, we then opted to keep the minimum number of entries set to its default setting (10 entries per buffer). 
+As we'll see in Section $\S$\ref{sec:DAODProd_Results}, we then opted to keep the minimum number of entries set to its default setting, 10 entries per buffer. 
 
 
-For both the nightly and the release testing, the data derivation job comes from a 2022 dataset with four input files 160327 events. 
-The MC job comes from a 2023 $t\bar{t}$ standard sample simulation job with six input files with 140k events. 
-The specific datasets for both are noted in Appendix \ref{app: deriv job dataset}.
+For both the nightly and the release testing, the data derivation job comes from a 2022 dataset with four input files and 160,327 events. 
+The MC job comes from a 2023 $t\bar{t}$ standard sample simulation job with six input files and 140,000 events. 
+The datasets are noted in Appendix \ref{app: deriv job dataset}.
 
-The corresponding input files for both data and MC jobs were ran with various configurations of Athena (version 24.0.16) and its specified basket buffer limit. 
+The corresponding input files for both data and MC jobs were ran with various configurations of Athena by modifying the basket buffer limit. 
 The four configurations tested all kept minimum 10 entries per basket and modified the basket limitation in the following ways: 
 
 \begin{enumerate}
@@ -80,7 +78,7 @@ $\textit{PrimaryVerticesAuxDyn.trackParticleLinks}$ is a branch where, among eac
 Some branches, like \textit{HLTNav Summary DAODSlimmedAuxDyn.linkColNames} show highly compressible behavior and are consistent with the other job configurations (data, MC, PHYS, and PHYSLITE). 
 Further work could investigate these branches for further optimization of derivation jobs.
 
-\subsection{Conclusion to derivation job optimzation}
+\subsection{Conclusion to derivation job optimization}
 \label{sec:DAODProd_Results_conclusion}
 Initially, limiting the basket buffer size looked appealing; after the 128 kB basket buffer size limit was set, the compression ratio would begin to plateau, increasing the memory-usage without saving much in disk-usage. 
 The optimal balance is met with the setting of 128 kB basket buffers for derivation production. 
