@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1738360514 "main.bcf" "main.bbl" "main" 1738447134 0
+["biber main"] 1738451154 "main.bcf" "main.bbl" "main" 1738452650 0
   "./main.bib" 1738359523 21498 9fbdfcfc35f04edce8262e206e298239 ""
-  "main.bcf" 1738447134 109302 1f47785d707a765184429b4ddc6a7c6a "pdflatex"
+  "main.bcf" 1738452650 109302 1f47785d707a765184429b4ddc6a7c6a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1738447131 "main.tex" "main.pdf" "main" 1738447134 0
+["pdflatex"] 1738452647 "main.tex" "main.pdf" "main" 1738452650 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -146,7 +146,7 @@
   "2. CH. ATLASIO/_2.ATLASIO.tex" 1738442472 12267 43615deb7d75215fce3d031d8d817d85 ""
   "3. CH. Toy Model/_3.Toy_Model.tex" 1738442530 20447 b22265d2ea20d18f96a7e2d8bd318a32 ""
   "4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex" 1738442342 7684 f6679a12683ef0851a05356ec662ca8e ""
-  "5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex" 1738447124 6055 60d46e4e070dd23f2c8c5513eaefe20f ""
+  "5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex" 1738452417 8324 b92e0a257b2a6fcce71583dd6eafae64 ""
   "6. Conclusion/_6.Conclusion.tex" 1737498117 1373 c5457c3489719fa5ad6fc0ea1434e4d3 ""
   "7.Appendix/app1.tex" 1733944924 470 b0778d0cf8b8614fcf30292f5da37696 ""
   "content/dataset-data.txt" 1733937528 94 8f96ad9a2a8d229e798b1057ba8caa12 ""
@@ -178,14 +178,14 @@
   "content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=100,000 events).png" 1733774568 19454 664f8169a54f4622f93edb9a9e4ee7de ""
   "content/toymodel_content/Number of Baskets vs Branch Size.png" 1738104846 295283 6fb5595f46c8ea91f309608e5b32415c ""
   "content/toymodel_content/branch_compfacts_nomix.png" 1733254549 150206 26242720335858505c570aafe8426241 ""
-  "main.aux" 1738447134 23658 0c62ff1daf7310c59cc7c51c6150df7c "pdflatex"
-  "main.bbl" 1738360517 167821 98f7a4d82e17f89554ce14b606c85d3d "biber main"
-  "main.lof" 1738447134 2416 9345e63e8f2c4a5bdb14c2f45a1fc2b2 "pdflatex"
-  "main.lot" 1738447134 2643 a5ca730a74c1b844cf217dca1eb4d25d "pdflatex"
-  "main.out" 1738447134 5980 b88d9606096b673ab96d40cf768c9140 "pdflatex"
-  "main.run.xml" 1738447134 2299 81988d3303a58f7ac525483192dfa2a1 "pdflatex"
+  "main.aux" 1738452650 24248 97d4e22844a5d442889a50cbc29b163a "pdflatex"
+  "main.bbl" 1738451157 167821 98f7a4d82e17f89554ce14b606c85d3d "biber main"
+  "main.lof" 1738452650 2416 9345e63e8f2c4a5bdb14c2f45a1fc2b2 "pdflatex"
+  "main.lot" 1738452650 2643 a5ca730a74c1b844cf217dca1eb4d25d "pdflatex"
+  "main.out" 1738452650 6299 f35efc2ec773c6f8ace6eac0358c1e86 "pdflatex"
+  "main.run.xml" 1738452650 2299 81988d3303a58f7ac525483192dfa2a1 "pdflatex"
   "main.tex" 1738442327 4380 1851c9eee4ec02a3a73ac9f58d596e7f ""
-  "main.toc" 1738447134 2807 40789173296cbbf6be4aa7b23ce1e614 "pdflatex"
+  "main.toc" 1738452650 2988 fd22c45920eb672faab1a4e0df54b365 "pdflatex"
   "niuthesis.cls" 1733244687 19841 383f0cf852e034f4cf8a04d6217b83a7 ""
   (generated)
   "main.aux"

@@ -29,7 +29,9 @@
 \contentsline {chapter}{\numberline {5}Modernizing I/O CI Unit-Tests}{36}{chapter.5}%
 \contentsline {section}{\numberline {5.1}xAOD Test Object}{36}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Unit Tests}{37}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Results}{39}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Conclusion}{40}{chapter.6}%
-\contentsline {chapter}{Appendix: Derivation Production Data}{44}{appendix.A}%
+\contentsline {subsection}{\numberline {5.2.1}WritexAODElectron.py}{38}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}ReadxAODElectron.py}{40}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Results}{40}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusion}{41}{chapter.6}%
+\contentsline {chapter}{Appendix: Derivation Production Data}{45}{appendix.A}%
 \contentsfinish 

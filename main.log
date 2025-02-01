@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  1 FEB 2025 15:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  1 FEB 2025 17:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -869,7 +869,7 @@ col-lec-tion of xAOD::ExampleElectrons.[]|
 ]
 Chapter 1.
 (./1. Introduction/_1.Particle_PHYS_and_LHC.tex
-<content/img/LHC illustration.jpg, id=372, 1445.4pt x 1018.80624pt>
+<content/img/LHC illustration.jpg, id=384, 1445.4pt x 1018.80624pt>
 File: content/img/LHC illustration.jpg Graphic file (type jpg)
 <use content/img/LHC illustration.jpg>
 Package pdftex.def Info: content/img/LHC illustration.jpg  used on input line 1
@@ -889,7 +889,7 @@ l.21
 
 
 ]
-<content/img/ATLAS_Detector.jpg, id=384, 702.625pt x 404.51125pt>
+<content/img/ATLAS_Detector.jpg, id=396, 702.625pt x 404.51125pt>
 File: content/img/ATLAS_Detector.jpg Graphic file (type jpg)
 <use content/img/ATLAS_Detector.jpg>
 Package pdftex.def Info: content/img/ATLAS_Detector.jpg  used on input line 25.
@@ -915,18 +915,18 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) [7]
 [8]
-<content/img/tt_PHYS.png, id=480, 492.84125pt x 329.23pt>
+<content/img/tt_PHYS.png, id=492, 492.84125pt x 329.23pt>
 File: content/img/tt_PHYS.png Graphic file (type png)
 <use content/img/tt_PHYS.png>
 Package pdftex.def Info: content/img/tt_PHYS.png  used on input line 117.
 (pdftex.def)             Requested size: 234.8775pt x 156.9033pt.
-<content/img/tt_PHYSLITE.png, id=482, 479.7925pt x 287.0725pt>
+<content/img/tt_PHYSLITE.png, id=494, 479.7925pt x 287.0725pt>
 File: content/img/tt_PHYSLITE.png Graphic file (type png)
 <use content/img/tt_PHYSLITE.png>
 Package pdftex.def Info: content/img/tt_PHYSLITE.png  used on input line 123.
 (pdftex.def)             Requested size: 234.8775pt x 140.53534pt.
  [9]
-<content/img/catmore-derivation.png, id=488, 426.59375pt x 193.72375pt>
+<content/img/catmore-derivation.png, id=500, 426.59375pt x 193.72375pt>
 File: content/img/catmore-derivation.png Graphic file (type png)
 <use content/img/catmore-derivation.png>
 Package pdftex.def Info: content/img/catmore-derivation.png  used on input line
@@ -949,7 +949,7 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 ) [15]
 [16] [17] [18]
-<content/toymodel_content/branch_compfacts_nomix.png, id=634, 566.115pt x 303.9
+<content/toymodel_content/branch_compfacts_nomix.png, id=646, 566.115pt x 303.9
 72pt>
 File: content/toymodel_content/branch_compfacts_nomix.png Graphic file (type pn
 g)
@@ -963,7 +963,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [19] [20 <./content/toymodel_content/branch_compfacts_nomix.png>] [21] [22]
 <content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) 
-branches at (N=1,000,000 events).png, id=741, 602.25pt x 372.39125pt>
+branches at (N=1,000,000 events).png, id=753, 602.25pt x 372.39125pt>
 File: content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 ran
 dom) branches at (N=1,000,000 events).png Graphic file (type png)
 <use content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 rand
@@ -973,7 +973,7 @@ andom) and (1_4 random) branches at (N=1,000,000 events).png  used on input lin
 e 282.
 (pdftex.def)             Requested size: 375.80544pt x 232.3803pt.
 <content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) 
-branches at (N=100,000 events).png, id=742, 602.25pt x 372.39125pt>
+branches at (N=100,000 events).png, id=754, 602.25pt x 372.39125pt>
 File: content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 ran
 dom) branches at (N=100,000 events).png Graphic file (type png)
 <use content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 rand
@@ -994,7 +994,7 @@ s).png>]
 LaTeX Warning: Reference `sec:DAODProd_Intro' on page 25 undefined on input lin
 e 307.
 
-<content/toymodel_content/Compression Factor vs. Branch Size (KB).png, id=755, 
+<content/toymodel_content/Compression Factor vs. Branch Size (KB).png, id=767, 
 919.435pt x 566.115pt>
 File: content/toymodel_content/Compression Factor vs. Branch Size (KB).png Grap
 hic file (type png)
@@ -1002,7 +1002,7 @@ hic file (type png)
 Package pdftex.def Info: content/toymodel_content/Compression Factor vs. Branch
  Size (KB).png  used on input line 313.
 (pdftex.def)             Requested size: 375.80544pt x 231.39168pt.
-<content/toymodel_content/Number of Baskets vs Branch Size.png, id=756, 1068.99
+<content/toymodel_content/Number of Baskets vs Branch Size.png, id=768, 1068.99
 374pt x 654.445pt>
 File: content/toymodel_content/Number of Baskets vs Branch Size.png Graphic fil
 e (type png)
@@ -1014,25 +1014,25 @@ ize.png  used on input line 320.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [25 <./content/toymodel_content/Compression Factor vs. Branch Size (KB).png>]
-<content/toymodel_content/3.28/1_of_2.png, id=770, 601.24625pt x 374.39874pt>
+<content/toymodel_content/3.28/1_of_2.png, id=782, 601.24625pt x 374.39874pt>
 File: content/toymodel_content/3.28/1_of_2.png Graphic file (type png)
 <use content/toymodel_content/3.28/1_of_2.png>
 Package pdftex.def Info: content/toymodel_content/3.28/1_of_2.png  used on inpu
 t line 341.
 (pdftex.def)             Requested size: 234.8775pt x 146.26057pt.
-<content/toymodel_content/3.28/1_of_3.png, id=771, 1145.27875pt x 705.63625pt>
+<content/toymodel_content/3.28/1_of_3.png, id=783, 1145.27875pt x 705.63625pt>
 File: content/toymodel_content/3.28/1_of_3.png Graphic file (type png)
 <use content/toymodel_content/3.28/1_of_3.png>
 Package pdftex.def Info: content/toymodel_content/3.28/1_of_3.png  used on inpu
 t line 347.
 (pdftex.def)             Requested size: 234.8775pt x 144.71019pt.
-<content/toymodel_content/3.28/1_of_4.png, id=772, 1142.2675pt x 697.60625pt>
+<content/toymodel_content/3.28/1_of_4.png, id=784, 1142.2675pt x 697.60625pt>
 File: content/toymodel_content/3.28/1_of_4.png Graphic file (type png)
 <use content/toymodel_content/3.28/1_of_4.png>
 Package pdftex.def Info: content/toymodel_content/3.28/1_of_4.png  used on inpu
 t line 354.
 (pdftex.def)             Requested size: 234.8775pt x 143.43599pt.
-<content/toymodel_content/3.28/1_of_5.png, id=773, 1139.25626pt x 697.60625pt>
+<content/toymodel_content/3.28/1_of_5.png, id=785, 1139.25626pt x 697.60625pt>
 File: content/toymodel_content/3.28/1_of_5.png Graphic file (type png)
 <use content/toymodel_content/3.28/1_of_5.png>
 Package pdftex.def Info: content/toymodel_content/3.28/1_of_5.png  used on inpu
@@ -1042,25 +1042,25 @@ t line 360.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<content/toymodel_content/4.18/1_of_2.png, id=774, 922.44624pt x 534.99875pt>
+<content/toymodel_content/4.18/1_of_2.png, id=786, 922.44624pt x 534.99875pt>
 File: content/toymodel_content/4.18/1_of_2.png Graphic file (type png)
 <use content/toymodel_content/4.18/1_of_2.png>
 Package pdftex.def Info: content/toymodel_content/4.18/1_of_2.png  used on inpu
 t line 372.
 (pdftex.def)             Requested size: 234.8775pt x 136.22287pt.
-<content/toymodel_content/4.18/1_of_3.png, id=775, 883.3pt x 541.02126pt>
+<content/toymodel_content/4.18/1_of_3.png, id=787, 883.3pt x 541.02126pt>
 File: content/toymodel_content/4.18/1_of_3.png Graphic file (type png)
 <use content/toymodel_content/4.18/1_of_3.png>
 Package pdftex.def Info: content/toymodel_content/4.18/1_of_3.png  used on inpu
 t line 378.
 (pdftex.def)             Requested size: 234.8775pt x 143.85701pt.
-<content/toymodel_content/4.18/1_of_4.png, id=776, 875.27pt x 537.00626pt>
+<content/toymodel_content/4.18/1_of_4.png, id=788, 875.27pt x 537.00626pt>
 File: content/toymodel_content/4.18/1_of_4.png Graphic file (type png)
 <use content/toymodel_content/4.18/1_of_4.png>
 Package pdftex.def Info: content/toymodel_content/4.18/1_of_4.png  used on inpu
 t line 385.
 (pdftex.def)             Requested size: 234.8775pt x 144.10046pt.
-<content/toymodel_content/4.18/1_of_5.png, id=777, 877.2775pt x 541.02126pt>
+<content/toymodel_content/4.18/1_of_5.png, id=789, 877.2775pt x 541.02126pt>
 File: content/toymodel_content/4.18/1_of_5.png Graphic file (type png)
 <use content/toymodel_content/4.18/1_of_5.png>
 Package pdftex.def Info: content/toymodel_content/4.18/1_of_5.png  used on inpu
@@ -1098,7 +1098,7 @@ Chapter 5.
 (./5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex [36
 
 ]
-<content/img/aux_store_better.png, id=851, 1592.95125pt x 456.70625pt>
+<content/img/aux_store_better.png, id=863, 1592.95125pt x 456.70625pt>
 File: content/img/aux_store_better.png Graphic file (type png)
 <use content/img/aux_store_better.png>
 Package pdftex.def Info: content/img/aux_store_better.png  used on input line 2
@@ -1110,11 +1110,49 @@ Underfull \hbox (badness 4254) in paragraph at lines 26--26
 or a col-lec-tion of
  []
 
-[37 <./content/img/aux_store_better.png>] [38]) [39]
-Chapter 6.
-(./6. Conclusion/_6.Conclusion.tex) [40
+[37 <./content/img/aux_store_better.png>]
+Overfull \hbox (64.71039pt too wide) in paragraph at lines 91--94
+[]\OT1/cmr/m/n/12 The two new tests were [][]\OT1/cmtt/m/n/12 WritexAODElectron
+ []\OT1/cmr/m/n/12 and [][]\OT1/cmtt/m/n/12 ReadxAODElectron[]\OT1/cmr/m/n/12 .
+ Dur-ing the [][]\OT1/cmtt/m/n/12 WritexAODElectron
+ []
 
-] [41
+
+Overfull \hbox (15.88309pt too wide) in paragraph at lines 91--94
+\OT1/cmr/m/n/12 stored in one of the files pro-duced by the [][]\OT1/cmtt/m/n/1
+2 ReadWrite []\OT1/cmr/m/n/12 unit-test. Then the [][]\OT1/cmtt/m/n/12 WriteExa
+mpleElectron
+ []
+
+[38]
+
+Package caption Warning: \label without proper reference on input line 114.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:Mod_utests_WritexAODElectron1' on page 39 undefin
+ed on input line 116.
+
+
+Overfull \hbox (23.29343pt too wide) in paragraph at lines 116--121
+[]\OT1/cmr/m/n/12 As shown in Fig-ure [][][], the [][]\OT1/cmtt/m/n/12 ExampleE
+lectronContainer []\OT1/cmr/m/n/12 and [][]\OT1/cmtt/m/n/12 ExampleElectronAuxC
+ontainer
+ []
+
+
+Package caption Warning: \label without proper reference on input line 136.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:Mod_utests_WritexAODElectron2' on page 39 undefin
+ed on input line 123.
+
+[39]) [40]
+Chapter 6.
+(./6. Conclusion/_6.Conclusion.tex) [41
+
+] [42
 
 ]
 Overfull \hbox (38.50938pt too wide) in paragraph at lines 137--137
@@ -1130,9 +1168,9 @@ hena\OT1/cmr/m/n/12 . []$\OT1/cmtt/m/n/12 https : / / github . com / arthurkrau
 s3 /
  []
 
-[42] [43]
+[43] [44]
 Appendix A.
-[44
+[45
 
 
 ] (./7.Appendix/app1.tex
@@ -1140,21 +1178,21 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 7.
  (./content/dataset-data.txt)
 (./content/inputfiles-data.txt) (./content/dataset-mc.txt)
-(./content/inputfiles-mc.txt)) [45] (./main.aux)
+(./content/inputfiles-mc.txt)) [46] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B88D9606096B673AB96D40CF768C9140;5980.
+(rerunfilecheck)             Checksum: F35EFC2EC773C6F8ACE6EAC0358C1E86;6299.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23555 strings out of 476025
- 407069 string characters out of 5790017
+ 23657 strings out of 476025
+ 408632 string characters out of 5790017
  2161388 words of memory out of 5000000
- 43273 multiletter control sequences out of 15000+600000
+ 43344 multiletter control sequences out of 15000+600000
  519406 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,77p,1144b,2166s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1172,10 +1210,10 @@ xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texli
 ve/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (54 pages, 2698717 bytes).
+Output written on main.pdf (55 pages, 2704035 bytes).
 PDF statistics:
- 1108 PDF objects out of 1200 (max. 8388607)
- 918 compressed objects within 10 object streams
- 368 named destinations out of 1000 (max. 500000)
- 360 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1161 PDF objects out of 1200 (max. 8388607)
+ 968 compressed objects within 10 object streams
+ 399 named destinations out of 1000 (max. 500000)
+ 376 words of extra memory for PDF output out of 10000 (max. 10000000)
 

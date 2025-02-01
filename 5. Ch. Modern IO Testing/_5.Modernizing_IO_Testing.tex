@@ -13,12 +13,12 @@ A collection of \verb|ExampleElectron| objects are stored in the \verb|ExampleEl
 This \verb|DataVector<xAOD::ExampleElectron>| acts similar to a \verb|std::vector<xAOD::ExampleElectron>|, but has additional code to handle the separation of interface and auxiliary data storage. 
 
 % Aux Store
-The xAOD EDM uses an abstract interface connecting between the \verb|DataVector| and the auxiliary data, this is the \verb|AuxStore|. 
+The xAOD EDM uses an abstract interface connecting between the \verb|DataVector| and the auxiliary data, this is the \verb|IAuxStore|. 
 The function \verb|setStore| is responsible for ensuring the auxillary data store is matched with it's corresponding \verb|DataVector|.
 Another feature to the xAOD EDM is the ability to have a dynamic store of auxiliary data.
 This separates the auxiliary data between static and dynamic data stores. 
 Where the static dta stores comprise of known variables and the dynamic counterpart stores data of variables not declared but still might be needed by the user. 
-Figure \ref{fig:Mod_utests_aux_store} illustrates how a simple setup of storing a \verb|DataVector| of electrons that hold some specific parameters into one \verb|AuxStore| while also having a separate \verb|AuxStore| specifically for the dynamic attributes. 
+Figure \ref{fig:Mod_utests_aux_store} illustrates how a simple setup of storing a \verb|DataVector| of electrons that hold some specific parameters into one \verb|IAuxStore| while also having a separate \verb|IAuxStore| specifically for the dynamic attributes. 
 
 \begin{figure}[h]
     \centering
@@ -34,12 +34,13 @@ Figure \ref{fig:Mod_utests_aux_store} illustrates how a simple setup of storing 
 \section{Unit Tests}
 \label{sec:Mod_utests_CI}
 Unit tests are programs that act as a catch during the continuous integration of a codebase and exhaust features that need to remain functional. 
-Athena has a number of unit tests which check every merge request and nightly build for issues in the new code that could break core I/O functionality, either at the level of Athena, ROOT, or any other software in the LCG stack.
+Athena has a number of unit tests which check every merge request and nightly build for issues in the new code that could break core functionality, either at the level of Athena, ROOT, or any other software in the LCG stack.
 With the adoption of the xAOD EDM, there were no unit tests to cover core I/O functionality related to this new EDM. 
 
 Specifically there were no unit tests to handle selection of dynamic attributes, or decorations, on xAOD objects created during writing and read back.
 To address this, a new xAOD test object needed to be created and written during a new unit test that fit into the existing unit tests.
 The list of AthenaPoolExample unit tests that are currently executed during a nightly build can be found in Table \ref{tab:CI_Unit_Tests}.
+These tests are executed in this order, as the objects created in one might be used in proceeding test.
 
 \begin{table}[h]
     \centering
@@ -62,7 +63,7 @@ The list of AthenaPoolExample unit tests that are currently executed during a ni
         \hline
         ReadxAODElectron & ReadExampleElectron \\
         \hline
-        ReadAgan & ReadData \\
+        ReadAgain & ReadData \\
         \hline
         WriteConcat & WriteData, ReWriteData \\
         \hline
@@ -82,18 +83,62 @@ The list of AthenaPoolExample unit tests that are currently executed during a ni
     \label{tab:CI_Unit_Tests}
 \end{table}
 
-The mechanism for passing a unit test done automatically by building the framework, running the unit tests, and comparing the diff of the output file to the unit test with a reference file associated with that particular unit test. 
+The mechanism for passing a unit test is done automatically by building the framework, running the unit tests, and comparing the diff of the output file to the unit test with a reference file associated with that particular unit test. 
 If the unit test passes, then the diff will be empty and the unit test will be marked as passing.
 Conversely, if the unit test fails, then the diff will be non-empty and the unit test will be marked as failing.
 
-These tests are executed in this order, as the objects created in one might be used in proceeding test.
-The two new tests were \verb|WritexAODElectron| and \verb|ReadxAODElectron|. 
+\subsection{WritexAODElectron.py}
+The two new tests were \verb|WritexAODElectron| and \verb|ReadxAODElectron|.
 During the \verb|WritexAODElectron| unit test, the first call is to the \verb|ReadData| algorithm to read off all of the \verb|ExampleTrack| objects stored in one of the files produced by the \verb|ReadWrite| unit-test.
 Then the \verb|WriteExampleElectron| algorithm is called and takes \verb|ExampleTracks|, creates an \verb|ExampleElectron| object and sets the electrons \verb|pt| to the tracks \verb|pt|. 
+
+\begin{figure}[h]
+    \centering
+    \begin{lstlisting}[language=C]
+        auto elecCont = std::make_unique<xAOD::ExampleElectronContainer>();
+        auto elecStore = std::make_unique<xAOD::ExampleElectronAuxContainer>();
+        elecCont->setStore(elecStore.get());
+
+        SG::ReadHandle<ExampleTrackContainer> trackCont(m_exampleTrackKey, ctx);
+    
+        elecCont->push_back(std::make_unique<xAOD::ExampleElectron>());
+      
+        for (const ExampleTrack* track : *trackCont) {
+          // Take on the pT of the track
+          elecCont->back()->setPt(track->getPT());
+        }
+
+        SG::WriteHandle<xAOD::ExampleElectronContainer> objs(m_exampleElectronContainerKey, ctx);
+        ATH_CHECK(objs.record(std::move(elecCont), std::move(elecStore)));
+    \end{lstlisting}
+    \label{fig:Mod_utests_WritexAODElectron1}
+\end{figure}
+As shown in Figure \ref{fig:Mod_utests_WritexAODElectron1}, the \verb|ExampleElectronContainer| and \verb|ExampleElectronAuxContainer| are created and set to the \verb|elecCont| and \verb|elecStore| respectively.
+The \verb|elecCont| has an associated aux store it needs, so the \verb|setStore| function is called with the \verb|elecStore| pointer.
+The track container is accessed by using StoreGate's \verb|ReadHandle|, which associates the \verb|m_exampleTrackKey| with the \verb|ExampleTrackContainer| specified in the header file.
+This is then looped over all elements in the container and the \verb|pt| of each track is set to the \verb|pt| of the electron.
+A \verb|WriteHandle|, called \verb|objs|, is then created for the container of \verb|ExampleElectrons| which is then recorded.
+
 Within the same algorithm, the next step is to loop over each of the newly produced \verb|ExampleElectrons|, accessing the decorations \verb|decor1| and \verb|decor2|, and setting each to an arbitrary float value that are easily identifiable later.
+Figure \ref{fig:Mod_utests_WritexAODElectron2} shows how this is done using two handles for each decoration. 
+Note the difference here using the \verb|WriteDecorHandle|, where the prior handle type was \verb|WriteHandle|.
+\begin{figure}[h]
+    \centering
+    \begin{lstlisting}[language=C]
+        SG::WriteDecorHandle<xAOD::ExampleElectronContainer, float> hdl1(m_decor1Key,ctx);
+        SG::WriteDecorHandle<xAOD::ExampleElectronContainer, float> hdl2(m_decor2Key,ctx);
+
+        for (const xAOD::ExampleElectron* obj : *objs) {
+            hdl1(objs) = 123.;
+            hdl2(objs) = 456.;
+        }
+    \end{lstlisting}
+    \label{fig:Mod_utests_WritexAODElectron2}
+\end{figure}
+
+
+\subsection{ReadxAODElectron.py}
 The \verb|ReadxAODElectron| unit test will attempt to show the xAOD function of accessing one dynamic variable, in this case \verb|decor1|, while not accessing the other, \verb|decor2|.
 
-
-The way the xAOD::ExampleElectron object is accessed in the unit test is by utilizing StoreGate and its WriteHandleKey.
 
 \section{Results}
