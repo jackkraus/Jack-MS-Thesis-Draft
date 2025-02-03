@@ -8,15 +8,53 @@ This project opted to take is by optimizing for disk-space and memory by testing
 \label{sec:DAODProd_Analysis}
 % RSS/PSS for memory usage and output file size for disk usage
 
-Our initial focus was on the inclusion of a minimum number of entries per buffer and the maximum basket buffer limit.
-As we'll see in Section $\S$\ref{sec:DAODProd_Results}, we then opted to keep the minimum number of entries set to its default setting, 10 entries per buffer. 
+As the toy model ruled out, the focus here was on optimizing Athena and not ROOTs contribution for optimization.
+The initial focus was on the inclusion of a minimum number of entries per buffer and the maximum basket buffer limit.
+The AthenaPOOL script directly involved with these buffer settings is the \verb|PoolWriteConfig.py| found in the path \verb|athena/Database/AthenaPOOL/AthenaPoolCnvSvc/python/|.
+As discussed in Section $\S$\ref{sec:DAODProd_Results}, further testing opted to keep the minimum number of entries set to its default setting, 10 entries per buffer. 
 
-
-For both the nightly and the release testing, the data derivation job comes from a 2022 dataset with four input files and 160,327 events. 
+Throughout the duration of this testing, the results of compression or file size are independent of any changes to the release or the nightly version of Athena.  
+The data derivation job comes from a 2022 dataset with four input files and 160,327 events. 
 The MC job comes from a 2023 $t\bar{t}$ standard sample simulation job with six input files and 140,000 events. 
 The datasets are noted in Appendix \ref{app: deriv job dataset}.
 
-The corresponding input files for both data and MC jobs were ran with various configurations of Athena by modifying the basket buffer limit. 
+\subsection{Derivation Job Command}
+Rucio is the data-management solution used to download the various AOD input files used for the derivation jobs. 
+A sample command would look like:
+\begin{lstlisting}[language=bash]
+    rucio download data22_13p6TeV:AOD.31407809._000898.pool.root.1
+\end{lstlisting}
+This downloads the AOD file from Rucio and saves it to the user's local directory.
+
+The command used by Athena to run a derivation job takes the form of the following example: 
+\begin{lstlisting}[language=bash]
+    ATHENA_CORE_NUMBER=4 Derivation_tf.py \
+    --CA True \
+    --inputAODFile /data/akraus/AOD_mc23/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.merge.AOD.e8514_e8528_s4162_s4114_r14622_r14663/AOD.33799166._001224.pool.root.1 \
+    --outputDAODFile art.pool.root \
+    --formats PHYSLITE \
+    --maxEvents 2000 \
+    --sharedWriter True \
+    --multiprocess True ;  
+\end{lstlisting}
+Where Athena allows one to specify the number of cores to use with the \verb|ATHENA_CORE_NUMBER| environment variable.
+\verb|Derivation_tf.py| is a script that runs the derivation job and is part of the Athena release.
+The \verb|--inputAODFile| is the input file for the derivation job, in this case an AOD file.
+The user can specify multiple input files at a time by enclosing the input files in quotes and separating each file with a comma, like the following:
+\begin{lstlisting}[language=bash]
+    --inputAODFile="AOD.A.pool.root.1,AOD.B.pool.root.1,AOD.C.pool.root.1,AOD.D.pool.root.1"
+\end{lstlisting}
+The \verb|--outputDAODFile| is the output file for the derivation job, in this case a DAOD file.
+The \verb|--formats PHYSLITE| flag allows the job to use the PHYSLITE format for the DAOD.
+Here is where the user may choose to include PHYS or PHYSLITE simply by inlusion of one or both.
+The \verb|--maxEvents| flag allows one to specify the maximum number of events to run the job on.
+The \verb|--sharedWriter True| flag allows the job to utilize SharedWriter. 
+The \verb|--multiprocess True| flag allows the job to use AthenaMP tools.
+
+
+
+
+The input files for both data and MC jobs were ran with various configurations of Athena by modifying the basket buffer limit. 
 The four configurations tested all kept minimum 10 entries per basket and modified the basket limitation in the following ways: 
 
 \begin{enumerate}
@@ -26,15 +64,15 @@ The four configurations tested all kept minimum 10 entries per basket and modifi
     \item ``$\textit{512k}$'' - Limit basket buffer to $512\times1024$ bytes
 \end{enumerate}
 
-Interesting results come from the comparison of ``no-lim" and ``default" configuration. The ``256k" and ``512k" configurations were included for completeness and provided to be a helpful sanity check throughout. 
-Building and running these configurations of Athena are illustrated in a GitHub repository. \cite{Kraus}
+% ====== 
+% RESULTS
+% ======
 
 \section{Results}
 \label{sec:DAODProd_Results}
 
 \subsection{Presence of basket-cap and presence of minimum number of entries}
 \label{sec:DAODProd_Results_presence}
-
 
 First batch testing was for data and MC simulation derivation production jobs with and without presence of an upper limit to the basket size and presence of the minimum number of entires per branch. 
 PHYSLITE MC derivation production, from Table \ref{Tab: night-mc-outputfs}, sees a 9.9\% increase in output file size when compared to the default Athena configuration. 

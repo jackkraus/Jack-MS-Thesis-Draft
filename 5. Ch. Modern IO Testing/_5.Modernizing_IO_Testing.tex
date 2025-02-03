@@ -114,7 +114,7 @@ Then the \verb|WriteExampleElectron| algorithm is called and takes \verb|Example
     \label{fig:Mod_utests_WritexAODElectron1}
 \end{figure}
 As shown in Figure \ref{fig:Mod_utests_WritexAODElectron1}, the \verb|ExampleElectronContainer| and \verb|ExampleElectronAuxContainer| are created and set to the \verb|elecCont| and \verb|elecStore| respectively.
-The \verb|elecCont| has an associated aux store it needs, so the \verb|setStore| function is called with the \verb|elecStore| pointer.
+The \verb|elecCont| has an associated aux store, so the \verb|setStore| function is called with the \verb|elecStore| pointer.
 The track container is accessed by using StoreGate's \verb|ReadHandle|, which associates the \verb|m_exampleTrackKey| with the \verb|ExampleTrackContainer| specified in the header file.
 This is then looped over all elements in the container and the \verb|pt| of each track is set to the \verb|pt| of the electron.
 A \verb|WriteHandle|, called \verb|objs|, is then created for the container of \verb|ExampleElectrons| which is then recorded.
