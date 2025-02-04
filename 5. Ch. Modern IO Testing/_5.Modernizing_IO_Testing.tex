@@ -90,28 +90,37 @@ Conversely, if the unit test fails, then the diff will be non-empty and the unit
 \subsection{WritexAODElectron.py}
 The two new tests were \verb|WritexAODElectron| and \verb|ReadxAODElectron|.
 During the \verb|WritexAODElectron| unit test, the first call is to the \verb|ReadData| algorithm to read off all of the \verb|ExampleTrack| objects stored in one of the files produced by the \verb|ReadWrite| unit-test.
+
+
+%% WriteExampleElectronAlgorithm
+% Header (.h)
+Much of the code in Athena practice header/source-file separation, the header acting as an interface for the whole object and the source file containing the core functionality of the algorithm.
+The header file includes various packages needed by the algorithm, such as data objects, Write/ReadHandleKeys, base algorithms that give consistent structure to the algorithm, and whatever else is required. 
+In \verb|WriteExampleElectron|, 
+
+% Source File (.c)
 Then the \verb|WriteExampleElectron| algorithm is called and takes \verb|ExampleTracks|, creates an \verb|ExampleElectron| object and sets the electrons \verb|pt| to the tracks \verb|pt|. 
-
 \begin{figure}[h]
-    \centering
-    \begin{lstlisting}[language=C]
-        auto elecCont = std::make_unique<xAOD::ExampleElectronContainer>();
-        auto elecStore = std::make_unique<xAOD::ExampleElectronAuxContainer>();
-        elecCont->setStore(elecStore.get());
+\centering
+\begin{lstlisting}[language=C]
+auto elecCont = std::make_unique<xAOD::ExampleElectronContainer>();
+auto elecStore = std::make_unique<xAOD::ExampleElectronAuxContainer>();
+elecCont->setStore(elecStore.get());
 
-        SG::ReadHandle<ExampleTrackContainer> trackCont(m_exampleTrackKey, ctx);
-    
-        elecCont->push_back(std::make_unique<xAOD::ExampleElectron>());
-      
-        for (const ExampleTrack* track : *trackCont) {
-          // Take on the pT of the track
-          elecCont->back()->setPt(track->getPT());
-        }
+SG::ReadHandle<ExampleTrackContainer> trackCont(m_exampleTrackKey, ctx);
 
-        SG::WriteHandle<xAOD::ExampleElectronContainer> objs(m_exampleElectronContainerKey, ctx);
-        ATH_CHECK(objs.record(std::move(elecCont), std::move(elecStore)));
-    \end{lstlisting}
-    \label{fig:Mod_utests_WritexAODElectron1}
+elecCont->push_back(std::make_unique<xAOD::ExampleElectron>());
+
+for (const ExampleTrack* track : *trackCont) {
+    // Take on the pT of the track
+    elecCont->back()->setPt(track->getPT());
+}
+
+SG::WriteHandle<xAOD::ExampleElectronContainer> objs(m_exampleElectronContainerKey, ctx);
+ATH_CHECK(objs.record(std::move(elecCont), std::move(elecStore)));
+\end{lstlisting}
+\caption{Algorithm to initialize and write T/P data (ExampleTracks) to an xAOD object container (ExampleElectronContainer).}
+\label{fig:Mod_utests_WritexAODElectron1}
 \end{figure}
 As shown in Figure \ref{fig:Mod_utests_WritexAODElectron1}, the \verb|ExampleElectronContainer| and \verb|ExampleElectronAuxContainer| are created and set to the \verb|elecCont| and \verb|elecStore| respectively.
 The \verb|elecCont| has an associated aux store, so the \verb|setStore| function is called with the \verb|elecStore| pointer.
@@ -124,21 +133,34 @@ Figure \ref{fig:Mod_utests_WritexAODElectron2} shows how this is done using two 
 Note the difference here using the \verb|WriteDecorHandle|, where the prior handle type was \verb|WriteHandle|.
 \begin{figure}[h]
     \centering
-    \begin{lstlisting}[language=C]
-        SG::WriteDecorHandle<xAOD::ExampleElectronContainer, float> hdl1(m_decor1Key,ctx);
-        SG::WriteDecorHandle<xAOD::ExampleElectronContainer, float> hdl2(m_decor2Key,ctx);
+\begin{lstlisting}[language=C]
+SG::WriteDecorHandle<xAOD::ExampleElectronContainer, float> hdl1(m_decor1Key,ctx);
+SG::WriteDecorHandle<xAOD::ExampleElectronContainer, float> hdl2(m_decor2Key,ctx);
 
-        for (const xAOD::ExampleElectron* obj : *objs) {
-            hdl1(objs) = 123.;
-            hdl2(objs) = 456.;
-        }
-    \end{lstlisting}
+for (const xAOD::ExampleElectron* obj : *objs) {
+    hdl1(objs) = 123.;
+    hdl2(objs) = 456.;
+}
+\end{lstlisting}
+    \caption{Writing of dynamic variables for each of the ExampleElectron objects.}
     \label{fig:Mod_utests_WritexAODElectron2}
 \end{figure}
 
 
 \subsection{ReadxAODElectron.py}
-The \verb|ReadxAODElectron| unit test will attempt to show the xAOD function of accessing one dynamic variable, in this case \verb|decor1|, while not accessing the other, \verb|decor2|.
-
+The only algorithm called in this test is \verb|ReadExampleElectron|.
+The header file for the \verb|ReadExampleElectron| only creates \verb|ReadHandleKey| for the container of ExampleElectrons, with the same name from the header of the \verb|WriteExampleElectron| algorithm header, syntax shown in Figure \ref{fig:Mod_utests_ReadxAODElectron1}.
+\begin{figure}[h]
+    \centering
+\begin{lstlisting}[language=C]
+SG::ReadHandleKey<xAOD::ExampleElectronContainer>
+m_exampleElectronContainerKey{this, "ExampleElectronContainerName",
+                                "TestContainer"};
+\end{lstlisting}
+    \caption{ReadHandleKey for the container of ExampleElectrons}
+    \label{fig:Mod_utests_ReadxAODElectron1}
+\end{figure}
+Following this, the \verb|ReadxAODElectron| unit test will demonstrate the xAOD function of accessing one dynamic variable, in this case \verb|decor1|, while not accessing the other, \verb|decor2|.
+This is done by 
 
 \section{Results}
