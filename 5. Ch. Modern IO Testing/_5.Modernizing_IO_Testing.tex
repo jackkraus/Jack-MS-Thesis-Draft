@@ -23,7 +23,7 @@ Figure \ref{fig:Mod_utests_aux_store} illustrates how a simple setup of storing 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{content/img/aux_store_better.png}
-    \caption{The static and dynamic auxiliary data store for a collection of xAOD::ExampleElectrons.}
+    \caption{The framework between interface objects and the static/dynamic auxiliary data store for a collection of xAOD::ExampleElectrons.}
     \label{fig:Mod_utests_aux_store}
 \end{figure}
 
@@ -84,19 +84,60 @@ These tests are executed in this order, as the objects created in one might be u
 \end{table}
 
 The mechanism for passing a unit test is done automatically by building the framework, running the unit tests, and comparing the diff of the output file to the unit test with a reference file associated with that particular unit test. 
-If the unit test passes, then the diff will be empty and the unit test will be marked as passing.
+If the unit test passes, then the diff, a product of the \verb|git diff| command, will be empty and the unit test will be marked as passing.
 Conversely, if the unit test fails, then the diff will be non-empty and the unit test will be marked as failing.
 
 \subsection{WritexAODElectron.py}
-The two new tests were \verb|WritexAODElectron| and \verb|ReadxAODElectron|.
-During the \verb|WritexAODElectron| unit test, the first call is to the \verb|ReadData| algorithm to read off all of the \verb|ExampleTrack| objects stored in one of the files produced by the \verb|ReadWrite| unit-test.
+The two new tests added to the package were \verb|WritexAODElectron| and \verb|ReadxAODElectron|.
+During this first unit test, the first algorithm called is to \verb|ReadData| which reads off all of the \verb|ExampleTrack| objects stored in one of the files produced by the \verb|ReadWrite| unit-test.
+Within the python script of the first unit test, the user is able to decide what decorations to have written to file. 
+This is a part of the \verb|OutputStreamCfg| parameter, \verb|ItemList|, wherein the user specifies the object and its name in the format shown in Figure \ref{fig:Mod_utests_WritexAODElectron_ItemList}. 
+\begin{figure}[h]
+\centering
+\begin{lstlisting}[language=C]
+ItemList = [ "ExampleTrackContainer#MyTracks", 
+"xAOD::ExampleElectronContainer#TestContainer",
+"xAOD::ExampleElectronAuxContainer#TestContainerAux.-decor2"] )
+\end{lstlisting}
+\caption{WritexAODElectron header file setup}
+\label{fig:Mod_utests_WritexAODElectron_ItemList}
+\end{figure}
+
 
 
 %% WriteExampleElectronAlgorithm
 % Header (.h)
 Much of the code in Athena practice header/source-file separation, the header acting as an interface for the whole object and the source file containing the core functionality of the algorithm.
-The header file includes various packages needed by the algorithm, such as data objects, Write/ReadHandleKeys, base algorithms that give consistent structure to the algorithm, and whatever else is required. 
-In \verb|WriteExampleElectron|, 
+The header file includes various packages needed by the algorithm, such as data objects, \verb|Write/ReadHandleKeys|, base algorithms that give consistent structure to the algorithm, and whatever else is required. 
+In the write-algorithm, there are \verb|ReadHandleKeys| for \verb|ExampleTrack| objects saved by a prior unit test. 
+For the \verb|WriteHandleKeys|, there is one for the \verb|ExampleElectronContainer| and the name given to it is ``TestContainer". 
+This ``TestContainer" name will be needed for the \verb|ReadExampleElectron| algorithm as the name is how it's able to refer to the correct \verb|ExampleElectronContainer| present in the input file. 
+Additionally, a \verb|WriteHandleDecorKey| for the decoration objects is needed for appending each decoration onto each \verb|ExampleElectron| object. 
+Figure \ref{fig:Mod_utests_WritexAODElectron_header} shows the syntax for how these keys would be presently defined.
+
+\begin{figure}[h]
+\centering
+\begin{lstlisting}[language=C]
+// Read key ExampleTracks
+SG::ReadHandleKey<ExampleTrackContainer> m_exampleTrackKey{
+    this, "ExampleTrackKey", "MyTracks"};  
+
+// Write key for the ExampleElectronContainer
+SG::WriteHandleKey<xAOD::ExampleElectronContainer>
+    m_exampleElectronContainerKey{this, "ExampleElectronContainerName",
+                                "TestContainer"};
+
+// Decoration keys
+SG::WriteDecorHandleKey<xAOD::ExampleElectronContainer> m_decor1Key{
+    this, "ExampleElectronContainerDecorKey1", "TestContainer.decor1",
+    "decorator1 key"};
+SG::WriteDecorHandleKey<xAOD::ExampleElectronContainer> m_decor2Key{
+    this, "ExampleElectronContainerDecorKey2", "TestContainer.decor2",
+    "decorator2 key"};
+\end{lstlisting}
+\caption{WritexAODElectron header file setup}
+\label{fig:Mod_utests_WritexAODElectron_header}
+\end{figure}
 
 % Source File (.c)
 Then the \verb|WriteExampleElectron| algorithm is called and takes \verb|ExampleTracks|, creates an \verb|ExampleElectron| object and sets the electrons \verb|pt| to the tracks \verb|pt|. 
@@ -108,7 +149,6 @@ auto elecStore = std::make_unique<xAOD::ExampleElectronAuxContainer>();
 elecCont->setStore(elecStore.get());
 
 SG::ReadHandle<ExampleTrackContainer> trackCont(m_exampleTrackKey, ctx);
-
 elecCont->push_back(std::make_unique<xAOD::ExampleElectron>());
 
 for (const ExampleTrack* track : *trackCont) {

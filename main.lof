@@ -15,10 +15,12 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{27}{figure.caption.16}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The static and dynamic auxiliary data store for a collection of xAOD::ExampleElectrons.\relax }}{38}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Algorithm to initialize and write T/P data (ExampleTracks) to an xAOD object container (ExampleElectronContainer).\relax }}{40}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Writing of dynamic variables for each of the ExampleElectron objects.\relax }}{41}{figure.caption.30}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces ReadHandleKey for the container of ExampleElectrons\relax }}{41}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The framework between interface objects and the static/dynamic auxiliary data store for a collection of xAOD::ExampleElectrons.\relax }}{38}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces WritexAODElectron header file setup\relax }}{40}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces WritexAODElectron header file setup\relax }}{41}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Algorithm to initialize and write T/P data (ExampleTracks) to an xAOD object container (ExampleElectronContainer).\relax }}{42}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Writing of dynamic variables for each of the ExampleElectron objects.\relax }}{42}{figure.caption.32}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces ReadHandleKey for the container of ExampleElectrons\relax }}{43}{figure.caption.33}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

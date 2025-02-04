@@ -2726,6 +2726,44 @@
       \endverb
       \keyw{ATLAS,SCT,Silicon,Microstrip,Barrel,Module,LHC}
     \endentry
+    \entry{HL-LHC_Tech_design}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fd7f00a7df2e569f278fa98e72b180e2}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={I.\bibnamedelimi Bejar\bibnamedelima Alonso},
+           giveni={I\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CERN Yellow Reports: Monographs}%
+      }
+      \strng{namehash}{fd7f00a7df2e569f278fa98e72b180e2}
+      \strng{fullhash}{fd7f00a7df2e569f278fa98e72b180e2}
+      \strng{bibnamehash}{fd7f00a7df2e569f278fa98e72b180e2}
+      \strng{authorbibnamehash}{fd7f00a7df2e569f278fa98e72b180e2}
+      \strng{authornamehash}{fd7f00a7df2e569f278fa98e72b180e2}
+      \strng{authorfullhash}{fd7f00a7df2e569f278fa98e72b180e2}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{High-Luminosity Large Hadron Collider (HL-LHC): Technical design report}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{390}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.23731/CYRM-2020-0010
+      \endverb
+      \verb{urlraw}
+      \verb https://e-publishing.cern.ch/index.php/CYRM/issue/view/127
+      \endverb
+      \verb{url}
+      \verb https://e-publishing.cern.ch/index.php/CYRM/issue/view/127
+      \endverb
+    \endentry
     \entry{Buckley_2015}{article}{}
       \name{author}{11}{}{%
         {{hash=2914a2575bda7d21604d8d93cbec8450}{%
