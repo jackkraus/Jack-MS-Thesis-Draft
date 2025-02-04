@@ -9,15 +9,15 @@
     \resizebox{\textwidth}{!}{
         \begin{tabular}{|c|c|c|c|}
             \hline
-                Athena v22.0.16 configurations (Data) & Max PSS (MB) ($\Delta$\% default) & PHYS outFS (GB) ($\Delta$\% default) & PHYSLITE outFS (GB) ($\Delta$\% default) \\ \hline
-                With basket-cap and min-num-entries (default)  & 27.109 ( + 0.00 \%) & 3.216 ( + 0.00 \%) & 1.034 ( + 0.00 \%) \\ \hline
-                Without both basket-cap and min-num-entries & 27.813 ( + 2.53 \%) & 3.222 ( + 0.20 \%) & 1.036 ( + 0.21 \%) \\ \hline
-                Without basket-cap but with min-num-entries & 27.814  ( + 2.53 \%) & 3.216 ( - 0.00 \%) & 1.030 ( - 0.39 \%) \\ \hline
-                With basket-cap but without min-num-entries & 27.298 ( + 0.69 \%) & 3.221 ( + 0.15 \%) & 1.042 ( + 0.71 \%) \\ \hline
+                Presence of features (Data) & Max PSS (MB) ($\Delta$\% default) & PHYS outFS (GB) ($\Delta$\%) & PHYSLITE outFS (GB) ($\Delta$\%) \\ \hline
+                basket-cap, min-num-entries (default)  & 27.1 ( + 0.0 \%) & 3.22 ( + 0.0 \%) & 1.03 ( + 0.0 \%) \\ \hline
+                \st{basket-cap} \st{min-num-entries} & 27.8 ( + 2.5 \%) & 3.22 ( + 0.2 \%) & 1.04 ( + 0.2 \%) \\ \hline
+                \st{basket-cap} min-num-entries & 27.8  ( + 2.5 \%) & 3.22 ( - 0.0 \%) & 1.03 ( - 0.4 \%) \\ \hline
+                basket-cap,  \st{min-num-entries} & 27.3 ( + 0.7 \%) & 3.22 ( + 0.2 \%) & 1.04 ( + 0.7 \%) \\ \hline
             \end{tabular}
     }
     \label{Tab: night-data-outputfs}
-    \caption{Athena v22.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for data jobs over various Athena configurations for 160327 entries.}
+    \caption{Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for data jobs while varying the presence of features in Athena PoolWriteConfig.py for 160327 entries.}
 \end{table}
 
 % Data file sizes 
@@ -55,14 +55,14 @@
         \resizebox{\textwidth}{!}{
             \begin{tabular}{|c|c|c|c|}
                 \hline
-                    Athena v22.0.16 configurations (MC) & Max PSS (MB) ($\Delta$\% default) & PHYS outFS (GB) ($\Delta$\% default) & PHYSLITE outFS (GB) ($\Delta$\% default) \\ \hline
-                    With basket-cap and min-num-entries (default)  & 14.13 ( + 0.00 \%) & 5.83 ( + 0.00 \%) & 2.59 ( + 0.00 \%) \\ \hline
-                    Without both basket-cap and min-num-entries & 16.08 ( + 12.13 \%) & 6.00 ( + 2.93 \%) & 2.72 ( + 5.06 \%) \\ \hline
-                    Without basket-cap but with min-num-entries & 15.97  ( + 11.51 \%) & 5.67 ( - 2.80 \%) & 2.45 ( - 5.58 \%) \\ \hline
-                    With basket-cap but without min-num-entries & 14.19 ( + 0.42 \%) & 6.16 ( + 5.35 \%) & 2.87 ( + 9.90 \%) \\ \hline
+                Presence of features (MC) & Max PSS (MB) ($\Delta$\% default) & PHYS outFS (GB) ($\Delta$\%) & PHYSLITE outFS (GB) ($\Delta$\%) \\ \hline
+                basket-cap, min-num-entries (default)  & 14.1 ( + 0.0 \%) & 5.8 ( + 0.0 \%) & 2.6 ( + 0.0 \%) \\ \hline
+                \st{basket-cap} \st{min-num-entries} & 16.1 ( + 12.1 \%) & 6.0 ( + 2.9 \%) & 2.7 ( + 5.1 \%) \\ \hline
+                \st{basket-cap} min-num-entries & 16.0  ( + 11.5 \%) & 5.7 ( - 2.8 \%) & 2.5 ( - 5.6 \%) \\ \hline
+                basket-cap,  \st{min-num-entries} & 14.2 ( + 0.4 \%) & 6.2 ( + 5.4 \%) & 2.9 ( + 9.9 \%) \\ \hline
                 \end{tabular}
         }
-        \caption{Athena v22.0.16: Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for MC jobs over various Athena configurations for 140000 entries.}
+        \caption{Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for MC jobs while varying the presence of features in Athena PoolWriteConfig.py for 140000 entries.}
         \label{Tab: night-mc-outputfs}
     \end{table}
 \end{center}

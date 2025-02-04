@@ -125,24 +125,12 @@ Following branch initialization comes the event loop where data is generated and
             vec_ten1.emplace_back(float_1);
         }
 
-        // Fill vec_ten2
-        // Contents of the vector:
-        //    {float_2_0, ... , float_2_99}
-        //    Hundred floats, each float is random
-        for (int a = 0, a < size_vec_2; a++) {
-            float_2 = gRandom->Rndm() * 10;
-            vec_ten2.emplace_back(float_2);
-        }
-
-        // Fill vec_ten3
-        // Contents of the vector:
-        //    {float_3_0, ... , float_3_999}
-        //    Thousand floats, each float is random
-        for (int b = 0, b < size_vec_3; b++) {
-            float_3 = gRandom->Rndm() * 10;
-            vec_ten3.emplace_back(float_3);
-        }
-        tree->Fill(); // Fill our TTree with all the new branches
+        // Do the same with vec_ten2 and vec_ten3, except for 
+        //     vectors with size 100 and 1000 respectively. 
+        
+        // After all branches are filled, fill the TTree with 
+        //     new branches
+        tree->Fill();
     }
     // Saving tree and file
     tree->Write();
@@ -233,35 +221,13 @@ Mixing of random floats and repeated integer values takes the same script struct
             }
         }
 
-        // Generating vec_ten2
-        // Contents of the vector:
-        //    {float_2_0, ... ,float_2_49, 1, ... , 1}
-        //    50 floats of random values, 50 integers of value 1.
-        for (int c = 0; c < size_vec_2; c++) {
-            if (c < size_vec_2 / 2) {
-              float_2 = gRandom->Rndm() * gRandom->Gaus(0, 1);
-              vec_ten2.emplace_back(float_2);
-            } else {
-              float_2 = 1;
-              vec_ten2.emplace_back(float_2);
-            }
-        }
+        // Do the same with vec_ten2 and vec_ten3, except for 
+        //     vectors with size 100 and 1000 respectively. 
 
-        // Generating vec_ten3
-        // Contents of the vector:
-        //    {float_3_0, ... , float_3_499, 1, ... , 1}
-        //    500 entries are floats of random values, 
-        //    500 entries are integers of value 1.
-        for (int d = 0; d < size_vec_3; d++) {
-            if (d < size_vec_3 / 2) {
-              float_3 = gRandom->Rndm() * gRandom->Gaus(0, 1);
-              vec_ten3.emplace_back(float_3);
-            } else {
-              float_3 = 1;
-              vec_ten3.emplace_back(float_3);
-            }
-        }
-        tree->Fill(); // Fill our TTree with all the new branches
+
+        // After all branches are filled, fill the TTree with 
+        //     new branches
+        tree->Fill(); 
     }
     // Saving tree and file
     tree->Write();
