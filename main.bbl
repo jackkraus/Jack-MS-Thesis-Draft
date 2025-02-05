@@ -4067,6 +4067,95 @@
       \verb https://dx.doi.org/10.1088/1748-0221/3/02/P02013
       \endverb
     \endentry
+    \entry{ATLAS_HL-LHC_projections}{article}{}
+      \name{author}{12}{}{%
+        {{hash=444a3bd0657e87dba43b8992336d4a08}{%
+           family={Elmsheuser},
+           familyi={E\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9fa93261e467bb4099b97f153665b0d8}{%
+           family={Anastopoulos},
+           familyi={A\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1081d56829213b37324ddbcb9687e932}{%
+           family={Boyd},
+           familyi={B\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=36fa905bec248f250f6e5bd30c45c812}{%
+           family={Catmore},
+           familyi={C\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=40d3a635315fe1ca2481c99fb81ae8d1}{%
+           family={Gray},
+           familyi={G\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e0d35a488929834faf44b72d3031ce1c}{%
+           family={Krasznahorkay},
+           familyi={K\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=391e343546456eb771f38d8c31de0a05}{%
+           family={McFayden},
+           familyi={M\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5c2dc5306d8042820e0f867fef7f6838}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={C.J.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ff43375653fe822096776c7fcf2fa2e6}{%
+           family={Sfyrla},
+           familyi={S\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=50a28b8a15a9b708e31cae77a0da4f71}{%
+           family={Strandberg},
+           familyi={S\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cc56392b05eebff55109e109e1f87e47}{%
+           family={Suruliz},
+           familyi={S\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e091ea92c5b3e2baa1c4a0d00db07892}{%
+           family={Theveneaux-Pelzer},
+           familyi={T\bibinithyphendelim P\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f92396b375324678b87427be28a6d75}
+      \strng{fullhash}{931365a57646b5220a04aa9fbe2a0c61}
+      \strng{bibnamehash}{7f92396b375324678b87427be28a6d75}
+      \strng{authorbibnamehash}{7f92396b375324678b87427be28a6d75}
+      \strng{authornamehash}{7f92396b375324678b87427be28a6d75}
+      \strng{authorfullhash}{931365a57646b5220a04aa9fbe2a0c61}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EPJ Web Conf.}
+      \field{title}{Evolution of the ATLAS analysis model for Run-3 and prospects for HL-LHC}
+      \field{volume}{245}
+      \field{year}{2020}
+      \field{pages}{06014}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1051/epjconf/202024506014
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1051/epjconf/202024506014
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1051/epjconf/202024506014
+      \endverb
+    \endentry
     \entry{ATLAS_Illustration}{misc}{}
       \name{author}{2}{}{%
         {{hash=e52b0b1fccb9c002909cdd7fa31b43bd}{%
@@ -4240,6 +4329,105 @@
       \verb https://dx.doi.org/10.1088/1742-6596/513/3/032052
       \endverb
     \endentry
+    \entry{AthenaMT_Leggett_2017}{article}{}
+      \name{author}{13}{}{%
+        {{hash=53b8e488fcdd6aa7c04a8d02377a250f}{%
+           family={Leggett},
+           familyi={L\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8faabd21d9116a4ef76718f44ba3c244}{%
+           family={Baines},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3948255c447895aeaff0a70630210214}{%
+           family={Bold},
+           familyi={B\bibinitperiod},
+           given={Tomasz},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f61c86f55b15c03cb50671fc2b99d1ca}{%
+           family={Calafiura},
+           familyi={C\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5182e01b17373da47ae1120eb2e14041}{%
+           family={Farrell},
+           familyi={F\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=32368325d5351ce553dae08bba02a1c6}{%
+           family={Gemmeren},
+           familyi={G\bibinitperiod},
+           given={Peter\bibnamedelima van},
+           giveni={P\bibinitperiod\bibinitdelim v\bibinitperiod}}}%
+        {{hash=79cd13d0e5370f3a48a0b36db918d735}{%
+           family={Malon},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=73ccaf8862f31b684f52e58283ef2ef8}{%
+           family={Ritsch},
+           familyi={R\bibinitperiod},
+           given={Elmar},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9b99f13368221558c628e58dd218ae89}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={Graeme},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2c1d60f12fb1e23b09cef12c38ba779e}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d8eb8c7078fc800f79801710eeff872e}{%
+           family={Tsulaia},
+           familyi={T\bibinitperiod},
+           given={Vakhtang},
+           giveni={V\bibinitperiod}}}%
+        {{hash=85d0568708b3f1f92d4d3ba9ecc47cb4}{%
+           family={Wynne},
+           familyi={W\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8dde729c404b4f8adf1fb76f37dd169c}{%
+           family={ATLAS\bibnamedelima Collaboration},
+           familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           prefix={on\bibnamedelima behalf\bibnamedelimb of\bibnamedelima the},
+           prefixi={o\bibinitperiod\bibinitdelim b\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim t\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{043ad3a25a266af6adbb040357e7ddf0}
+      \strng{fullhash}{60c65826a5c150634603354225ef3583}
+      \strng{bibnamehash}{043ad3a25a266af6adbb040357e7ddf0}
+      \strng{authorbibnamehash}{043ad3a25a266af6adbb040357e7ddf0}
+      \strng{authornamehash}{043ad3a25a266af6adbb040357e7ddf0}
+      \strng{authorfullhash}{60c65826a5c150634603354225ef3583}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physics: Conference Series}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{AthenaMT: upgrading the ATLAS software framework for the many-core world with multi-threading}
+      \field{volume}{898}
+      \field{year}{2017}
+      \field{pages}{042009}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/898/4/042009
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1742-6596/898/4/042009
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1742-6596/898/4/042009
+      \endverb
+    \endentry
     \entry{LHC_faq_guide}{misc}{}
       \name{author}{2}{}{%
         {{hash=d2819a6cc34bba5656b4460348b04dcc}{%
@@ -4270,6 +4458,50 @@
       \endverb
       \verb{url}
       \verb https://home.cern/resources/brochure/knowledge-sharing/lhc-facts-and-figures
+      \endverb
+    \endentry
+    \entry{RNTuple_Lopez-Gomez_2023}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b94e1c2ed9f725674fed0c686df69923}{%
+           family={Lopez-Gomez},
+           familyi={L\bibinithyphendelim G\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9c425c8dbdc9160066a9fb60dde0c9a1}{%
+           family={Blomer},
+           familyi={B\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{287a837a93ea10fbbbba12cd21f30e60}
+      \strng{fullhash}{287a837a93ea10fbbbba12cd21f30e60}
+      \strng{bibnamehash}{287a837a93ea10fbbbba12cd21f30e60}
+      \strng{authorbibnamehash}{287a837a93ea10fbbbba12cd21f30e60}
+      \strng{authornamehash}{287a837a93ea10fbbbba12cd21f30e60}
+      \strng{authorfullhash}{287a837a93ea10fbbbba12cd21f30e60}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physics: Conference Series}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{RNTuple performance: Status and Outlook}
+      \field{volume}{2438}
+      \field{year}{2023}
+      \field{pages}{012118}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/2438/1/012118
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1742-6596/2438/1/012118
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1742-6596/2438/1/012118
       \endverb
     \endentry
     \entry{Mindur:2139567}{misc}{}

@@ -81,8 +81,10 @@ Reconstructed AOD are then processed through derivation jobs that reduced AODs f
 The High-Luminosity LHC (HL-LHC) is the upgrade to LHC that anticipates more events and more data taken than ever before.
 % How does high luminosity affect the number of collisions? 
 The goal is to reach a luminosity of $350 fb^{-1}$, which is forecasted to be reached gradually by around 2040.\cite{HL-LHC_Tech_design}
-The HL-LHC era is projected to demand anywhere from 6-10 times as much yearly storage, so any attempt to save on disk storage will help. \cite{ATLAS_HL-LHC_projections}
+The HL-LHC era is projected to demand anywhere from 6-10 times data stored per year, so any attempt to save on disk storage will help. \cite{ATLAS_HL-LHC_projections}
 
-% What are some areas of research being done to 
-% RNTuple
-% GPU and Accelerators
+One area of research is in the development of the ROOT N-Tuple (RNTuple) I/O subsystem, which is a new storage format for high-energy physics data seeking to replace ROOT TTree. 
+The RNTuple is a columnar-based storage format that is optimized for data storage and processing.
+It's been shown to out perform TTree I/O subsystem and other storage formats in file size, throughput, and compression, but still has more development before full implementation into the analysis pipeline.\cite{RNTuple_Lopez-Gomez_2023}
+Additionally, there's a push to utilize GPUs and other accelerators in conjunction with CPUs to process track reconstruction and AOD derivation.
+Also being developed are software framework updates to make the single-threaded CPU programs multi-thread friendly.\cite{AthenaMT_Leggett_2017}

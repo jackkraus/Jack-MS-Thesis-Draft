@@ -99,7 +99,7 @@ ItemList = [ "ExampleTrackContainer#MyTracks",
 "xAOD::ExampleElectronContainer#TestContainer",
 "xAOD::ExampleElectronAuxContainer#TestContainerAux.-decor2"] )
 \end{lstlisting}
-\caption{WritexAODElectron header file setup}
+\caption{WritexAODElectron ItemList for the OutputStreamCfg parameter. Showing how to select dynamic attributes at the CA level.}
 \label{fig:Mod_utests_WritexAODElectron_ItemList}
 \end{figure}
 
@@ -135,7 +135,7 @@ SG::WriteDecorHandleKey<xAOD::ExampleElectronContainer> m_decor2Key{
     this, "ExampleElectronContainerDecorKey2", "TestContainer.decor2",
     "decorator2 key"};
 \end{lstlisting}
-\caption{WritexAODElectron header file setup}
+\caption{WriteExampleElectronheader file setup}
 \label{fig:Mod_utests_WritexAODElectron_header}
 \end{figure}
 
@@ -200,7 +200,6 @@ m_exampleElectronContainerKey{this, "ExampleElectronContainerName",
     \caption{ReadHandleKey for the container of ExampleElectrons}
     \label{fig:Mod_utests_ReadxAODElectron1}
 \end{figure}
-Following this, the \verb|ReadxAODElectron| unit test will demonstrate the xAOD function of accessing one dynamic variable, in this case \verb|decor1|, while not accessing the other, \verb|decor2|.
-This is done by 
+
 
 \section{Results}
