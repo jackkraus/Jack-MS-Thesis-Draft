@@ -200,6 +200,13 @@ m_exampleElectronContainerKey{this, "ExampleElectronContainerName",
     \caption{ReadHandleKey for the container of ExampleElectrons}
     \label{fig:Mod_utests_ReadxAODElectron1}
 \end{figure}
-
+From the source file, we can initialize the \verb|ReadHandleKey| object by a simple \verb|ATH_CHECK(m_exampleElectronContainerKey.initialize());| in the \verb|intitialize()| method.
+This allows for, when defining the \verb|ReadHandle| in execute, identifying the correct container defined in the header file.
+The same can be done for the decoration key, which needs a separate read handle, \verb|ReadDecorHandle|. 
+Once this is setup, all the read algorithm needs to do is to loop over all the \verb|ExampleElectrons| in the ``TestContainer" and access their $p_T$ and charge.
 
 \section{Results}
+This project sought to replace existing unit tests that created \verb|ExampleHits|, T/P EDM objects, to be written and read back. 
+An independent xAOD object, \verb|ExampleElectron|, was created and implemented into two new unit tests that write and read \verb|ExampleElectron| objects along with their chosen dynamic attributes. 
+A merge request was created, approved, and merged into the Athena software framework.
+Future work can be done to fully modernize the package these unit tests reside, \verb|AthenaPoolExampleAlgorithms|, including unit tests that test core functionality of AthenaMT/AthenaMP, and newer storage formats like RNTuple. 

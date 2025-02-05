@@ -2764,6 +2764,59 @@
       \verb https://e-publishing.cern.ch/index.php/CYRM/issue/view/127
       \endverb
     \endentry
+    \entry{RNTuple_Blomer}{article}{}
+      \name{author}{8}{}{%
+        {{hash=8b9ffe18a8d243ac0f9e8bede163b04c}{%
+           family={{Blomer, Jakob}},
+           familyi={B\bibinitperiod}}}%
+        {{hash=b4733396bfb52169380f594bfdb7e889}{%
+           family={{Canal, Philippe}},
+           familyi={C\bibinitperiod}}}%
+        {{hash=928fb71a482118699a6bab9ea3ea4864}{%
+           family={{de Geus, Florine}},
+           familyi={d\bibinitperiod}}}%
+        {{hash=9ca3b23fa0af0b18fbda50d7de3dfe30}{%
+           family={{Hahnfeld, Jonas}},
+           familyi={H\bibinitperiod}}}%
+        {{hash=59ce101fabfc663ad2311529ece99080}{%
+           family={{Naumann, Axel}},
+           familyi={N\bibinitperiod}}}%
+        {{hash=86fa12abfb51da9186e13ac2114a35e3}{%
+           family={{Lopez-Gomez, Javier}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=7506d43ec7e32777fe9766ea5dce6401}{%
+           family={{Lazzari Miotto, Giovanna}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=9d74746b1a604f4931cffafe33883ce0}{%
+           family={{Padulano, Vincenzo Eduardo}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b360f094206615a3191fe0e7adc3121}
+      \strng{fullhash}{2a99c686466f4167b76e1d6311bb7555}
+      \strng{bibnamehash}{8b360f094206615a3191fe0e7adc3121}
+      \strng{authorbibnamehash}{8b360f094206615a3191fe0e7adc3121}
+      \strng{authornamehash}{8b360f094206615a3191fe0e7adc3121}
+      \strng{authorfullhash}{2a99c686466f4167b76e1d6311bb7555}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EPJ Web of Conf.}
+      \field{title}{ROOT’s RNTuple I/O Subsystem: The Path to Production}
+      \field{volume}{295}
+      \field{year}{2024}
+      \field{pages}{06020}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1051/epjconf/202429506020
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1051/epjconf/202429506020
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1051/epjconf/202429506020
+      \endverb
+    \endentry
     \entry{Buckley_2015}{article}{}
       \name{author}{11}{}{%
         {{hash=2914a2575bda7d21604d8d93cbec8450}{%

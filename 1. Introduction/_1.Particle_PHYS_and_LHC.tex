@@ -46,7 +46,7 @@ The TRT's straw walls are made of two $35\mu m$ layers comprised of $6\mu m$ car
 The straws are filled with a gas mixture of $70\% \text{Xe} + 27\% \text{CO}_2 + 3\% \text{O}_2$. 
 Its measurement precision is around $170 \mu m$. 
 Particles with relativistic velocities have higher Lorentz $\gamma$-factors (see Eq. \eqref{lorentzGamma}). 
-The TRT uses varying materials to discriminate between heavier particles, which have low $\gamma$ and radiate less, and lighter particles, which have higher $\gamma$ and radiate more. \cite{Mindur:2139567}
+The TRT uses varying materials to discriminate between heavier particles, which have low $\gamma$ and radiate less, and lighter particles, which have higher $\gamma$ and radiate more.\cite{Mindur:2139567}
 \begin{equation}\label{lorentzGamma}
     \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
 \end{equation}
@@ -67,12 +67,12 @@ The ATLAS Trigger system is responsible for quickly deciding what events are int
 The Trigger system is divided into the first- and second-level triggers and when a particle activates a trigger, the trigger makes a decision to tell the Data Acquistion System (DAQ) to save the data produced by the detector. 
 The first-level trigger is a hardware trigger that decides, within $2.5 \mu s$ after the event, if it's a good event to put into a storage buffer for the second-level trigger.
 The second-level trigger is a software trigger that decides within $200 \mu s$ and uses around 40,000 CPU-cores and analyses the event to decide if it is worth keeping. 
-The second-level trigger selects about 1000 events per second to keep and store long-term. \cite{Trigger-DAQ}
+The second-level trigger selects about 1000 events per second to keep and store long-term.\cite{Trigger-DAQ}
 The data taken by this Trigger/DAQ system is raw and not yet in a state that is ready for analysis, but it is ready for the reconstruction stage. 
 
 % How is this relevant to the thesis?
 The amount of data taken at ATLAS is substantial.
-ATLAS sees more than 3.2 PB of raw data each year, each individual event being around 1.6 MB. \cite{ATLAS_Fact_Sheet} 
+ATLAS sees more than 3.2 PB of raw data each year, each individual event being around 1.6 MB.\cite{ATLAS_Fact_Sheet} 
 All of the data produced by LHC experiments, especially ATLAS, has to be sent to the LHC Computing Grid (LCG). 
 The increase in data means more resources from the Grid will be needed, so optimization is an essential part of ensuring scalability of the data able to be taken in by the experiment.
 Reconstructed AOD are then processed through derivation jobs that reduced AODs from  $\mathcal{O}(1)$ MB per event to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD). 
@@ -81,10 +81,11 @@ Reconstructed AOD are then processed through derivation jobs that reduced AODs f
 The High-Luminosity LHC (HL-LHC) is the upgrade to LHC that anticipates more events and more data taken than ever before.
 % How does high luminosity affect the number of collisions? 
 The goal is to reach a luminosity of $350 fb^{-1}$, which is forecasted to be reached gradually by around 2040.\cite{HL-LHC_Tech_design}
-The HL-LHC era is projected to demand anywhere from 6-10 times data stored per year, so any attempt to save on disk storage will help. \cite{ATLAS_HL-LHC_projections}
+The HL-LHC era is projected to demand anywhere from 6-10 times data stored per year, so any attempt to save on disk storage will help.\cite{ATLAS_HL-LHC_projections}
 
 One area of research is in the development of the ROOT N-Tuple (RNTuple) I/O subsystem, which is a new storage format for high-energy physics data seeking to replace ROOT TTree. 
 The RNTuple is a columnar-based storage format that is optimized for data storage and processing.
-It's been shown to out perform TTree I/O subsystem and other storage formats in file size, throughput, and compression, but still has more development before full implementation into the analysis pipeline.\cite{RNTuple_Lopez-Gomez_2023}
+It's been shown to outperform TTree I/O subsystem and other storage formats in file size (by about 15\%), throughput, and compression, but still has more development before full implementation into the analysis pipeline.\cite{RNTuple_Lopez-Gomez_2023}\cite{RNTuple_Blomer}
 Additionally, there's a push to utilize GPUs and other accelerators in conjunction with CPUs to process track reconstruction and AOD derivation.
 Also being developed are software framework updates to make the single-threaded CPU programs multi-thread friendly.\cite{AthenaMT_Leggett_2017}
+

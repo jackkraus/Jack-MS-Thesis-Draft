@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  5 FEB 2025 14:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  5 FEB 2025 16:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -928,18 +928,18 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) [7]
 [8]
-<content/img/tt_PHYS.png, id=539, 492.84125pt x 329.23pt>
+<content/img/tt_PHYS.png, id=541, 492.84125pt x 329.23pt>
 File: content/img/tt_PHYS.png Graphic file (type png)
 <use content/img/tt_PHYS.png>
 Package pdftex.def Info: content/img/tt_PHYS.png  used on input line 117.
 (pdftex.def)             Requested size: 234.8775pt x 156.9033pt.
-<content/img/tt_PHYSLITE.png, id=541, 479.7925pt x 287.0725pt>
+<content/img/tt_PHYSLITE.png, id=543, 479.7925pt x 287.0725pt>
 File: content/img/tt_PHYSLITE.png Graphic file (type png)
 <use content/img/tt_PHYSLITE.png>
 Package pdftex.def Info: content/img/tt_PHYSLITE.png  used on input line 123.
 (pdftex.def)             Requested size: 234.8775pt x 140.53534pt.
  [9]
-<content/img/catmore-derivation.png, id=548, 426.59375pt x 193.72375pt>
+<content/img/catmore-derivation.png, id=550, 426.59375pt x 193.72375pt>
 File: content/img/catmore-derivation.png Graphic file (type png)
 <use content/img/catmore-derivation.png>
 Package pdftex.def Info: content/img/catmore-derivation.png  used on input line
@@ -962,7 +962,7 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 ) [15]
 [16] [17] [18]
-<content/toymodel_content/branch_compfacts_nomix.png, id=691, 566.115pt x 303.9
+<content/toymodel_content/branch_compfacts_nomix.png, id=693, 566.115pt x 303.9
 72pt>
 File: content/toymodel_content/branch_compfacts_nomix.png Graphic file (type pn
 g)
@@ -973,7 +973,7 @@ sed on input line 168.
  [19 <./content/toymodel_content/branch_compfacts_nomix.png>]
 [20] [21]
 <content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) 
-branches at (N=1,000,000 events).png, id=762, 1318.9275pt x 813.0375pt>
+branches at (N=1,000,000 events).png, id=764, 1318.9275pt x 813.0375pt>
 File: content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 ran
 dom) branches at (N=1,000,000 events).png Graphic file (type png)
 <use content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 rand
@@ -983,7 +983,7 @@ andom) and (1_4 random) branches at (N=1,000,000 events).png  used on input lin
 e 248.
 (pdftex.def)             Requested size: 375.80544pt x 231.65607pt.
 <content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) 
-branches at (N=100,000 events).png, id=763, 1318.9275pt x 815.045pt>
+branches at (N=100,000 events).png, id=765, 1318.9275pt x 815.045pt>
 File: content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 ran
 dom) branches at (N=100,000 events).png Graphic file (type png)
 <use content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 rand
@@ -1004,7 +1004,7 @@ e 273.
 
 [23 <./content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 ra
 ndom) branches at (N=100,000 events).png>]
-<content/toymodel_content/Compression Factor vs. Branch Size (KB).png, id=778, 
+<content/toymodel_content/Compression Factor vs. Branch Size (KB).png, id=780, 
 919.435pt x 566.115pt>
 File: content/toymodel_content/Compression Factor vs. Branch Size (KB).png Grap
 hic file (type png)
@@ -1012,7 +1012,7 @@ hic file (type png)
 Package pdftex.def Info: content/toymodel_content/Compression Factor vs. Branch
  Size (KB).png  used on input line 279.
 (pdftex.def)             Requested size: 375.80544pt x 231.39168pt.
-<content/toymodel_content/Number of Baskets vs Branch Size.png, id=779, 1068.99
+<content/toymodel_content/Number of Baskets vs Branch Size.png, id=781, 1068.99
 374pt x 654.445pt>
 File: content/toymodel_content/Number of Baskets vs Branch Size.png Graphic fil
 e (type png)
@@ -1025,25 +1025,25 @@ ize.png  used on input line 286.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [24 <./content/toymodel_content/Compression Factor vs. Branch Size (KB).png>]
-<content/toymodel_content/3.28/1_of_2.png, id=790, 601.24625pt x 374.39874pt>
+<content/toymodel_content/3.28/1_of_2.png, id=792, 601.24625pt x 374.39874pt>
 File: content/toymodel_content/3.28/1_of_2.png Graphic file (type png)
 <use content/toymodel_content/3.28/1_of_2.png>
 Package pdftex.def Info: content/toymodel_content/3.28/1_of_2.png  used on inpu
 t line 307.
 (pdftex.def)             Requested size: 234.8775pt x 146.26057pt.
-<content/toymodel_content/3.28/1_of_3.png, id=791, 1145.27875pt x 705.63625pt>
+<content/toymodel_content/3.28/1_of_3.png, id=793, 1145.27875pt x 705.63625pt>
 File: content/toymodel_content/3.28/1_of_3.png Graphic file (type png)
 <use content/toymodel_content/3.28/1_of_3.png>
 Package pdftex.def Info: content/toymodel_content/3.28/1_of_3.png  used on inpu
 t line 313.
 (pdftex.def)             Requested size: 234.8775pt x 144.71019pt.
-<content/toymodel_content/3.28/1_of_4.png, id=792, 1142.2675pt x 697.60625pt>
+<content/toymodel_content/3.28/1_of_4.png, id=794, 1142.2675pt x 697.60625pt>
 File: content/toymodel_content/3.28/1_of_4.png Graphic file (type png)
 <use content/toymodel_content/3.28/1_of_4.png>
 Package pdftex.def Info: content/toymodel_content/3.28/1_of_4.png  used on inpu
 t line 320.
 (pdftex.def)             Requested size: 234.8775pt x 143.43599pt.
-<content/toymodel_content/3.28/1_of_5.png, id=793, 1139.25626pt x 697.60625pt>
+<content/toymodel_content/3.28/1_of_5.png, id=795, 1139.25626pt x 697.60625pt>
 File: content/toymodel_content/3.28/1_of_5.png Graphic file (type png)
 <use content/toymodel_content/3.28/1_of_5.png>
 Package pdftex.def Info: content/toymodel_content/3.28/1_of_5.png  used on inpu
@@ -1053,25 +1053,25 @@ t line 326.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<content/toymodel_content/4.18/1_of_2.png, id=794, 922.44624pt x 534.99875pt>
+<content/toymodel_content/4.18/1_of_2.png, id=796, 922.44624pt x 534.99875pt>
 File: content/toymodel_content/4.18/1_of_2.png Graphic file (type png)
 <use content/toymodel_content/4.18/1_of_2.png>
 Package pdftex.def Info: content/toymodel_content/4.18/1_of_2.png  used on inpu
 t line 338.
 (pdftex.def)             Requested size: 234.8775pt x 136.22287pt.
-<content/toymodel_content/4.18/1_of_3.png, id=795, 883.3pt x 541.02126pt>
+<content/toymodel_content/4.18/1_of_3.png, id=797, 883.3pt x 541.02126pt>
 File: content/toymodel_content/4.18/1_of_3.png Graphic file (type png)
 <use content/toymodel_content/4.18/1_of_3.png>
 Package pdftex.def Info: content/toymodel_content/4.18/1_of_3.png  used on inpu
 t line 344.
 (pdftex.def)             Requested size: 234.8775pt x 143.85701pt.
-<content/toymodel_content/4.18/1_of_4.png, id=796, 875.27pt x 537.00626pt>
+<content/toymodel_content/4.18/1_of_4.png, id=798, 875.27pt x 537.00626pt>
 File: content/toymodel_content/4.18/1_of_4.png Graphic file (type png)
 <use content/toymodel_content/4.18/1_of_4.png>
 Package pdftex.def Info: content/toymodel_content/4.18/1_of_4.png  used on inpu
 t line 351.
 (pdftex.def)             Requested size: 234.8775pt x 144.10046pt.
-<content/toymodel_content/4.18/1_of_5.png, id=797, 877.2775pt x 541.02126pt>
+<content/toymodel_content/4.18/1_of_5.png, id=799, 877.2775pt x 541.02126pt>
 File: content/toymodel_content/4.18/1_of_5.png Graphic file (type png)
 <use content/toymodel_content/4.18/1_of_5.png>
 Package pdftex.def Info: content/toymodel_content/4.18/1_of_5.png  used on inpu
@@ -1109,7 +1109,7 @@ Chapter 5.
 (./5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex [37
 
 ]
-<content/img/aux_store_better.png, id=896, 1592.95125pt x 456.70625pt>
+<content/img/aux_store_better.png, id=898, 1592.95125pt x 456.70625pt>
 File: content/img/aux_store_better.png Graphic file (type png)
 <use content/img/aux_store_better.png>
 Package pdftex.def Info: content/img/aux_store_better.png  used on input line 2
@@ -1164,16 +1164,16 @@ nput line 7.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 51E9B3E5ED22EA5C5AC755CFE91C0ABC;6737.
+(rerunfilecheck)             Checksum: 67DF563389829850CB6544CF3F4D826C;6730.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23965 strings out of 476025
- 414053 string characters out of 5790017
+ 23969 strings out of 476025
+ 414203 string characters out of 5790017
  2160388 words of memory out of 5000000
- 43631 multiletter control sequences out of 15000+600000
+ 43634 multiletter control sequences out of 15000+600000
  519719 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,77p,1144b,2178s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1192,10 +1192,10 @@ ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive
 /2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (59 pages, 2833037 bytes).
+Output written on main.pdf (59 pages, 2835129 bytes).
 PDF statistics:
- 1247 PDF objects out of 1440 (max. 8388607)
- 1040 compressed objects within 11 object streams
- 412 named destinations out of 1000 (max. 500000)
+ 1251 PDF objects out of 1440 (max. 8388607)
+ 1044 compressed objects within 11 object streams
+ 413 named destinations out of 1000 (max. 500000)
  392 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -131,7 +131,7 @@ $\textit{PrimaryVerticesAuxDyn.trackParticleLinks}$ is a branch where, among eac
 Some branches, like \textit{HLTNav Summary DAODSlimmedAuxDyn.linkColNames} show highly compressible behavior and are consistent with the other job configurations (data, MC, PHYS, and PHYSLITE). 
 Further work could investigate these branches for further optimization of derivation jobs.
 
-\subsection{Conclusion to derivation job optimization}
+\section{Conclusion to derivation job optimization}
 \label{sec:DAODProd_Results_conclusion}
 Initially, limiting the basket buffer size looked appealing; after the 128 kB basket buffer size limit was set, the compression ratio would begin to plateau, increasing the memory-usage without saving much in disk-usage. 
 The optimal balance is met with the setting of 128 kB basket buffers for derivation production. 
