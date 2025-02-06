@@ -1,12 +1,20 @@
 # code cred goes to Tyler Burch
 
+# To start, you'll need to remove all `progress.csv` entries 
+#       (except the headers in the first line) and then
+#       you should be able to run the update script:
+#       $ ./updateProgress.sh 
+
 from datetime import datetime
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import seaborn as sns
+
+# Adjust this to the path for your thesis/progressTracking directory
 savedir = "/Users/jackkraus/Desktop/masters-thesis/Jack-MS-Thesis-Draft/progressTracking/"
 
+# Adjust this to the path you want the progress.csv to show up 
 df = pd.read_csv('/Users/jackkraus/Desktop/masters-thesis/Jack-MS-Thesis-Draft/progressTracking/progress.csv')
 
 df['timestamp_fixed'] = pd.to_datetime(df['timestamp'], format="%Y-%m-%d %H:%M:%S")
@@ -18,6 +26,7 @@ current_wordcount = df["wordcount"].iloc[-1]
 wc_color="orangered"
 pc_color="royalblue"
 
+# Adjust this to your name
 def add_watermark(text="Jack Kraus"):
     """
     adds watermark to lower left corner of matplotlib plot

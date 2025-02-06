@@ -1,16 +1,16 @@
-Particle physics is the branch of physics that explores the fundamental constituents of matter and the forces governing their interactions.  
+Particle physics is the branch of physics that studies the fundamental constituents of matter and the forces governing their interactions.  
 The field started as studies in electromagnetism, radiation, and further developed with the discovery of the electron.
 What followed was more experiments to search for new particles, new models to describe the results, and new search techniques which demanded more data.
 The balance in resources for an experiment bottlenecks how much data can be taken, so steps need to be taken to identify interesting interactions and optimize the storage and processing of this data.
 This thesis investigates software performance optimization of the ATLAS experiment at CERN. 
-Specifically, ways to modernize and optimize areas of the software framework, Athena, to improve input/output (I/O) during derivation production and create new tests that catch when specific core I/O functionality is broken.
+Specifically, ways to modernize and optimize areas of the software framework, Athena, to improve input/output (I/O) performance during derivation production and create new tests that catch when specific core I/O functionality is broken.
 
 \section{LHC and The ATLAS Detector}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=.8\textwidth]{content/img/LHC illustration.jpg}
-    \caption{Illustration of the LHC experiment sites on the France-Switzerland border. \cite{LHC_Illustration}}
+    \caption{Illustration of the LHC experiment sites on the France-Switzerland border.\cite{LHC_Illustration}}
     \label{fig:intro_LHC_sites}
 \end{figure}
 
@@ -23,7 +23,7 @@ The ATLAS detector is comprised of three main sections, the inner detector, calo
 \begin{figure}[h]
     \centering
     \includegraphics[width=.8\textwidth]{content/img/ATLAS_Detector.jpg}
-    \caption{Overview of the ATLAS detectors main components. \cite{ATLAS_Illustration}}
+    \caption{Overview of the ATLAS detectors main components.\cite{ATLAS_Illustration}}
     \label{fig:intro_ATLAS_detector}
 \end{figure}
 
@@ -45,7 +45,7 @@ The TRT is made of a collection of tubes made with many layers of different mate
 The TRT's straw walls are made of two $35\mu m$ layers comprised of $6\mu m$ carbon-polymide, $0.20 \mu m$ aluminum, and a $25\mu m$ Kapton film reflected back.\cite{TRT_2008}
 The straws are filled with a gas mixture of $70\% \text{Xe} + 27\% \text{CO}_2 + 3\% \text{O}_2$. 
 Its measurement precision is around $170 \mu m$. 
-Particles with relativistic velocities have higher Lorentz $\gamma$-factors (see Eq. \eqref{lorentzGamma}). 
+Particles with relativistic velocities have higher Lorentz $\gamma$-factors (see Equation \eqref{lorentzGamma}). 
 The TRT uses varying materials to discriminate between heavier particles, which have low $\gamma$ and radiate less, and lighter particles, which have higher $\gamma$ and radiate more.\cite{Mindur:2139567}
 \begin{equation}\label{lorentzGamma}
     \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
@@ -59,7 +59,7 @@ The Tile calorimeter surrounds the LAr calorimeter and is the largest part of th
 Particles then traverse through the layers of steel and plastic scintillating tiles. 
 When a particle hits the steel, a cascade of secondary particles is generated, and the plastic scintillators will produce photons whose current can be measured.
 
-\section{ATLAS Trigger and Data Acquisition}
+\section{ATLAS Trigger and Data Acquisition (DAQ)}
 
 The LHC produces $pp$-collisions at a rate of 40 MHz, each collision is an ``event". 
 % What is the ATLAS Trigger System
@@ -83,9 +83,9 @@ The High-Luminosity LHC (HL-LHC) is the upgrade to LHC that anticipates more eve
 The goal is to reach a luminosity of $350 fb^{-1}$, which is forecasted to be reached gradually by around 2040.\cite{HL-LHC_Tech_design}
 The HL-LHC era is projected to demand anywhere from 6-10 times data stored per year, so any attempt to save on disk storage will help.\cite{ATLAS_HL-LHC_projections}
 
-One area of research is in the development of the ROOT N-Tuple (RNTuple) I/O subsystem, which is a new storage format for high-energy physics data seeking to replace ROOT TTree. 
+One area of research to account for this flood of new data is in the development of the ROOT N-Tuple (RNTuple) I/O subsystem, which is a new storage format for high-energy physics data seeking to replace ROOT TTree. 
 The RNTuple is a columnar-based storage format that is optimized for data storage and processing.
 It's been shown to outperform TTree I/O subsystem and other storage formats in file size (by about 15\%), throughput, and compression, but still has more development before full implementation into the analysis pipeline.\cite{RNTuple_Lopez-Gomez_2023}\cite{RNTuple_Blomer}
 Additionally, there's a push to utilize GPUs and other accelerators in conjunction with CPUs to process track reconstruction and AOD derivation.
-Also being developed are software framework updates to make the single-threaded CPU programs multi-thread friendly.\cite{AthenaMT_Leggett_2017}
+Also being developed are software framework updates, such as AthenaMT, to make the single-threaded CPU programs multi-thread ready.\cite{AthenaMT_Leggett_2017}
 

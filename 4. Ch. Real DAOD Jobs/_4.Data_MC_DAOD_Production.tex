@@ -116,7 +116,7 @@ The compressed file size is the size of the branch that is permanently saved int
 Branches with highly repetitive data are better compressed than non-repetitive data, leading to high compression factors--the initial size of the branch contains more data than it needs pre-derivation. 
 If pre-derivation branches are larger than necessary, there should be an opportunity to save memory usage during the derivation job. 
 
-The following tables look into some highly compressible branches and might lead to areas where simulation might save some space. (AOD pre compression?)
+The following tables look into some highly compressible branches that might lead to areas where simulation might save some space. 
 
 \input{content/tables/top-ten/mc/mc-physlite-CF}
 % Label: \label{Tab: 24.0.16-MC-PHYS-default-top-CF}
@@ -129,7 +129,7 @@ This is inline with the original expectation that an increased buffer size limit
 $\textit{PrimaryVerticesAuxDyn.trackParticleLinks}$ is a branch where, among each configuration of Athena MC derivation, has the highest compression factor of any branch in this dataset. 
 
 Some branches, like \textit{HLTNav Summary DAODSlimmedAuxDyn.linkColNames} show highly compressible behavior and are consistent with the other job configurations (data, MC, PHYS, and PHYSLITE). 
-Further work could investigate these branches for further optimization of derivation jobs.
+Further work could investigate these branches for further areas of optimization for long term storage and better memory usage during derivation.
 
 \section{Conclusion to derivation job optimization}
 \label{sec:DAODProd_Results_conclusion}

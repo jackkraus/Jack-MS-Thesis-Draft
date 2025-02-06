@@ -2,7 +2,7 @@
 The Trigger/DAQ system sends and saves data from the detector to a persistent data storage solution.
 It's at this stage where the data isn't yet ready for an effective analysis, so what needs to happen is the data needs to be reconstructed and consolidated into physics objects, or Analysis Object Data (AOD) files.
 Creating AODs from data requires significant computation power and Athena is the software framework that plays a significant role in this process.
-This chapter will cover the software tools used by ATLAS 
+This chapter will cover some of the important software tools used by ATLAS to run derivation jobs, as well as introduce data structures that represent event information. 
 
 \section{Athena and ROOT}
 % \subsection{What is Athena}
@@ -24,16 +24,17 @@ Where \verb|../package_filters.txt| is the text file containing the path to the 
 % How we used it
 % % Athena POOL
 AthenaPOOL is data storage architecture suite of packages within Athena that provide conversion services. 
-It originated as a separate project to serve as a layer between the transient data used by the software framework and the data stored permanently, persistent.
+It originated as a separate project to serve as a layer between the transient data, stored in memory, used by the software framework and the data stored permanently, or persistently.
 The transient/persistent style of representing event data will be further explained in $\S$ \ref{sec:IO_EDM}.
 
 
-
-
 % % Component Accumulator
-These unit tests are component accumulator (CA) scripts written in Python and call upon algorithms written in C++. 
-The python scripts are also used to set the job options for the algorithms added to the component accumulator, job options like flag definitions, input and output file names, and other algorithm specific options.
-A CA script written in pseudocode would take the form: 
+An important step throughout the development of Athena is to ensure any new changes to the codebase won't overrule the functionality of core features to the present workflows.
+One of the ares needed to be tested before and upon merging of any new changes to Athena is the I/O functionality, or the performance of reading and writing of stored objects within a broader context of various jobs, i.e. reconstruction or derivation.
+These are unit tests which are scripts written in Python and call upon algorithms written in C++. 
+The python scripts are used to set the job options for the algorithms added to the component accumulator (CA), job options like flag definitions, input and output file names, and other algorithm specific options.
+While CA is a more general mechanism to run any kind of job with Athena, it's within the scope of this thesis where the focus is on testing core I/O functionality of the new event data model. 
+A general CA script written in pseudocode would take the form: 
 \begin{lstlisting}[language=Python]
     # Import Packages
     from AthenaConfiguration.AllConfigFlags import initConfigFlags
@@ -65,7 +66,6 @@ A CA script written in pseudocode would take the form:
 \end{lstlisting}
 
 
-
 % What is ROOT
 ROOT is an open-source software framework used for high-energy physics analysis at CERN.\cite{ROOT_about} 
 It uses C++ objects to save, access, and process data brought in by the various experiments based at the LHC, the ATLAS experiment uses it in conjunction with Athena.
@@ -82,7 +82,7 @@ CI is a software development practice where new code is tested and validated upo
 Every commit to the main branch is automatically built and tested for specific core features that are required to work with the codebase. 
 This helps to ensure that the codebase is working as intended and that the new code is compatible with the existing codebase.
 
-Athena is hosted on GitLab and developed using CI with an instance of Jenkins, called ATLAS Robot, to build and test the new changes within a merge request interface. 
+Athena is hosted on GitLab and developed using CI with an instance of Jenkins, called ATLAS Robot, which builds and tests the new changes within a merge request interface. 
 ATLAS Robot will then provide a report of the build and test results.
 If the build or test fail, ATLAS Robot will provide a report of which steps failed and why.
 This allows for early detection of issues before the nightly build is compiled and tested.
@@ -127,9 +127,8 @@ Figure \ref{fig:IO_tt_PHYS_vs_PHYSLITE} shows the object composition of a PHYS a
     \caption{Object composition of a PHYS and PHYSLITE $t\bar{t}$ sample from Run 3.}
     \label{fig:IO_tt_PHYS_vs_PHYSLITE}
 \end{figure}
-PHYS output files, at 40.0 kB per event, is prodominantly made of jet collections, while PHYSLITE, at 16.1 kB per event, has more trigger and track information.
-There is ongoing work to reduce the amount of Trigger information in PHYSLITE which would help to reduce the file size.
-
+PHYS output files, at 40.0 kB per event, is predominantly made of jet collections, while PHYSLITE, at 16.1 kB per event, has more trigger and track information.
+There is ongoing work to reduce the amount of Trigger information in PHYSLITE which would help further reduce the file size saved to disk.
 PHYSLITE, being the smallest file of the two, sees the largest effect upon attempts of optimization. 
 These jobs can demand heavy resource usage on the GRID, so optimization of the AOD/DAODs for derivation jobs can be vital. 
 
@@ -172,7 +171,7 @@ Additionally, converting from transient to persistent data was an excessive step
 The xAOD EDM is the successor to the T/P EDM and brings a number of improvements.
 This EDM, unlike T/P, is usuable both on Athena and ROOT.
 It's easier to pick up for analysis and reconstruction. 
-The xAOD EDM has the ability to add and remove variables at runtime, these variables are called ``decorations."
+The xAOD EDM has the ability to add and remove variables within an \verb|ItemList| at runtime, specified in the CA script, these variables are ``decorations."
 
 The xAOD EDM use two types of objects handle data, interface objects and payload objects. 
 Interfaces act as an interface for the user to access the object but without its stored data. 

@@ -1021,9 +1021,6 @@ INPUT ./content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 ra
 INPUT content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=100,000 events).png
 INPUT ./content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=100,000 events).png
 INPUT ./content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=100,000 events).png
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT ./content/toymodel_content/Compression Factor vs. Branch Size (KB).png
 INPUT ./content/toymodel_content/Compression Factor vs. Branch Size (KB).png
 INPUT content/toymodel_content/Compression Factor vs. Branch Size (KB).png
@@ -1129,6 +1126,9 @@ INPUT ./content/img/aux_store_better.png
 INPUT content/img/aux_store_better.png
 INPUT ./content/img/aux_store_better.png
 INPUT ./content/img/aux_store_better.png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT ./6. Conclusion/_6.Conclusion.tex
 INPUT 6. Conclusion/_6.Conclusion.tex
 INPUT ./6. Conclusion/_6.Conclusion.tex
