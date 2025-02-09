@@ -156,8 +156,8 @@ An EDM allows those developers to more easily debug and communicate issues when 
 \subsection{Transient/Persistent (T/P) EDM}
 One of the previous EDM schemas used by ATLAS concerned a dual transient/persistent status of AOD.
 With this EDM, the AOD was converted into an ntuple based format called D3PDs. 
-While this conversion allowed for fast readability and partial read for effient analysis in ROOT, it left the files disconnected from the reconstruction tools found in Athena.\cite{Athena_xAOD_design}
-When transient data was present in memory, it could have information attatched to the object and gain in complexity the more it was used.
+While this conversion allowed for fast readability and partial read for efficient analysis in ROOT, it left the files disconnected from the reconstruction tools found in Athena.\cite{Athena_xAOD_design}
+When transient data was present in memory, it could have information attached to the object and gain in complexity the more it was used.
 Transient data needed to be simplified before it could become persistent into long-term storage (sent to disk). 
 ROOT had trouble handling the complex inheritance models that would come up the more developers used this EDM. 
 Before the successor to the T/P EDM was created, ATLAS physicists would convert data samples using the full EDM to a simpler one that would be directly readable by ROOT.
@@ -169,7 +169,7 @@ Additionally, converting from transient to persistent data was an excessive step
 
 \subsection{xAOD EDM}
 The xAOD EDM is the successor to the T/P EDM and brings a number of improvements.
-This EDM, unlike T/P, is usuable both on Athena and ROOT.
+This EDM, unlike T/P, is usable both on Athena and ROOT.
 It's easier to pick up for analysis and reconstruction. 
 The xAOD EDM has the ability to add and remove variables within an \verb|ItemList| at runtime, specified in the CA script, these variables are ``decorations."
 
