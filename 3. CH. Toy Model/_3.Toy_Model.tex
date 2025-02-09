@@ -1,6 +1,6 @@
 Building a toy model for derivation production jobs offers a simplified framework to effectively simulate and analyze the behavior of real and Monte Carlo (MC) data under techniques of optimization aimed to study.
 One commonality between both data and MC is the data types stored in branches for both is made of a mixture between repeated integer-like data and randomized floating-point data. 
-Intergers are easier to compress than floating-point numbers, so adjusting the mixture of each will yield compression ratios closer to real and MC data.  
+Integers are easier to compress than floating-point numbers, so adjusting the mixture of each will yield compression ratios closer to real and MC data.  
 Replicating this mixture in a branch give us an effective model that resemble how current derivation jobs act on real and MC simulated data. 
 These toy model mixtures provide an avenue to test opportunities for optimizing the memory and storage demands of the GRID by first looking at limiting basket sizes and their effects on compression of branches. 
 
@@ -13,7 +13,7 @@ Vectors are used in this toy model, as opposed to arrays, because vectors are dy
 This original model had four distinct branches, each with a set number of events (\verb|N=1000|), and each event having a number of entries, vectors with 1, 10, 100, and 1000 floats each.
 
 The script can be compiled with \verb|gcc| or \verb|g++| and it requires all of the dependencies that come with ROOT. 
-Alternatively, the script can be run direclty within ROOT.
+Alternatively, the script can be run directly within ROOT.
 % To begin this script, there are a number of included ROOT and \verb|C++| standard library headers. 
 % \begin{lstlisting}[language=C]
 %   // C++ Standard Library
@@ -184,7 +184,7 @@ This is the leading indication that there needs to be more compressible data wit
 The branches needed to have some balance between compressible and incompressible data to mimic the compression ratio found in real data.
 How this was achieved was by filling each vector with different ratios of random floats and repeating integers, which will now be described in detail.
 
-The first change was increasing the total number of events per branch from $N = 10^4$ to $N = 10^5$, or from 10,000 to 100,000. 
+The first change was increasing the total number of events per branch from $N = 10^4$ to $N = 10^5$. 
 Mixing of random floats and repeated integer values takes the same script structure as Section $\S$ \ref{sec:toy_compression_random_float_branches} but adjusts the event generation loop.
 \begin{lstlisting}[language=C]  
   void VectorTree() {
@@ -265,9 +265,9 @@ With these mixtures added to the toy model, we can start looking at varying the 
 \label{sec: toy-model basket-size investigation}
 
 Investigating how compression is affected by the basket size requires us to change the basket size, refill the branch and read it out.
-Changing the basket sizes was done at the script level with a simple setting after the branch initialization and before the event loop the following code:
+Changing the basket buffer size was done at the script level with a simple setting after the branch initialization and before the event loop the following code:
 \begin{lstlisting}
-    int basketSize = 8192000;
+    int basketSize = 8192000; // 8 MB
     tree->SetBasketSize("*",basketSize);
 \end{lstlisting}
 This ROOT-level setting was sufficient for the case of the toy model; testing of the basket size setting both at the ROOT- and Athena-level would be done later using derivation production jobs in Section $\S\ref{sec:DAODProd_Analysis}$.
@@ -288,16 +288,16 @@ The first branch looked at closely was the branch with a thousand vectors with h
     \label{fig:toymodel_NumBasketsvsBranchSize_1/2mixture}
 \end{figure}
 
-Figure \ref{fig:toymodel_CFvsBranchSize_1/2mixture} and Figure \ref{fig:toymodel_NumBasketsvsBranchSize_1/2mixture} are the first indication that the lower basket sizes are too small to effectively compress the data. 
+Figures \ref{fig:toymodel_CFvsBranchSize_1/2mixture} and \ref{fig:toymodel_NumBasketsvsBranchSize_1/2mixture} are the first indication that the lower basket sizes are too small to effectively compress the data. 
 For baskets smaller than 16 kB, it is necessary to have as many baskets as events to store all the data effectively.
 For a mixed-content vector with one thousand entries, containing 500 floats and 500 integers (both are 4 bytes each), its size is approximately 4 kB.
 ROOT creates baskets of at least the size of the smallest branch entry, in this case the size of a single vector.
 So even though the basket size was set to 1 or 2 kB, ROOT created baskets of 4 kB.
-These baskets $\leq 4$kB have a significantly worse compression than the baskets $\geq 4$kB in size, so the focus was shifted toward baskets  
+These baskets $\leq 4$kB have a significantly worse compression than the baskets $\geq 4$kB in size, so the focus was shifted toward baskets.  
 Once the basket size is larger than the size of a single vector, more than one vector can be stored in a single basket and the total number of baskets is reduced.
 
 There were different types of configuration to the toy model investigated by this study. 
-Looking further into the types of mixtures and how they would affect compression are shown in Figure \ref{fig:toymodel_328_compF_vs_basketsize} and \ref{fig:toymodel_418_compF_vs_basketsize}. 
+Looking further into the types of mixtures and how they would affect compression are shown in Figures \ref{fig:toymodel_328_compF_vs_basketsize} and \ref{fig:toymodel_418_compF_vs_basketsize}. 
 Here the same mixtures were used but the precision of the floating point numbers was decreased from the standard 32 floating-point precision to 16 and 8, making compression easier. 
 
 \begin{figure}[h]
