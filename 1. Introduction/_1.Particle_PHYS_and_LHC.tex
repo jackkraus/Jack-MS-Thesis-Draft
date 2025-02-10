@@ -23,7 +23,7 @@ Pseudo-rapidity is a parameter representing the the angle relative to the beamli
     \eta \equiv -\ln\left[ \tan\left(\frac{\theta}{2}\right)\right],
 \end{equation}  
 where if $\theta = 0$ then $\eta = \infty$ and if $\theta = \frac{\pi}{2}$ then $\eta = 0$.
-Pseudo-rapidity is used, as opposed to traditional cartesian angles, because it's Lorentz invariant under boosts along the beam axis, making it easier to identify collisions due to symmetry.  
+Pseudo-rapidity is used, as opposed to traditional Cartesian angles, because it's Lorentz invariant under boosts along the beam axis, making it easier to identify collisions due to symmetry.  
 \begin{figure}[h!]
     \centering
     \includegraphics[width=.8\textwidth]{content/img/ATLAS_quadrant.png}
@@ -41,14 +41,15 @@ The ATLAS detector is comprised of three main sections, the inner detector, calo
 The inner detector measures the direction, momentum and charge of electrically charged particles.
 Its main function is to measure the track of the charged particles without destroying the particle itself.
 The first point of contact for particles emerging from $pp$-collisions from the center of the ATLAS detector is the pixel detector.\cite{PixelDetector_2008}
-It has over 92 million pixels and is radiation hard to aid in particle track and vertex reconstruction.
-When charged particles pass through a pixel sensor, it ionizes the one-sided doped-silicon wafer to produce an excited electron will then occupy the conduction band of the semiconductor producing an electron-hole pair, leaving the valence band empty.\cite{KnollRadDetection}
+It has over 92 million pixels to aid in particle track and vertex reconstruction.
+Since the pixels are the first point of contact to the incident particles they have to be radiation hard so the electronics may function without fault.
+When a charged particle passes through a pixel sensor it ionizes the one-sided doped-silicon wafer to produce an excited electron will then occupy the conduction band of the semiconductor producing an electron-hole pair, leaving the valence band empty.\cite{KnollRadDetection}
 This hole in the valence band together with the excited electron in the conduction band is called an electron-hole pair.
 The electron-hole pair is in the presence of an electric field, which will induce drifting of the electron-hole pair, drifting that will generate the electric current to be measured.
 
 Surrounding the pixel detector is the SemiConductor Tracker (SCT), which uses 4,088 modules of 6 million implanted silicon readout strips.\cite{ABDESSELAM2006642}
 Both the pixel detector and SCT measure the path particles take, called tracks.
-While the pixel detector has measurement precision up to $10 \mu m$, the SCT has precision up to $25\mu m$. 
+While the pixel detector has measurement precision up to $10 \mu m$ in the $r\phi$ direction and $70 \mu m$ in the $z$-coordinate direction,\cite{Andreazza:1287089} the SCT has resolution up to$17 \mu m$ in the $r\phi$-direction and $580 \mu m$ in the $z$-direction. 
 
 The final layer of the inner detector is the transition radiation tracker (TRT). 
 The TRT is made of a collection of tubes made with many layers of different materials with varying indices of refraction.
