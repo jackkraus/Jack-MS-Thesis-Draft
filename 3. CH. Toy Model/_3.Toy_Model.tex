@@ -1,7 +1,7 @@
 Building a toy model for derivation production jobs offers a simplified framework to effectively simulate and analyze the behavior of real and Monte Carlo (MC) data under techniques of optimization aimed to study.
 One commonality between both data and MC is the data types stored in branches for both is made of a mixture between repeated integer-like data and randomized floating-point data. 
-Integers are easier to compress than floating-point numbers, so adjusting the mixture of each will yield compression ratios closer to real and MC data.  
-Replicating this mixture in a branch give us an effective model that resemble how current derivation jobs act on real and MC simulated data. 
+Integers are easier to compress than floating-point numbers, so adjusting the mixture of each can yield compression ratios closer to real and MC data.  
+Replicating this mixture in a branch give us an effective model that resembles how current derivation jobs act on real and MC simulated data. 
 These toy model mixtures provide an avenue to test opportunities for optimizing the memory and storage demands of the GRID by first looking at limiting basket sizes and their effects on compression of branches. 
 
 
@@ -9,7 +9,7 @@ These toy model mixtures provide an avenue to test opportunities for optimizing 
 
 \subsection{Random Float Branches} \label{sec:toy_compression_random_float_branches}
 There were a number of iterations to the toy model, but the first was constructed by filling a TTree with branches that each have vectors with varying number of random floats to write and read.
-Vectors are used in this toy model, as opposed to arrays, because vectors are dynamically allocated and deallocated, which allows for more flexibility when synthesizing AOD. 
+Vectors are used in this toy model, as opposed to arrays, because vectors are dynamically allocated and deallocated, which allows for more flexibility when synthesizing AODs. 
 This original model had four distinct branches, each with a set number of events (\verb|N=1000|), and each event having a number of entries, vectors with 1, 10, 100, and 1000 floats each.
 
 The script can be compiled with \verb|gcc| or \verb|g++| and it requires all of the dependencies that come with ROOT. 
@@ -42,9 +42,9 @@ What is needed first is an output file, which will be called \verb|VectorTreeFil
 %     ...
 %   }
 % \end{lstlisting}
-Initializing variables start with the total number of events in the branch, i.e. the number of times a branch is filled with the specified numbers per vectors, \verb|N|. 
+The toy model starts variable initialization with the total number of events in the branch, i.e. the number of times a branch is filled with the specified numbers per vectors, \verb|N|. 
 Additionally the branches have a number of floats per vector, this size will need to be defined as \verb|size_vec_0|, \verb|size_vec_1|, etc.  
-The actual vectors that are being stored into each branch need to be defined as well as the temporary placeholder variable for our randomized floats, \verb|vec_tenX| and \verb|float_X| respectively. 
+The actual vectors that are being stored into each branch need to be defined as well as the temporary placeholder variable for our randomized floats, \verb|vec_tenX| and \verb|float_X|, respectively. 
 \begin{lstlisting}[language=C]  
   void VectorTree() {
     ...
@@ -70,7 +70,7 @@ The actual vectors that are being stored into each branch need to be defined as 
   }
 \end{lstlisting}
 
-From here, initialize the branches so each one knows where its vector pair resides in memory.
+From here, branches are initialized so each one knows where its vector pair resides in memory.
 \begin{lstlisting}[language=C]  
   void VectorTree() {
     ...

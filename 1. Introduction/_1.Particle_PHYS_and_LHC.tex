@@ -14,20 +14,30 @@ Specifically, ways to modernize and optimize areas of the software framework, At
     \label{fig:intro_LHC_sites}
 \end{figure}
 
-The Large Hadron Collider (LHC), shown in Figure \ref{fig:intro_LHC_sites},  is a particle accelerator spanning a 26.7-kilometer ring that crosses between the France-Switzerland border at a depth between 50 and 175 meters underground.\cite{LHC_faq_guide}
+The Large Hadron Collider (LHC), shown in Figure \ref{fig:intro_LHC_sites},  is a particle accelerator spanning a 26.7-kilometer ring that crosses between the France-Switzerland border at a depth between 50 and 175 meters underground.\cite{Brüning:782076}
 The ATLAS experiment, shown in Figure \ref{fig:intro_ATLAS_detector}, is the largest LHC general purpose detector, and the largest detector ever made for particle collision experiments. 
-It's 46 meters long, 25 meters high and 25 meters wide.\cite{ATLAS_Fact_Sheet}
+The detector lies in a cavern 92.5 m underground at a length of 46 m, height and width of 25 m.\cite{ATLAS_Tech_Proposal}
+A quadrant of the detector is shown in Figure \ref{fig:ATLAS_quadrant}, where $\eta$ is a measure of the pseudo-rapidity.
+Pseudo-rapidity is a parameter representing the the angle relative to the beamline and is defined as
+\begin{equation}
+    \eta \equiv -\ln\left[ \tan\left(\frac{\theta}{2}\right)\right],
+\end{equation}  
+where if $\theta = 0$ then $\eta = \infty$ and if $\theta = \frac{\pi}{2}$ then $\eta = 0$.
+Pseudo-rapidity is used, as opposed to traditional cartesian angles, because it's Lorentz invariant under boosts along the beam axis, making it easier to identify collisions due to symmetry.  
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.8\textwidth]{content/img/ATLAS_quadrant.png}
+    \caption{One quadrant of the ATLAS detector.\cite{ATLAS_Tech_Proposal}}
+    \label{fig:ATLAS_quadrant}
+\end{figure}
+
 The ATLAS detector is comprised of three main sections, the inner detector, calorimeters and the muon detector system. 
-
-
 \begin{figure}[h]
     \centering
     \includegraphics[width=.8\textwidth]{content/img/ATLAS_Detector.jpg}
     \caption{Overview of the ATLAS detectors main components.\cite{ATLAS_Illustration}}
     \label{fig:intro_ATLAS_detector}
 \end{figure}
-
-
 The inner detector measures the direction, momentum and charge of electrically charged particles.
 Its main function is to measure the track of the charged particles without destroying the particle itself.
 The first point of contact for particles emerging from $pp$-collisions from the center of the ATLAS detector is the pixel detector.\cite{PixelDetector_2008}

@@ -18,7 +18,158 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
+  \datalist[entry]{none/global//global/global}
+    \entry{LHC_Illustration}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f8bd0356e6dc1ca33bc342ada2117488}{%
+           family={CERN},
+           familyi={C\bibinitperiod},
+           given={Jean-Luc\bibnamedelima Caron},
+           giveni={J\bibinithyphendelim L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           prefix={for},
+           prefixi={f\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8bd0356e6dc1ca33bc342ada2117488}
+      \strng{fullhash}{f8bd0356e6dc1ca33bc342ada2117488}
+      \strng{bibnamehash}{f8bd0356e6dc1ca33bc342ada2117488}
+      \strng{authorbibnamehash}{f8bd0356e6dc1ca33bc342ada2117488}
+      \strng{authornamehash}{f8bd0356e6dc1ca33bc342ada2117488}
+      \strng{authorfullhash}{f8bd0356e6dc1ca33bc342ada2117488}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{LHC Illustration showing underground locations of detectors}
+      \field{year}{1998}
+      \verb{urlraw}
+      \verb https://research.princeton.edu/news/princeton-led-group-prepares-large-hadron-collider-bright-future
+      \endverb
+      \verb{url}
+      \verb https://research.princeton.edu/news/princeton-led-group-prepares-large-hadron-collider-bright-future
+      \endverb
+    \endentry
+    \entry{Brüning:782076}{book}{}
+      \name{author}{7}{}{%
+        {{hash=c9a324bb9a73322510ce6491007589ce}{%
+           family={Brüning},
+           familyi={B\bibinitperiod},
+           given={Oliver\bibnamedelima Sim},
+           giveni={O\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=27c0d70e2ccc0d27aad2e650cc1a8f50}{%
+           family={Collier},
+           familyi={C\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2582fc5d66afe2e9d4441336bf6f8fd5}{%
+           family={Lebrun},
+           familyi={L\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5989faab9323b87eba26b48446d8993d}{%
+           family={Myers},
+           familyi={M\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=004c382fdaca31e6f614dceccc6c4763}{%
+           family={Ostojic},
+           familyi={O\bibinitperiod},
+           given={Ranko},
+           giveni={R\bibinitperiod}}}%
+        {{hash=859574ed2024b812bcae7c9de5af7895}{%
+           family={Poole},
+           familyi={P\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f0740a01ded863cafc5c5a8c10fc9e7b}{%
+           family={Proudlock},
+           familyi={P\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \list{publisher}{1}{%
+        {CERN}%
+      }
+      \strng{namehash}{8f17260326e9957cf9e7df8d39e7952f}
+      \strng{fullhash}{bd6370d8800b3fed4a534892c9929e09}
+      \strng{bibnamehash}{8f17260326e9957cf9e7df8d39e7952f}
+      \strng{authorbibnamehash}{8f17260326e9957cf9e7df8d39e7952f}
+      \strng{authornamehash}{8f17260326e9957cf9e7df8d39e7952f}
+      \strng{authorfullhash}{bd6370d8800b3fed4a534892c9929e09}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{CERN Yellow Reports: Monographs}
+      \field{title}{{LHC Design Report}}
+      \field{year}{2004}
+      \verb{doi}
+      \verb 10.5170/CERN-2004-003-V-1
+      \endverb
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/782076
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/782076
+      \endverb
+    \endentry
+    \entry{ATLAS_Tech_Proposal}{book}{}
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \list{publisher}{1}{%
+        {CERN}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{series}{LHC technical proposal}
+      \field{title}{{ATLAS: technical proposal for a general-purpose pp experiment at the Large Hadron Collider at CERN}}
+      \field{year}{1994}
+      \verb{doi}
+      \verb 10.17181/CERN.NR4P.BG9K
+      \endverb
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/290968
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/290968
+      \endverb
+    \endentry
+    \entry{ATLAS_Illustration}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=e52b0b1fccb9c002909cdd7fa31b43bd}{%
+           family={Girolamo},
+           familyi={G\bibinitperiod},
+           given={Beniamino\bibnamedelima Di},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=48579ef9b2b26d9fcdfc215cf1ec2ee7}{%
+           family={Nessi},
+           familyi={N\bibinitperiod},
+           given={Marzio},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e49f902bd551e762a0c6564a1439ebbb}
+      \strng{fullhash}{e49f902bd551e762a0c6564a1439ebbb}
+      \strng{bibnamehash}{e49f902bd551e762a0c6564a1439ebbb}
+      \strng{authorbibnamehash}{e49f902bd551e762a0c6564a1439ebbb}
+      \strng{authornamehash}{e49f902bd551e762a0c6564a1439ebbb}
+      \strng{authorfullhash}{e49f902bd551e762a0c6564a1439ebbb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ATLAS undergoes some delicate gymnastics}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://cerncourier.com/a/atlas-undergoes-some-delicate-gymnastics/
+      \endverb
+      \verb{url}
+      \verb https://cerncourier.com/a/atlas-undergoes-some-delicate-gymnastics/
+      \endverb
+    \endentry
     \entry{PixelDetector_2008}{article}{}
       \name{author}{268}{}{%
         {{hash=50f20d3c6dfbe5459d0f39bcb67740ec}{%
@@ -1368,8 +1519,8 @@
       \strng{authorbibnamehash}{f1cec2969fb25fe3621ef4c33b2c003a}
       \strng{authornamehash}{f1cec2969fb25fe3621ef4c33b2c003a}
       \strng{authorfullhash}{a7f278151774bce364ea23602ed1decd}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The silicon pixel tracking system for the ATLAS experiment at the Large Hadron Collider is described and the performance requirements are summarized. Detailed descriptions of the pixel detector electronics and the silicon sensors are given. The design, fabrication, assembly and performance of the pixel detector modules are presented. Data obtained from test beams as well as studies using cosmic rays are also discussed.}
@@ -1390,6 +1541,33 @@
       \verb{url}
       \verb https://dx.doi.org/10.1088/1748-0221/3/07/P07007
       \endverb
+    \endentry
+    \entry{KnollRadDetection}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6658b3a0dc8d44502ea2cda983468088}{%
+           family={Knoll},
+           familyi={K\bibinitperiod},
+           given={Glenn\bibnamedelima F.},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Inc.}%
+      }
+      \strng{namehash}{6658b3a0dc8d44502ea2cda983468088}
+      \strng{fullhash}{6658b3a0dc8d44502ea2cda983468088}
+      \strng{bibnamehash}{6658b3a0dc8d44502ea2cda983468088}
+      \strng{authorbibnamehash}{6658b3a0dc8d44502ea2cda983468088}
+      \strng{authornamehash}{6658b3a0dc8d44502ea2cda983468088}
+      \strng{authorfullhash}{6658b3a0dc8d44502ea2cda983468088}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Radiation Detection and Measurement}
+      \field{year}{2010}
     \endentry
     \entry{ABDESSELAM2006642}{article}{}
       \name{author}{264}{}{%
@@ -2720,8 +2898,8 @@
       \strng{authorbibnamehash}{bf817e19f5890a21f153bd8dfd3648a6}
       \strng{authornamehash}{bf817e19f5890a21f153bd8dfd3648a6}
       \strng{authorfullhash}{f82928e2919c05200bfc43008cf49234}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper describes the silicon microstrip modules in the barrel section of the SemiConductor Tracker (SCT) of the ATLAS experiment at the CERN Large Hadron Collider (LHC). The module requirements, components and assembly techniques are given, as well as first results of the module performance on the fully assembled barrels that make up the detector being installed in the ATLAS experiment.}
@@ -2743,308 +2921,6 @@
       \verb https://www.sciencedirect.com/science/article/pii/S016890020601388X
       \endverb
       \keyw{ATLAS,SCT,Silicon,Microstrip,Barrel,Module,LHC}
-    \endentry
-    \entry{HL-LHC_Tech_design}{article}{}
-      \name{author}{1}{}{%
-        {{hash=fd7f00a7df2e569f278fa98e72b180e2}{%
-           family={al.},
-           familyi={a\bibinitperiod},
-           given={I.\bibnamedelimi Bejar\bibnamedelima Alonso},
-           giveni={I\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim A\bibinitperiod},
-           prefix={et},
-           prefixi={e\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {CERN Yellow Reports: Monographs}%
-      }
-      \strng{namehash}{fd7f00a7df2e569f278fa98e72b180e2}
-      \strng{fullhash}{fd7f00a7df2e569f278fa98e72b180e2}
-      \strng{bibnamehash}{fd7f00a7df2e569f278fa98e72b180e2}
-      \strng{authorbibnamehash}{fd7f00a7df2e569f278fa98e72b180e2}
-      \strng{authornamehash}{fd7f00a7df2e569f278fa98e72b180e2}
-      \strng{authorfullhash}{fd7f00a7df2e569f278fa98e72b180e2}
-      \field{sortinit}{a}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{High-Luminosity Large Hadron Collider (HL-LHC): Technical design report}
-      \field{volume}{10}
-      \field{year}{2020}
-      \field{pages}{390}
-      \range{pages}{1}
-      \verb{doi}
-      \verb https://doi.org/10.23731/CYRM-2020-0010
-      \endverb
-      \verb{urlraw}
-      \verb https://e-publishing.cern.ch/index.php/CYRM/issue/view/127
-      \endverb
-      \verb{url}
-      \verb https://e-publishing.cern.ch/index.php/CYRM/issue/view/127
-      \endverb
-    \endentry
-    \entry{RNTuple_Blomer}{article}{}
-      \name{author}{8}{}{%
-        {{hash=8b9ffe18a8d243ac0f9e8bede163b04c}{%
-           family={{Blomer, Jakob}},
-           familyi={B\bibinitperiod}}}%
-        {{hash=b4733396bfb52169380f594bfdb7e889}{%
-           family={{Canal, Philippe}},
-           familyi={C\bibinitperiod}}}%
-        {{hash=928fb71a482118699a6bab9ea3ea4864}{%
-           family={{de Geus, Florine}},
-           familyi={d\bibinitperiod}}}%
-        {{hash=9ca3b23fa0af0b18fbda50d7de3dfe30}{%
-           family={{Hahnfeld, Jonas}},
-           familyi={H\bibinitperiod}}}%
-        {{hash=59ce101fabfc663ad2311529ece99080}{%
-           family={{Naumann, Axel}},
-           familyi={N\bibinitperiod}}}%
-        {{hash=86fa12abfb51da9186e13ac2114a35e3}{%
-           family={{Lopez-Gomez, Javier}},
-           familyi={L\bibinitperiod}}}%
-        {{hash=7506d43ec7e32777fe9766ea5dce6401}{%
-           family={{Lazzari Miotto, Giovanna}},
-           familyi={L\bibinitperiod}}}%
-        {{hash=9d74746b1a604f4931cffafe33883ce0}{%
-           family={{Padulano, Vincenzo Eduardo}},
-           familyi={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{8b360f094206615a3191fe0e7adc3121}
-      \strng{fullhash}{2a99c686466f4167b76e1d6311bb7555}
-      \strng{bibnamehash}{8b360f094206615a3191fe0e7adc3121}
-      \strng{authorbibnamehash}{8b360f094206615a3191fe0e7adc3121}
-      \strng{authornamehash}{8b360f094206615a3191fe0e7adc3121}
-      \strng{authorfullhash}{2a99c686466f4167b76e1d6311bb7555}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{EPJ Web of Conf.}
-      \field{title}{ROOT’s RNTuple I/O Subsystem: The Path to Production}
-      \field{volume}{295}
-      \field{year}{2024}
-      \field{pages}{06020}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1051/epjconf/202429506020
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1051/epjconf/202429506020
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1051/epjconf/202429506020
-      \endverb
-    \endentry
-    \entry{Buckley_2015}{article}{}
-      \name{author}{11}{}{%
-        {{hash=2914a2575bda7d21604d8d93cbec8450}{%
-           family={Buckley},
-           familyi={B\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
-        {{hash=36f26e0c338475417702cfb205340058}{%
-           family={Eifert},
-           familyi={E\bibinitperiod},
-           given={T},
-           giveni={T\bibinitperiod}}}%
-        {{hash=419c369760dd9dfd1eee84b37c333e21}{%
-           family={Elsing},
-           familyi={E\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=e7646167b3cc11ba916490df0d4d84f7}{%
-           family={Gillberg},
-           familyi={G\bibinitperiod},
-           given={D},
-           giveni={D\bibinitperiod}}}%
-        {{hash=bf0dbb9efcfb9349e016f6560967bc6b}{%
-           family={Koeneke},
-           familyi={K\bibinitperiod},
-           given={K},
-           giveni={K\bibinitperiod}}}%
-        {{hash=e0d35a488929834faf44b72d3031ce1c}{%
-           family={Krasznahorkay},
-           familyi={K\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
-        {{hash=3efdec65543778c5361133e575eb989e}{%
-           family={Moyse},
-           familyi={M\bibinitperiod},
-           given={E},
-           giveni={E\bibinitperiod}}}%
-        {{hash=b72351089b9a49daeed38cc66ccde2b9}{%
-           family={Nowak},
-           familyi={N\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=04f25ef56145796479b1d816b69c6344}{%
-           family={Snyder},
-           familyi={S\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=d6b07f28298803390b9d085f997fb7ca}{%
-           family={Gemmeren},
-           familyi={G\bibinitperiod},
-           given={P},
-           giveni={P\bibinitperiod},
-           prefix={van},
-           prefixi={v\bibinitperiod}}}%
-        {{hash=bcd9b07dda13b51d23799ee3deebe951}{%
-           family={ATLAS\bibnamedelima Collaboration).},
-           familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod},
-           given={(For},
-           giveni={(\bibinitperiod},
-           prefix={the},
-           prefixi={t\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{fullhash}{74ae9c0d5baaa5417d72597aba2bc1fb}
-      \strng{bibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{authorbibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{authornamehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{authorfullhash}{74ae9c0d5baaa5417d72597aba2bc1fb}
-      \field{extraname}{1}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{During the 2013-2014 shutdown of the Large Hadron Collider, ATLAS switched to a new event data model for analysis, called the xAOD. A key feature of this model is the separation of the object data from the objects themselves (the ‘auxiliary store’). Rather than being stored as member variables of the analysis classes, all object data are stored separately, as vectors of simple values. Thus, the data are stored in a ‘structure of arrays’ format, while the user still can access it as an ‘array of structures’. This organization allows for on-demand partial reading of objects, the selective removal of object properties, and the addition of arbitrary user- defined properties in a uniform manner. It also improves performance by increasing the locality of memory references in typical analysis code. The resulting data structures can be written to ROOT files with data properties represented as simple ROOT tree branches. This paper focuses on the design and implementation of the auxiliary store and its interaction with ROOT.}
-      \field{journaltitle}{Journal of Physics: Conference Series}
-      \field{month}{12}
-      \field{number}{7}
-      \field{title}{Implementation of the ATLAS Run 2 event data model}
-      \field{volume}{664}
-      \field{year}{2015}
-      \field{pages}{072045}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1088/1742-6596/664/7/072045
-      \endverb
-      \verb{urlraw}
-      \verb https://dx.doi.org/10.1088/1742-6596/664/7/072045
-      \endverb
-      \verb{url}
-      \verb https://dx.doi.org/10.1088/1742-6596/664/7/072045
-      \endverb
-    \endentry
-    \entry{Athena_xAOD_design}{misc}{}
-      \name{author}{7}{}{%
-        {{hash=2914a2575bda7d21604d8d93cbec8450}{%
-           family={Buckley},
-           familyi={B\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=36f26e0c338475417702cfb205340058}{%
-           family={Eifert},
-           familyi={E\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=419c369760dd9dfd1eee84b37c333e21}{%
-           family={Elsing},
-           familyi={E\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=e7646167b3cc11ba916490df0d4d84f7}{%
-           family={Gillberg},
-           familyi={G\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=151ebaa38ced3936fa5a69c9c053c6b4}{%
-           family={Köneke},
-           familyi={K\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
-        {{hash=e0d35a488929834faf44b72d3031ce1c}{%
-           family={Krasznahorkay},
-           familyi={K\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=3efdec65543778c5361133e575eb989e}{%
-           family={Moyse},
-           familyi={M\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{fullhash}{ba32133e59725d3a04d1bde0f69fde4e}
-      \strng{bibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{authorbibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{authornamehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{authorfullhash}{ba32133e59725d3a04d1bde0f69fde4e}
-      \field{extraname}{2}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Report of the xAOD Design Group}
-      \field{year}{2013}
-      \verb{urlraw}
-      \verb https://cds.cern.ch/record/1598793/files/ATL-COM-SOFT-2013-022.pdf
-      \endverb
-      \verb{url}
-      \verb https://cds.cern.ch/record/1598793/files/ATL-COM-SOFT-2013-022.pdf
-      \endverb
-    \endentry
-    \entry{Trigger-DAQ}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=d29874d6591d70a9544f7bd286992acc}{%
-           family={CERN},
-           familyi={C\bibinitperiod},
-           given={ATLAS\bibnamedelima Experiment},
-           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
-           prefix={at},
-           prefixi={a\bibinitperiod}}}%
-      }
-      \strng{namehash}{d29874d6591d70a9544f7bd286992acc}
-      \strng{fullhash}{d29874d6591d70a9544f7bd286992acc}
-      \strng{bibnamehash}{d29874d6591d70a9544f7bd286992acc}
-      \strng{authorbibnamehash}{d29874d6591d70a9544f7bd286992acc}
-      \strng{authornamehash}{d29874d6591d70a9544f7bd286992acc}
-      \strng{authorfullhash}{d29874d6591d70a9544f7bd286992acc}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{ATLAS Experiment at CERN}
-      \field{title}{Trigger and Data Acquisition}
-      \verb{urlraw}
-      \verb https://atlas.cern/Discover/Detector/Trigger-DAQ
-      \endverb
-      \verb{url}
-      \verb https://atlas.cern/Discover/Detector/Trigger-DAQ
-      \endverb
-    \endentry
-    \entry{LHC_Illustration}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=f8bd0356e6dc1ca33bc342ada2117488}{%
-           family={CERN},
-           familyi={C\bibinitperiod},
-           given={Jean-Luc\bibnamedelima Caron},
-           giveni={J\bibinithyphendelim L\bibinitperiod\bibinitdelim C\bibinitperiod},
-           prefix={for},
-           prefixi={f\bibinitperiod}}}%
-      }
-      \strng{namehash}{f8bd0356e6dc1ca33bc342ada2117488}
-      \strng{fullhash}{f8bd0356e6dc1ca33bc342ada2117488}
-      \strng{bibnamehash}{f8bd0356e6dc1ca33bc342ada2117488}
-      \strng{authorbibnamehash}{f8bd0356e6dc1ca33bc342ada2117488}
-      \strng{authornamehash}{f8bd0356e6dc1ca33bc342ada2117488}
-      \strng{authorfullhash}{f8bd0356e6dc1ca33bc342ada2117488}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{LHC Illustration showing underground locations of detectors}
-      \field{year}{1998}
-      \verb{urlraw}
-      \verb https://research.princeton.edu/news/princeton-led-group-prepares-large-hadron-collider-bright-future
-      \endverb
-      \verb{url}
-      \verb https://research.princeton.edu/news/princeton-led-group-prepares-large-hadron-collider-bright-future
-      \endverb
     \endentry
     \entry{TRT_2008}{article}{}
       \name{author}{212}{}{%
@@ -4115,8 +3991,8 @@
       \strng{authorbibnamehash}{3ea6e64aef489305a694dfef0d3398d3}
       \strng{authornamehash}{3ea6e64aef489305a694dfef0d3398d3}
       \strng{authorfullhash}{cd13bf7a4cd7067d444611c781a8a5d0}
-      \field{sortinit}{c}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A straw proportional counter is the basic element of the ATLAS Transition Radiation Tracker (TRT). Its detailed properties as well as the main properties of a few TRT operating gas mixtures are described. Particular attention is paid to straw tube performance in high radiation conditions and to its operational stability.}
@@ -4136,6 +4012,139 @@
       \endverb
       \verb{url}
       \verb https://dx.doi.org/10.1088/1748-0221/3/02/P02013
+      \endverb
+    \endentry
+    \entry{Mindur:2139567}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a193ca1f969305c9d6026edbddf4560a}{%
+           family={Mindur},
+           familyi={M\bibinitperiod},
+           given={Bartosz},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{a193ca1f969305c9d6026edbddf4560a}
+      \strng{fullhash}{a193ca1f969305c9d6026edbddf4560a}
+      \strng{bibnamehash}{a193ca1f969305c9d6026edbddf4560a}
+      \strng{authorbibnamehash}{a193ca1f969305c9d6026edbddf4560a}
+      \strng{authornamehash}{a193ca1f969305c9d6026edbddf4560a}
+      \strng{authorfullhash}{a193ca1f969305c9d6026edbddf4560a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ATLAS Transition Radiation Tracker (TRT): Straw tubes for tracking and particle identification at the Large Hadron Collider}}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1016/j.nima.2016.04.026
+      \endverb
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2139567
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2139567
+      \endverb
+    \endentry
+    \entry{Trigger-DAQ}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d29874d6591d70a9544f7bd286992acc}{%
+           family={CERN},
+           familyi={C\bibinitperiod},
+           given={ATLAS\bibnamedelima Experiment},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           prefix={at},
+           prefixi={a\bibinitperiod}}}%
+      }
+      \strng{namehash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{fullhash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{bibnamehash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{authorbibnamehash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{authornamehash}{d29874d6591d70a9544f7bd286992acc}
+      \strng{authorfullhash}{d29874d6591d70a9544f7bd286992acc}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ATLAS Experiment at CERN}
+      \field{title}{Trigger and Data Acquisition}
+      \verb{urlraw}
+      \verb https://atlas.cern/Discover/Detector/Trigger-DAQ
+      \endverb
+      \verb{url}
+      \verb https://atlas.cern/Discover/Detector/Trigger-DAQ
+      \endverb
+    \endentry
+    \entry{ATLAS_Fact_Sheet}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=6df9005f733ddf0d66260994df1e339a}{%
+           family={Outreach},
+           familyi={O\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{fullhash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{bibnamehash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{authorbibnamehash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{authornamehash}{6df9005f733ddf0d66260994df1e339a}
+      \strng{authorfullhash}{6df9005f733ddf0d66260994df1e339a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ATLAS Fact Sheet : To raise awareness of the ATLAS detector and collaboration on the LHC}}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.17181/CERN.1LN2.J772
+      \endverb
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/1457044
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/1457044
+      \endverb
+    \endentry
+    \entry{HL-LHC_Tech_design}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fd7f00a7df2e569f278fa98e72b180e2}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={I.\bibnamedelimi Bejar\bibnamedelima Alonso},
+           giveni={I\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CERN Yellow Reports: Monographs}%
+      }
+      \strng{namehash}{fd7f00a7df2e569f278fa98e72b180e2}
+      \strng{fullhash}{fd7f00a7df2e569f278fa98e72b180e2}
+      \strng{bibnamehash}{fd7f00a7df2e569f278fa98e72b180e2}
+      \strng{authorbibnamehash}{fd7f00a7df2e569f278fa98e72b180e2}
+      \strng{authornamehash}{fd7f00a7df2e569f278fa98e72b180e2}
+      \strng{authorfullhash}{fd7f00a7df2e569f278fa98e72b180e2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{High-Luminosity Large Hadron Collider (HL-LHC): Technical design report}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{390}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.23731/CYRM-2020-0010
+      \endverb
+      \verb{urlraw}
+      \verb https://e-publishing.cern.ch/index.php/CYRM/issue/view/127
+      \endverb
+      \verb{url}
+      \verb https://e-publishing.cern.ch/index.php/CYRM/issue/view/127
       \endverb
     \endentry
     \entry{ATLAS_HL-LHC_projections}{article}{}
@@ -4207,8 +4216,8 @@
       \strng{authorbibnamehash}{7f92396b375324678b87427be28a6d75}
       \strng{authornamehash}{7f92396b375324678b87427be28a6d75}
       \strng{authorfullhash}{931365a57646b5220a04aa9fbe2a0c61}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{EPJ Web Conf.}
@@ -4227,177 +4236,101 @@
       \verb https://doi.org/10.1051/epjconf/202024506014
       \endverb
     \endentry
-    \entry{ATLAS_Illustration}{misc}{}
+    \entry{RNTuple_Lopez-Gomez_2023}{article}{}
       \name{author}{2}{}{%
-        {{hash=e52b0b1fccb9c002909cdd7fa31b43bd}{%
-           family={Girolamo},
-           familyi={G\bibinitperiod},
-           given={Beniamino\bibnamedelima Di},
-           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=48579ef9b2b26d9fcdfc215cf1ec2ee7}{%
-           family={Nessi},
-           familyi={N\bibinitperiod},
-           given={Marzio},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{e49f902bd551e762a0c6564a1439ebbb}
-      \strng{fullhash}{e49f902bd551e762a0c6564a1439ebbb}
-      \strng{bibnamehash}{e49f902bd551e762a0c6564a1439ebbb}
-      \strng{authorbibnamehash}{e49f902bd551e762a0c6564a1439ebbb}
-      \strng{authornamehash}{e49f902bd551e762a0c6564a1439ebbb}
-      \strng{authorfullhash}{e49f902bd551e762a0c6564a1439ebbb}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{ATLAS undergoes some delicate gymnastics}
-      \field{year}{2013}
-      \verb{urlraw}
-      \verb https://cerncourier.com/a/atlas-undergoes-some-delicate-gymnastics/
-      \endverb
-      \verb{url}
-      \verb https://cerncourier.com/a/atlas-undergoes-some-delicate-gymnastics/
-      \endverb
-    \endentry
-    \entry{athena}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
-           family={group},
-           familyi={g\bibinitperiod},
-           given={ATLAS},
-           giveni={A\bibinitperiod},
-           prefix={software},
-           prefixi={s\bibinitperiod}}}%
-      }
-      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \field{extraname}{1}
-      \field{sortinit}{g}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Athena}
-      \verb{urlraw}
-      \verb https://doi.org/10.5281/zenodo.2641997
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.5281/zenodo.2641997
-      \endverb
-    \endentry
-    \entry{athenadocs}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
-           family={group},
-           familyi={g\bibinitperiod},
-           given={ATLAS},
-           giveni={A\bibinitperiod},
-           prefix={software},
-           prefixi={s\bibinitperiod}}}%
-      }
-      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \field{extraname}{2}
-      \field{sortinit}{g}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Athena Software Documentation}
-      \verb{urlraw}
-      \verb https://atlassoftwaredocs.web.cern.ch/athena/
-      \endverb
-      \verb{url}
-      \verb https://atlassoftwaredocs.web.cern.ch/athena/
-      \endverb
-    \endentry
-    \entry{KnollRadDetection}{book}{}
-      \name{author}{1}{}{%
-        {{hash=6658b3a0dc8d44502ea2cda983468088}{%
-           family={Knoll},
-           familyi={K\bibinitperiod},
-           given={Glenn\bibnamedelima F.},
-           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {New York}%
+        {{hash=b94e1c2ed9f725674fed0c686df69923}{%
+           family={Lopez-Gomez},
+           familyi={L\bibinithyphendelim G\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9c425c8dbdc9160066a9fb60dde0c9a1}{%
+           family={Blomer},
+           familyi={B\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {John Wiley \& Sons, Inc.}%
+        {IOP Publishing}%
       }
-      \strng{namehash}{6658b3a0dc8d44502ea2cda983468088}
-      \strng{fullhash}{6658b3a0dc8d44502ea2cda983468088}
-      \strng{bibnamehash}{6658b3a0dc8d44502ea2cda983468088}
-      \strng{authorbibnamehash}{6658b3a0dc8d44502ea2cda983468088}
-      \strng{authornamehash}{6658b3a0dc8d44502ea2cda983468088}
-      \strng{authorfullhash}{6658b3a0dc8d44502ea2cda983468088}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Radiation Detection and Measurement}
-      \field{year}{2010}
-    \endentry
-    \entry{DAOD_Laycock_2014}{article}{}
-      \name{author}{5}{}{%
-        {{hash=1b54b3cfe8357400c8bc8ab406ca3ce6}{%
-           family={Laycock},
-           familyi={L\bibinitperiod},
-           given={P\bibnamedelima J},
-           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=04d41327386688ff04f6c660fa86da0d}{%
-           family={Ozturk},
-           familyi={O\bibinitperiod},
-           given={N},
-           giveni={N\bibinitperiod}}}%
-        {{hash=f93928ef46dad0c39f151b95f7381f5b}{%
-           family={Beckingham},
-           familyi={B\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=001b00cc0f8871ac3b6836fa8e815b0b}{%
-           family={Henderson},
-           familyi={H\bibinitperiod},
-           given={R},
-           giveni={R\bibinitperiod}}}%
-        {{hash=2007e48a9d3ec189d6f0ce8b4c93569a}{%
-           family={Zhou},
-           familyi={Z\bibinitperiod},
-           given={L},
-           giveni={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{3dba564d726ca4b069011388d922122b}
-      \strng{fullhash}{a4afaf028ecb1e6926bdc05470a7a6f9}
-      \strng{bibnamehash}{3dba564d726ca4b069011388d922122b}
-      \strng{authorbibnamehash}{3dba564d726ca4b069011388d922122b}
-      \strng{authornamehash}{3dba564d726ca4b069011388d922122b}
-      \strng{authorfullhash}{a4afaf028ecb1e6926bdc05470a7a6f9}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \strng{namehash}{287a837a93ea10fbbbba12cd21f30e60}
+      \strng{fullhash}{287a837a93ea10fbbbba12cd21f30e60}
+      \strng{bibnamehash}{287a837a93ea10fbbbba12cd21f30e60}
+      \strng{authorbibnamehash}{287a837a93ea10fbbbba12cd21f30e60}
+      \strng{authornamehash}{287a837a93ea10fbbbba12cd21f30e60}
+      \strng{authorfullhash}{287a837a93ea10fbbbba12cd21f30e60}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Physics: Conference Series}
-      \field{month}{6}
-      \field{number}{3}
-      \field{title}{Derived Physics Data Production in ATLAS: Experience with Run 1 and Looking Ahead}
-      \field{volume}{513}
-      \field{year}{2014}
-      \field{pages}{032052}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{RNTuple performance: Status and Outlook}
+      \field{volume}{2438}
+      \field{year}{2023}
+      \field{pages}{012118}
       \range{pages}{1}
       \verb{doi}
-      \verb 10.1088/1742-6596/513/3/032052
+      \verb 10.1088/1742-6596/2438/1/012118
       \endverb
       \verb{urlraw}
-      \verb https://dx.doi.org/10.1088/1742-6596/513/3/032052
+      \verb https://dx.doi.org/10.1088/1742-6596/2438/1/012118
       \endverb
       \verb{url}
-      \verb https://dx.doi.org/10.1088/1742-6596/513/3/032052
+      \verb https://dx.doi.org/10.1088/1742-6596/2438/1/012118
+      \endverb
+    \endentry
+    \entry{RNTuple_Blomer}{article}{}
+      \name{author}{8}{}{%
+        {{hash=8b9ffe18a8d243ac0f9e8bede163b04c}{%
+           family={{Blomer, Jakob}},
+           familyi={B\bibinitperiod}}}%
+        {{hash=b4733396bfb52169380f594bfdb7e889}{%
+           family={{Canal, Philippe}},
+           familyi={C\bibinitperiod}}}%
+        {{hash=928fb71a482118699a6bab9ea3ea4864}{%
+           family={{de Geus, Florine}},
+           familyi={d\bibinitperiod}}}%
+        {{hash=9ca3b23fa0af0b18fbda50d7de3dfe30}{%
+           family={{Hahnfeld, Jonas}},
+           familyi={H\bibinitperiod}}}%
+        {{hash=59ce101fabfc663ad2311529ece99080}{%
+           family={{Naumann, Axel}},
+           familyi={N\bibinitperiod}}}%
+        {{hash=86fa12abfb51da9186e13ac2114a35e3}{%
+           family={{Lopez-Gomez, Javier}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=7506d43ec7e32777fe9766ea5dce6401}{%
+           family={{Lazzari Miotto, Giovanna}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=9d74746b1a604f4931cffafe33883ce0}{%
+           family={{Padulano, Vincenzo Eduardo}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b360f094206615a3191fe0e7adc3121}
+      \strng{fullhash}{2a99c686466f4167b76e1d6311bb7555}
+      \strng{bibnamehash}{8b360f094206615a3191fe0e7adc3121}
+      \strng{authorbibnamehash}{8b360f094206615a3191fe0e7adc3121}
+      \strng{authornamehash}{8b360f094206615a3191fe0e7adc3121}
+      \strng{authorfullhash}{2a99c686466f4167b76e1d6311bb7555}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EPJ Web of Conf.}
+      \field{title}{ROOT’s RNTuple I/O Subsystem: The Path to Production}
+      \field{volume}{295}
+      \field{year}{2024}
+      \field{pages}{06020}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1051/epjconf/202429506020
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1051/epjconf/202429506020
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1051/epjconf/202429506020
       \endverb
     \endentry
     \entry{AthenaMT_Leggett_2017}{article}{}
@@ -4477,8 +4410,8 @@
       \strng{authorbibnamehash}{043ad3a25a266af6adbb040357e7ddf0}
       \strng{authornamehash}{043ad3a25a266af6adbb040357e7ddf0}
       \strng{authorfullhash}{60c65826a5c150634603354225ef3583}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Physics: Conference Series}
@@ -4499,146 +4432,117 @@
       \verb https://dx.doi.org/10.1088/1742-6596/898/4/042009
       \endverb
     \endentry
-    \entry{LHC_faq_guide}{misc}{}
-      \name{author}{2}{}{%
-        {{hash=d2819a6cc34bba5656b4460348b04dcc}{%
-           family={Lopes},
-           familyi={L\bibinitperiod},
-           given={Ana},
-           giveni={A\bibinitperiod}}}%
-        {{hash=70b8001c15d8abe036b2374607109ab8}{%
-           family={Perry},
-           familyi={P\bibinitperiod},
-           given={Melissa\bibnamedelima Loyse},
-           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \strng{namehash}{92e5b56d42f7b071fc52842ff10049f1}
-      \strng{fullhash}{92e5b56d42f7b071fc52842ff10049f1}
-      \strng{bibnamehash}{92e5b56d42f7b071fc52842ff10049f1}
-      \strng{authorbibnamehash}{92e5b56d42f7b071fc52842ff10049f1}
-      \strng{authornamehash}{92e5b56d42f7b071fc52842ff10049f1}
-      \strng{authorfullhash}{92e5b56d42f7b071fc52842ff10049f1}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{FAQ-LHC The guide}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://home.cern/resources/brochure/knowledge-sharing/lhc-facts-and-figures
-      \endverb
-      \verb{url}
-      \verb https://home.cern/resources/brochure/knowledge-sharing/lhc-facts-and-figures
-      \endverb
-    \endentry
-    \entry{RNTuple_Lopez-Gomez_2023}{article}{}
-      \name{author}{2}{}{%
-        {{hash=b94e1c2ed9f725674fed0c686df69923}{%
-           family={Lopez-Gomez},
-           familyi={L\bibinithyphendelim G\bibinitperiod},
-           given={Javier},
-           giveni={J\bibinitperiod}}}%
-        {{hash=9c425c8dbdc9160066a9fb60dde0c9a1}{%
-           family={Blomer},
-           familyi={B\bibinitperiod},
-           given={Jakob},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{287a837a93ea10fbbbba12cd21f30e60}
-      \strng{fullhash}{287a837a93ea10fbbbba12cd21f30e60}
-      \strng{bibnamehash}{287a837a93ea10fbbbba12cd21f30e60}
-      \strng{authorbibnamehash}{287a837a93ea10fbbbba12cd21f30e60}
-      \strng{authornamehash}{287a837a93ea10fbbbba12cd21f30e60}
-      \strng{authorfullhash}{287a837a93ea10fbbbba12cd21f30e60}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Physics: Conference Series}
-      \field{month}{2}
-      \field{number}{1}
-      \field{title}{RNTuple performance: Status and Outlook}
-      \field{volume}{2438}
-      \field{year}{2023}
-      \field{pages}{012118}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1088/1742-6596/2438/1/012118
-      \endverb
-      \verb{urlraw}
-      \verb https://dx.doi.org/10.1088/1742-6596/2438/1/012118
-      \endverb
-      \verb{url}
-      \verb https://dx.doi.org/10.1088/1742-6596/2438/1/012118
-      \endverb
-    \endentry
-    \entry{Mindur:2139567}{misc}{}
+    \entry{athena}{misc}{}
       \name{author}{1}{}{%
-        {{hash=a193ca1f969305c9d6026edbddf4560a}{%
-           family={Mindur},
-           familyi={M\bibinitperiod},
-           given={Bartosz},
-           giveni={B\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {CERN}%
-      }
-      \list{location}{1}{%
-        {Geneva}%
-      }
-      \strng{namehash}{a193ca1f969305c9d6026edbddf4560a}
-      \strng{fullhash}{a193ca1f969305c9d6026edbddf4560a}
-      \strng{bibnamehash}{a193ca1f969305c9d6026edbddf4560a}
-      \strng{authorbibnamehash}{a193ca1f969305c9d6026edbddf4560a}
-      \strng{authornamehash}{a193ca1f969305c9d6026edbddf4560a}
-      \strng{authorfullhash}{a193ca1f969305c9d6026edbddf4560a}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{ATLAS Transition Radiation Tracker (TRT): Straw tubes for tracking and particle identification at the Large Hadron Collider}}
-      \field{year}{2017}
-      \verb{doi}
-      \verb 10.1016/j.nima.2016.04.026
-      \endverb
-      \verb{urlraw}
-      \verb https://cds.cern.ch/record/2139567
-      \endverb
-      \verb{url}
-      \verb https://cds.cern.ch/record/2139567
-      \endverb
-    \endentry
-    \entry{ATLAS_Fact_Sheet}{unpublished}{}
-      \name{author}{1}{}{%
-        {{hash=6df9005f733ddf0d66260994df1e339a}{%
-           family={Outreach},
-           familyi={O\bibinitperiod},
+        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
+           family={group},
+           familyi={g\bibinitperiod},
            given={ATLAS},
-           giveni={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod},
+           prefix={software},
+           prefixi={s\bibinitperiod}}}%
       }
-      \strng{namehash}{6df9005f733ddf0d66260994df1e339a}
-      \strng{fullhash}{6df9005f733ddf0d66260994df1e339a}
-      \strng{bibnamehash}{6df9005f733ddf0d66260994df1e339a}
-      \strng{authorbibnamehash}{6df9005f733ddf0d66260994df1e339a}
-      \strng{authornamehash}{6df9005f733ddf0d66260994df1e339a}
-      \strng{authorfullhash}{6df9005f733ddf0d66260994df1e339a}
-      \field{sortinit}{O}
-      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{ATLAS Fact Sheet : To raise awareness of the ATLAS detector and collaboration on the LHC}}
-      \field{year}{2010}
-      \verb{doi}
-      \verb 10.17181/CERN.1LN2.J772
-      \endverb
+      \field{title}{Athena}
       \verb{urlraw}
-      \verb https://cds.cern.ch/record/1457044
+      \verb https://doi.org/10.5281/zenodo.2641997
       \endverb
       \verb{url}
-      \verb https://cds.cern.ch/record/1457044
+      \verb https://doi.org/10.5281/zenodo.2641997
+      \endverb
+    \endentry
+    \entry{athenadocs}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
+           family={group},
+           familyi={g\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod},
+           prefix={software},
+           prefixi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Athena Software Documentation}
+      \verb{urlraw}
+      \verb https://atlassoftwaredocs.web.cern.ch/athena/
+      \endverb
+      \verb{url}
+      \verb https://atlassoftwaredocs.web.cern.ch/athena/
+      \endverb
+    \endentry
+    \entry{ROOT_about}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8eb19af9389c25cec01b25123c309112}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={ROOT},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{fullhash}{8eb19af9389c25cec01b25123c309112}
+      \strng{bibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorbibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ROOT, About}
+      \verb{urlraw}
+      \verb https://root.cern/about/
+      \endverb
+      \verb{url}
+      \verb https://root.cern/about/
+      \endverb
+    \endentry
+    \entry{ROOT_TTree}{software}{}
+      \name{author}{1}{}{%
+        {{hash=8eb19af9389c25cec01b25123c309112}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={ROOT},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{fullhash}{8eb19af9389c25cec01b25123c309112}
+      \strng{bibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorbibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ROOT, TTree Class}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://root.cern.ch/doc/master/classTTree.html
+      \endverb
+      \verb{url}
+      \verb https://root.cern.ch/doc/master/classTTree.html
       \endverb
     \endentry
     \entry{PHYSLITE_A_new_2024}{article}{}
@@ -4671,8 +4575,8 @@
       \strng{authorbibnamehash}{bc521da4b53e83da276a2b1a531bc4a7}
       \strng{authornamehash}{bc521da4b53e83da276a2b1a531bc4a7}
       \strng{authorfullhash}{9b54328134bb7ec3f4128b56d4813cdb}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{EPJ Web of Conf.}
@@ -4691,59 +4595,213 @@
       \verb https://doi.org/10.1051/epjconf/202429506017
       \endverb
     \endentry
-    \entry{ROOT_about}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=8eb19af9389c25cec01b25123c309112}{%
-           family={Team},
-           familyi={T\bibinitperiod},
-           given={ROOT},
+    \entry{DAOD_Laycock_2014}{article}{}
+      \name{author}{5}{}{%
+        {{hash=1b54b3cfe8357400c8bc8ab406ca3ce6}{%
+           family={Laycock},
+           familyi={L\bibinitperiod},
+           given={P\bibnamedelima J},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=04d41327386688ff04f6c660fa86da0d}{%
+           family={Ozturk},
+           familyi={O\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f93928ef46dad0c39f151b95f7381f5b}{%
+           family={Beckingham},
+           familyi={B\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=001b00cc0f8871ac3b6836fa8e815b0b}{%
+           family={Henderson},
+           familyi={H\bibinitperiod},
+           given={R},
            giveni={R\bibinitperiod}}}%
+        {{hash=2007e48a9d3ec189d6f0ce8b4c93569a}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{8eb19af9389c25cec01b25123c309112}
-      \strng{fullhash}{8eb19af9389c25cec01b25123c309112}
-      \strng{bibnamehash}{8eb19af9389c25cec01b25123c309112}
-      \strng{authorbibnamehash}{8eb19af9389c25cec01b25123c309112}
-      \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
-      \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
-      \field{extraname}{1}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \strng{namehash}{3dba564d726ca4b069011388d922122b}
+      \strng{fullhash}{a4afaf028ecb1e6926bdc05470a7a6f9}
+      \strng{bibnamehash}{3dba564d726ca4b069011388d922122b}
+      \strng{authorbibnamehash}{3dba564d726ca4b069011388d922122b}
+      \strng{authornamehash}{3dba564d726ca4b069011388d922122b}
+      \strng{authorfullhash}{a4afaf028ecb1e6926bdc05470a7a6f9}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{ROOT, About}
+      \field{journaltitle}{Journal of Physics: Conference Series}
+      \field{month}{6}
+      \field{number}{3}
+      \field{title}{Derived Physics Data Production in ATLAS: Experience with Run 1 and Looking Ahead}
+      \field{volume}{513}
+      \field{year}{2014}
+      \field{pages}{032052}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/513/3/032052
+      \endverb
       \verb{urlraw}
-      \verb https://root.cern/about/
+      \verb https://dx.doi.org/10.1088/1742-6596/513/3/032052
       \endverb
       \verb{url}
-      \verb https://root.cern/about/
+      \verb https://dx.doi.org/10.1088/1742-6596/513/3/032052
       \endverb
     \endentry
-    \entry{ROOT_TTree}{software}{}
-      \name{author}{1}{}{%
-        {{hash=8eb19af9389c25cec01b25123c309112}{%
-           family={Team},
-           familyi={T\bibinitperiod},
-           given={ROOT},
-           giveni={R\bibinitperiod}}}%
+    \entry{Athena_xAOD_design}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=2914a2575bda7d21604d8d93cbec8450}{%
+           family={Buckley},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=36f26e0c338475417702cfb205340058}{%
+           family={Eifert},
+           familyi={E\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=419c369760dd9dfd1eee84b37c333e21}{%
+           family={Elsing},
+           familyi={E\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e7646167b3cc11ba916490df0d4d84f7}{%
+           family={Gillberg},
+           familyi={G\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=151ebaa38ced3936fa5a69c9c053c6b4}{%
+           family={Köneke},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0d35a488929834faf44b72d3031ce1c}{%
+           family={Krasznahorkay},
+           familyi={K\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3efdec65543778c5361133e575eb989e}{%
+           family={Moyse},
+           familyi={M\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{8eb19af9389c25cec01b25123c309112}
-      \strng{fullhash}{8eb19af9389c25cec01b25123c309112}
-      \strng{bibnamehash}{8eb19af9389c25cec01b25123c309112}
-      \strng{authorbibnamehash}{8eb19af9389c25cec01b25123c309112}
-      \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
-      \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
-      \field{extraname}{2}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \strng{namehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{fullhash}{ba32133e59725d3a04d1bde0f69fde4e}
+      \strng{bibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authorbibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authornamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authorfullhash}{ba32133e59725d3a04d1bde0f69fde4e}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{ROOT, TTree Class}
-      \field{year}{2024}
+      \field{title}{Report of the xAOD Design Group}
+      \field{year}{2013}
       \verb{urlraw}
-      \verb https://root.cern.ch/doc/master/classTTree.html
+      \verb https://cds.cern.ch/record/1598793/files/ATL-COM-SOFT-2013-022.pdf
       \endverb
       \verb{url}
-      \verb https://root.cern.ch/doc/master/classTTree.html
+      \verb https://cds.cern.ch/record/1598793/files/ATL-COM-SOFT-2013-022.pdf
+      \endverb
+    \endentry
+    \entry{Buckley_2015}{article}{}
+      \name{author}{11}{}{%
+        {{hash=2914a2575bda7d21604d8d93cbec8450}{%
+           family={Buckley},
+           familyi={B\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=36f26e0c338475417702cfb205340058}{%
+           family={Eifert},
+           familyi={E\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=419c369760dd9dfd1eee84b37c333e21}{%
+           family={Elsing},
+           familyi={E\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e7646167b3cc11ba916490df0d4d84f7}{%
+           family={Gillberg},
+           familyi={G\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bf0dbb9efcfb9349e016f6560967bc6b}{%
+           family={Koeneke},
+           familyi={K\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0d35a488929834faf44b72d3031ce1c}{%
+           family={Krasznahorkay},
+           familyi={K\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3efdec65543778c5361133e575eb989e}{%
+           family={Moyse},
+           familyi={M\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b72351089b9a49daeed38cc66ccde2b9}{%
+           family={Nowak},
+           familyi={N\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=04f25ef56145796479b1d816b69c6344}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d6b07f28298803390b9d085f997fb7ca}{%
+           family={Gemmeren},
+           familyi={G\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=bcd9b07dda13b51d23799ee3deebe951}{%
+           family={ATLAS\bibnamedelima Collaboration).},
+           familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={(For},
+           giveni={(\bibinitperiod},
+           prefix={the},
+           prefixi={t\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{fullhash}{74ae9c0d5baaa5417d72597aba2bc1fb}
+      \strng{bibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authorbibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authornamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authorfullhash}{74ae9c0d5baaa5417d72597aba2bc1fb}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{During the 2013-2014 shutdown of the Large Hadron Collider, ATLAS switched to a new event data model for analysis, called the xAOD. A key feature of this model is the separation of the object data from the objects themselves (the ‘auxiliary store’). Rather than being stored as member variables of the analysis classes, all object data are stored separately, as vectors of simple values. Thus, the data are stored in a ‘structure of arrays’ format, while the user still can access it as an ‘array of structures’. This organization allows for on-demand partial reading of objects, the selective removal of object properties, and the addition of arbitrary user- defined properties in a uniform manner. It also improves performance by increasing the locality of memory references in typical analysis code. The resulting data structures can be written to ROOT files with data properties represented as simple ROOT tree branches. This paper focuses on the design and implementation of the auxiliary store and its interaction with ROOT.}
+      \field{journaltitle}{Journal of Physics: Conference Series}
+      \field{month}{12}
+      \field{number}{7}
+      \field{title}{Implementation of the ATLAS Run 2 event data model}
+      \field{volume}{664}
+      \field{year}{2015}
+      \field{pages}{072045}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/664/7/072045
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1742-6596/664/7/072045
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1742-6596/664/7/072045
       \endverb
     \endentry
   \enddatalist
