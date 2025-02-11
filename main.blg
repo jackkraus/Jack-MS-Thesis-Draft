@@ -1,22 +1,22 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[26] biber-darwin:340> INFO - === Mon Feb 10, 2025, 13:38:57
-[32] Biber.pm:419> INFO - Reading 'main.bcf'
-[63] Biber.pm:979> INFO - Found 24 citekeys in bib section 0
+[26] biber-darwin:340> INFO - === Mon Feb 10, 2025, 16:23:52
+[33] Biber.pm:419> INFO - Reading 'main.bcf'
+[63] Biber.pm:979> INFO - Found 25 citekeys in bib section 0
 [69] Biber.pm:4419> INFO - Processing section 0
 [74] Biber.pm:4610> INFO - Looking for bibtex file 'main.bib' for section 0
 [75] bibtex.pm:1713> INFO - LaTeX decoding ...
 [90] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
-[535] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[535] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[535] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[535] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[554] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[756] bbl.pm:763> INFO - Output to main.bbl
-[756] Biber.pm:131> WARN - legacy month field 'jul' in entry 'PixelDetector_2008' is not an integer - this will probably not sort properly.
-[756] Biber.pm:131> WARN - legacy month field 'feb' in entry 'TRT_2008' is not an integer - this will probably not sort properly.
-[756] Biber.pm:131> WARN - legacy month field 'feb' in entry 'RNTuple_Lopez-Gomez_2023' is not an integer - this will probably not sort properly.
-[756] Biber.pm:131> WARN - legacy month field 'oct' in entry 'AthenaMT_Leggett_2017' is not an integer - this will probably not sort properly.
-[756] Biber.pm:131> WARN - legacy month field 'jun' in entry 'DAOD_Laycock_2014' is not an integer - this will probably not sort properly.
-[756] Biber.pm:131> WARN - legacy month field 'dec' in entry 'Buckley_2015' is not an integer - this will probably not sort properly.
-[756] Biber.pm:133> INFO - WARNINGS: 6
+[525] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[525] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[525] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[525] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[544] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[735] bbl.pm:763> INFO - Output to main.bbl
+[735] Biber.pm:131> WARN - legacy month field 'jul' in entry 'PixelDetector_2008' is not an integer - this will probably not sort properly.
+[735] Biber.pm:131> WARN - legacy month field 'feb' in entry 'TRT_2008' is not an integer - this will probably not sort properly.
+[735] Biber.pm:131> WARN - legacy month field 'feb' in entry 'RNTuple_Lopez-Gomez_2023' is not an integer - this will probably not sort properly.
+[735] Biber.pm:131> WARN - legacy month field 'oct' in entry 'AthenaMT_Leggett_2017' is not an integer - this will probably not sort properly.
+[735] Biber.pm:131> WARN - legacy month field 'jun' in entry 'DAOD_Laycock_2014' is not an integer - this will probably not sort properly.
+[735] Biber.pm:131> WARN - legacy month field 'dec' in entry 'Buckley_2015' is not an integer - this will probably not sort properly.
+[735] Biber.pm:133> INFO - WARNINGS: 6

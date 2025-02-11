@@ -2922,6 +2922,40 @@
       \endverb
       \keyw{ATLAS,SCT,Silicon,Microstrip,Barrel,Module,LHC}
     \endentry
+    \entry{Andreazza:1287089}{report}{}
+      \name{author}{1}{}{%
+        {{hash=e74a762347d39b125f11d634824b86a0}{%
+           family={Andreazza},
+           familyi={A\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{e74a762347d39b125f11d634824b86a0}
+      \strng{fullhash}{e74a762347d39b125f11d634824b86a0}
+      \strng{bibnamehash}{e74a762347d39b125f11d634824b86a0}
+      \strng{authorbibnamehash}{e74a762347d39b125f11d634824b86a0}
+      \strng{authornamehash}{e74a762347d39b125f11d634824b86a0}
+      \strng{authorfullhash}{e74a762347d39b125f11d634824b86a0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The ATLAS Pixel Detector operation and performance}}
+      \field{type}{techreport}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/1287089
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/1287089
+      \endverb
+    \endentry
     \entry{TRT_2008}{article}{}
       \name{author}{212}{}{%
         {{hash=d32b5f11c174876411a191d31820f13f}{%
@@ -4449,8 +4483,8 @@
       \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
       \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Athena}
@@ -4600,7 +4634,7 @@
         {{hash=1b54b3cfe8357400c8bc8ab406ca3ce6}{%
            family={Laycock},
            familyi={L\bibinitperiod},
-           given={P\bibnamedelima J},
+           given={P.\bibnamedelimi J.},
            giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
         {{hash=04d41327386688ff04f6c660fa86da0d}{%
            family={Ozturk},
@@ -4714,7 +4748,7 @@
         {{hash=2914a2575bda7d21604d8d93cbec8450}{%
            family={Buckley},
            familyi={B\bibinitperiod},
-           given={A},
+           given={A.},
            giveni={A\bibinitperiod}}}%
         {{hash=36f26e0c338475417702cfb205340058}{%
            family={Eifert},

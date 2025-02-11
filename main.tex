@@ -58,7 +58,7 @@
 
 
 
-\title{Optimization of derivation jobs and modernization of nightly CI build I/O tests for the ATLAS Experiment}
+\title{Optimization of derivation jobs and modernization of I/O integration tests for the ATLAS Experiment}
 \author{Arthur C. Kraus}
 \major{Physics}
 \degree{Thesis}{M.S.}{Master of Science}
@@ -77,7 +77,7 @@ The ATLAS experiment's Software Performance Optimization Team has areas in devel
 One area of interest is optimization of derivation production jobs by improving derived object data stored to disk by about 4-5\% by eliminating the upper-limit on TTree basket buffers, at the expense of an increase in memory usage by about 11\%. 
 
 Athena and the software it depends on are updated frequently, and to synthesize changes cohesively there are scripts, unit tests, that run which test core I/O functionality. 
-This thesis also addresses a project to add a handful of I/O unit tests that exercise features exclusive to the xAOD Event Data Model (EDM) such as writing and reading object data from the previous EDM using transient and persistent data. 
+This thesis upgrades existing I/O unit tests to now exercise features exclusive to the xAOD Event Data Model (EDM) such as writing and reading object data from the previous EDM using transient and persistent data. 
 These new unit tests also include and omit select dynamic attributes to object data during the component accumulator step. 
 \end{abstract}
 
