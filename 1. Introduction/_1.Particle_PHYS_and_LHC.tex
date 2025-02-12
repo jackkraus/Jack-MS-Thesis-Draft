@@ -26,18 +26,21 @@ where if $\theta = 0$ then $\eta = \infty$ and if $\theta = \frac{\pi}{2}$ then 
 Pseudo-rapidity is used, as opposed to traditional Cartesian angles, because it's Lorentz invariant under boosts along the beam axis, making it easier to identify tracks due to symmetry of the collision.  
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=.8\textwidth]{content/img/ATLAS_quadrant.png}
-    \caption{One quadrant of the ATLAS detector.\cite{ATLAS_Tech_Proposal}}
+    \includegraphics[width=.8\textwidth]{content/img/ATLAS qudrant labelled MS.png}
+    \caption{One quadrant of the ATLAS detector. The components of the Muon Spectrometer are labelled \cite{Hough_Transform_CSC}}
     \label{fig:ATLAS_quadrant}
 \end{figure}
 
-The ATLAS detector is comprised of three main sections, the inner detector, calorimeters and the muon detector system. 
 \begin{figure}[h]
     \centering
     \includegraphics[width=.8\textwidth]{content/img/ATLAS_Detector.jpg}
     \caption{Overview of the ATLAS detectors main components.\cite{ATLAS_Illustration}}
     \label{fig:intro_ATLAS_detector}
 \end{figure}
+
+\noindent\textbf{Inner Detector}
+
+The ATLAS detector is comprised of three main sections, the inner detector, calorimeters and the muon detector system. 
 The inner detector measures the direction, momentum and charge of electrically charged particles.
 Its main function is to measure the track of the charged particles without destroying the particle itself.
 The first point of contact for particles emerging from $pp$-collisions from the center of the ATLAS detector is the pixel detector.\cite{PixelDetector_2008}
@@ -56,11 +59,14 @@ The TRT is made of a collection of tubes made with many layers of different mate
 The TRT's straw walls are made of two $35\mu m$ layers comprised of $6\mu m$ carbon-polymide, $0.20 \mu m$ aluminum, and a $25\mu m$ Kapton film reflected back.\cite{TRT_2008}
 The straws are filled with a gas mixture of $70\% \text{Xe} + 27\% \text{CO}_2 + 3\% \text{O}_2$. 
 Its measurement precision is around $170 \mu m$. 
-Particles with relativistic velocities have higher Lorentz $\gamma$-factors (see Equation \eqref{lorentzGamma}). 
-The TRT uses varying materials to discriminate between heavier particles, which have low $\gamma$ and radiate less, and lighter particles, which have higher $\gamma$ and radiate more.\cite{Mindur:2139567}
+Particles with relativistic velocities have higher Lorentz $\gamma$-factors,
 \begin{equation}\label{lorentzGamma}
-    \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
+    \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}.
 \end{equation}
+The TRT uses varying materials to discriminate between heavier particles, which have low $\gamma$ and radiate less, and lighter particles, which have higher $\gamma$ and radiate more.\cite{Mindur:2139567}
+
+\pagebreak
+\noindent\textbf{Calorimeters}
 
 There are two main calorimeters for ATLAS, the Liquid Argon (LAr) calorimeter and the Tile Hadronic calorimeter.
 The LAr calorimeter surrounds the inner detector and measures the energy deposits of objects that interact via the electromagnetic force. 
@@ -73,15 +79,22 @@ When a particle hits the steel, a cascade of secondary protons, neutrons and oth
 Through this mechanism, these decay products will continue until the energy has entirely dissipated.
 
 % Discuss the Muon spectrometer
-The Muon Spectrometer (MS) sits at the end of the ATLAS detector and is designed to identify muon tracks and momentum to high-resolution.
+\noindent\textbf{Muon Spectrometer (MS)}
+
+The MS sits at the end of the ATLAS detector and is designed to identify muon tracks and momentum to high-resolution, its components are shown in Figure \ref{fig:ATLAS_quadrant}.
+Monitored Drift Tube (MDT) chambers are used for precision measurement of muon tracks in the principle bending direction of the magnetic fields over a large $\eta$.
+The MDT lie in the endcaps and barrel regions covering the pseudorapidity regions $0 < |\eta| < 2.7$, where the the tubes run perpendicular to the beam and in-line with the magnetic field lines.
+Single cell resolution for these drift tubes can reach 60 $\mu m$.\cite{ATLAS_Tech_Proposal}
 The area of highest particle flux is the region of pseudo-rapidity $2 < |\eta| < 2.7$, here is where the cathode strip chambers lie.\cite{muonSpec}
-Cathode strip chambers 
-Monitored Drift Tube (MDT) chambers are used for precision measurement of muon tracks in the principle bending direction of the magnetic fields.
-MDTs are placed over the barrel region which extends up to $|\eta|\approx 1$, where the the tubes run perpendicular to the beam and in-line with the magnetic field lines.
-The MDT lie in the endcaps pseudorapidity regions $|\eta| > 2.7$, 
-Resistive plate chambers (RPC)
-Thin gap chambers (TGC)
-Micromegas
+Cathode strip chambers (CSCs) are layered to determine track vectors and use multi-wire chambers to achieve a resolution up to $50 \mu m$. 
+
+The RPCs are gaseous parallel-plate detectors suited for fast spacetime particle tracking that combines the the spatial resolution (\~ 1 cm) of the wire chambers and the time resolution (\~ 1 ns) of a scintillation counter.
+Resistive plate chambers (RPCs) and the Thin gap chambers (TGCs) provide the trigger information for the MDTs and CSCs to then make a precision measurement, so speed takes priority over spatial resolution for the muon trigger system. 
+Though RPCs don't have wires, their design consists of two strips separated by an insulating spacer to create a gap for the gas ($C_2 H_2 F_4$ plus some smaller of argon/butane) to occupy.
+Thin gap chambers (TGCs) exist in the forward region and are thin wire chambers that aide in muon triggering and measurement of the azimuthal coordinate to be used in compliment with MDTs.
+The time resolution in TCGs help identify bunch-crossings and granularity in momentum of the muon that comes within the equipotential of the wires. 
+Since each wire can be given a position in the trigger system, any muon that passes through the TGC can be compared with greater spatial precision with the MDTs and illustrate a track later.
+The accuracy of identifying the correct bunch crossing with TGCs is 99\% and the delivery of bunch crossing identification can be delivered within 25 ns, only a small fraction of bunch crossings arrive later than that window.
 
 \section{ATLAS Trigger and Data Acquisition (TDAQ)}
 

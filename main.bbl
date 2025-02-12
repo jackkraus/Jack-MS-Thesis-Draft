@@ -138,6 +138,37 @@
       \verb https://cds.cern.ch/record/290968
       \endverb
     \endentry
+    \entry{Hough_Transform_CSC}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=8964d27296e316b112baf0a26ed5a40a}{%
+           family={Amram},
+           familyi={A\bibinitperiod},
+           given={Nir},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Tel Aviv, Tel Aviv U.}%
+      }
+      \strng{namehash}{8964d27296e316b112baf0a26ed5a40a}
+      \strng{fullhash}{8964d27296e316b112baf0a26ed5a40a}
+      \strng{bibnamehash}{8964d27296e316b112baf0a26ed5a40a}
+      \strng{authorbibnamehash}{8964d27296e316b112baf0a26ed5a40a}
+      \strng{authornamehash}{8964d27296e316b112baf0a26ed5a40a}
+      \strng{authorfullhash}{8964d27296e316b112baf0a26ed5a40a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Presented on 19 Mar 2008}
+      \field{title}{{Hough Transform Track Reconstruction in the Cathode Strip Chambers in ATLAS}}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/1118033
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/1118033
+      \endverb
+    \endentry
     \entry{ATLAS_Illustration}{misc}{}
       \name{author}{2}{}{%
         {{hash=e52b0b1fccb9c002909cdd7fa31b43bd}{%
@@ -4084,6 +4115,26 @@
       \verb https://cds.cern.ch/record/2139567
       \endverb
     \endentry
+    \entry{muonSpec}{book}{}
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \list{publisher}{1}{%
+        {CERN}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{series}{Technical design report. ATLAS}
+      \field{title}{{ATLAS muon spectrometer: Technical Design Report}}
+      \field{year}{1997}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/331068
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/331068
+      \endverb
+    \endentry
     \entry{Trigger-DAQ}{misc}{}
       \name{author}{1}{}{%
         {{hash=d29874d6591d70a9544f7bd286992acc}{%
@@ -4347,8 +4398,8 @@
       \strng{authorbibnamehash}{8b360f094206615a3191fe0e7adc3121}
       \strng{authornamehash}{8b360f094206615a3191fe0e7adc3121}
       \strng{authorfullhash}{2a99c686466f4167b76e1d6311bb7555}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{EPJ Web of Conf.}
@@ -4444,8 +4495,8 @@
       \strng{authorbibnamehash}{043ad3a25a266af6adbb040357e7ddf0}
       \strng{authornamehash}{043ad3a25a266af6adbb040357e7ddf0}
       \strng{authorfullhash}{60c65826a5c150634603354225ef3583}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Physics: Conference Series}
@@ -4815,8 +4866,8 @@
       \strng{authornamehash}{76d2c1d0a7bf71502eccc157feea837d}
       \strng{authorfullhash}{74ae9c0d5baaa5417d72597aba2bc1fb}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{During the 2013-2014 shutdown of the Large Hadron Collider, ATLAS switched to a new event data model for analysis, called the xAOD. A key feature of this model is the separation of the object data from the objects themselves (the ‘auxiliary store’). Rather than being stored as member variables of the analysis classes, all object data are stored separately, as vectors of simple values. Thus, the data are stored in a ‘structure of arrays’ format, while the user still can access it as an ‘array of structures’. This organization allows for on-demand partial reading of objects, the selective removal of object properties, and the addition of arbitrary user- defined properties in a uniform manner. It also improves performance by increasing the locality of memory references in typical analysis code. The resulting data structures can be written to ROOT files with data properties represented as simple ROOT tree branches. This paper focuses on the design and implementation of the auxiliary store and its interaction with ROOT.}

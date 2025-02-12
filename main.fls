@@ -956,16 +956,17 @@ INPUT ./content/img/LHC illustration.jpg
 INPUT content/img/LHC illustration.jpg
 INPUT ./content/img/LHC illustration.jpg
 INPUT ./content/img/LHC illustration.jpg
-INPUT ./content/img/ATLAS_quadrant.png
-INPUT ./content/img/ATLAS_quadrant.png
-INPUT content/img/ATLAS_quadrant.png
-INPUT ./content/img/ATLAS_quadrant.png
-INPUT ./content/img/ATLAS_quadrant.png
+INPUT ./content/img/ATLAS qudrant labelled MS.png
+INPUT ./content/img/ATLAS qudrant labelled MS.png
+INPUT content/img/ATLAS qudrant labelled MS.png
+INPUT ./content/img/ATLAS qudrant labelled MS.png
+INPUT ./content/img/ATLAS qudrant labelled MS.png
 INPUT ./content/img/ATLAS_Detector.jpg
 INPUT ./content/img/ATLAS_Detector.jpg
 INPUT content/img/ATLAS_Detector.jpg
 INPUT ./content/img/ATLAS_Detector.jpg
 INPUT ./content/img/ATLAS_Detector.jpg
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./2. CH. ATLASIO/_2.ATLASIO.tex
 INPUT 2. CH. ATLASIO/_2.ATLASIO.tex
 INPUT ./2. CH. ATLASIO/_2.ATLASIO.tex
@@ -1131,7 +1132,6 @@ INPUT ./content/img/aux_store_better.png
 INPUT content/img/aux_store_better.png
 INPUT ./content/img/aux_store_better.png
 INPUT ./content/img/aux_store_better.png
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT ./6. Conclusion/_6.Conclusion.tex
