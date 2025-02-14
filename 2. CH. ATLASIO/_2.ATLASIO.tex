@@ -8,7 +8,6 @@ This chapter will cover some of the important software tools used by ATLAS to ru
 % \subsection{What is Athena}
 Athena is the open-source software framework for the ATLAS experiment.\cite{athena}
 It uses on other software such as ROOT, Geant4 and other software as part of the LCG software stack. 
-Athena manages ATLAS production workflows which include event generation, simulation of data, reconstruction from hits, and derivation of reconstructed hits.\cite{athenadocs}
 It also provides some in-house based analysis tools as well as tools for specifically ROOT based analysis.
 
 % % CMake
@@ -30,7 +29,7 @@ The transient/persistent style of representing event data will be further explai
 
 % % Component Accumulator
 An important step throughout the development of Athena is to ensure any new changes to the codebase won't overrule the functionality of core features to the present workflows.
-One of the ares needed to be tested before and upon merging of any new changes to Athena is the I/O functionality, or the performance of reading and writing of stored objects within a broader context of various jobs, i.e. reconstruction or derivation.
+One of the areas needed to be tested before and upon merging of any new changes to Athena is the I/O functionality, or the performance of reading and writing of stored objects within a broader context of various jobs, i.e. reconstruction or derivation.
 These are unit tests which are scripts written in Python and call upon algorithms written in C++. 
 The python scripts are used to set the job options for the algorithms added to the component accumulator (CA), job options like flag definitions, input and output file names, and other algorithm specific options.
 While CA is a more general mechanism to run any kind of job with Athena, it's within the scope of this thesis where the focus is on testing core I/O functionality of the new event data model. 
@@ -104,11 +103,12 @@ It makes reading back branches faster as all of the baskets are stored near each
 \verb|AutoFlush| is a function that tells the \verb|Fill()| function after a designated number of entries of the branch, in this case vectors, to flush all branch buffers from memory and save them to disk. 
 
 
-\section{Derivation Production Jobs}
+\section{Derivation Production Jobs} \label{section: ATLASIO_Derivation}
+
 A derivation production job takes AODs, which comes from the reconstruction step at $\mathcal{O}(1 \text{ MB})$ per event, and creates a derived AOD (DAOD) which sits at $\mathcal{O}(10 \text{ kB})$ per event.
 Derivation production is a necessary step to make all data accessible for physicists doing analysis as well as reducing the amount of data that needs to be processed.
 While derivations are reduced AODs, they often contain additional information useful for analysis, such as jet collections and high-level discriminants.\cite{PHYSLITE_A_new_2024}
-Athena provides two types of output files from a derivation job, PHYS and PHYSLITE. 
+The two mainstream output file formats Athena is capable of handling are PHYS and PHYSLITE.  
 Figure \ref{fig:IO_tt_PHYS_vs_PHYSLITE} shows the object composition of a PHYS and PHYSLITE $t\bar{t}$ sample. 
 \begin{figure}[h]
     \centering
@@ -146,7 +146,7 @@ Lastly slimming removes variables from objects uniformly across events.
 
 
 \section{Event Data Models}
-\label{sec:IO_EDM}
+% \label{sec:IO_EDM}
 % \subsection{What is an Event Data Model}
 An Event Data Model (EDM) is a collection of classes and their relationships to each other that provide a representation of an event detected with the goal of making it easier to use and manipulate by developers.
 An EDM is how particles and jets are represented in memory, stored to disk, and manipulated in analysis.

@@ -34,7 +34,7 @@ Pseudo-rapidity is used, as opposed to traditional Cartesian angles, because it'
 \begin{figure}[h]
     \centering
     \includegraphics[width=.8\textwidth]{content/img/ATLAS_Detector.jpg}
-    \caption{Overview of the ATLAS detectors main components.\cite{ATLAS_Illustration}}
+    \caption{Overview of the ATLAS detectors main components, with two people in figure to scale.\cite{ATLAS_Illustration}}
     \label{fig:intro_ATLAS_detector}
 \end{figure}
 
@@ -99,6 +99,10 @@ The accuracy of identifying the correct bunch crossing with TGCs is 99\% and the
 \section{ATLAS Trigger and Data Acquisition (TDAQ)}
 
 The LHC produces $pp$-collisions at a rate of 40 MHz, each collision is an ``event". 
+More specifically, around $10^11$ protons are accelerated in one ``bunch" with around 2800 bunches per proton beam spaces around 25 ns apart from each other. 
+Each beam is then concentrated to the width of 64 $\mu m$ at the interaction point where about 20 collisions happen at one bunch crossing, these collisions within one bunch results in ``pile-up".
+
+
 % What is the ATLAS Trigger System
 The ATLAS Trigger system is responsible for quickly deciding what events are interesting for physics analysis.
 The Trigger system is divided into the first- and second-level triggers and when a particle activates a trigger, the trigger makes a decision to tell the Data Acquisition System (DAQ) to save the data produced by the detector. 
@@ -107,12 +111,20 @@ The second-level trigger is a software trigger that decides within $200 \mu s$ a
 The second-level trigger selects about 1000 events per second to keep and store long-term.\cite{Trigger-DAQ}
 The data taken by this Trigger/DAQ system is raw and not yet in a state that is ready for analysis, but it is ready for the reconstruction stage. 
 
+
+% Analysis Pipeline
+Athena manages ATLAS production workflows which include event generation, simulation of data, reconstruction from hits, and derivation of reconstructed hits.\cite{athenadocs}
+Reconstructed Analysis Object Data (AOD) are then processed through derivation jobs that reduced AODs from  $\mathcal{O}(1)$ MB per event to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD). 
+Further discussion on the production of DAOD can be found in Section $\S$ \ref{section: ATLASIO_Derivation}.
+
+
 % How is this relevant to the thesis?
 The amount of data taken at ATLAS is substantial.
-ATLAS sees more than 3.2 PB of raw data each year, each individual event being around 1.6 MB.\cite{ATLAS_Fact_Sheet} 
-All of the data produced by LHC experiments, especially ATLAS, has to be sent to the LHC Computing Grid (LCG). 
+ATLAS sees more than 3 PB of raw data each year, each individual event being around 2 MB.\cite{ATLAS_Fact_Sheet} 
+All of the data produced by LHC experiments, especially ATLAS, has to be sent to the Worldwide LHC Computing Grid (WLCG).
+% How is it sent to the Grid: Tier 0, 1, 2 sites
+
 The increase in data means more resources from the Grid will be needed, so optimization is an essential part of ensuring scalability of the data able to be taken in by the experiment.
-Reconstructed AOD are then processed through derivation jobs that reduced AODs from  $\mathcal{O}(1)$ MB per event to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD). 
 
 \section{HL-LHC and Future Needs in Computation}
 The High-Luminosity LHC (HL-LHC) is the upgrade to LHC that anticipates more events and more data taken than ever before.
