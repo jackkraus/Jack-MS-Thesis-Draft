@@ -2380,19 +2380,21 @@
     <bcf:citekey order="25" intorder="1">Trigger-DAQ</bcf:citekey>
     <bcf:citekey order="26" intorder="1">athenadocs</bcf:citekey>
     <bcf:citekey order="27" intorder="1">ATLAS_Fact_Sheet</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">HL-LHC_Tech_design</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">ATLAS_HL-LHC_projections</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">RNTuple_Lopez-Gomez_2023</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">RNTuple_Blomer</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">AthenaMT_Leggett_2017</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">athena</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">ROOT_about</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">ROOT_TTree</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">PHYSLITE_A_new_2024</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">DAOD_Laycock_2014</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">DAOD_Laycock_2014</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">Athena_xAOD_design</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">Buckley_2015</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">WLCG_Tech_design_report</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">Martelli_2015</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">HL-LHC_Tech_design</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">ATLAS_HL-LHC_projections</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">RNTuple_Lopez-Gomez_2023</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">RNTuple_Blomer</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">AthenaMT_Leggett_2017</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">athena</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">ROOT_about</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">ROOT_TTree</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">PHYSLITE_A_new_2024</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">DAOD_Laycock_2014</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">DAOD_Laycock_2014</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">Athena_xAOD_design</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">Buckley_2015</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

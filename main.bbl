@@ -4164,6 +4164,35 @@
       \verb https://atlas.cern/Discover/Detector/Trigger-DAQ
       \endverb
     \endentry
+    \entry{athenadocs}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
+           family={group},
+           familyi={g\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod},
+           prefix={software},
+           prefixi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Athena Software Documentation}
+      \verb{urlraw}
+      \verb https://atlassoftwaredocs.web.cern.ch/athena/
+      \endverb
+      \verb{url}
+      \verb https://atlassoftwaredocs.web.cern.ch/athena/
+      \endverb
+    \endentry
     \entry{ATLAS_Fact_Sheet}{unpublished}{}
       \name{author}{1}{}{%
         {{hash=6df9005f733ddf0d66260994df1e339a}{%
@@ -4194,6 +4223,215 @@
       \verb https://cds.cern.ch/record/1457044
       \endverb
     \endentry
+    \entry{WLCG_Tech_design_report}{book}{}
+      \name{author}{27}{}{%
+        {{hash=ccae0ecfb11fdb799a597ffe818556fa}{%
+           family={Bos},
+           familyi={B\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f3259789db6944074e40422994b51529}{%
+           family={Brook},
+           familyi={B\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=cb3a79336360b3da108edace08f30ebb}{%
+           family={Duellmann},
+           familyi={D\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7ca53f95801676c8dfcc01abe1678771}{%
+           family={Eck},
+           familyi={E\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=045d0352ebb1e6b51515da3b8af0dab0}{%
+           family={Fisk},
+           familyi={F\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=763ccb88432d4937c301fa5804c00f1c}{%
+           family={Foster},
+           familyi={F\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3a4ed52cdc8aaabb157cff5e51e0be51}{%
+           family={Gibbard},
+           familyi={G\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c5fd4e0e73cc6ae75a5159c462a686b7}{%
+           family={Grandi},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1cb1b8e7939ad9580d9d07233199bbb4}{%
+           family={Grey},
+           familyi={G\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b2d836e810a6560664ea5939074b8d71}{%
+           family={Harvey},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=26fce24e7dd83e0f2f7c3a57b3ed9352}{%
+           family={Heiss},
+           familyi={H\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3eb2973928acf4cfc3b87d1cb0d3296c}{%
+           family={Hemmer},
+           familyi={H\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7b4ec20829c717ddf95f2fa4929c1e3f}{%
+           family={Jarp},
+           familyi={J\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5f0f5b620c99fdde5a29a1d446c6aea1}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=dce905e9f24abee3f4ad5df933ef3b92}{%
+           family={Kelsey},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a7e159a48798ffd48086b4c28b5e1739}{%
+           family={Knobloch},
+           familyi={K\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a3637dae0e2ad92aa5e4105ed0fcaaaa}{%
+           family={Lamanna},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=84e298db73f7782a3280813f6ae2af4e}{%
+           family={Marten},
+           familyi={M\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4f7a9f862b823947f08892acfde9f0d0}{%
+           family={Mato\bibnamedelima Vila},
+           familyi={M\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=02919ff631a7e703ac92d175250496b3}{%
+           family={Ould-Saada},
+           familyi={O\bibinithyphendelim S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=60b5026461d051c5ffda0b3602b38f5a}{%
+           family={Panzer-Steindel},
+           familyi={P\bibinithyphendelim S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=df3b1b0944a7c782c0ace4ca0c088ecc}{%
+           family={Perini},
+           familyi={P\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d6d451cee6f8042389ab4b501648d4c5}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f36eaff5db14a13414840026809230ba}{%
+           family={Schutz},
+           familyi={S\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f047f828809a4737f0ca411f99b865b3}{%
+           family={Schwickerath},
+           familyi={S\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+        {{hash=c0fdb0f69c101dbe039599850dc86654}{%
+           family={Shiers},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=824516d3685b5e5393ad2806b3d98685}{%
+           family={Wenaus},
+           familyi={W\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \list{publisher}{1}{%
+        {CERN}%
+      }
+      \strng{namehash}{85c4af17a6affbbb944029fb318bea3c}
+      \strng{fullhash}{f6071c0c05e5adeee6ebc9817cd85c76}
+      \strng{bibnamehash}{85c4af17a6affbbb944029fb318bea3c}
+      \strng{authorbibnamehash}{85c4af17a6affbbb944029fb318bea3c}
+      \strng{authornamehash}{85c4af17a6affbbb944029fb318bea3c}
+      \strng{authorfullhash}{f6071c0c05e5adeee6ebc9817cd85c76}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Technical design report. LCG}
+      \field{title}{{LHC computing Grid: Technical Design Report. Version 1.06 (20 Jun 2005)}}
+      \field{year}{2005}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/840543
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/840543
+      \endverb
+    \endentry
+    \entry{Martelli_2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e06cae68a7b69fb0b8f333f8e4826596}{%
+           family={Martelli},
+           familyi={M\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=25891f4abb78b04d567ed1b31f051c18}{%
+           family={Stancu},
+           familyi={S\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{e0c93b7352f5a51d026582b8b135a221}
+      \strng{fullhash}{e0c93b7352f5a51d026582b8b135a221}
+      \strng{bibnamehash}{e0c93b7352f5a51d026582b8b135a221}
+      \strng{authorbibnamehash}{e0c93b7352f5a51d026582b8b135a221}
+      \strng{authornamehash}{e0c93b7352f5a51d026582b8b135a221}
+      \strng{authorfullhash}{e0c93b7352f5a51d026582b8b135a221}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The LHC Optical Private Network (LHCOPN), linking CERN and the Tier 1s, and the LHC Open Network Environment (LHCONE) which links these to the Tier 2 community both successfully supported the data transfer needs of the LHC community during Run 1 and have now evolved to serve the networking requirements of the new computing models for Run 2. We present here the current status and the key changes, notably the delivered and planned bandwidth increases, the ongoing work to better address the needs of the Asia-Pacific region, developments to improve redundancy and progress made for provisioning point-to-point links.}
+      \field{journaltitle}{Journal of Physics: Conference Series}
+      \field{month}{12}
+      \field{number}{5}
+      \field{title}{LHCOPN and LHCONE: Status and Future Evolution}
+      \field{volume}{664}
+      \field{year}{2015}
+      \field{pages}{052025}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/664/5/052025
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1742-6596/664/5/052025
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1742-6596/664/5/052025
+      \endverb
+    \endentry
     \entry{HL-LHC_Tech_design}{article}{}
       \name{author}{1}{}{%
         {{hash=fd7f00a7df2e569f278fa98e72b180e2}{%
@@ -4213,8 +4451,8 @@
       \strng{authorbibnamehash}{fd7f00a7df2e569f278fa98e72b180e2}
       \strng{authornamehash}{fd7f00a7df2e569f278fa98e72b180e2}
       \strng{authorfullhash}{fd7f00a7df2e569f278fa98e72b180e2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{High-Luminosity Large Hadron Collider (HL-LHC): Technical design report}
@@ -4301,8 +4539,8 @@
       \strng{authorbibnamehash}{7f92396b375324678b87427be28a6d75}
       \strng{authornamehash}{7f92396b375324678b87427be28a6d75}
       \strng{authorfullhash}{931365a57646b5220a04aa9fbe2a0c61}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{EPJ Web Conf.}
@@ -4343,8 +4581,8 @@
       \strng{authorbibnamehash}{287a837a93ea10fbbbba12cd21f30e60}
       \strng{authornamehash}{287a837a93ea10fbbbba12cd21f30e60}
       \strng{authorfullhash}{287a837a93ea10fbbbba12cd21f30e60}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Physics: Conference Series}
@@ -4533,7 +4771,7 @@
       \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
       \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
       \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \field{extraname}{1}
+      \field{extraname}{2}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -4544,35 +4782,6 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.5281/zenodo.2641997
-      \endverb
-    \endentry
-    \entry{athenadocs}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
-           family={group},
-           familyi={g\bibinitperiod},
-           given={ATLAS},
-           giveni={A\bibinitperiod},
-           prefix={software},
-           prefixi={s\bibinitperiod}}}%
-      }
-      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Athena Software Documentation}
-      \verb{urlraw}
-      \verb https://atlassoftwaredocs.web.cern.ch/athena/
-      \endverb
-      \verb{url}
-      \verb https://atlassoftwaredocs.web.cern.ch/athena/
       \endverb
     \endentry
     \entry{ROOT_about}{misc}{}
@@ -4781,8 +4990,8 @@
       \strng{authornamehash}{76d2c1d0a7bf71502eccc157feea837d}
       \strng{authorfullhash}{ba32133e59725d3a04d1bde0f69fde4e}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Report of the xAOD Design Group}

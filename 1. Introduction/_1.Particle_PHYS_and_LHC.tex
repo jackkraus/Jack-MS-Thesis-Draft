@@ -112,7 +112,7 @@ The second-level trigger selects about 1000 events per second to keep and store 
 The data taken by this Trigger/DAQ system is raw and not yet in a state that is ready for analysis, but it is ready for the reconstruction stage. 
 
 
-% Analysis Pipeline
+% TODO: More on the  Analysis Pipeline
 Athena manages ATLAS production workflows which include event generation, simulation of data, reconstruction from hits, and derivation of reconstructed hits.\cite{athenadocs}
 Reconstructed Analysis Object Data (AOD) are then processed through derivation jobs that reduced AODs from  $\mathcal{O}(1)$ MB per event to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD). 
 Further discussion on the production of DAOD can be found in Section $\S$ \ref{section: ATLASIO_Derivation}.
@@ -121,8 +121,14 @@ Further discussion on the production of DAOD can be found in Section $\S$ \ref{s
 % How is this relevant to the thesis?
 The amount of data taken at ATLAS is substantial.
 ATLAS sees more than 3 PB of raw data each year, each individual event being around 2 MB.\cite{ATLAS_Fact_Sheet} 
-All of the data produced by LHC experiments, especially ATLAS, has to be sent to the Worldwide LHC Computing Grid (WLCG).
+All of the data produced by LHC experiments, especially ATLAS, has to be sent to the Worldwide LHC Computing Grid (WLCG).\cite{WLCG_Tech_design_report}
 % How is it sent to the Grid: Tier 0, 1, 2 sites
+The WLCG composes of a three-tiered system, CERN serves as the Tier-0 site, there are $\mathcal{O}(20)$ Tier-1 sites, and $\mathcal{O}(200)$ Tier-2 sites.\cite{Martelli_2015}
+Though, the numbers of each site do change over time.
+The raw data coming from the TDAQ systems are recorded at the CERN Tier-0 sites where a first-pass at reconstruction will take place and a copy of the raw data is sent to the Tier-1 sites.
+Multiple 10 Gbps capacity links streamline dataflow from the ATLAS TDAQ to the Tier-0 site. 
+Tier-1 sites offer manage permanent storage of raw and reconstructed data and provide extensive processing capability for analysis that might need it.
+Tier-2 sites 
 
 The increase in data means more resources from the Grid will be needed, so optimization is an essential part of ensuring scalability of the data able to be taken in by the experiment.
 
