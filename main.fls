@@ -967,6 +967,11 @@ INPUT content/img/ATLAS_Detector.jpg
 INPUT ./content/img/ATLAS_Detector.jpg
 INPUT ./content/img/ATLAS_Detector.jpg
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./content/img/modified-James-chain-processing.png
+INPUT ./content/img/modified-James-chain-processing.png
+INPUT content/img/modified-James-chain-processing.png
+INPUT ./content/img/modified-James-chain-processing.png
+INPUT ./content/img/modified-James-chain-processing.png
 INPUT ./2. CH. ATLASIO/_2.ATLASIO.tex
 INPUT 2. CH. ATLASIO/_2.ATLASIO.tex
 INPUT ./2. CH. ATLASIO/_2.ATLASIO.tex

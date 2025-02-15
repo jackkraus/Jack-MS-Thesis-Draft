@@ -1,23 +1,24 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[29] biber-darwin:340> INFO - === Fri Feb 14, 2025, 11:25:58
-[37] Biber.pm:419> INFO - Reading 'main.bcf'
-[69] Biber.pm:979> INFO - Found 29 citekeys in bib section 0
-[76] Biber.pm:4419> INFO - Processing section 0
-[80] Biber.pm:4610> INFO - Looking for bibtex file 'main.bib' for section 0
-[82] bibtex.pm:1713> INFO - LaTeX decoding ...
-[100] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
-[573] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[573] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[573] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[573] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[594] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[799] bbl.pm:763> INFO - Output to main.bbl
-[799] Biber.pm:131> WARN - legacy month field 'jul' in entry 'PixelDetector_2008' is not an integer - this will probably not sort properly.
-[800] Biber.pm:131> WARN - legacy month field 'feb' in entry 'TRT_2008' is not an integer - this will probably not sort properly.
-[800] Biber.pm:131> WARN - legacy month field 'dec' in entry 'Martelli_2015' is not an integer - this will probably not sort properly.
-[800] Biber.pm:131> WARN - legacy month field 'feb' in entry 'RNTuple_Lopez-Gomez_2023' is not an integer - this will probably not sort properly.
-[800] Biber.pm:131> WARN - legacy month field 'oct' in entry 'AthenaMT_Leggett_2017' is not an integer - this will probably not sort properly.
-[800] Biber.pm:131> WARN - legacy month field 'jun' in entry 'DAOD_Laycock_2014' is not an integer - this will probably not sort properly.
-[800] Biber.pm:131> WARN - legacy month field 'dec' in entry 'Buckley_2015' is not an integer - this will probably not sort properly.
-[800] Biber.pm:133> INFO - WARNINGS: 7
+[28] biber-darwin:340> INFO - === Sat Feb 15, 2025, 12:50:45
+[35] Biber.pm:419> INFO - Reading 'main.bcf'
+[66] Biber.pm:979> INFO - Found 30 citekeys in bib section 0
+[73] Biber.pm:4419> INFO - Processing section 0
+[77] Biber.pm:4610> INFO - Looking for bibtex file 'main.bib' for section 0
+[79] bibtex.pm:1713> INFO - LaTeX decoding ...
+[98] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
+[570] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[570] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[570] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[570] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[591] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[821] bbl.pm:763> INFO - Output to main.bbl
+[821] Biber.pm:131> WARN - legacy month field 'jul' in entry 'PixelDetector_2008' is not an integer - this will probably not sort properly.
+[821] Biber.pm:131> WARN - legacy month field 'feb' in entry 'TRT_2008' is not an integer - this will probably not sort properly.
+[821] Biber.pm:131> WARN - legacy month field 'dec' in entry 'Martelli_2015' is not an integer - this will probably not sort properly.
+[821] Biber.pm:131> WARN - unpublished entry 'James_Catmore_chain_processing' (main.bib): Invalid format 'February 8' of date field 'date' - ignoring
+[821] Biber.pm:131> WARN - legacy month field 'feb' in entry 'RNTuple_Lopez-Gomez_2023' is not an integer - this will probably not sort properly.
+[821] Biber.pm:131> WARN - legacy month field 'oct' in entry 'AthenaMT_Leggett_2017' is not an integer - this will probably not sort properly.
+[821] Biber.pm:131> WARN - legacy month field 'jun' in entry 'DAOD_Laycock_2014' is not an integer - this will probably not sort properly.
+[821] Biber.pm:131> WARN - legacy month field 'dec' in entry 'Buckley_2015' is not an integer - this will probably not sort properly.
+[821] Biber.pm:133> INFO - WARNINGS: 8

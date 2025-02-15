@@ -35,8 +35,8 @@
       \strng{authorbibnamehash}{f8bd0356e6dc1ca33bc342ada2117488}
       \strng{authornamehash}{f8bd0356e6dc1ca33bc342ada2117488}
       \strng{authorfullhash}{f8bd0356e6dc1ca33bc342ada2117488}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{LHC Illustration showing underground locations of detectors}
@@ -1593,8 +1593,8 @@
       \strng{authorbibnamehash}{6658b3a0dc8d44502ea2cda983468088}
       \strng{authornamehash}{6658b3a0dc8d44502ea2cda983468088}
       \strng{authorfullhash}{6658b3a0dc8d44502ea2cda983468088}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Radiation Detection and Measurement}
@@ -2929,8 +2929,8 @@
       \strng{authorbibnamehash}{bf817e19f5890a21f153bd8dfd3648a6}
       \strng{authornamehash}{bf817e19f5890a21f153bd8dfd3648a6}
       \strng{authorfullhash}{f82928e2919c05200bfc43008cf49234}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper describes the silicon microstrip modules in the barrel section of the SemiConductor Tracker (SCT) of the ATLAS experiment at the CERN Large Hadron Collider (LHC). The module requirements, components and assembly techniques are given, as well as first results of the module performance on the fully assembled barrels that make up the detector being installed in the ATLAS experiment.}
@@ -4373,8 +4373,8 @@
       \strng{authorbibnamehash}{85c4af17a6affbbb944029fb318bea3c}
       \strng{authornamehash}{85c4af17a6affbbb944029fb318bea3c}
       \strng{authorfullhash}{f6071c0c05e5adeee6ebc9817cd85c76}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{series}{Technical design report. LCG}
@@ -4409,8 +4409,8 @@
       \strng{authorbibnamehash}{e0c93b7352f5a51d026582b8b135a221}
       \strng{authornamehash}{e0c93b7352f5a51d026582b8b135a221}
       \strng{authorfullhash}{e0c93b7352f5a51d026582b8b135a221}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The LHC Optical Private Network (LHCOPN), linking CERN and the Tier 1s, and the LHC Open Network Environment (LHCONE) which links these to the Tier 2 community both successfully supported the data transfer needs of the LHC community during Run 1 and have now evolved to serve the networking requirements of the new computing models for Run 2. We present here the current status and the key changes, notably the delivered and planned bandwidth increases, the ongoing work to better address the needs of the Asia-Pacific region, developments to improve redundancy and progress made for provisioning point-to-point links.}
@@ -4558,6 +4558,38 @@
       \verb{url}
       \verb https://doi.org/10.1051/epjconf/202024506014
       \endverb
+    \endentry
+    \entry{James_Catmore_chain_processing}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=36fa905bec248f250f6e5bd30c45c812}{%
+           family={Catmore},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {University of Oslo}%
+      }
+      \strng{namehash}{36fa905bec248f250f6e5bd30c45c812}
+      \strng{fullhash}{36fa905bec248f250f6e5bd30c45c812}
+      \strng{bibnamehash}{36fa905bec248f250f6e5bd30c45c812}
+      \strng{authorbibnamehash}{36fa905bec248f250f6e5bd30c45c812}
+      \strng{authornamehash}{36fa905bec248f250f6e5bd30c45c812}
+      \strng{authorfullhash}{36fa905bec248f250f6e5bd30c45c812}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Joint Oslo/Bergen/NBI ATLAS Software Tutorial}
+      \field{title}{The ATLAS data processing chain: from collision to paper}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://indico.cern.ch/event/472469/contributions/1982677/attachments/1220934/1785823/intro_slides.pdf
+      \endverb
+      \verb{url}
+      \verb https://indico.cern.ch/event/472469/contributions/1982677/attachments/1220934/1785823/intro_slides.pdf
+      \endverb
+      \warn{\item unpublished entry 'James_Catmore_chain_processing' (main.bib): Invalid format 'February 8' of date field 'date' - ignoring}
     \endentry
     \entry{RNTuple_Lopez-Gomez_2023}{article}{}
       \name{author}{2}{}{%
@@ -4799,8 +4831,8 @@
       \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
       \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{ROOT, About}
@@ -4826,8 +4858,8 @@
       \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
       \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{ROOT, TTree Class}
@@ -4869,8 +4901,8 @@
       \strng{authorbibnamehash}{bc521da4b53e83da276a2b1a531bc4a7}
       \strng{authornamehash}{bc521da4b53e83da276a2b1a531bc4a7}
       \strng{authorfullhash}{9b54328134bb7ec3f4128b56d4813cdb}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{EPJ Web of Conf.}
@@ -4923,8 +4955,8 @@
       \strng{authorbibnamehash}{3dba564d726ca4b069011388d922122b}
       \strng{authornamehash}{3dba564d726ca4b069011388d922122b}
       \strng{authorfullhash}{a4afaf028ecb1e6926bdc05470a7a6f9}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Physics: Conference Series}
