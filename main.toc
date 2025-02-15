@@ -4,7 +4,7 @@
 \noindent Chapter\@@@par 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}LHC and The ATLAS Detector}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}ATLAS Trigger and Data Acquisition (TDAQ)}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.2}ATLAS Trigger/Data Acquisition (TDAQ)}{6}{section.1.2}%
 \contentsline {section}{\numberline {1.3}ATLAS Software and Computing Needs}{8}{section.1.3}%
 \contentsline {chapter}{\numberline {2}I/O Tools}{10}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Athena and ROOT}{10}{section.2.1}%

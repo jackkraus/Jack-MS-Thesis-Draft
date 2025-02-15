@@ -76,6 +76,7 @@ With this comes an increase in data taken per year that current software and com
 The ATLAS experiment's Software Performance Optimization Team has areas in development to improve the Athena software framework that is scalable in performance and ready for wide-spread HL-LHC era data taking. 
 One area of interest is optimization of derivation production jobs by improving derived object data stored to disk by about 4-5\% by eliminating the upper-limit on TTree basket buffers, at the expense of an increase in memory usage by about 11\%. 
 
+%:
 Athena and the software it depends on are updated frequently, and to synthesize changes cohesively there are scripts, unit tests, that run which test core I/O functionality. 
 This thesis upgrades existing I/O unit tests to now exercise features exclusive to the xAOD Event Data Model (EDM) such as writing and reading object data from the previous EDM using transient and persistent data. 
 These new unit tests also include and omit select dynamic attributes to object data during the component accumulator step. 

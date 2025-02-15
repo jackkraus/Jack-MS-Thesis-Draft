@@ -48,10 +48,10 @@
       \verb https://research.princeton.edu/news/princeton-led-group-prepares-large-hadron-collider-bright-future
       \endverb
     \endentry
-    \entry{Brüning:782076}{book}{}
+    \entry{Bruning:782076}{book}{}
       \name{author}{7}{}{%
-        {{hash=c9a324bb9a73322510ce6491007589ce}{%
-           family={Brüning},
+        {{hash=974e2620d87c6855c674b65000b36b8b}{%
+           family={Bruning},
            familyi={B\bibinitperiod},
            given={Oliver\bibnamedelima Sim},
            giveni={O\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
@@ -92,12 +92,12 @@
       \list{publisher}{1}{%
         {CERN}%
       }
-      \strng{namehash}{8f17260326e9957cf9e7df8d39e7952f}
-      \strng{fullhash}{bd6370d8800b3fed4a534892c9929e09}
-      \strng{bibnamehash}{8f17260326e9957cf9e7df8d39e7952f}
-      \strng{authorbibnamehash}{8f17260326e9957cf9e7df8d39e7952f}
-      \strng{authornamehash}{8f17260326e9957cf9e7df8d39e7952f}
-      \strng{authorfullhash}{bd6370d8800b3fed4a534892c9929e09}
+      \strng{namehash}{90d3cd02e2038c3907a432749a6385e4}
+      \strng{fullhash}{474a7d853cfcd205e4f404f92d23de5c}
+      \strng{bibnamehash}{90d3cd02e2038c3907a432749a6385e4}
+      \strng{authorbibnamehash}{90d3cd02e2038c3907a432749a6385e4}
+      \strng{authornamehash}{90d3cd02e2038c3907a432749a6385e4}
+      \strng{authorfullhash}{474a7d853cfcd205e4f404f92d23de5c}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -4164,35 +4164,6 @@
       \verb https://atlas.cern/Discover/Detector/Trigger-DAQ
       \endverb
     \endentry
-    \entry{athenadocs}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
-           family={group},
-           familyi={g\bibinitperiod},
-           given={ATLAS},
-           giveni={A\bibinitperiod},
-           prefix={software},
-           prefixi={s\bibinitperiod}}}%
-      }
-      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
-      \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Athena Software Documentation}
-      \verb{urlraw}
-      \verb https://atlassoftwaredocs.web.cern.ch/athena/
-      \endverb
-      \verb{url}
-      \verb https://atlassoftwaredocs.web.cern.ch/athena/
-      \endverb
-    \endentry
     \entry{ATLAS_Fact_Sheet}{unpublished}{}
       \name{author}{1}{}{%
         {{hash=6df9005f733ddf0d66260994df1e339a}{%
@@ -4373,8 +4344,8 @@
       \strng{authorbibnamehash}{85c4af17a6affbbb944029fb318bea3c}
       \strng{authornamehash}{85c4af17a6affbbb944029fb318bea3c}
       \strng{authorfullhash}{f6071c0c05e5adeee6ebc9817cd85c76}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{series}{Technical design report. LCG}
@@ -4386,38 +4357,6 @@
       \verb{url}
       \verb https://cds.cern.ch/record/840543
       \endverb
-    \endentry
-    \entry{James_Catmore_chain_processing}{unpublished}{}
-      \name{author}{1}{}{%
-        {{hash=36fa905bec248f250f6e5bd30c45c812}{%
-           family={Catmore},
-           familyi={C\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {University of Oslo}%
-      }
-      \strng{namehash}{36fa905bec248f250f6e5bd30c45c812}
-      \strng{fullhash}{36fa905bec248f250f6e5bd30c45c812}
-      \strng{bibnamehash}{36fa905bec248f250f6e5bd30c45c812}
-      \strng{authorbibnamehash}{36fa905bec248f250f6e5bd30c45c812}
-      \strng{authornamehash}{36fa905bec248f250f6e5bd30c45c812}
-      \strng{authorfullhash}{36fa905bec248f250f6e5bd30c45c812}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Joint Oslo/Bergen/NBI ATLAS Software Tutorial}
-      \field{title}{The ATLAS data processing chain: from collision to paper}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb https://indico.cern.ch/event/472469/contributions/1982677/attachments/1220934/1785823/intro_slides.pdf
-      \endverb
-      \verb{url}
-      \verb https://indico.cern.ch/event/472469/contributions/1982677/attachments/1220934/1785823/intro_slides.pdf
-      \endverb
-      \warn{\item unpublished entry 'James_Catmore_chain_processing' (main.bib): Invalid format 'February 8' of date field 'date' - ignoring}
     \endentry
     \entry{Martelli_2015}{article}{}
       \name{author}{2}{}{%
@@ -4463,6 +4402,67 @@
       \verb{url}
       \verb https://dx.doi.org/10.1088/1742-6596/664/5/052025
       \endverb
+    \endentry
+    \entry{athenadocs}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
+           family={group},
+           familyi={g\bibinitperiod},
+           given={ATLAS},
+           giveni={A\bibinitperiod},
+           prefix={software},
+           prefixi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{fullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{bibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorbibnamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Athena Software Documentation}
+      \verb{urlraw}
+      \verb https://atlassoftwaredocs.web.cern.ch/athena/
+      \endverb
+      \verb{url}
+      \verb https://atlassoftwaredocs.web.cern.ch/athena/
+      \endverb
+    \endentry
+    \entry{James_Catmore_chain_processing}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=36fa905bec248f250f6e5bd30c45c812}{%
+           family={Catmore},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {University of Oslo}%
+      }
+      \strng{namehash}{36fa905bec248f250f6e5bd30c45c812}
+      \strng{fullhash}{36fa905bec248f250f6e5bd30c45c812}
+      \strng{bibnamehash}{36fa905bec248f250f6e5bd30c45c812}
+      \strng{authorbibnamehash}{36fa905bec248f250f6e5bd30c45c812}
+      \strng{authornamehash}{36fa905bec248f250f6e5bd30c45c812}
+      \strng{authorfullhash}{36fa905bec248f250f6e5bd30c45c812}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Joint Oslo/Bergen/NBI ATLAS Software Tutorial}
+      \field{title}{The ATLAS data processing chain: from collision to paper}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://indico.cern.ch/event/472469/contributions/1982677/attachments/1220934/1785823/intro_slides.pdf
+      \endverb
+      \verb{url}
+      \verb https://indico.cern.ch/event/472469/contributions/1982677/attachments/1220934/1785823/intro_slides.pdf
+      \endverb
+      \warn{\item unpublished entry 'James_Catmore_chain_processing' (main.bib): Invalid format 'February 8' of date field 'date' - ignoring}
     \endentry
     \entry{HL-LHC_Tech_design}{article}{}
       \name{author}{1}{}{%

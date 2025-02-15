@@ -14,7 +14,7 @@ Specifically, ways to modernize and optimize areas of the software framework, At
     \label{fig:intro_LHC_sites}
 \end{figure}
 
-The Large Hadron Collider (LHC), shown in Figure \ref{fig:intro_LHC_sites},  is a particle accelerator spanning a 26.7-kilometer ring that crosses between the France-Switzerland border at a depth between 50 and 175 meters underground.\cite{Brüning:782076}
+The Large Hadron Collider (LHC), shown in Figure \ref{fig:intro_LHC_sites},  is a particle accelerator spanning a 26.7-kilometer ring that crosses between the France-Switzerland border at a depth between 50 and 175 meters underground.\cite{Bruning:782076}
 The ATLAS experiment, shown in Figure \ref{fig:intro_ATLAS_detector}, is the largest LHC general purpose detector, and the largest detector ever made for particle collision experiments. 
 The detector lies in a cavern 92.5 m underground at a length of 46 m, height and width of 25 m.\cite{ATLAS_Tech_Proposal}
 A quadrant of the detector is shown in Figure \ref{fig:ATLAS_quadrant}, where $\eta$ is a measure of the pseudo-rapidity.
@@ -96,29 +96,21 @@ The time resolution in TCGs help identify bunch-crossings and granularity in mom
 Since each wire can be given a position in the trigger system, any muon that passes through the TGC can be compared with greater spatial precision with the MDTs and illustrate a track later.
 The accuracy of identifying the correct bunch crossing with TGCs is 99\% and the delivery of bunch crossing identification can be delivered within 25 ns, only a small fraction of bunch crossings arrive later than that window.
 
-\section{ATLAS Trigger and Data Acquisition (TDAQ)}
+\section{ATLAS Trigger/Data Acquisition (TDAQ)}
 
 The LHC produces $pp$-collisions at a rate of 40 MHz, each collision is an ``event". 
-More specifically, around $10^11$ protons are accelerated in one ``bunch" with around 2800 bunches per proton beam spaces around 25 ns apart from each other. 
+More specifically, around $10^{11}$ protons are accelerated in one ``bunch" with around 2800 bunches per proton beam spaces around 25 ns apart from each other. 
 Each beam is then concentrated to the width of $64 \mu m$ at the interaction point where about 20 collisions happen at one bunch crossing, these collisions within one bunch results in ``pile-up".
-
 
 % What is the ATLAS Trigger System
 The ATLAS Trigger system is responsible for quickly deciding what events are interesting for physics analysis.
-The Trigger system is divided into the first- and second-level triggers and when a particle activates a trigger, the trigger makes a decision to tell the Data Acquisition System (DAQ) to save the data produced by the detector. 
+The Trigger system is divided into the first- and second-level triggers and when a particle activates a trigger, the trigger makes a decision to tell the DAQ to save the data produced by the detector. 
 The first-level trigger is a hardware trigger that decides, within $2.5 \mu s$ after the event, if it's a good event to put into a storage buffer for the second-level trigger.
 The second-level trigger is a software trigger that decides within $200 \mu s$ and uses around 40,000 CPU-cores and analyses the event to decide if it is worth keeping. 
 The second-level trigger selects about 1000 events per second to keep and store long-term.\cite{Trigger-DAQ}
-The data taken by this Trigger/DAQ system is raw and not yet in a state that is ready for analysis, but it is ready for the reconstruction stage. 
+The data taken by the TDAQ system is raw and not yet in a state that is ready for analysis, but it is ready for further processing. 
 
-
-% TODO: More on the  Analysis Pipeline
-Athena manages ATLAS production workflows which include event generation, simulation of data, reconstruction from hits, and derivation of reconstructed hits.\cite{athenadocs}
-Reconstructed Analysis Object Data (AOD) are then processed through derivation jobs that reduced AODs from  $\mathcal{O}(1)$ MB per event to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD). 
-Further discussion on the production of DAOD can be found in Section \ref{section: ATLASIO_Derivation}.
-
-
-% How is this relevant to the thesis?
+% Lots of data -> WLCG handles it
 The amount of data taken at ATLAS is substantial, seeing more than 3 PB of raw data each year and each individual event being around 2 MB.\cite{ATLAS_Fact_Sheet} 
 All of the data produced by LHC experiments, especially ATLAS, has to be sent to the Worldwide LHC Computing Grid (WLCG).\cite{WLCG_Tech_design_report}
 % How is it sent to the Grid: Tier 0, 1, 2 sites
@@ -129,8 +121,12 @@ Multiple 10 Gbps capacity links streamline dataflow from the ATLAS TDAQ to the T
 Tier-1 sites offer manage permanent storage of raw and reconstructed data and provide extensive processing capability for analysis that might demand it.
 Tier-2 sites provide additional computation and storage services that compliment end-user analysis.
 
-Figure \ref{fig:ATLAS_data_chain} illustrates the entire ATLAS data processing chain for both real detector data and Monte Carlo simulations. 
-% How does the production chain play out?
+% WLCG handles it -> in what way is it being handled?
+Athena manages ATLAS production workflows which are involved with simulation of data and event generation, track reconstruction from hits, and derivation production.\cite{athenadocs}
+Figure \ref{fig:ATLAS_data_chain} illustrates the broadstrokes of the entire ATLAS data processing chain for both real detector data and Monte Carlo (MC) simulations. 
+MC simulation starts with the event generation (EVNT), following simulation of events hitting the detector (HITS) and further simulation of what would be readout of the detector (RDO).
+The reconstructed Analysis Object Data (AOD) are then processed through derivation production jobs that reduces AODs from  $\mathcal{O}(1)$ MB per event to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD). 
+Further discussion on the production of DAOD can be found in Section \ref{section: ATLASIO_Derivation}.
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{content/img/modified-James-chain-processing.png}
@@ -138,14 +134,16 @@ Figure \ref{fig:ATLAS_data_chain} illustrates the entire ATLAS data processing c
     \label{fig:ATLAS_data_chain}
 \end{figure}
 
+
+
 \section{ATLAS Software and Computing Needs}
 The High-Luminosity LHC (HL-LHC) is the upgrade to LHC that anticipates more events and more data taken than ever before.
 % How does high luminosity affect the number of collisions? 
 The goal is to reach a luminosity of $350 fb^{-1}$, which is forecasted to be reached gradually by around 2040.\cite{HL-LHC_Tech_design}
 The HL-LHC era is projected to demand anywhere from 6-10 times data stored per year, so any attempt to save on disk storage will help.\cite{ATLAS_HL-LHC_projections}
-The increase in data means more resources from the Grid will be needed, so optimization is an essential part of ensuring scalability of the data able to be taken in by the experiment.
+Increasing data means more resources from the Grid will be needed, so optimization across files and software is an essential part of ensuring scalability of the data taken in by the detector.
 
-
+The traditional method of storing information for AOD/DAOD is in with ROOT TTrees.
 
 
 
