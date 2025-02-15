@@ -24,7 +24,7 @@ Where \verb|../package_filters.txt| is the text file containing the path to the 
 % % Athena POOL
 AthenaPOOL is data storage architecture suite of packages within Athena that provide conversion services. 
 It originated as a separate project to serve as a layer between the transient data, stored in memory, used by the software framework and the data stored permanently, or persistently.
-The transient/persistent style of representing event data will be further explained in $\S$ \ref{sec:IO_EDM}.
+The transient/persistent style of representing event data will be further explained in Section \ref{sec:IO_EDM}.
 
 
 % % Component Accumulator
@@ -103,7 +103,8 @@ It makes reading back branches faster as all of the baskets are stored near each
 \verb|AutoFlush| is a function that tells the \verb|Fill()| function after a designated number of entries of the branch, in this case vectors, to flush all branch buffers from memory and save them to disk. 
 
 
-\section{Derivation Production Jobs} \label{section: ATLASIO_Derivation}
+\section{Derivation Production Jobs}
+ \label{section: ATLASIO_Derivation}
 
 A derivation production job takes AODs, which comes from the reconstruction step at $\mathcal{O}(1 \text{ MB})$ per event, and creates a derived AOD (DAOD) which sits at $\mathcal{O}(10 \text{ kB})$ per event.
 Derivation production is a necessary step to make all data accessible for physicists doing analysis as well as reducing the amount of data that needs to be processed.
@@ -183,5 +184,5 @@ Payload classes are often referred to as auxiliary storage.
 The specific data structure used by ATLAS is the ROOT TTree, but the EDM is agnostic to the type of data structure used. 
 ATLAS specific libraries are not required to handle files written in the xAOD format since the payload can be read directly from the contiguous allocation of memory, a central tenent of the xAOD EDM.
 This allows for the separation of ATLAS specific analysis frameworks and the preferred analysis tool of the user.
-More information on how the xAOD EDM is deployed into unit tests in $\S$ \ref{sec:Mod_utests_xAOD_object}.
+More information on how the xAOD EDM is deployed into unit tests in Section \ref{sec:Mod_utests_xAOD_object}.
 

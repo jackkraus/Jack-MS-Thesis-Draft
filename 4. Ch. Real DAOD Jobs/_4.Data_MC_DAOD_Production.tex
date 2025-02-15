@@ -11,7 +11,7 @@ This project opted to take is by optimizing for disk-space and memory by testing
 As the toy model ruled out, the focus here was on optimizing Athena and not ROOTs contribution for optimization.
 The initial focus was on the inclusion of a minimum number of entries per buffer and the maximum basket buffer limit.
 The AthenaPOOL script directly involved with these buffer settings is the \verb|PoolWriteConfig.py| found in the path \verb|athena/Database/AthenaPOOL/AthenaPoolCnvSvc/python/|.
-As discussed in Section $\S$\ref{sec:DAODProd_Results}, further testing opted to keep the minimum number of entries set to its default setting, 10 entries per buffer. 
+As discussed in Section \ref{sec:DAODProd_Results}, further testing opted to keep the minimum number of entries set to its default setting, 10 entries per buffer. 
 
 Throughout the duration of this testing, the results of compression or file size are independent of any changes to the release or the nightly version of Athena.  
 The data derivation job comes from a 2022 dataset with four input files and 160,327 events. 

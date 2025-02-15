@@ -137,7 +137,7 @@ Following branch initialization comes the event loop where data is generated and
     ...
   }
 \end{lstlisting}
-Once the branches were filled, ROOT then will loop over each of the branches in the TTree and at regular intervals will remove the baskets from memory, compress, and write the baskets to disk (flushed), as was discussed in Section $\S \ref{section: ATLASIO_TTreeObject}$.
+Once the branches were filled, ROOT then will loop over each of the branches in the TTree and at regular intervals will remove the baskets from memory, compress, and write the baskets to disk (flushed), as was discussed in Section \ref{section: ATLASIO_TTreeObject}.
 
 As illustrated, the \verb|TTree| is written to the file which allows for the last steps within this script. 
 
@@ -185,7 +185,7 @@ The branches needed to have some balance between compressible and incompressible
 How this was achieved was by filling each vector with different ratios of random floats and repeating integers, which will now be described in detail.
 
 The first change was increasing the total number of events per branch from $N = 10^4$ to $N = 10^5$. 
-Mixing of random floats and repeated integer values takes the same script structure as Section $\S$ \ref{sec:toy_compression_random_float_branches} but adjusts the event generation loop.
+Mixing of random floats and repeated integer values takes the same script structure as Section \ref{sec:toy_compression_random_float_branches} but adjusts the event generation loop.
 \begin{lstlisting}[language=C]  
   void VectorTree() {
     ...
@@ -270,7 +270,7 @@ Changing the basket buffer size was done at the script level with a simple setti
     int basketSize = 8192000; // 8 MB
     tree->SetBasketSize("*",basketSize);
 \end{lstlisting}
-This ROOT-level setting was sufficient for the case of the toy model; testing of the basket size setting both at the ROOT- and Athena-level would be done later using derivation production jobs in Section $\S\ref{sec:DAODProd_Analysis}$.
+This ROOT-level setting was sufficient for the case of the toy model; testing of the basket size setting both at the ROOT- and Athena-level would be done later using derivation production jobs in Section \ref{sec:DAODProd_Analysis}.
 The lower bound set for the basket size was 1 kB and the upper bound was 16 MB.
 The first branch looked at closely was the branch with a thousand vectors with half of them being random floats, see Figure \ref{fig:toymodel_CFvsBranchSize_1/2mixture}.
 

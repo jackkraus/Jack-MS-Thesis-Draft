@@ -84,11 +84,11 @@ Through this mechanism, these decay products will continue until the energy has 
 The MS sits at the end of the ATLAS detector and is designed to identify muon tracks and momentum to high-resolution, its components are shown in Figure \ref{fig:ATLAS_quadrant}.
 Monitored Drift Tube (MDT) chambers are used for precision measurement of muon tracks in the principle bending direction of the magnetic fields over a large $\eta$.
 The MDT lie in the endcaps and barrel regions covering the pseudorapidity regions $0 < |\eta| < 2.7$, where the the tubes run perpendicular to the beam and in-line with the magnetic field lines.
-Single cell resolution for these drift tubes can reach 60 $\mu m$.\cite{ATLAS_Tech_Proposal}
+Single cell resolution for these drift tubes can reach $60 \mu m$.\cite{ATLAS_Tech_Proposal}
 The area of highest particle flux is the region of pseudo-rapidity $2 < |\eta| < 2.7$, here is where the cathode strip chambers lie.\cite{muonSpec}
 Cathode strip chambers (CSCs) are layered to determine track vectors and use multi-wire chambers to achieve a resolution up to $50 \mu m$. 
 
-The RPCs are gaseous parallel-plate detectors suited for fast spacetime particle tracking that combines the the spatial resolution (\~ 1 cm) of the wire chambers and the time resolution (\~ 1 ns) of a scintillation counter.
+The RPCs are gaseous parallel-plate detectors suited for fast spacetime particle tracking that combines the the spatial resolution (around 1 cm) of the wire chambers and the time resolution (around 1 ns) of a scintillation counter.
 Resistive plate chambers (RPCs) and the Thin gap chambers (TGCs) provide the trigger information for the MDTs and CSCs to then make a precision measurement, so speed takes priority over spatial resolution for the muon trigger system. 
 Though RPCs don't have wires, their design consists of two strips separated by an insulating spacer to create a gap for the gas ($C_2 H_2 F_4$ plus some smaller of argon/butane) to occupy.
 Thin gap chambers (TGCs) exist in the forward region and are thin wire chambers that aide in muon triggering and measurement of the azimuthal coordinate to be used in compliment with MDTs.
@@ -100,7 +100,7 @@ The accuracy of identifying the correct bunch crossing with TGCs is 99\% and the
 
 The LHC produces $pp$-collisions at a rate of 40 MHz, each collision is an ``event". 
 More specifically, around $10^11$ protons are accelerated in one ``bunch" with around 2800 bunches per proton beam spaces around 25 ns apart from each other. 
-Each beam is then concentrated to the width of 64 $\mu m$ at the interaction point where about 20 collisions happen at one bunch crossing, these collisions within one bunch results in ``pile-up".
+Each beam is then concentrated to the width of $64 \mu m$ at the interaction point where about 20 collisions happen at one bunch crossing, these collisions within one bunch results in ``pile-up".
 
 
 % What is the ATLAS Trigger System
@@ -115,12 +115,11 @@ The data taken by this Trigger/DAQ system is raw and not yet in a state that is 
 % TODO: More on the  Analysis Pipeline
 Athena manages ATLAS production workflows which include event generation, simulation of data, reconstruction from hits, and derivation of reconstructed hits.\cite{athenadocs}
 Reconstructed Analysis Object Data (AOD) are then processed through derivation jobs that reduced AODs from  $\mathcal{O}(1)$ MB per event to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD). 
-Further discussion on the production of DAOD can be found in Section $\S$ \ref{section: ATLASIO_Derivation}.
+Further discussion on the production of DAOD can be found in Section \ref{section: ATLASIO_Derivation}.
 
 
 % How is this relevant to the thesis?
-The amount of data taken at ATLAS is substantial.
-ATLAS sees more than 3 PB of raw data each year, each individual event being around 2 MB.\cite{ATLAS_Fact_Sheet} 
+The amount of data taken at ATLAS is substantial, seeing more than 3 PB of raw data each year and each individual event being around 2 MB.\cite{ATLAS_Fact_Sheet} 
 All of the data produced by LHC experiments, especially ATLAS, has to be sent to the Worldwide LHC Computing Grid (WLCG).\cite{WLCG_Tech_design_report}
 % How is it sent to the Grid: Tier 0, 1, 2 sites
 The WLCG composes of a three-tiered system, CERN serves as the Tier-0 site, there are $\mathcal{O}(20)$ Tier-1 sites, and $\mathcal{O}(200)$ Tier-2 sites.\cite{Martelli_2015}
@@ -130,21 +129,26 @@ Multiple 10 Gbps capacity links streamline dataflow from the ATLAS TDAQ to the T
 Tier-1 sites offer manage permanent storage of raw and reconstructed data and provide extensive processing capability for analysis that might demand it.
 Tier-2 sites provide additional computation and storage services that compliment end-user analysis.
 
-The increase in data means more resources from the Grid will be needed, so optimization is an essential part of ensuring scalability of the data able to be taken in by the experiment.
+Figure \ref{fig:ATLAS_data_chain} illustrates the entire ATLAS data processing chain for both real detector data and Monte Carlo simulations. 
+% How does the production chain play out?
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{content/img/modified-James-chain-processing.png}
+    \caption{ATLAS data chain-processing for data and Monte Carlo simulation. Figure is modified from \cite{James_Catmore_chain_processing}.}
+    \label{fig:ATLAS_data_chain}
+\end{figure}
 
 \section{ATLAS Software and Computing Needs}
 The High-Luminosity LHC (HL-LHC) is the upgrade to LHC that anticipates more events and more data taken than ever before.
 % How does high luminosity affect the number of collisions? 
 The goal is to reach a luminosity of $350 fb^{-1}$, which is forecasted to be reached gradually by around 2040.\cite{HL-LHC_Tech_design}
 The HL-LHC era is projected to demand anywhere from 6-10 times data stored per year, so any attempt to save on disk storage will help.\cite{ATLAS_HL-LHC_projections}
+The increase in data means more resources from the Grid will be needed, so optimization is an essential part of ensuring scalability of the data able to be taken in by the experiment.
 
-% How does the production chain play out?
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=.8\textwidth]{content/img/modified-James-chain-processing.png}
-    \caption{ATLAS data chain-processing for data and Monte Carlo simulation. Figure modified from \cite{James_Catmore_chain_processing}}
-    \label{fig:intro_ATLAS_detector}
-\end{figure}
+
+
+
+
 
 One area of research to account for this flood of new data is in the development of the ROOT N-Tuple (RNTuple) I/O subsystem, which is a new storage format for high-energy physics data seeking to replace ROOT TTree. 
 The RNTuple is a columnar-based storage format that is optimized for data storage and processing.

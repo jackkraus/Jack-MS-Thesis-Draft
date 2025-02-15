@@ -2382,10 +2382,10 @@
     <bcf:citekey order="29" intorder="1">ATLAS_Fact_Sheet</bcf:citekey>
     <bcf:citekey order="30" intorder="1">WLCG_Tech_design_report</bcf:citekey>
     <bcf:citekey order="31" intorder="1">Martelli_2015</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">HL-LHC_Tech_design</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">ATLAS_HL-LHC_projections</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">James_Catmore_chain_processing</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">James_Catmore_chain_processing</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">James_Catmore_chain_processing</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">James_Catmore_chain_processing</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">HL-LHC_Tech_design</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">ATLAS_HL-LHC_projections</bcf:citekey>
     <bcf:citekey order="36" intorder="1">RNTuple_Lopez-Gomez_2023</bcf:citekey>
     <bcf:citekey order="37" intorder="1">RNTuple_Blomer</bcf:citekey>
     <bcf:citekey order="38" intorder="1">AthenaMT_Leggett_2017</bcf:citekey>
