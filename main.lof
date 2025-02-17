@@ -1,29 +1,30 @@
 \noindent Figure\hfill Page\@@@par 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of the LHC experiment sites on the France-Switzerland border.\blx@tocontentsinit {0}\cite {LHC_Illustration}\relax }}{2}{figure.caption.6}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces One quadrant of the ATLAS detector. The components of the Muon Spectrometer are labelled \blx@tocontentsinit {0}\cite {Hough_Transform_CSC}\relax }}{3}{figure.caption.7}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Overview of the ATLAS detectors main components, with two people in figure to scale.\blx@tocontentsinit {0}\cite {ATLAS_Illustration}\relax }}{4}{figure.caption.8}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces ATLAS data chain-processing for data and Monte Carlo simulation. Figure is modified from \blx@tocontentsinit {0}\cite {James_Catmore_chain_processing}.\relax }}{8}{figure.caption.9}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces HL-LHC computing model projections on the future disk and tape usage compared to the expected budget increases.\blx@tocontentsinit {0}\cite {CERN-LHCC-2020-015}\relax }}{9}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of the LHC experiment sites on the France-Switzerland border.\blx@tocontentsinit {0}\cite {LHC_Illustration}\relax }}{2}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces One quadrant of the ATLAS detector. The components of the Muon Spectrometer are labelled \blx@tocontentsinit {0}\cite {Hough_Transform_CSC}\relax }}{3}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Overview of the ATLAS detectors main components, with two people in figure to scale.\blx@tocontentsinit {0}\cite {ATLAS_Illustration}\relax }}{4}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces ATLAS data chain-processing for data and Monte Carlo simulation. Figure is modified from \blx@tocontentsinit {0}\cite {James_Catmore_chain_processing}.\relax }}{8}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces HL-LHC computing model projections on the future disk and tape usage compared to the expected budget increases.\blx@tocontentsinit {0}\cite {CERN-LHCC-2020-015}\relax }}{9}{figure.caption.11}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Object composition of a PHYS and PHYSLITE $t\bar {t}$ sample from Run 3.\relax }}{15}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Derivation production from Reconstruction to Final N-Tuple\blx@tocontentsinit {0}\cite {DAOD_Laycock_2014}\relax }}{16}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Object composition of a PHYS and PHYSLITE $t\bar {t}$ sample from Run 3.\relax }}{14}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Derivation production from Reconstruction to Final N-Tuple\blx@tocontentsinit {0}\cite {DAOD_Laycock_2014}\relax }}{15}{figure.caption.13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Compression factors of $N=1000$ entries per branch with random-valued vectors of varying size.\relax }}{24}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^6$ events)\relax }}{27}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^5$ events)\relax }}{28}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Compression Factors vs Branch Size (1000 entries per vector, 1/2 Mixture $N=10^6$ events)\relax }}{29}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Number of Baskets vs Branch Size (1000 entries per vector, 1/2 Mixture $N=10^6$ events)\relax }}{30}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Varying Mixtures in 8 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{31}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{32}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Compression factors of $N=1000$ entries per branch with random-valued vectors of varying size.\relax }}{23}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^6$ events)\relax }}{26}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^5$ events)\relax }}{27}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Compression Factors vs Branch Size (1000 entries per vector, 1/2 Mixture $N=10^6$ events)\relax }}{28}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Number of Baskets vs Branch Size (1000 entries per vector, 1/2 Mixture $N=10^6$ events)\relax }}{29}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Varying Mixtures in 8 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{30}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{31}{figure.caption.20}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The framework between interface objects and the static/dynamic auxiliary data store for a collection of xAOD::ExampleElectrons.\relax }}{43}{figure.caption.30}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces WritexAODElectron ItemList for the OutputStreamCfg parameter. Showing how to select dynamic attributes at the CA level.\relax }}{45}{figure.caption.32}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces WriteExampleElectronheader file setup\relax }}{45}{figure.caption.33}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Algorithm to initialize and write T/P data (ExampleTracks) to an xAOD object container (ExampleElectronContainer).\relax }}{46}{figure.caption.34}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Writing of dynamic variables for each of the ExampleElectron objects.\relax }}{47}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces ReadHandleKey for the container of ExampleElectrons\relax }}{47}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The framework between interface objects and the static/dynamic auxiliary data store for a collection of xAOD::ExampleElectrons.\relax }}{42}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces WritexAODElectron ItemList for the OutputStreamCfg parameter. Showing how to select dynamic attributes at the CA level.\relax }}{44}{figure.caption.33}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces WriteExampleElectronheader file setup\relax }}{44}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Algorithm to initialize and write T/P data (ExampleTracks) to an xAOD object container (ExampleElectronContainer).\relax }}{45}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Writing of dynamic variables for each of the ExampleElectron objects.\relax }}{46}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces ReadHandleKey for the container of ExampleElectrons\relax }}{46}{figure.caption.37}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

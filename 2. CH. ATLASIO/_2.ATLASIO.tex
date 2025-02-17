@@ -7,7 +7,8 @@ This chapter will cover some of the important software tools used by ATLAS to ru
 \section{Athena and ROOT}
 % \subsection{What is Athena}
 Athena is the open-source software framework for the ATLAS experiment.\cite{athena}
-It uses on other software such as ROOT, Geant4 and other software as part of the LCG software stack. 
+It is based off the Gaudi project and uses on other software such as ROOT and other software as part of the LCG software stack.
+It's mostly C++ $\textsc{Python}$
 It also provides some in-house based analysis tools as well as tools for specifically ROOT based analysis.
 
 % % CMake
@@ -30,40 +31,10 @@ The transient/persistent style of representing event data will be further explai
 % % Component Accumulator
 An important step throughout the development of Athena is to ensure any new changes to the codebase won't overrule the functionality of core features to the present workflows.
 One of the areas needed to be tested before and upon merging of any new changes to Athena is the I/O functionality, or the performance of reading and writing of stored objects within a broader context of various jobs, i.e. reconstruction or derivation.
-These are unit tests which are scripts written in Python and call upon algorithms written in C++. 
+These are unit tests which are scripts written in $\textsc{Python}$ and call upon algorithms written in C++. 
 The python scripts are used to set the job options for the algorithms added to the component accumulator (CA), job options like flag definitions, input and output file names, and other algorithm specific options.
 While CA is a more general mechanism to run any kind of job with Athena, it's within the scope of this thesis where the focus is on testing core I/O functionality of the new event data model. 
-A general CA script written in pseudocode would take the form: 
-\begin{lstlisting}[language=Python]
-    # Import Packages
-    from AthenaConfiguration.AllConfigFlags import initConfigFlags
-    from AthenaConfiguration.ComponentFactory import CompFactory
-    from OutputStreamAthenaPool.OutputStreamConfig import OutputStreamCfg, outputStreamName
-
-    # Set Job Options
-    outputStreamName = "StreamA"
-    outputFileName = "output.root"
-
-    # Setup flags
-    flags = initConfigFlags()
-    flags.Input.Files = ["input.root"]
-    flags.addFlag(f"Output.{streamName}FileName", outputFileName)
-    # Other flags
-    flags.lock()
-
-    # Main services
-    from AthenaConfiguration.MainServicesConfig import MainServicesCfg
-    acc = MainServicesCfg( flags )
-
-    # Add algorithms
-    acc.addEventAlgo( CompFactory.MyAlgorithm(MyParameters) )
-
-    # Run
-    import sys
-    sc = acc.run(flags.Exec.MaxEvents)
-    sys.exit(sc.isFailure())
-\end{lstlisting}
-
+An example Athena job configuration is found in Appendix \ref{app:athena-job-config}. 
 
 % What is ROOT
 ROOT is an open-source software framework used for high-energy physics analysis at CERN.\cite{ROOT_about} 
