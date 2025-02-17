@@ -946,8 +946,11 @@ OUTPUT main.lot
 INPUT ./main.lof
 INPUT main.lof
 INPUT main.lof
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 OUTPUT main.lof
+INPUT ./main.loa
+INPUT main.loa
+INPUT main.loa
+OUTPUT main.loa
 INPUT ./1. Introduction/_1.Particle_PHYS_and_LHC.tex
 INPUT 1. Introduction/_1.Particle_PHYS_and_LHC.tex
 INPUT ./1. Introduction/_1.Particle_PHYS_and_LHC.tex
@@ -967,6 +970,7 @@ INPUT ./content/img/ATLAS_Detector.jpg
 INPUT content/img/ATLAS_Detector.jpg
 INPUT ./content/img/ATLAS_Detector.jpg
 INPUT ./content/img/ATLAS_Detector.jpg
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./content/img/modified-James-chain-processing.png
 INPUT ./content/img/modified-James-chain-processing.png
 INPUT content/img/modified-James-chain-processing.png
@@ -986,6 +990,19 @@ INPUT ./2. CH. ATLASIO/_2.ATLASIO.tex
 INPUT 2. CH. ATLASIO/_2.ATLASIO.tex
 INPUT ./2. CH. ATLASIO/_2.ATLASIO.tex
 INPUT 2. CH. ATLASIO/_2.ATLASIO.tex
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT ./content/img/athena job.png
+INPUT ./content/img/athena job.png
+INPUT content/img/athena job.png
+INPUT ./content/img/athena job.png
+INPUT ./content/img/athena job.png
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -996,10 +1013,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT ./content/img/tt_PHYS.png
 INPUT ./content/img/tt_PHYS.png
 INPUT content/img/tt_PHYS.png
@@ -1096,9 +1109,6 @@ INPUT ./4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
 INPUT 4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
 INPUT ./4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
 INPUT 4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT ./content/tables/nightly-tables.tex
 INPUT ./content/tables/nightly-tables.tex
 INPUT ./content/tables/nightly-tables.tex
@@ -1153,7 +1163,6 @@ INPUT ./6. Conclusion/_6.Conclusion.tex
 INPUT 6. Conclusion/_6.Conclusion.tex
 INPUT ./6. Conclusion/_6.Conclusion.tex
 INPUT 6. Conclusion/_6.Conclusion.tex
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT ./7.Appendix/app1.tex
 INPUT 7.Appendix/app1.tex
 INPUT ./7.Appendix/app1.tex
@@ -1182,6 +1191,14 @@ INPUT ./content/inputfiles-mc.txt
 INPUT content/inputfiles-mc.txt
 INPUT ./content/inputfiles-mc.txt
 INPUT content/inputfiles-mc.txt
+INPUT ./7.Appendix/app2.tex
+INPUT 7.Appendix/app2.tex
+INPUT ./7.Appendix/app2.tex
+INPUT 7.Appendix/app2.tex
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
@@ -1192,8 +1209,10 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb

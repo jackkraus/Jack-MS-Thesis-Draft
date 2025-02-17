@@ -8,8 +8,38 @@ This chapter will cover some of the important software tools used by ATLAS to ru
 % \subsection{What is Athena}
 Athena is the open-source software framework for the ATLAS experiment.\cite{athena}
 It is based off the Gaudi project and uses on other software such as ROOT and other software as part of the LCG software stack.
-It's mostly C++ $\textsc{Python}$
 It also provides some in-house based analysis tools as well as tools for specifically ROOT based analysis.
+
+An Athena application relies on $\textit{components}$: Algorithms, Tools, Services and Properties. \cite{Aad:2895022}  
+Each component plays a role in executing an Athena application or job, which is written and configured in $\textsc{Python}$.
+Specifically, an Algorithm accesses data objects in the event store, as shown with the solid lines in Figure \ref{fig:ATLAS_Athena_Job_flow}, but does not own or provide any data itself.
+Algorithms can ``own" Tools, which serve as helpers exclusive to Algorithms or other components that call them.\footnote{``Ownership" here refers to the components exclusive access or control of a Tool or Service.} 
+Services are not as exclusive with its access, as they can be used by other components to provide a service such as Athena-ROOT conversion, random number generators, and others. 
+  
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{content/img/athena job.png}
+  \caption{An Athena application's general structure.\cite{Aad:2895022}}
+  \label{fig:ATLAS_Athena_Job_flow}
+\end{figure}
+
+
+% % Component Accumulator
+An important step throughout the development of Athena is to ensure any new changes to the codebase will not overrule the functionality of core features to the present workflows.
+One of the areas needed to be tested before and upon merging of any new changes to Athena is the I/O functionality, or the performance of reading and writing of stored objects within a broader context of various jobs, i.e. reconstruction or derivation.
+The python scripts are used to set the job options for the algorithms added to the component accumulator (CA), job options like flag definitions, input and output file names, and other algorithm specific options.
+While CA is a more general mechanism to run any kind of job with Athena, it's within the scope of this thesis where the focus is on testing core I/O functionality of the new event data model. 
+An example Athena job configuration is found in Appendix \ref{app:athena-job-config}. 
+
+% What is ROOT
+ROOT is an open-source software framework used for high-energy physics analysis at CERN.\cite{ROOT_about} 
+It uses C++ objects to save, access, and process data brought in by the various experiments based at the LHC, the ATLAS experiment uses it in conjunction with Athena.
+ROOT largely revolves around organization and manipulation of TFiles and TTrees into ROOT files.
+A TTree represents a columnar dataset, and the list of columns are called branches. 
+The branches have memory buffers that are automatically allocated by ROOT. 
+These memory buffers are divided into corresponding baskets, whose size is designated during memory allocation.
+More detail on branch baskets are explored in Chapter \ref{chap:Toy_Model} and \ref{chap:DAODProd}.
 
 % % CMake
 CMake and Make are open-source software that is used to build Athena, ROOT, and other software.
@@ -27,23 +57,6 @@ AthenaPOOL is data storage architecture suite of packages within Athena that pro
 It originated as a separate project to serve as a layer between the transient data, stored in memory, used by the software framework and the data stored permanently, or persistently.
 The transient/persistent style of representing event data will be further explained in Section \ref{sec:IO_EDM}.
 
-
-% % Component Accumulator
-An important step throughout the development of Athena is to ensure any new changes to the codebase won't overrule the functionality of core features to the present workflows.
-One of the areas needed to be tested before and upon merging of any new changes to Athena is the I/O functionality, or the performance of reading and writing of stored objects within a broader context of various jobs, i.e. reconstruction or derivation.
-These are unit tests which are scripts written in $\textsc{Python}$ and call upon algorithms written in C++. 
-The python scripts are used to set the job options for the algorithms added to the component accumulator (CA), job options like flag definitions, input and output file names, and other algorithm specific options.
-While CA is a more general mechanism to run any kind of job with Athena, it's within the scope of this thesis where the focus is on testing core I/O functionality of the new event data model. 
-An example Athena job configuration is found in Appendix \ref{app:athena-job-config}. 
-
-% What is ROOT
-ROOT is an open-source software framework used for high-energy physics analysis at CERN.\cite{ROOT_about} 
-It uses C++ objects to save, access, and process data brought in by the various experiments based at the LHC, the ATLAS experiment uses it in conjunction with Athena.
-ROOT largely revolves around organization and manipulation of TFiles and TTrees into ROOT files.
-A TTree represents a columnar dataset, and the list of columns are called branches. 
-The branches have memory buffers that are automatically allocated by ROOT. 
-These memory buffers are divided into corresponding baskets, whose size is designated during memory allocation.
-More detail on branch baskets are explored in Chapter \ref{chap:Toy_Model} and \ref{chap:DAODProd}.
 
 % What we looked at/How we used it
 
