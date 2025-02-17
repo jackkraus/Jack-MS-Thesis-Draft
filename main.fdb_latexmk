@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1739658480 "main.bcf" "main.bbl" "main" 1739658490 0
-  "./main.bib" 1739658391 28146 7f4fa33b8e97323b588a8c2dbda80708 ""
-  "main.bcf" 1739658490 109507 5a40aaacb2f4b9dd396ece6254008215 "pdflatex"
+["biber main"] 1739819217 "main.bcf" "main.bbl" "main" 1739819228 0
+  "./main.bib" 1739819049 28495 c9e608562d837ba31724849e3ee69c6a ""
+  "main.bcf" 1739819228 109578 b694b5254b6926031f88e2e5468008a7 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1739658486 "main.tex" "main.pdf" "main" 1739658490 0
+["pdflatex"] 1739819224 "main.tex" "main.pdf" "main" 1739819228 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -146,7 +146,7 @@
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "0.Preamble/acknowledgement.tex" 1732651585 899 d32676d931facfdbfe1720751ba16d26 ""
   "0.Preamble/dedication.tex" 1732651585 303 1831dc51cd4f943291b3461e2678a277 ""
-  "1. Introduction/_1.Particle_PHYS_and_LHC.tex" 1739658423 14859 84b7936899fde86b607ef4d8d32ed523 ""
+  "1. Introduction/_1.Particle_PHYS_and_LHC.tex" 1739819186 15788 fa7f78bc1b1d2dfe93ac9762ca81d700 ""
   "2. CH. ATLASIO/_2.ATLASIO.tex" 1739658271 12962 4e4a30e4bca8fe1974268e33a5a7c6ef ""
   "3. CH. Toy Model/_3.Toy_Model.tex" 1739653603 19146 c2beed4dba3ecaa00db05950da1516aa ""
   "4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex" 1739653613 11042 ae2bfd650fb28c0e7fa88a838e148c11 ""
@@ -160,6 +160,8 @@
   "content/img/LHC illustration.jpg" 1734388231 95095 51a06610f06a638ba0b5728a03c0cd6d ""
   "content/img/aux_store_better.png" 1738445580 86385 b0dbbee77fc8fee1d3a8962ef199945d ""
   "content/img/catmore-derivation.png" 1738172360 83516 84f7d7b71573ad8380c15e2a9595293d ""
+  "content/img/computing model-disk.png" 1739818515 190457 87df73ae093a21227e186f453c92c3e8 ""
+  "content/img/computing model-tape.png" 1739818760 187142 cb369d9a8d281cdacb6d8ca4c7df8528 ""
   "content/img/modified-James-chain-processing.png" 1739644788 392038 19b9b197f76bb95cf2e6b810f1a25784 ""
   "content/img/tt_PHYS.png" 1738177272 59993 ce944a6d5b2c4cf9d9e713afb4253715 ""
   "content/img/tt_PHYSLITE.png" 1738177286 73309 d856fa969533e00ddac1cb3592e2df8a ""
@@ -184,15 +186,15 @@
   "content/toymodel_content/Compression Ratios for (1_2 random) and (1_4 random) branches at (N=100,000 events).png" 1738783232 105738 9b3b51ac19c83b8ddf6c3cba71210c66 ""
   "content/toymodel_content/Number of Baskets vs Branch Size.png" 1738104846 295283 6fb5595f46c8ea91f309608e5b32415c ""
   "content/toymodel_content/branch_compfacts_nomix.png" 1733254549 150206 26242720335858505c570aafe8426241 ""
-  "main.aux" 1739658490 30576 27798c26237da9fb80aec121021251f9 "pdflatex"
-  "main.bbl" 1739658483 196776 67c2ed92ce091072cb8125eda7420acb "biber main"
-  "main.bib" 1739658391 28146 7f4fa33b8e97323b588a8c2dbda80708 ""
-  "main.lof" 1739658490 3791 9c7a8208a0a1c372db5c188b239af5e7 "pdflatex"
-  "main.lot" 1739658490 2641 66954670114ee6b488dd5f1297c77c64 "pdflatex"
-  "main.out" 1739658490 6445 3d4c3837926f319b420d202aca580a6a "pdflatex"
-  "main.run.xml" 1739658490 2299 81988d3303a58f7ac525483192dfa2a1 "pdflatex"
+  "main.aux" 1739819228 31837 c61d3de7430caff971a66aa217f49958 "pdflatex"
+  "main.bbl" 1739819220 193442 7fbc528e62ca0e17c913117b076a09d5 "biber main"
+  "main.bib" 1739819049 28495 c9e608562d837ba31724849e3ee69c6a ""
+  "main.lof" 1739819228 4121 2fcc407b8e01d58eb639df67b09dfda9 "pdflatex"
+  "main.lot" 1739819228 2641 aac24ef6ddb385ca150a45b5bec4b8df "pdflatex"
+  "main.out" 1739819228 6445 3d4c3837926f319b420d202aca580a6a "pdflatex"
+  "main.run.xml" 1739819228 2299 81988d3303a58f7ac525483192dfa2a1 "pdflatex"
   "main.tex" 1739658226 4303 6621297966f4246615c8d014c20d1811 ""
-  "main.toc" 1739658490 3070 6035785a02bf602fca226138d06f8883 "pdflatex"
+  "main.toc" 1739819228 3070 296abdba8eca8a5bea0e8bf0f74eb624 "pdflatex"
   "niuthesis.cls" 1738708047 19841 383f0cf852e034f4cf8a04d6217b83a7 ""
   (generated)
   "main.aux"

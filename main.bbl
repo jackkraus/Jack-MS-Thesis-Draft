@@ -1550,8 +1550,8 @@
       \strng{authorbibnamehash}{f1cec2969fb25fe3621ef4c33b2c003a}
       \strng{authornamehash}{f1cec2969fb25fe3621ef4c33b2c003a}
       \strng{authorfullhash}{a7f278151774bce364ea23602ed1decd}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The silicon pixel tracking system for the ATLAS experiment at the Large Hadron Collider is described and the performance requirements are summarized. Detailed descriptions of the pixel detector electronics and the silicon sensors are given. The design, fabrication, assembly and performance of the pixel detector modules are presented. Data obtained from test beams as well as studies using cosmic rays are also discussed.}
@@ -4178,8 +4178,8 @@
       \strng{authorbibnamehash}{6df9005f733ddf0d66260994df1e339a}
       \strng{authornamehash}{6df9005f733ddf0d66260994df1e339a}
       \strng{authorfullhash}{6df9005f733ddf0d66260994df1e339a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{ATLAS Fact Sheet : To raise awareness of the ATLAS detector and collaboration on the LHC}}
@@ -4344,8 +4344,8 @@
       \strng{authorbibnamehash}{85c4af17a6affbbb944029fb318bea3c}
       \strng{authornamehash}{85c4af17a6affbbb944029fb318bea3c}
       \strng{authorfullhash}{f6071c0c05e5adeee6ebc9817cd85c76}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{series}{Technical design report. LCG}
@@ -4591,6 +4591,26 @@
       \verb https://doi.org/10.1051/epjconf/202024506014
       \endverb
     \endentry
+    \entry{CERN-LHCC-2020-015}{report}{}
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{{ATLAS HL-LHC Computing Conceptual Design Report}}
+      \field{type}{techreport}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2729668
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2729668
+      \endverb
+    \endentry
     \entry{RNTuple_Lopez-Gomez_2023}{article}{}
       \name{author}{2}{}{%
         {{hash=b94e1c2ed9f725674fed0c686df69923}{%
@@ -4613,8 +4633,8 @@
       \strng{authorbibnamehash}{287a837a93ea10fbbbba12cd21f30e60}
       \strng{authornamehash}{287a837a93ea10fbbbba12cd21f30e60}
       \strng{authorfullhash}{287a837a93ea10fbbbba12cd21f30e60}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Physics: Conference Series}
@@ -4668,8 +4688,8 @@
       \strng{authorbibnamehash}{8b360f094206615a3191fe0e7adc3121}
       \strng{authornamehash}{8b360f094206615a3191fe0e7adc3121}
       \strng{authorfullhash}{2a99c686466f4167b76e1d6311bb7555}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{EPJ Web of Conf.}
@@ -4686,105 +4706,6 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1051/epjconf/202429506020
-      \endverb
-    \endentry
-    \entry{AthenaMT_Leggett_2017}{article}{}
-      \name{author}{13}{}{%
-        {{hash=53b8e488fcdd6aa7c04a8d02377a250f}{%
-           family={Leggett},
-           familyi={L\bibinitperiod},
-           given={Charles},
-           giveni={C\bibinitperiod}}}%
-        {{hash=8faabd21d9116a4ef76718f44ba3c244}{%
-           family={Baines},
-           familyi={B\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-        {{hash=3948255c447895aeaff0a70630210214}{%
-           family={Bold},
-           familyi={B\bibinitperiod},
-           given={Tomasz},
-           giveni={T\bibinitperiod}}}%
-        {{hash=f61c86f55b15c03cb50671fc2b99d1ca}{%
-           family={Calafiura},
-           familyi={C\bibinitperiod},
-           given={Paolo},
-           giveni={P\bibinitperiod}}}%
-        {{hash=5182e01b17373da47ae1120eb2e14041}{%
-           family={Farrell},
-           familyi={F\bibinitperiod},
-           given={Steven},
-           giveni={S\bibinitperiod}}}%
-        {{hash=32368325d5351ce553dae08bba02a1c6}{%
-           family={Gemmeren},
-           familyi={G\bibinitperiod},
-           given={Peter\bibnamedelima van},
-           giveni={P\bibinitperiod\bibinitdelim v\bibinitperiod}}}%
-        {{hash=79cd13d0e5370f3a48a0b36db918d735}{%
-           family={Malon},
-           familyi={M\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=73ccaf8862f31b684f52e58283ef2ef8}{%
-           family={Ritsch},
-           familyi={R\bibinitperiod},
-           given={Elmar},
-           giveni={E\bibinitperiod}}}%
-        {{hash=9b99f13368221558c628e58dd218ae89}{%
-           family={Stewart},
-           familyi={S\bibinitperiod},
-           given={Graeme},
-           giveni={G\bibinitperiod}}}%
-        {{hash=2c1d60f12fb1e23b09cef12c38ba779e}{%
-           family={Snyder},
-           familyi={S\bibinitperiod},
-           given={Scott},
-           giveni={S\bibinitperiod}}}%
-        {{hash=d8eb8c7078fc800f79801710eeff872e}{%
-           family={Tsulaia},
-           familyi={T\bibinitperiod},
-           given={Vakhtang},
-           giveni={V\bibinitperiod}}}%
-        {{hash=85d0568708b3f1f92d4d3ba9ecc47cb4}{%
-           family={Wynne},
-           familyi={W\bibinitperiod},
-           given={Benjamin},
-           giveni={B\bibinitperiod}}}%
-        {{hash=8dde729c404b4f8adf1fb76f37dd169c}{%
-           family={ATLAS\bibnamedelima Collaboration},
-           familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod},
-           prefix={on\bibnamedelima behalf\bibnamedelimb of\bibnamedelima the},
-           prefixi={o\bibinitperiod\bibinitdelim b\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim t\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{043ad3a25a266af6adbb040357e7ddf0}
-      \strng{fullhash}{60c65826a5c150634603354225ef3583}
-      \strng{bibnamehash}{043ad3a25a266af6adbb040357e7ddf0}
-      \strng{authorbibnamehash}{043ad3a25a266af6adbb040357e7ddf0}
-      \strng{authornamehash}{043ad3a25a266af6adbb040357e7ddf0}
-      \strng{authorfullhash}{60c65826a5c150634603354225ef3583}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Physics: Conference Series}
-      \field{month}{10}
-      \field{number}{4}
-      \field{title}{AthenaMT: upgrading the ATLAS software framework for the many-core world with multi-threading}
-      \field{volume}{898}
-      \field{year}{2017}
-      \field{pages}{042009}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1088/1742-6596/898/4/042009
-      \endverb
-      \verb{urlraw}
-      \verb https://dx.doi.org/10.1088/1742-6596/898/4/042009
-      \endverb
-      \verb{url}
-      \verb https://dx.doi.org/10.1088/1742-6596/898/4/042009
       \endverb
     \endentry
     \entry{athena}{misc}{}
@@ -4804,8 +4725,8 @@
       \strng{authornamehash}{a019aa0836c410317d8dbfe3ac3878fc}
       \strng{authorfullhash}{a019aa0836c410317d8dbfe3ac3878fc}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Athena}

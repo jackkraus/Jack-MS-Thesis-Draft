@@ -140,17 +140,34 @@ Further discussion on the production of DAOD can be found in Section \ref{sectio
 The High-Luminosity LHC (HL-LHC) is the upgrade to LHC that anticipates more events and more data taken than ever before.
 % How does high luminosity affect the number of collisions? 
 The goal is to reach a luminosity of $350 fb^{-1}$, which is forecasted to be reached gradually by around 2040.\cite{HL-LHC_Tech_design}
-The HL-LHC era is projected to demand anywhere from 6-10 times data stored per year, so any attempt to save on disk storage will help.\cite{ATLAS_HL-LHC_projections}
-Increasing data means more resources from the Grid will be needed, so optimization across files and software is an essential part of ensuring scalability of the data taken in by the detector.
+The HL-LHC era will start sooner than that, and it's projected to demand anywhere from 6-10 times data stored per year, so any attempt to save on disk storage should be investigated.\cite{ATLAS_HL-LHC_projections}
+Increasing data means more resources from the Grid will be used, so optimization across files and software is an essential part of ensuring scalability of the data taken in by the detector.
+Figure \ref{fig:intro_computing_models} illustrates the projections of the HL-LHC era long-term storage usage for both disk and tape. 
 
-The traditional method of storing information for AOD/DAOD is in with ROOT TTrees.
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/img/computing model-disk.png}
+        % \caption{A subfigure}
+        \label{fig:intro_computing_disk}
+      \end{subfigure}%     
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/img/computing model-tape.png}
+        % \caption{B subfigure}
+        \label{fig:intro_computing_tape}
+    \end{subfigure}% 
+    \caption{HL-LHC computing model projections on the future disk and tape usage compared to the expected budget increases.\cite{CERN-LHCC-2020-015}}
+    \label{fig:intro_computing_models}
+\end{figure}
 
-
-
-
-One area of research to account for this flood of new data is in the development of the ROOT N-Tuple (RNTuple) I/O subsystem, which is a new storage format for high-energy physics data seeking to replace ROOT TTree. 
-The RNTuple is a columnar-based storage format that is optimized for data storage and processing.
-It's been shown to outperform TTree I/O subsystem and other storage formats in file size (by about 15\%), throughput, and compression, but still has more development before full implementation into the analysis pipeline.\cite{RNTuple_Lopez-Gomez_2023}\cite{RNTuple_Blomer}
-Additionally, there's a push to utilize GPUs and other accelerators in conjunction with CPUs to process track reconstruction and AOD derivation.
-Also being developed are software framework updates, such as AthenaMT, to make the single-threaded CPU programs multi-thread ready.\cite{AthenaMT_Leggett_2017}
+% We've been using ROOT TTree for decades 
+% in particular TTree is used to store event data 
+One avenue optimziation is being investigated is in the method of storing data to file.
+The traditional method of storing event information for AOD/DAOD is with ROOT TTrees.
+ROOT TTrees (referred to as ``TTrees" or ``trees") have been the standard data storage format for over two decades, and they provide a clear means of organizing and accessing physics objects for processing and analysis.
+The development of the ROOT N-Tuple (RNTuple) I/O subsystem updates areas to support multi-thread processing, asynchronous I/O, object stores, and more.
+It's been shown to outperform the TTree I/O subsystem and other storage formats in file size (by about 15\%), throughput, and compression, but still has more development before full implementation into the analysis pipeline.\cite{RNTuple_Lopez-Gomez_2023}\cite{RNTuple_Blomer}
+While RNTuple is in development, there are still insights regarding resource usage optimization that are found by using TTree in its current state. 
 
