@@ -1,11 +1,11 @@
-A general CA script written in pseudocode would take the form: 
+\section{Athena job configuration example}
+A general Athena application using \verb|ComponentAccumulator| written in pseudocode would take the form: 
 \begin{lstlisting}[language=Python]
     # Import Packages
     from AthenaConfiguration.AllConfigFlags import initConfigFlags
     from AthenaConfiguration.ComponentFactory import CompFactory
     from OutputStreamAthenaPool.OutputStreamConfig import OutputStreamCfg, outputStreamName
 
-    # Set Job Options
     outputStreamName = "StreamA"
     outputFileName = "output.root"
 
@@ -13,18 +13,18 @@ A general CA script written in pseudocode would take the form:
     flags = initConfigFlags()
     flags.Input.Files = ["input.root"]
     flags.addFlag(f"Output.{streamName}FileName", outputFileName)
-    # Other flags
     flags.lock()
 
-    # Main services
+    # Main Service(s)
     from AthenaConfiguration.MainServicesConfig import MainServicesCfg
     acc = MainServicesCfg( flags )
 
-    # Add algorithms
+    # Add algorithms to the accumulator
     acc.addEventAlgo( CompFactory.MyAlgorithm(MyParameters) )
 
-    # Run
     import sys
     sc = acc.run(flags.Exec.MaxEvents)
-    sys.exit(sc.isFailure())
 \end{lstlisting}
+
+The \verb|acc| is the \verb|ComponentAccumulator|, so here the user might have more than one Algorithm it needs to call, but each one would have a separate \verb|.addEventAlgo| call. 
+When \verb|flag.lock()| is called, any previously established flags will be set in place and unable to be changed. 

@@ -13,22 +13,20 @@ It also provides some in-house based analysis tools as well as tools for specifi
 An Athena application relies on $\textit{components}$: Algorithms, Tools, Services and Properties. \cite{Aad:2895022}  
 Each component plays a role in executing an Athena application or job, which is written and configured in $\textsc{Python}$.
 Specifically, an Algorithm accesses data objects in the event store, as shown with the solid lines in Figure \ref{fig:ATLAS_Athena_Job_flow}, but does not own or provide any data itself.
-Algorithms can ``own" Tools, which serve as helpers exclusive to Algorithms or other components that call them.\footnote{``Ownership" here refers to the components exclusive access or control of a Tool or Service.} 
+Algorithms can ``own" Tools, which serve as helpers exclusive to Algorithms or other components that call them.\footnote{``Ownership" here refers to the components' exclusive access or control of a Tool or Service.} 
 Services are not as exclusive with its access, as they can be used by other components to provide a service such as Athena-ROOT conversion, random number generators, and others. 
-  
+Properties are able to be called at initialization of the job configuration and include flag definitions, input and output file names, and other algorithm specific options.
+\verb|ComponentAccumulator| (CA) is a python class that put into Athena production as a way to prevent extra calls of setting flags during configuration. 
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\textwidth]{content/img/athena job.png}
+  \includegraphics[width=0.8\textwidth]{content/img/athena job.png}
   \caption{An Athena application's general structure.\cite{Aad:2895022}}
   \label{fig:ATLAS_Athena_Job_flow}
 \end{figure}
 
-
-% % Component Accumulator
 An important step throughout the development of Athena is to ensure any new changes to the codebase will not overrule the functionality of core features to the present workflows.
 One of the areas needed to be tested before and upon merging of any new changes to Athena is the I/O functionality, or the performance of reading and writing of stored objects within a broader context of various jobs, i.e. reconstruction or derivation.
-The python scripts are used to set the job options for the algorithms added to the component accumulator (CA), job options like flag definitions, input and output file names, and other algorithm specific options.
 While CA is a more general mechanism to run any kind of job with Athena, it's within the scope of this thesis where the focus is on testing core I/O functionality of the new event data model. 
 An example Athena job configuration is found in Appendix \ref{app:athena-job-config}. 
 
