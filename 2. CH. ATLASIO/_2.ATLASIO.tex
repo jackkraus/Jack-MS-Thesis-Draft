@@ -51,17 +51,21 @@ Where \verb|../package_filters.txt| is the text file containing the path to the 
 
 % How we used it
 % % Athena POOL
-AthenaPOOL is data storage architecture suite of packages within Athena that provide conversion services. 
-It originated as a separate project to serve as a layer between the transient data, stored in memory, used by the software framework and the data stored permanently, or persistently.
-The transient/persistent style of representing event data will be further explained in Section \ref{sec:IO_EDM}.
-
+The POOL framework is part of a larger framework including CORAL and COOL, together made up the Persistency Framework (PF). \cite{Trentadue_2012}
+The PF was developed with the intent to be independent of any individual experiment, and the goal was to address data access requirements of LHC experiments in different ways.
+POOL was in charge of C++ object storage, collection of metadata, and file catalogs by using streaming and relational technologies. 
+POOL provided highly scalable object serialization to framework evolving PF files. 
+It was eventually discontinued by other experiments in favor of a newer persistency mechanism that uses ROOT in a more streamlined way.
+ATLAS then became the sole supporter of POOL and integrated it within Athena to support persistent navigation of the ROOT storage layer.
+Now, Athena has both the original PF POOL functionality and a separate modern AthenaPool functionality. 
+AthenaPool resides in the ATLAS I/O framework and controls ROOT TTree and TBranch properties such as compression and basket buffer sizing.
 
 % What we looked at/How we used it
 
 \subsection{Continuous Integration (CI) and Development}
 CI is a software development practice where new code is tested and validated upon each merge to the main branch of a repository. 
 Every commit to the main branch is automatically built and tested for specific core features that are required to work with the codebase. 
-This helps to ensure that the codebase is working as intended and that the new code is compatible with the existing codebase.
+This helps to ensure that the codebase is working as intended and that any new code is compatible with the existing codebase.
 
 Athena is hosted on GitLab and developed using CI with an instance of Jenkins, called ATLAS Robot, which builds and tests the new changes within a merge request interface. 
 ATLAS Robot will then provide a report of the build and test results.
