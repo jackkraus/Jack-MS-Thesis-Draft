@@ -22,6 +22,9 @@ The datasets are noted in Appendix \ref{app: deriv job dataset}.
 To run a derivation job, AODs need to be downloaded by a data-management service, such as Rucio, to a user's local machine. 
 Rucio is the data-management solution used for this project to procure the various AOD input files used for the derivation jobs.
 The machine running the Rucio client will need to have a valid proxy added for Rucio to run correctly.  
+
+The machine used to run these derivation tests was a CERN based machine, using an $\textsc{AMD EPYC}$ 7302 16-Core Processor, supplied with 258 GB of memory, on version 9.4 of the AlmaLinux distribution. 
+
 A sample command would look like:
 \begin{lstlisting}[language=bash]
 rucio download data22_13p6TeV:AOD.31407809._000898.pool.root.1
