@@ -7,7 +7,8 @@ import seaborn as sns
 # Adjust this to the path for your thesis/progressTracking directory
 savedir = "/Users/jackkraus/Desktop/masters-thesis/Jack-MS-Thesis-Draft/progressTracking/"
 
-yourname= "Jack Kraus"
+# for the watermark
+yourname = "Jack Kraus"
 
 # Adjust this to the path you want the progress.csv to show up 
 df = pd.read_csv('/Users/jackkraus/Desktop/masters-thesis/Jack-MS-Thesis-Draft/progressTracking/progress.csv')

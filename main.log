@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  19 FEB 2025 13:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  24 FEB 2025 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -979,34 +979,33 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 File: content/img/branches_in_TTree.png Graphic file (type png)
 <use content/img/branches_in_TTree.png>
 Package pdftex.def Info: content/img/branches_in_TTree.png  used on input line 
-83.
+82.
 (pdftex.def)             Requested size: 469.75502pt x 75.99535pt.
 
-[14]
-<content/img/tt_PHYS.png, id=633, 492.84125pt x 329.23pt>
+[14 <./content/img/branches_in_TTree.png>]
+<content/img/tt_PHYS.png, id=634, 492.84125pt x 329.23pt>
 File: content/img/tt_PHYS.png Graphic file (type png)
 <use content/img/tt_PHYS.png>
-Package pdftex.def Info: content/img/tt_PHYS.png  used on input line 113.
+Package pdftex.def Info: content/img/tt_PHYS.png  used on input line 112.
 (pdftex.def)             Requested size: 234.8775pt x 156.9033pt.
-<content/img/tt_PHYSLITE.png, id=634, 479.7925pt x 287.0725pt>
+<content/img/tt_PHYSLITE.png, id=635, 479.7925pt x 287.0725pt>
 File: content/img/tt_PHYSLITE.png Graphic file (type png)
 <use content/img/tt_PHYSLITE.png>
-Package pdftex.def Info: content/img/tt_PHYSLITE.png  used on input line 119.
+Package pdftex.def Info: content/img/tt_PHYSLITE.png  used on input line 118.
 (pdftex.def)             Requested size: 234.8775pt x 140.53534pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15 <./content/img/branches_in_TTree.png>]
+[15]
 <content/img/catmore-derivation.png, id=642, 426.59375pt x 193.72375pt>
 File: content/img/catmore-derivation.png Graphic file (type png)
 <use content/img/catmore-derivation.png>
 Package pdftex.def Info: content/img/catmore-derivation.png  used on input line
- 133.
+ 132.
 (pdftex.def)             Requested size: 375.80544pt x 170.66956pt.
  [16 <./content/img/tt_PHYS.png> <./content/img/tt_PHYSLITE.png> <./content/img
-/catmore-derivation.png>] [17])
-[18]
+/catmore-derivation.png>] [17]) [18]
 Chapter 3.
 (./3. CH. Toy Model/_3.Toy_Model.tex [19
 
@@ -1147,7 +1146,7 @@ Chapter 4.
 (./content/tables/top-ten/mc/mc-physlite-CF.tex)
 (./content/tables/top-ten/mc/mc-physlite-total.tex)
 (./content/tables/top-ten/mc/mc-physlite-compressed.tex)
-Overfull \hbox (4.02786pt too wide) in paragraph at lines 131--133
+Overfull \hbox (4.02786pt too wide) in paragraph at lines 134--136
 []\OT1/cmr/m/n/12 Some branches, like \OT1/cmr/m/it/12 HLT-Nav Sum-mary DAOD-Sl
 immedAux-Dyn.linkColNames \OT1/cmr/m/n/12 show highly
  []
@@ -1225,9 +1224,6 @@ Appendix B.
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )) [58]
 [59] (./main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 271873DFF6BAEED23D4FD3BC7C6AEA17;6448.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1259,7 +1255,7 @@ e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 23/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/202
 3/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023
 /texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (70 pages, 3899499 bytes).
+Output written on main.pdf (70 pages, 3900724 bytes).
 PDF statistics:
  1458 PDF objects out of 1728 (max. 8388607)
  1205 compressed objects within 13 object streams

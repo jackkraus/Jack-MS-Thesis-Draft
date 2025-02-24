@@ -7,7 +7,7 @@
 \contentsline {figure}{\numberline {1.5}{\ignorespaces HL-LHC computing model projections on the future disk and tape usage compared to the expected budget increases.\blx@tocontentsinit {0}\cite {CERN-LHCC-2020-015}\relax }}{9}{figure.caption.11}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces An Athena application's general structure.\blx@tocontentsinit {0}\cite {Aad:2895022}\relax }}{12}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces A snapshot of the contents of a TTree, TBranches \relax }}{15}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A snapshot of the TBranches composing a TTree, from a PHYSLITE DAOD\relax }}{14}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Object composition of a PHYS and PHYSLITE $t\bar {t}$ sample from Run 3.\relax }}{16}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Derivation production from Reconstruction to Final N-Tuple\blx@tocontentsinit {0}\cite {DAOD_Laycock_2014}\relax }}{16}{figure.caption.15}%
 \addvspace {10\p@ }

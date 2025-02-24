@@ -47,11 +47,10 @@ A user can create a text file identifying the path to the package modified, and 
     cmake -DATLAS_PACKAGE_FILTER_FILE=../package_filters.txt ../athena/Projects/WorkDir/ 
     make -j
 \end{lstlisting}
-Where \verb|../package_filters.txt| is the text file containing the path to the package modified, and \verb|../athena/Projects/WorkDir/| is the path to the Athena source.
 
 % How we used it
 % % Athena POOL
-The POOL framework is part of a larger framework including CORAL and COOL, together made up the Persistency Framework (PF). \cite{Trentadue_2012}
+The POOL framework is part of a larger framework known as the Persistency Framework (PF). \cite{Trentadue_2012}
 The PF was developed with the intent to be independent of any individual experiment, and the goal was to address data access requirements of LHC experiments in different ways.
 POOL was in charge of C++ object storage, collection of metadata, and file catalogs by using streaming and relational technologies. 
 POOL provided highly scalable object serialization to framework evolving PF files. 
