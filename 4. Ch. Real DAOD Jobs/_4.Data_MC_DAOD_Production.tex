@@ -19,7 +19,7 @@ The MC job comes from a 2023 $t\bar{t}$ standard sample simulation job with six 
 The datasets are noted in Appendix \ref{app: deriv job dataset}.
 
 \subsection{Derivation Job Command}
-To run a derivation job, AODs need to be downloaded by a data-management service, such as Rucio, to a user's local machine. 
+To run a derivation job, AODs need to be downloaded by a data-management service, such as Rucio, to a user's local machine.\cite{RUCIO_citation} 
 Rucio is the data-management solution used for this project to procure the various AOD input files used for the derivation jobs.
 The machine running the Rucio client will need to have a valid proxy added for Rucio to run correctly.  
 
@@ -82,11 +82,12 @@ The four configurations tested all kept minimum number of basket buffer entries 
 The first batch testing was for data and MC simulation derivation production jobs with and without presence of an upper limit to the basket size and presence of the minimum number of basket buffer entries. 
 PHYSLITE MC derivation production, from Table \ref{Tab: night-mc-outputfs}, sees a 9.9\% increase in output file size when compared to the default Athena configuration. 
 Since this configuration only differs by the omission of the ``min-number-entries" requirement, we assume the minimum number of basket buffer entries should be kept at 10 and left alone. 
-Table \ref{Tab: night-mc-outputfs} also shows the potential for a PHYSLITE MC DAOD output file size reduction by eliminating our upper basket buffer limit altogether.  
 
 \input{content/tables/nightly-tables}
 % Data Label: \label{Tab: night-data-outputfs}
 % MC Label: \label{Tab: night-mc-outputfs}
+Table \ref{Tab: night-mc-outputfs} also shows the potential for a PHYSLITE MC DAOD output file size reduction by eliminating our upper basket buffer limit altogether.  
+However, since derivation production (or any job for that matter) is memory bound\footnote{Memory usage for the Grid is standardized at 2 GB per core on an 8-core configuration allowing any job to process on any Grid node.} neither case where basket buffer limits are removed are viable options for optimization. 
 
 \subsection{Comparing different basket sizes}
 \label{sec:DAODProd_Results_comparing}

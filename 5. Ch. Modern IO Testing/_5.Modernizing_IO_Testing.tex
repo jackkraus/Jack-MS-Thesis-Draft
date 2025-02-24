@@ -10,15 +10,11 @@ The new software developed in this project takes in track information from a uni
 The object used to employ the new unit test is the \verb|xAOD::ExampleElectron| object, where the \verb|xAOD::| is a declaration of the namespace and simply identifies the object as an xAOD object.
 An individual \verb|ExampleElectron| object only has a few parameters for sake of testing, its transvese momentum, \verb|pt|, and its charge, \verb|charge|.
 A collection of \verb|ExampleElectron| objects are stored in the \verb|ExampleElectronContainer| object, which is just a \verb|DataVector| of \verb|ExampleElectron| objects.\cite{Buckley_2015}
-This \verb|DataVector<xAOD::ExampleElectron>| acts similar to a \verb|std::vector<xAOD::ExampleElectron>|, but has additional code to handle the separation of interface and auxiliary data storage. 
-
-% Aux Store
-The xAOD EDM uses an abstract interface connecting between the \verb|DataVector| and the auxiliary data, this is the \verb|IAuxStore|. 
-The function \verb|setStore| is responsible for ensuring the auxiliary data store is matched with it's corresponding \verb|DataVector|.
-Another feature to the xAOD EDM is the ability to have a dynamic store of auxiliary data.
-This separates the auxiliary data between static and dynamic data stores. 
-% Explain this better
-Wheree the static data stores comprise known variables, the dynamic counterpart stores data of variables not declared but that still might be needed by the user. 
+This \verb|DataVector| acts similar to an \verb|std::vector|. 
+ 
+% Explain Aux Store better
+The xAOD EDM utilizes a separation between between static and dynamic data stores.
+Where the static data stores comprise known variables, the dynamic counterpart stores data of variables not declared but that still might be needed by the user. 
 Figure \ref{fig:Mod_utests_aux_store} illustrates how a simple setup of storing a \verb|DataVector| of electrons that hold some specific parameters into one \verb|IAuxStore| while also having a separate \verb|IAuxStore| specifically for the dynamic attributes. 
 
 \begin{figure}[h]
