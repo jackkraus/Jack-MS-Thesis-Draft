@@ -125,7 +125,7 @@ Tier-2 sites provide additional computation and storage services that compliment
 Athena manages ATLAS production workflows which are involved with simulation of data and event generation, track reconstruction from hits, and derivation production.\cite{athenadocs}
 Figure \ref{fig:ATLAS_data_chain} illustrates the broadstrokes of the entire ATLAS data processing chain for both real detector data and Monte Carlo (MC) simulations. 
 MC simulation starts with the event generation (EVNT), following simulation of events hitting the detector (HITS) and further simulation of what would be readout of the detector (RDO).
-The reconstructed Analysis Object Data (AOD) are then processed through derivation production jobs that reduces AODs from  $\mathcal{O}(1)$ MB per event to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD). 
+The reconstructed Analysis Object Data (AOD) are then processed through derivation production jobs that reduces AODs through several steps of skimming, thinning and slimming data and from $\mathcal{O}(1)$ MB per event to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD). 
 Further discussion on the production of DAOD can be found in Section \ref{section: ATLASIO_Derivation}.
 \begin{figure}[ht]
     \centering
