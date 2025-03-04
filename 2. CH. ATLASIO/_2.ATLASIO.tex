@@ -91,7 +91,7 @@ The Athena default basket size at present is 128 kB, and the default minimum num
 One function relevant to TTree is \verb|Fill()|. 
 \verb|Fill()| will loop over all of the branches in the TTree and compresses the baskets that make up the branch.
 This removes the basket from memory as it is then compressed and written to disk.
-It makes reading back branches faster as all of the baskets are stored near each other on the same disk region. \cite{ROOT_TTree}
+It makes reading back branches faster as all of the baskets are stored near each other on the same disk region.\cite{ROOT_TTree}
 
 % AutoFlush
 \verb|AutoFlush| is a function that tells the \verb|Fill()| function after a designated number of entries of the branch, in this case vectors, to flush all branch buffers from memory and save them to disk. 
@@ -124,7 +124,7 @@ Figure \ref{fig:IO_tt_PHYS_vs_PHYSLITE} shows the object composition of a PHYS a
 \end{figure}
 PHYS output files, at 40.0 kB per event, is predominantly made of jet collections, while PHYSLITE, at 16.1 kB per event, has more trigger and track information.
 There is ongoing work to reduce the amount of Trigger information in PHYSLITE which would help further reduce the file size saved to disk.
-PHYSLITE, being the smallest file of the two, sees the largest effect upon attempts of optimization. 
+PHYSLITE, being the smaller file of the two, sees the largest effect upon attempts of optimization. 
 These jobs can demand heavy resource usage on the GRID, so optimization of the AOD/DAODs for derivation jobs can be vital. 
 
 \begin{figure}[h]
@@ -158,20 +158,19 @@ Before the successor to the T/P EDM was created, ATLAS physicists would convert 
 This would lead to duplication of data and made it challenging to develop and maintain the analysis tools to be used on both the full EDM and the reduced ones.
 Additionally, converting from transient to persistent data was an excessive step which was eventually removed by the adoption of using an EDM that blends the two stages of data together, this was dubbed the xAOD EDM.
 
-
-
+Add more text here.... \cite{ATLAS_Fact_Sheet}
 
 \subsection{xAOD EDM}
-The xAOD EDM is the successor to the T/P EDM and brings a number of improvements.
+The xAOD EDM is the successor to the T/P EDM and brings a number of improvements.\cite{Buckley_2015}
 This EDM, unlike T/P, is usable both on Athena and ROOT.
 It's easier to pick up for analysis and reconstruction. 
 The xAOD EDM has the ability to add and remove variables within an \verb|ItemList| at runtime, specified in the CA script, these variables are ``decorations."
 
-The xAOD EDM use two types of objects handle data, interface objects and payload objects. 
+The xAOD EDM use two types of objects that handle data, interface objects and payload objects. 
 Interfaces act as an interface for the user to access the object but without its stored data. 
-This differs from T/P where the user would have to load an object into memory to access the object. 
+This differs from T/P where the user wants to load an object into memory to access the object. 
 If the user wanted to delay the loading of data into memory, they could use the interface object to do so. 
-The payload object contains the data for the interface object and is allocating contiguous blocks of memory. 
+The payload object contains the data for the interface object and allocates contiguous blocks of memory. 
 Payload classes are often referred to as auxiliary storage. 
 
 The specific data structure used by ATLAS is the ROOT TTree, but the EDM is agnostic to the type of data structure used. 
