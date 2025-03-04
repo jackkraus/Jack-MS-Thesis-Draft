@@ -4903,8 +4903,8 @@
       \strng{authorbibnamehash}{11fb3487a84d2790e99bc789fd8a1993}
       \strng{authornamehash}{11fb3487a84d2790e99bc789fd8a1993}
       \strng{authorfullhash}{64b5a94a4931a0783d9780a3f2ba8cc2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The LCG Persistency Framework consists of three software packages (CORAL, COOL and POOL) that address the data access requirements of the LHC experiments in several different areas. The project is the result of the collaboration between the CERN IT Department and the three experiments (ATLAS, CMS and LHCb) that are using some or all of the Persistency Framework components to access their data. POOL is a hybrid technology store for C++ objects, using a mixture of streaming and relational technologies to implement both object persistency and object metadata catalogs and collections. CORAL is an abstraction layer with an SQL-free API for accessing data stored using relational database technologies. COOL provides specific software components and tools for the handling of the time variation and versioning of the experiment conditions data. This presentation reports on the status and outlook in each of the three sub-projects at the time of the CHEP2012 conference, reviewing the usage of each package in the three LHC experiments.}
@@ -4924,6 +4924,18 @@
       \endverb
       \verb{url}
       \verb https://dx.doi.org/10.1088/1742-6596/396/5/052067
+      \endverb
+    \endentry
+    \entry{athena-gitlab}{misc}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{title}{Athena gitlab repository}
+      \verb{urlraw}
+      \verb https://gitlab.cern.ch/atlas/athena
+      \endverb
+      \verb{url}
+      \verb https://gitlab.cern.ch/atlas/athena
       \endverb
     \endentry
     \entry{ROOT_TTree}{software}{}
@@ -5212,6 +5224,191 @@
       \verb{url}
       \verb https://dx.doi.org/10.1088/1742-6596/664/7/072045
       \endverb
+    \endentry
+    \entry{RUCIO_citation}{article}{}
+      \name{author}{30}{}{%
+        {{hash=675355e9675e847e8fd7ab89d0b67b7f}{%
+           family={Barisits},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=199f9de831ff218699dc3a6e73f8d0c4}{%
+           family={Beermann},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8cc2b0c4bbb7f5c98412957c6c959bec}{%
+           family={Berghaus},
+           familyi={B\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8eed91fd7f4f597db7655ac9fd6e880d}{%
+           family={Bockelman},
+           familyi={B\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=37540cd66a62ba48242ea65ce21c3707}{%
+           family={Bogado},
+           familyi={B\bibinitperiod},
+           given={Joaquin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0c89255a728cd727edcd60a9feb0a739}{%
+           family={Cameron},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=664a1242248474385bef27f78123c8c0}{%
+           family={Christidis},
+           familyi={C\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ca6d2281c9b61ff15e48bc53316de52b}{%
+           family={Ciangottini},
+           familyi={C\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1da4dd0d33bcca8b253c07cec5a28ebf}{%
+           family={Dimitrov},
+           familyi={D\bibinitperiod},
+           given={Gancho},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5b87ecf08ba98e2db2a87070cb9e60f6}{%
+           family={Elsing},
+           familyi={E\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d1606a5b40f59d873298037ebd4f4ff6}{%
+           family={Garonne},
+           familyi={G\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=2cb1a2acc8416f6a24959a38801556a0}{%
+           family={Girolamo},
+           familyi={G\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           prefix={di},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=433ba3bed929737353d45b5a44578952}{%
+           family={Goossens},
+           familyi={G\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+        {{hash=303bd8874163dbb40a7bc01edcf5ebc5}{%
+           family={Guan},
+           familyi={G\bibinitperiod},
+           given={Wen},
+           giveni={W\bibinitperiod}}}%
+        {{hash=97ffb4f13d958af095dd785e2097e5d7}{%
+           family={Guenther},
+           familyi={G\bibinitperiod},
+           given={Jaroslav},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7979e0120be76067ac6f1b96c4c3b85a}{%
+           family={Javurek},
+           familyi={J\bibinitperiod},
+           given={Tomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9b62cce977e50bfb9c2588276ec7c76d}{%
+           family={Kuhn},
+           familyi={K\bibinitperiod},
+           given={Dietmar},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4406aca5efcda76196856f2330c5146b}{%
+           family={Lassnig},
+           familyi={L\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+        {{hash=79a887e3dcd263e38637e084b8148f41}{%
+           family={Lopez},
+           familyi={L\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod}}}%
+        {{hash=24bb806b6023fbfac05f9d8523acc509}{%
+           family={Magini},
+           familyi={M\bibinitperiod},
+           given={Nicolo},
+           giveni={N\bibinitperiod}}}%
+        {{hash=43910c4fd70cf9db9a8d8883978670fc}{%
+           family={Molfetas},
+           familyi={M\bibinitperiod},
+           given={Angelos},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9b22a42bf13bb17d84aaa1a7fe0941a8}{%
+           family={Nairz},
+           familyi={N\bibinitperiod},
+           given={Armin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=30bf61494052f48f17b2e91810d7a624}{%
+           family={Ould-Saada},
+           familyi={O\bibinithyphendelim S\bibinitperiod},
+           given={Farid},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a6588d8b090b3a58d1b2c25927d3c8ee}{%
+           family={Prenner},
+           familyi={P\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f317019decbb4e9d982ebdb0f03bca1b}{%
+           family={Serfon},
+           familyi={S\bibinitperiod},
+           given={Cedric},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9b99f13368221558c628e58dd218ae89}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={Graeme},
+           giveni={G\bibinitperiod}}}%
+        {{hash=981671558ba0ca762b090497ccb71c5b}{%
+           family={Vaandering},
+           familyi={V\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=edb885c02d67188e7c15789251daa3d7}{%
+           family={Vasileva},
+           familyi={V\bibinitperiod},
+           given={Petya},
+           giveni={P\bibinitperiod}}}%
+        {{hash=472586258ded9977291e99e5dc6f88ac}{%
+           family={Vigne},
+           familyi={V\bibinitperiod},
+           given={Ralph},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2eb9c8f1bff18a897dc41124d613a52e}{%
+           family={Wegner},
+           familyi={W\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{07e9276093b1a0b1198da2b952b268c3}
+      \strng{fullhash}{6cc867a6ac911ec41b9d767b89fed89e}
+      \strng{bibnamehash}{07e9276093b1a0b1198da2b952b268c3}
+      \strng{authorbibnamehash}{07e9276093b1a0b1198da2b952b268c3}
+      \strng{authornamehash}{07e9276093b1a0b1198da2b952b268c3}
+      \strng{authorfullhash}{6cc867a6ac911ec41b9d767b89fed89e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Rucio is an open-source software framework that provides scientific collaborations with the functionality to organize, manage, and access their data at scale. The data can be distributed across heterogeneous data centers at widely distributed locations. Rucio was originally developed to meet the requirements of the high-energy physics experiment ATLAS, and now is continuously extended to support the LHC experiments and other diverse scientific communities. In this article, we detail the fundamental concepts of Rucio, describe the architecture along with implementation details, and report operational experience from production usage.}
+      \field{isbn}{2510-2044}
+      \field{journaltitle}{Computing and Software for Big Science}
+      \field{number}{1}
+      \field{title}{Rucio: Scientific Data Management}
+      \field{volume}{3}
+      \field{year}{2019}
+      \field{pages}{11}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s41781-019-0026-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s41781-019-0026-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s41781-019-0026-3
+      \endverb
+      \warn{\item article entry 'RUCIO_citation' (main.bib): Invalid format '2019/08/09' of date field 'date' - ignoring}
     \endentry
   \enddatalist
 \endrefsection

@@ -124,8 +124,9 @@ Tier-2 sites provide additional computation and storage services that compliment
 % WLCG handles it -> in what way is it being handled?
 Athena manages ATLAS production workflows which are involved with simulation of data and event generation, track reconstruction from hits, and derivation production.\cite{athenadocs}
 Figure \ref{fig:ATLAS_data_chain} illustrates the broadstrokes of the entire ATLAS data processing chain for both real detector data and Monte Carlo (MC) simulations. 
-MC simulation starts with the event generation (EVNT), following simulation of events hitting the detector (HITS) and further simulation of what would be readout of the detector (RDO).
-The reconstructed Analysis Object Data (AOD) are then processed through derivation production jobs that reduces AODs through several steps of skimming, thinning and slimming data and from $\mathcal{O}(1)$ MB per event to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD). 
+MC simulation starts with the event generation (EVNT), following simulation of events hitting the detector (HITS) and further simulation of what would be read out of the detector (RDO).
+The reconstructed Analysis Object Data (AOD) are then processed through derivation production jobs that reduces AODs through several steps of skimming, thinning and slimming data and from $\mathcal{O}(1)$ MB per event to $\mathcal{O}(10)$ kB per event, creating Derived AOD (DAOD).
+An AOD contains objects that  l
 Further discussion on the production of DAOD can be found in Section \ref{section: ATLASIO_Derivation}.
 \begin{figure}[ht]
     \centering
@@ -164,7 +165,7 @@ Figure \ref{fig:intro_computing_models} illustrates the projections of the HL-LH
 
 % We've been using ROOT TTree for decades 
 % in particular TTree is used to store event data 
-One avenue optimziation is being investigated is in the method of storing data to file.
+One avenue optimization is being investigated is in the method of storing data to file.
 The traditional method of storing event information for AOD/DAOD is with ROOT TTrees (see Section \ref{section: ATLASIO_TTreeObject}).
 ROOT TTrees (referred to as ``TTrees" or ``trees") have been the standard data storage format for over two decades, and they provide a clear means of organizing and accessing physics objects for processing and analysis.
 The development of the ROOT N-Tuple (RNTuple) I/O subsystem updates areas to support multi-thread processing, asynchronous I/O, object stores, and more.

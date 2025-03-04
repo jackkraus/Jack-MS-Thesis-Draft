@@ -1,14 +1,16 @@
 % CHAPTER START
 The Trigger/DAQ system sends and saves data from the detector to a persistent data storage solution.
-It's at this stage where the data isn't yet ready for an effective analysis, so what needs to happen is the data needs to be reconstructed and consolidated into physics objects, or Analysis Object Data (AOD) files.
-Creating AODs from data requires significant computation power and Athena is the software framework that plays a significant role in this process.
-This chapter will cover some of the important software tools used by ATLAS to run derivation jobs, as well as introduce data structures that represent event information. 
+The data at this stage needs to be reconstructed and consolidated into physics objects, or Analysis Object Data (AOD) files.
+Creating AODs from data requires significant computation power and is undertaken by a software framework maintained by ATLAS, Athena.
+This chapter will cover important tools and concepts used by ATLAS to run derivation jobs, as well as introduce data structures that represent event information. 
 
 \section{Athena and ROOT}
 % \subsection{What is Athena}
 Athena is the open-source software framework for the ATLAS experiment.\cite{athena}
-It is based off the Gaudi project and uses on other software such as ROOT and other software as part of the LCG software stack.
-It also provides some in-house based analysis tools as well as tools for specifically ROOT based analysis.
+It is based off the Gaudi project and uses on other software such as ROOT and other software as part of the LHC Computing Grid (LCG) software stack.\cite{WLCG_Tech_design_report}
+The LCG software stack is a set of software frameworks that provide general solutions for the LHC experiment's computing needs. 
+It contains on the order of 500 packages, which include binary builders and compilers, language libraries and dependencies, simulation and analysis software, and more.
+Athena also provides some in-house based analysis tools as well as tools for specifically ROOT based analysis.
 
 An Athena application relies on $\textit{components}$: Algorithms, Tools, Services and Properties. \cite{Aad:2895022}  
 Each component plays a role in executing an Athena application or job, which is written and configured in $\textsc{Python}$.
@@ -66,7 +68,7 @@ CI is a software development practice where new code is tested and validated upo
 Every commit to the main branch is automatically built and tested for specific core features that are required to work with the codebase. 
 This helps to ensure that the codebase is working as intended and that any new code is compatible with the existing codebase.
 
-Athena is hosted on GitLab and developed using CI with an instance of Jenkins, called ATLAS Robot, which builds and tests the new changes within a merge request interface. 
+Athena is hosted on GitLab and developed using CI with an instance of Jenkins, called ATLAS Robot, which builds and tests the new changes within a merge request interface.\cite{athena-gitlab}
 ATLAS Robot will then provide a report of the build and test results.
 If the build or test fail, ATLAS Robot will provide a report of which steps failed and why.
 This allows for early detection of issues before the nightly build is compiled and tested.
@@ -158,7 +160,6 @@ Before the successor to the T/P EDM was created, ATLAS physicists would convert 
 This would lead to duplication of data and made it challenging to develop and maintain the analysis tools to be used on both the full EDM and the reduced ones.
 Additionally, converting from transient to persistent data was an excessive step which was eventually removed by the adoption of using an EDM that blends the two stages of data together, this was dubbed the xAOD EDM.
 
-Add more text here.... \cite{ATLAS_Fact_Sheet}
 
 \subsection{xAOD EDM}
 The xAOD EDM is the successor to the T/P EDM and brings a number of improvements.\cite{Buckley_2015}
