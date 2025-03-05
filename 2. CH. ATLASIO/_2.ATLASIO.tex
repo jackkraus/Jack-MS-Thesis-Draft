@@ -90,6 +90,9 @@ Event data could range from information about a specific type of interaction, th
 Branches hold data into dedicated contiguous memory buffers, and those memory buffers, upon compression, become baskets.
 These baskets can have a limited size and a set minimum number of entries. 
 The Athena default basket size at present is 128 kB, and the default minimum number of entries is 10. 
+% TODO: The REASON we choose these numbers by default is ____ unclear, but the point is these are the relevant parameters that we're investigating.
+Prior to this thesis, the original implementation of both the basket size and minimum number of entries had not yet been investigated for avenues of optimization, this is explored in Section \ref{sec:DAODProd_Analysis}.
+
 
 One function relevant to TTree is \verb|Fill()|. 
 \verb|Fill()| will loop over all of the branches in the TTree and compresses the baskets that make up the branch.
