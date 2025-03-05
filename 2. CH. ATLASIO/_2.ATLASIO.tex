@@ -111,6 +111,8 @@ Derivation production is a necessary step to make all data accessible for physic
 While derivations are reduced AODs, they often contain additional information useful for analysis, such as jet collections and high-level discriminants.\cite{PHYSLITE_A_new_2024}
 The two mainstream output file formats Athena is capable of handling are PHYS and PHYSLITE.  
 Figure \ref{fig:IO_tt_PHYS_vs_PHYSLITE} shows the object composition of a PHYS and PHYSLITE $t\bar{t}$ sample. 
+
+% TODO: How does MC differ from Data in terms of composition? 
 \begin{figure}[h]
     \centering
     \begin{subfigure}{.5\textwidth}
@@ -125,12 +127,13 @@ Figure \ref{fig:IO_tt_PHYS_vs_PHYSLITE} shows the object composition of a PHYS a
         % \caption{B subfigure}
         \label{fig:IO_tt_PHYSLITE_subB}
       \end{subfigure}% 
-    \caption{Object composition of a PHYS and PHYSLITE $t\bar{t}$ sample from Run 3.}
+    \caption{Object composition of a PHYS and PHYSLITE $t\bar{t}$ MC simulated sample from Run 3.}
     \label{fig:IO_tt_PHYS_vs_PHYSLITE}
 \end{figure}
 PHYS output files, at 40.0 kB per event, is predominantly made of jet collections, while PHYSLITE, at 16.1 kB per event, has more trigger and track information.
-There is ongoing work to reduce the amount of Trigger information in PHYSLITE which would help further reduce the file size saved to disk.
-PHYSLITE, being the smaller file of the two, sees the largest effect upon attempts of optimization. 
+PHYSLITE, being the smaller file of the two, had a higher concentration of 
+% Is it true that PHYSLITE compresses more?  
+
 These jobs can demand heavy resource usage on the GRID, so optimization of the AOD/DAODs for derivation jobs can be vital. 
 
 \begin{figure}[h]
