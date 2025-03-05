@@ -13,7 +13,8 @@ It contains on the order of 500 packages, which include binary builders and comp
 Athena also provides some in-house based analysis tools as well as tools for specifically ROOT based analysis.
 
 An Athena application relies on $\textit{components}$: Algorithms, Tools, Services and Properties. \cite{Aad:2895022}  
-Each component plays a role in executing an Athena application or job, which is written and configured in $\textsc{Python}$.
+Each component plays a role in executing an Athena application or job, where $\textsc{Python}$ is used.
+ATLAS uses $\textsc{Python}$ for job configuration and steering.\footnote{Job transforms are $\textsc{Python}$ scripts that steer Athena production jobs by configuring arguments that would alter low-level behavior of the entire job. }
 Specifically, an Algorithm accesses data objects in the event store, as shown with the solid lines in Figure \ref{fig:ATLAS_Athena_Job_flow}, but does not own or provide any data itself.
 Algorithms can ``own" Tools, which serve as helpers exclusive to Algorithms or other components that call them.\footnote{``Ownership" here refers to the components' exclusive access or control of a Tool or Service.} 
 Services are not as exclusive with its access, as they can be used by other components to provide a service such as Athena-ROOT conversion, random number generators, and others. 
@@ -68,7 +69,7 @@ CI is a software development practice where new code is tested and validated upo
 Every commit to the main branch is automatically built and tested for specific core features that are required to work with the codebase. 
 This helps to ensure that the codebase is working as intended and that any new code is compatible with the existing codebase.
 
-Athena is hosted on GitLab and developed using CI with an instance of Jenkins, called ATLAS Robot, which builds and tests the new changes within a merge request interface.\cite{athena-gitlab}
+Athena is hosted on GitLab and developed using CI with an instance of Jenkins, called ATLAS Robot, which builds and tests the new changes within a merge request interface.\cite{athena-gitlab}\cite{Jenkins}
 ATLAS Robot will then provide a report of the build and test results.
 If the build or test fail, ATLAS Robot will provide a report of which steps failed and why.
 This allows for early detection of issues before the nightly build is compiled and tested.

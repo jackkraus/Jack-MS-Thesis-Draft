@@ -2398,14 +2398,15 @@
     <bcf:citekey order="49" intorder="1">ROOT_about</bcf:citekey>
     <bcf:citekey order="50" intorder="1">Trentadue_2012</bcf:citekey>
     <bcf:citekey order="51" intorder="1">athena-gitlab</bcf:citekey>
-    <bcf:citekey order="52" intorder="1">ROOT_TTree</bcf:citekey>
-    <bcf:citekey order="53" intorder="1">PHYSLITE_A_new_2024</bcf:citekey>
-    <bcf:citekey order="54" intorder="1">DAOD_Laycock_2014</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">Jenkins</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">ROOT_TTree</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">PHYSLITE_A_new_2024</bcf:citekey>
     <bcf:citekey order="55" intorder="1">DAOD_Laycock_2014</bcf:citekey>
-    <bcf:citekey order="56" intorder="1">Athena_xAOD_design</bcf:citekey>
-    <bcf:citekey order="57" intorder="1">Buckley_2015</bcf:citekey>
-    <bcf:citekey order="58" intorder="1">RUCIO_citation</bcf:citekey>
-    <bcf:citekey order="59" intorder="1">Buckley_2015</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">DAOD_Laycock_2014</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">Athena_xAOD_design</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">Buckley_2015</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">RUCIO_citation</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">Buckley_2015</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
