@@ -168,7 +168,7 @@ Figure \ref{fig:intro_computing_models} illustrates the projections of the HL-LH
 % We've been using ROOT TTree for decades 
 % in particular TTree is used to store event data 
 One avenue optimization is being investigated is in the method of storing data to file.
-The traditional method of storing event information for AOD/DAOD is with ROOT TTrees (see Section \ref{section: ATLASIO_TTreeObject}).
+The traditional method of storing event information for AOD/DAOD is with ROOT TTrees.
 ROOT TTrees (referred to as ``TTrees" or ``trees") have been the standard data storage format for over two decades, and they provide a clear means of organizing and accessing physics objects for processing and analysis.
 The development of the ROOT N-Tuple (RNTuple) I/O subsystem updates areas to support multi-thread processing, asynchronous I/O, object stores, and more.
 It's been shown to outperform the TTree I/O subsystem and other storage formats in file size (by about 15\%), throughput, and compression, but still has more development before full implementation into the analysis pipeline.\cite{RNTuple_Lopez-Gomez_2023}\cite{RNTuple_Blomer}

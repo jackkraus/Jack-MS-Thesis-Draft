@@ -33,14 +33,29 @@ One of the areas needed to be tested before and upon merging of any new changes 
 While CA is a more general mechanism to run many kinds of job with Athena, the scope of this thesis is using CA to test core I/O functionality of the new event data model. 
 An example Athena job configuration is found in Appendix \ref{app:athena-job-config}. 
 
-% What is ROOT
 ROOT is an open-source software framework used for high-energy physics analysis at CERN.\cite{ROOT_about} 
 It uses C++ objects to save, access, and process data brought in by the various experiments based at the LHC, the ATLAS experiment uses it in conjunction with Athena.
 ROOT largely revolves around organization and manipulation of TFiles and TTrees into ROOT files.
 A TTree represents a columnar dataset, and the list of columns are called branches. 
-The branches have memory buffers that are automatically allocated by ROOT. 
-These memory buffers are divided into corresponding baskets, whose size is designated during memory allocation.
-More detail on branch baskets are explored in Chapter \ref{chap:Toy_Model} and \ref{chap:DAODProd}.
+A TTree is a ROOT object that organizes physically distinct types of event data into TBranches, or just branches.
+Event data could range from information about a specific type of interaction, this includes tracks, position of particles at one point in the detector. 
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{content/img/branches_in_TTree.png}
+  \caption{A snapshot of the TBranches composing a TTree, from a PHYSLITE DAOD}
+  \label{fig:Branches_in_TTree}
+\end{figure}
+
+One function relevant to TTree is \verb|Fill()|. 
+\verb|Fill()| will loop over all of the branches in the TTree and compresses the baskets that make up the branch.\cite{ROOT_TTree}
+This initiates the data in memory to start filling a branch's basket buffer (or just ``baskets").
+While this first buffer is always unoptimized, it allows opportunity to calculate an optimal basket buffer size.
+At regular intervals, dictated either by number of bytes written or by number of entries written, \verb|AutoFlush| will start moving basket buffers from memory and saving them to disk. 
+It's this ``flushing" mechanism that allows for easy access to the branch data as each of the baskets will be stored contiguously in memory.
+The Athena default basket maximum size at present is 128 kB, and the default minimum number of entries is 10.
+The minimum number of entries helps reduce processing on every entry which might be empty, and the maximum basket size is in place to prevent baskets from using too much memory throughout a Grid job.  
+Prior to this thesis, the original implementation of both the basket size and minimum number of entries had not yet been fully investigated for avenues of optimization, this is explored in Section \ref{sec:DAODProd_Analysis}.
 
 % % CMake
 CMake and Make are open-source software that is used to build Athena, ROOT, and other software.
@@ -75,32 +90,6 @@ If the build or test fail, ATLAS Robot will provide a report of which steps fail
 This allows for early detection of issues before the nightly build is compiled and tested.
 
 
-
-\section{TTree Object} \label{section: ATLASIO_TTreeObject}
-A TTree is a ROOT object that organizes physically distinct types of event data into TBranches, or just branches.
-Event data could range from information about a specific type of interaction, this includes tracks, position of particles at one point in the detector. 
-
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width=\textwidth]{content/img/branches_in_TTree.png}
-  \caption{A snapshot of the TBranches composing a TTree, from a PHYSLITE DAOD}
-  \label{fig:Branches_in_TTree}
-\end{figure}
-
-Branches hold data into dedicated contiguous memory buffers, and those memory buffers, upon compression, become baskets.
-These baskets can have a limited size and a set minimum number of entries. 
-The Athena default basket size at present is 128 kB, and the default minimum number of entries is 10. 
-% TODO: The REASON we choose these numbers by default is ____ unclear, but the point is these are the relevant parameters that we're investigating.
-Prior to this thesis, the original implementation of both the basket size and minimum number of entries had not yet been investigated for avenues of optimization, this is explored in Section \ref{sec:DAODProd_Analysis}.
-
-
-One function relevant to TTree is \verb|Fill()|. 
-\verb|Fill()| will loop over all of the branches in the TTree and compresses the baskets that make up the branch.
-This removes the basket from memory as it is then compressed and written to disk.
-It makes reading back branches faster as all of the baskets are stored near each other on the same disk region.\cite{ROOT_TTree}
-
-% AutoFlush
-\verb|AutoFlush| is a function that tells the \verb|Fill()| function after a designated number of entries of the branch, in this case vectors, to flush all branch buffers from memory and save them to disk. 
 
 
 \section{Derivation Production Jobs}
