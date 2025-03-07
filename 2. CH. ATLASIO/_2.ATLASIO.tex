@@ -30,7 +30,7 @@ Properties are able to be called at initialization of the job configuration and 
 
 An important step throughout the development of Athena is to ensure any new changes to the codebase will not overrule the functionality of core features to the present workflows.
 One of the areas needed to be tested before and upon merging of any new changes to Athena is the I/O functionality, or the performance of reading and writing of stored objects within a broader context of various jobs, i.e. reconstruction or derivation.
-While CA is a more general mechanism to run any kind of job with Athena, it's within the scope of this thesis where the focus is on testing core I/O functionality of the new event data model. 
+While CA is a more general mechanism to run many kinds of job with Athena, the scope of this thesis is using CA to test core I/O functionality of the new event data model. 
 An example Athena job configuration is found in Appendix \ref{app:athena-job-config}. 
 
 % What is ROOT
@@ -144,7 +144,7 @@ These jobs can demand heavy resource usage on the GRID, so optimization of the A
 \end{figure}
 
 The derivation framework is sequence of steps that are performed on the AODs to create the DAODs.
-Skimming is the first step in the derivation framework, and it's responsible for removing whole events based on pre-defined criteria.
+Skimming is the first step in the derivation framework, and is responsible for removing whole events based on pre-defined criteria.
 Thinning is the second step, and it removes whole objects based on pre-defined criteria.
 Lastly slimming removes variables from objects uniformly across events. 
 

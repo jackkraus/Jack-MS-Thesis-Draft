@@ -1,4 +1,7 @@
 \section{Athena job configuration example}
+
+An Athena job configuration is a script that allows the user to steer a specific program in the framework.
+Steering allows one to, at a high-level, configure low-level behavior of any kind of production job. 
 A general Athena application using \verb|ComponentAccumulator| written in pseudocode would take the form: 
 \begin{lstlisting}[language=Python]
     # Import Packages
@@ -6,6 +9,7 @@ A general Athena application using \verb|ComponentAccumulator| written in pseudo
     from AthenaConfiguration.ComponentFactory import CompFactory
     from OutputStreamAthenaPool.OutputStreamConfig import OutputStreamCfg, outputStreamName
 
+    # Configure Output
     outputStreamName = "StreamA"
     outputFileName = "output.root"
 
@@ -22,6 +26,7 @@ A general Athena application using \verb|ComponentAccumulator| written in pseudo
     # Add algorithms to the accumulator
     acc.addEventAlgo( CompFactory.MyAlgorithm(MyParameters) )
 
+    # Run
     import sys
     sc = acc.run(flags.Exec.MaxEvents)
 \end{lstlisting}
