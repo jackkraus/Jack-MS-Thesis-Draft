@@ -4,6 +4,18 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import seaborn as sns
 
+today = datetime.today()
+
+
+pd_version = pd.__version__
+
+# check to see if pandas version < 3.0 
+#   pd v3.0 allows copy-on-write behavior
+#   see https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html#copy-on-write
+if(int(pd_version[0]) < 3):
+    pd.options.mode.copy_on_write = True
+
+
 # Adjust this to the path for your thesis/progressTracking directory
 savedir = "/Users/jackkraus/Desktop/masters-thesis/Jack-MS-Thesis-Draft/progressTracking/"
 
@@ -18,7 +30,7 @@ df = df.set_index('timestamp_fixed')
 
 # Define the start and end dates for the range you want to check
 start_date = '2024-12-01'
-end_date = '2025-02-19'
+end_date = today
 
 # Filter the DataFrame for the specified date range
 filtered_df = df.loc[start_date:end_date]
