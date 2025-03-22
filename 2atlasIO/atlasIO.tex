@@ -4,6 +4,43 @@ The data at this stage needs to be reconstructed and consolidated into physics o
 Creating AODs from data requires significant computation power and is undertaken by a software framework maintained by ATLAS, Athena.
 This chapter will cover important tools and concepts used by ATLAS to run derivation jobs, as well as introduce data structures that represent event information. 
 
+\section{Event Data Models} \label{sec:IO_EDM}
+% \subsection{What is an Event Data Model}
+An Event Data Model (EDM) is a collection of classes and their relationships to each other that provide a representation of an event detected with the goal of making it easier to use and manipulate by developers.
+An EDM is how particles and jets are represented in memory, stored to disk, and manipulated in analysis.
+It's useful to have an EDM because it brings a commonality to the code, aiding developers who reside in different groups often with various background experience.
+An EDM allows those developers to more easily debug and communicate issues when they arise.  
+
+\subsection{Transient/Persistent (T/P) EDM}
+ATLAS used an EDM schema for Run-1 which had a separate transient and persistent status of the AOD.
+AODs would often be converted to an ``ntuple" based D3DP format allowed for fast readability and partial read for efficient analysis in ROOT, though it left the files disconnected from the reconstruction tools found in Athena.\cite{Athena_xAOD_design}
+When transient data was present in memory, it could have information attached to the object and gain in complexity the more it was used.
+Transient data needed to be simplified before it could become persistent into long-term storage (sent to disk). 
+ROOT had trouble handling the complex inheritance models that would come up the more developers used this EDM. 
+Before the successor to the T/P EDM was created, ATLAS physicists would convert data samples using the full EDM to a simpler one that would be directly readable by ROOT.
+This would lead to duplication of data and made it challenging to develop and maintain the analysis tools to be used on both the full EDM and the reduced ones.
+Additionally, converting from transient to persistent data was an excessive step which was eventually removed by the adoption of using an EDM that blends the two stages of data together, this was dubbed the xAOD EDM.
+
+
+\subsection{xAOD EDM}
+The xAOD EDM is the successor to the T/P EDM and brings a number of improvements.\cite{Buckley_2015}
+This EDM, unlike T/P, is usable both on Athena and ROOT.
+It's easier to pick up for analysis and reconstruction. 
+The xAOD EDM has the ability to add and remove variables within an \verb|ItemList| at runtime, specified in the CA script, these variables are ``decorations."
+
+The xAOD EDM use two types of objects that handle data, interface objects and payload objects. 
+Interfaces act as an interface for the user to access the object but without its stored data. 
+This differs from T/P where the user wants to load an object into memory to access the object. 
+If the user wanted to delay the loading of data into memory, they could use the interface object to do so. 
+The payload object contains the data for the interface object and allocates contiguous blocks of memory. 
+Payload classes are often referred to as auxiliary storage. 
+
+The specific data structure used by ATLAS is the ROOT TTree, but the EDM is agnostic to the type of data structure used. 
+The ROOT TTree is discussed further in the next section.
+ATLAS specific libraries are not required to handle files written in the xAOD format since the payload can be read directly from the contiguous allocation of memory, a central tenent of the xAOD EDM.
+This allows for the separation of ATLAS specific analysis frameworks and the preferred analysis tool of the user.
+More information on how the xAOD EDM is deployed into unit tests in Section \ref{sec:Mod_utests_xAOD_object}.
+
 \section{Athena and ROOT}
 % \subsection{What is Athena}
 Athena is the open-source software framework for the ATLAS experiment.\cite{athena}
@@ -136,40 +173,4 @@ Thinning is the second step, and it removes whole objects based on pre-defined c
 Lastly slimming removes variables from objects uniformly across events. 
 
 
-\section{Event Data Models} \label{sec:IO_EDM}
-% \subsection{What is an Event Data Model}
-An Event Data Model (EDM) is a collection of classes and their relationships to each other that provide a representation of an event detected with the goal of making it easier to use and manipulate by developers.
-An EDM is how particles and jets are represented in memory, stored to disk, and manipulated in analysis.
-It's useful to have an EDM because it brings a commonality to the code, which is useful when developers reside in different groups with various backgrounds.
-An EDM allows those developers to more easily debug and communicate issues when they arise.  
-
-\subsection{Transient/Persistent (T/P) EDM}
-Another EDM schemas used by ATLAS utilizes a dual transient/persistent status of AOD.
-With this EDM, the AOD was converted into an ntuple based format called D3PDs. 
-While this conversion allowed for fast readability and partial read for efficient analysis in ROOT, it left the files disconnected from the reconstruction tools found in Athena.\cite{Athena_xAOD_design}
-When transient data was present in memory, it could have information attached to the object and gain in complexity the more it was used.
-Transient data needed to be simplified before it could become persistent into long-term storage (sent to disk). 
-ROOT had trouble handling the complex inheritance models that would come up the more developers used this EDM. 
-Before the successor to the T/P EDM was created, ATLAS physicists would convert data samples using the full EDM to a simpler one that would be directly readable by ROOT.
-This would lead to duplication of data and made it challenging to develop and maintain the analysis tools to be used on both the full EDM and the reduced ones.
-Additionally, converting from transient to persistent data was an excessive step which was eventually removed by the adoption of using an EDM that blends the two stages of data together, this was dubbed the xAOD EDM.
-
-
-\subsection{xAOD EDM}
-The xAOD EDM is the successor to the T/P EDM and brings a number of improvements.\cite{Buckley_2015}
-This EDM, unlike T/P, is usable both on Athena and ROOT.
-It's easier to pick up for analysis and reconstruction. 
-The xAOD EDM has the ability to add and remove variables within an \verb|ItemList| at runtime, specified in the CA script, these variables are ``decorations."
-
-The xAOD EDM use two types of objects that handle data, interface objects and payload objects. 
-Interfaces act as an interface for the user to access the object but without its stored data. 
-This differs from T/P where the user wants to load an object into memory to access the object. 
-If the user wanted to delay the loading of data into memory, they could use the interface object to do so. 
-The payload object contains the data for the interface object and allocates contiguous blocks of memory. 
-Payload classes are often referred to as auxiliary storage. 
-
-The specific data structure used by ATLAS is the ROOT TTree, but the EDM is agnostic to the type of data structure used. 
-ATLAS specific libraries are not required to handle files written in the xAOD format since the payload can be read directly from the contiguous allocation of memory, a central tenent of the xAOD EDM.
-This allows for the separation of ATLAS specific analysis frameworks and the preferred analysis tool of the user.
-More information on how the xAOD EDM is deployed into unit tests in Section \ref{sec:Mod_utests_xAOD_object}.
 
