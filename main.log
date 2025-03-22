@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  21 MAR 2025 13:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  22 MAR 2025 14:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -840,7 +840,7 @@ format '2019/08/09' of date field 'date' - ignoring.
 )
 Package biblatex Info: Reference section=0 on input line 70.
 Package biblatex Info: Reference segment=0 on input line 70.
- (./0.Preamble/dedication.tex) (./0.Preamble/acknowledgement.tex) [1
+ (./0preamble/dedication.tex) (./0preamble/acknowledgement.tex) [1
 Non-PDF special ignored!
 <special> papersize=614.295pt,794.96999pt
 
@@ -901,7 +901,7 @@ Overfull \hbox (29.3747pt too wide) has occurred while \output is active
 
 ]
 Chapter 1.
-(./1. Introduction/_1.Particle_PHYS_and_LHC.tex
+(./1intro/intro.tex
 <content/img/LHC illustration.jpg, id=466, 1445.4pt x 1018.80624pt>
 File: content/img/LHC illustration.jpg Graphic file (type jpg)
 <use content/img/LHC illustration.jpg>
@@ -966,7 +966,7 @@ ne 160.
  [9 <./content/img/computing model-disk.png> <./content/img/computing model-tap
 e.png>]) [10]
 Chapter 2.
-(./2. CH. ATLASIO/_2.ATLASIO.tex [11
+(./2atlasIO/atlasIO.tex [11
 
 ]
 <content/img/athena job.png, id=598, 949.5475pt x 477.785pt>
@@ -981,8 +981,7 @@ File: content/img/branches_in_TTree.png Graphic file (type png)
 Package pdftex.def Info: content/img/branches_in_TTree.png  used on input line 
 45.
 (pdftex.def)             Requested size: 469.75502pt x 75.99535pt.
-
-[13 <./content/img/branches_in_TTree.png>]
+ [13 <./content/img/branches_in_TTree.png>]
 (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
@@ -1013,7 +1012,7 @@ Package pdftex.def Info: content/img/catmore-derivation.png  used on input line
  [16 <./content/img/tt_PHYS.png> <./content/img/tt_PHYSLITE.png> <./content/img
 /catmore-derivation.png>] [17] [18]) [19]
 Chapter 3.
-(./3. CH. Toy Model/_3.Toy_Model.tex [20
+(./3toymodel/toymodel.tex [20
 
 ]
 (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1144,7 +1143,7 @@ _content/3.28/1_of_5.png>] [33 <./content/toymodel_content/4.18/1_of_2.png> <./
 content/toymodel_content/4.18/1_of_3.png> <./content/toymodel_content/4.18/1_of
 _4.png> <./content/toymodel_content/4.18/1_of_5.png>]
 Chapter 4.
-(./4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex [34
+(./4derivation/derivation.tex [34
 
 ] [35] [36]
 (./content/tables/nightly-tables.tex) [37] (./content/tables/data-fs-tables.tex
@@ -1167,7 +1166,7 @@ LaTeX Warning: Text page 40 contains only floats.
 
 [40] [41]) [42]
 Chapter 5.
-(./5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
+(./5unittests/unittests.tex
 <content/img/aux_store_better.png, id=990, 1592.95125pt x 456.70625pt>
 File: content/img/aux_store_better.png Graphic file (type png)
 <use content/img/aux_store_better.png>
@@ -1197,7 +1196,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [46] [47]) [48] [49]
 Chapter 6.
-(./6. Conclusion/_6.Conclusion.tex) [50
+(./6conclusion/conc.tex) [50
 
 ] [51
 
@@ -1225,7 +1224,7 @@ Appendix A.
 [56
 
 
-] (./7.Appendix/app1.tex
+] (./7appendix/app1.tex
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 7.
  (./content/dataset-data.txt)
@@ -1234,7 +1233,7 @@ nput line 7.
 Appendix B.
 [58
 
-] (./7.Appendix/app2.tex
+] (./7appendix/app2.tex
 (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) [59])
@@ -1249,8 +1248,8 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24177 strings out of 476025
- 420060 string characters out of 5790017
+ 24167 strings out of 476025
+ 419396 string characters out of 5790017
  2161388 words of memory out of 5000000
  43798 multiletter control sequences out of 15000+600000
  521678 words of font info for 65 fonts, out of 8000000 for 9000

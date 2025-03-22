@@ -905,20 +905,20 @@ INPUT main.bbl
 INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
-INPUT ./0.Preamble/dedication.tex
-INPUT ./0.Preamble/dedication.tex
-INPUT ./0.Preamble/dedication.tex
-INPUT 0.Preamble/dedication.tex
-INPUT ./0.Preamble/dedication.tex
-INPUT ./0.Preamble/dedication.tex
-INPUT 0.Preamble/dedication.tex
-INPUT ./0.Preamble/acknowledgement.tex
-INPUT ./0.Preamble/acknowledgement.tex
-INPUT ./0.Preamble/acknowledgement.tex
-INPUT 0.Preamble/acknowledgement.tex
-INPUT ./0.Preamble/acknowledgement.tex
-INPUT ./0.Preamble/acknowledgement.tex
-INPUT 0.Preamble/acknowledgement.tex
+INPUT ./0preamble/dedication.tex
+INPUT ./0preamble/dedication.tex
+INPUT ./0preamble/dedication.tex
+INPUT 0preamble/dedication.tex
+INPUT ./0preamble/dedication.tex
+INPUT ./0preamble/dedication.tex
+INPUT 0preamble/dedication.tex
+INPUT ./0preamble/acknowledgement.tex
+INPUT ./0preamble/acknowledgement.tex
+INPUT ./0preamble/acknowledgement.tex
+INPUT 0preamble/acknowledgement.tex
+INPUT ./0preamble/acknowledgement.tex
+INPUT ./0preamble/acknowledgement.tex
+INPUT 0preamble/acknowledgement.tex
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -951,10 +951,10 @@ INPUT ./main.loa
 INPUT main.loa
 INPUT main.loa
 OUTPUT main.loa
-INPUT ./1. Introduction/_1.Particle_PHYS_and_LHC.tex
-INPUT 1. Introduction/_1.Particle_PHYS_and_LHC.tex
-INPUT ./1. Introduction/_1.Particle_PHYS_and_LHC.tex
-INPUT 1. Introduction/_1.Particle_PHYS_and_LHC.tex
+INPUT ./1intro/intro.tex
+INPUT 1intro/intro.tex
+INPUT ./1intro/intro.tex
+INPUT 1intro/intro.tex
 INPUT ./content/img/LHC illustration.jpg
 INPUT ./content/img/LHC illustration.jpg
 INPUT content/img/LHC illustration.jpg
@@ -986,10 +986,10 @@ INPUT ./content/img/computing model-tape.png
 INPUT content/img/computing model-tape.png
 INPUT ./content/img/computing model-tape.png
 INPUT ./content/img/computing model-tape.png
-INPUT ./2. CH. ATLASIO/_2.ATLASIO.tex
-INPUT 2. CH. ATLASIO/_2.ATLASIO.tex
-INPUT ./2. CH. ATLASIO/_2.ATLASIO.tex
-INPUT 2. CH. ATLASIO/_2.ATLASIO.tex
+INPUT ./2atlasIO/atlasIO.tex
+INPUT 2atlasIO/atlasIO.tex
+INPUT ./2atlasIO/atlasIO.tex
+INPUT 2atlasIO/atlasIO.tex
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
@@ -1036,10 +1036,10 @@ INPUT ./content/img/catmore-derivation.png
 INPUT content/img/catmore-derivation.png
 INPUT ./content/img/catmore-derivation.png
 INPUT ./content/img/catmore-derivation.png
-INPUT ./3. CH. Toy Model/_3.Toy_Model.tex
-INPUT 3. CH. Toy Model/_3.Toy_Model.tex
-INPUT ./3. CH. Toy Model/_3.Toy_Model.tex
-INPUT 3. CH. Toy Model/_3.Toy_Model.tex
+INPUT ./3toymodel/toymodel.tex
+INPUT 3toymodel/toymodel.tex
+INPUT ./3toymodel/toymodel.tex
+INPUT 3toymodel/toymodel.tex
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1113,10 +1113,10 @@ INPUT ./content/toymodel_content/4.18/1_of_5.png
 INPUT content/toymodel_content/4.18/1_of_5.png
 INPUT ./content/toymodel_content/4.18/1_of_5.png
 INPUT ./content/toymodel_content/4.18/1_of_5.png
-INPUT ./4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
-INPUT 4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
-INPUT ./4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
-INPUT 4. Ch. Real DAOD Jobs/_4.Data_MC_DAOD_Production.tex
+INPUT ./4derivation/derivation.tex
+INPUT 4derivation/derivation.tex
+INPUT ./4derivation/derivation.tex
+INPUT 4derivation/derivation.tex
 INPUT ./content/tables/nightly-tables.tex
 INPUT ./content/tables/nightly-tables.tex
 INPUT ./content/tables/nightly-tables.tex
@@ -1156,10 +1156,10 @@ INPUT content/tables/top-ten/mc/mc-physlite-compressed.tex
 INPUT ./content/tables/top-ten/mc/mc-physlite-compressed.tex
 INPUT ./content/tables/top-ten/mc/mc-physlite-compressed.tex
 INPUT content/tables/top-ten/mc/mc-physlite-compressed.tex
-INPUT ./5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
-INPUT 5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
-INPUT ./5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
-INPUT 5. Ch. Modern IO Testing/_5.Modernizing_IO_Testing.tex
+INPUT ./5unittests/unittests.tex
+INPUT 5unittests/unittests.tex
+INPUT ./5unittests/unittests.tex
+INPUT 5unittests/unittests.tex
 INPUT ./content/img/aux_store_better.png
 INPUT ./content/img/aux_store_better.png
 INPUT content/img/aux_store_better.png
@@ -1167,14 +1167,14 @@ INPUT ./content/img/aux_store_better.png
 INPUT ./content/img/aux_store_better.png
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
-INPUT ./6. Conclusion/_6.Conclusion.tex
-INPUT 6. Conclusion/_6.Conclusion.tex
-INPUT ./6. Conclusion/_6.Conclusion.tex
-INPUT 6. Conclusion/_6.Conclusion.tex
-INPUT ./7.Appendix/app1.tex
-INPUT 7.Appendix/app1.tex
-INPUT ./7.Appendix/app1.tex
-INPUT 7.Appendix/app1.tex
+INPUT ./6conclusion/conc.tex
+INPUT 6conclusion/conc.tex
+INPUT ./6conclusion/conc.tex
+INPUT 6conclusion/conc.tex
+INPUT ./7appendix/app1.tex
+INPUT 7appendix/app1.tex
+INPUT ./7appendix/app1.tex
+INPUT 7appendix/app1.tex
 INPUT ./content/dataset-data.txt
 INPUT content/dataset-data.txt
 INPUT ./content/dataset-data.txt
@@ -1199,10 +1199,10 @@ INPUT ./content/inputfiles-mc.txt
 INPUT content/inputfiles-mc.txt
 INPUT ./content/inputfiles-mc.txt
 INPUT content/inputfiles-mc.txt
-INPUT ./7.Appendix/app2.tex
-INPUT 7.Appendix/app2.tex
-INPUT ./7.Appendix/app2.tex
-INPUT 7.Appendix/app2.tex
+INPUT ./7appendix/app2.tex
+INPUT 7appendix/app2.tex
+INPUT ./7appendix/app2.tex
+INPUT 7appendix/app2.tex
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
