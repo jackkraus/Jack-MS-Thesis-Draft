@@ -4433,6 +4433,80 @@
       \verb https://atlassoftwaredocs.web.cern.ch/athena/
       \endverb
     \endentry
+    \entry{Aad:2895022}{report}{}
+      \name{author}{8}{}{%
+        {{hash=ec1463e7fbfc553eca7d18cd31454ab6}{%
+           family={Aad},
+           familyi={A\bibinitperiod},
+           given={Georges},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6d88880333ed186037148809f5ff5718}{%
+           family={Aakvaag},
+           familyi={A\bibinitperiod},
+           given={Erlend},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b798112ebb8ebd443ba616aa739cdc84}{%
+           family={Abbott},
+           familyi={A\bibinitperiod},
+           given={Braden\bibnamedelima Keim},
+           giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=ee1ab8eea443771e964d7f3ff792d70b}{%
+           family={Abeling},
+           familyi={A\bibinitperiod},
+           given={Kira},
+           giveni={K\bibinitperiod}}}%
+        {{hash=50977ab195ad3dfc14376287916b6a3b}{%
+           family={Abicht},
+           familyi={A\bibinitperiod},
+           given={Nils\bibnamedelima Julius},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=38792e72768307e35f359d9069b4007a}{%
+           family={Abidi},
+           familyi={A\bibinitperiod},
+           given={Haider},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1fa5499131f6f1d5766137c38ad108ac}{%
+           family={Aboelela},
+           familyi={A\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c1beb9643962edfb6e306f27d1e11887}{%
+           family={Aboulhorma},
+           familyi={A\bibinitperiod},
+           given={Asmaa},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{f0806a61a21762c45bb17c53a0517ffd}
+      \strng{fullhash}{327a0aeb4575e56c38c697a30708e27a}
+      \strng{bibnamehash}{f0806a61a21762c45bb17c53a0517ffd}
+      \strng{authorbibnamehash}{f0806a61a21762c45bb17c53a0517ffd}
+      \strng{authornamehash}{f0806a61a21762c45bb17c53a0517ffd}
+      \strng{authorfullhash}{327a0aeb4575e56c38c697a30708e27a}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{{Software and computing for Run 3 of the ATLAS experiment at the LHC}}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2404.06335
+      \endverb
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2895022
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2895022
+      \endverb
+    \endentry
     \entry{James_Catmore_chain_processing}{unpublished}{}
       \name{author}{1}{}{%
         {{hash=36fa905bec248f250f6e5bd30c45c812}{%
@@ -4572,8 +4646,8 @@
       \strng{authorbibnamehash}{7f92396b375324678b87427be28a6d75}
       \strng{authornamehash}{7f92396b375324678b87427be28a6d75}
       \strng{authorfullhash}{931365a57646b5220a04aa9fbe2a0c61}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{EPJ Web Conf.}
@@ -4738,80 +4812,6 @@
       \verb https://doi.org/10.5281/zenodo.2641997
       \endverb
     \endentry
-    \entry{Aad:2895022}{report}{}
-      \name{author}{8}{}{%
-        {{hash=ec1463e7fbfc553eca7d18cd31454ab6}{%
-           family={Aad},
-           familyi={A\bibinitperiod},
-           given={Georges},
-           giveni={G\bibinitperiod}}}%
-        {{hash=6d88880333ed186037148809f5ff5718}{%
-           family={Aakvaag},
-           familyi={A\bibinitperiod},
-           given={Erlend},
-           giveni={E\bibinitperiod}}}%
-        {{hash=b798112ebb8ebd443ba616aa739cdc84}{%
-           family={Abbott},
-           familyi={A\bibinitperiod},
-           given={Braden\bibnamedelima Keim},
-           giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=ee1ab8eea443771e964d7f3ff792d70b}{%
-           family={Abeling},
-           familyi={A\bibinitperiod},
-           given={Kira},
-           giveni={K\bibinitperiod}}}%
-        {{hash=50977ab195ad3dfc14376287916b6a3b}{%
-           family={Abicht},
-           familyi={A\bibinitperiod},
-           given={Nils\bibnamedelima Julius},
-           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=38792e72768307e35f359d9069b4007a}{%
-           family={Abidi},
-           familyi={A\bibinitperiod},
-           given={Haider},
-           giveni={H\bibinitperiod}}}%
-        {{hash=1fa5499131f6f1d5766137c38ad108ac}{%
-           family={Aboelela},
-           familyi={A\bibinitperiod},
-           given={Mohammed},
-           giveni={M\bibinitperiod}}}%
-        {{hash=c1beb9643962edfb6e306f27d1e11887}{%
-           family={Aboulhorma},
-           familyi={A\bibinitperiod},
-           given={Asmaa},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {CERN}%
-      }
-      \list{location}{1}{%
-        {Geneva}%
-      }
-      \strng{namehash}{f0806a61a21762c45bb17c53a0517ffd}
-      \strng{fullhash}{327a0aeb4575e56c38c697a30708e27a}
-      \strng{bibnamehash}{f0806a61a21762c45bb17c53a0517ffd}
-      \strng{authorbibnamehash}{f0806a61a21762c45bb17c53a0517ffd}
-      \strng{authornamehash}{f0806a61a21762c45bb17c53a0517ffd}
-      \strng{authorfullhash}{327a0aeb4575e56c38c697a30708e27a}
-      \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{title}{{Software and computing for Run 3 of the ATLAS experiment at the LHC}}
-      \field{type}{techreport}
-      \field{year}{2024}
-      \verb{eprint}
-      \verb 2404.06335
-      \endverb
-      \verb{urlraw}
-      \verb https://cds.cern.ch/record/2895022
-      \endverb
-      \verb{url}
-      \verb https://cds.cern.ch/record/2895022
-      \endverb
-    \endentry
     \entry{ROOT_about}{misc}{}
       \name{author}{1}{}{%
         {{hash=8eb19af9389c25cec01b25123c309112}{%
@@ -4827,8 +4827,8 @@
       \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
       \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
       \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{ROOT, About}
@@ -4837,6 +4837,34 @@
       \endverb
       \verb{url}
       \verb https://root.cern/about/
+      \endverb
+    \endentry
+    \entry{ROOT_TTree}{software}{}
+      \name{author}{1}{}{%
+        {{hash=8eb19af9389c25cec01b25123c309112}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={ROOT},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{fullhash}{8eb19af9389c25cec01b25123c309112}
+      \strng{bibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorbibnamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
+      \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ROOT, TTree Class}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://root.cern.ch/doc/master/classTTree.html
+      \endverb
+      \verb{url}
+      \verb https://root.cern.ch/doc/master/classTTree.html
       \endverb
     \endentry
     \entry{Trentadue_2012}{article}{}
@@ -4938,32 +4966,16 @@
       \verb https://gitlab.cern.ch/atlas/athena
       \endverb
     \endentry
-    \entry{ROOT_TTree}{software}{}
-      \name{author}{1}{}{%
-        {{hash=8eb19af9389c25cec01b25123c309112}{%
-           family={Team},
-           familyi={T\bibinitperiod},
-           given={ROOT},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{8eb19af9389c25cec01b25123c309112}
-      \strng{fullhash}{8eb19af9389c25cec01b25123c309112}
-      \strng{bibnamehash}{8eb19af9389c25cec01b25123c309112}
-      \strng{authorbibnamehash}{8eb19af9389c25cec01b25123c309112}
-      \strng{authornamehash}{8eb19af9389c25cec01b25123c309112}
-      \strng{authorfullhash}{8eb19af9389c25cec01b25123c309112}
-      \field{extraname}{2}
+    \entry{Jenkins}{misc}{}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{ROOT, TTree Class}
-      \field{year}{2024}
+      \field{title}{Jenkins}
       \verb{urlraw}
-      \verb https://root.cern.ch/doc/master/classTTree.html
+      \verb https://www.jenkins.io
       \endverb
       \verb{url}
-      \verb https://root.cern.ch/doc/master/classTTree.html
+      \verb https://www.jenkins.io
       \endverb
     \endentry
     \entry{PHYSLITE_A_new_2024}{article}{}
@@ -5386,8 +5398,8 @@
       \strng{authorbibnamehash}{07e9276093b1a0b1198da2b952b268c3}
       \strng{authornamehash}{07e9276093b1a0b1198da2b952b268c3}
       \strng{authorfullhash}{6cc867a6ac911ec41b9d767b89fed89e}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Rucio is an open-source software framework that provides scientific collaborations with the functionality to organize, manage, and access their data at scale. The data can be distributed across heterogeneous data centers at widely distributed locations. Rucio was originally developed to meet the requirements of the high-energy physics experiment ATLAS, and now is continuously extended to support the LHC experiments and other diverse scientific communities. In this article, we detail the fundamental concepts of Rucio, describe the architecture along with implementation details, and report operational experience from production usage.}
