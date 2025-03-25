@@ -1,6 +1,7 @@
-Building a toy model for derivation production jobs offers a simplified framework to effectively simulate and analyze the behavior of real and Monte Carlo (MC) data under techniques of optimization aimed to study.
-One commonality between both data and MC is the data types stored in branches for both is made of a mixture between repeated integer-like data and randomized floating-point data. 
-Integers are easier to compress than floating-point numbers, so adjusting the mixture of each can yield compression ratios closer to real and MC data.  
+Building a toy model for derivation production jobs offers a simplified framework to effectively simulate and analyze the behavior of real and Monte Carlo (MC) data.
+A toy model collection of data can mimic commonalities in both data and MC by filling in branches with a mixture of position coordinate information, momenta, or other details about the detector.  
+
+Integers that are repeated can be easier to compress than floating-point numbers of increased precision, so adjusting the ratio of integers to floats creates a mixture which can yield compression ratios closer to real and MC data.  
 Replicating this mixture in a branch give us an effective model that resembles how current derivation jobs act on real and MC simulated data. 
 These toy model mixtures provide an avenue to test opportunities for optimizing the memory and storage demands of the GRID by first looking at limiting basket sizes and their effects on compression of branches. 
 
@@ -11,27 +12,9 @@ These toy model mixtures provide an avenue to test opportunities for optimizing 
 There were a number of iterations to the toy model, but the first was constructed by filling a TTree with branches that each have vectors with varying number of random floats to write and read.
 Vectors are used in this toy model, as opposed to arrays, because vectors are dynamically allocated and deallocated, which allows for more flexibility when synthesizing AODs. 
 This original model had four distinct branches, each with a set number of events (\verb|N=1000|), and each event having a number of entries, vectors with 1, 10, 100, and 1000 floats each.
-
 The script can be compiled with \verb|gcc| or \verb|g++| and it requires all of the dependencies that come with ROOT. 
 Alternatively, the script can be run directly within ROOT.
-% To begin this script, there are a number of included ROOT and \verb|C++| standard library headers. 
-% \begin{lstlisting}[language=C]
-%   // C++ Standard Library
-%   #include <iostream>
-%   #include <memory>
-%   #include <ostream>
-%   #include <vector>
-  
-%   // Necessary ROOT Headers
-%   #include "TBranch.h"
-%   #include "TCanvas.h"
-%   #include "TFile.h"
-%   #include "TH1.h"
-%   #include "TRandom.h"
-%   #include "TStyle.h"
-%   #include "TTree.h"
-%   ...
-% \end{lstlisting}
+
 The following function \verb|VectorTree()| is the main function in this code.
 What is needed first is an output file, which will be called \verb|VectorTreeFile.root|, and the name of the tree can simply be \verb|myTree|.
 % \begin{lstlisting}[language=C]
