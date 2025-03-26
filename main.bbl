@@ -4783,6 +4783,159 @@
       \verb https://doi.org/10.1051/epjconf/202429506020
       \endverb
     \endentry
+    \entry{Athena_xAOD_design}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=2914a2575bda7d21604d8d93cbec8450}{%
+           family={Buckley},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=36f26e0c338475417702cfb205340058}{%
+           family={Eifert},
+           familyi={E\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=419c369760dd9dfd1eee84b37c333e21}{%
+           family={Elsing},
+           familyi={E\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e7646167b3cc11ba916490df0d4d84f7}{%
+           family={Gillberg},
+           familyi={G\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=151ebaa38ced3936fa5a69c9c053c6b4}{%
+           family={Köneke},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0d35a488929834faf44b72d3031ce1c}{%
+           family={Krasznahorkay},
+           familyi={K\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3efdec65543778c5361133e575eb989e}{%
+           family={Moyse},
+           familyi={M\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{fullhash}{ba32133e59725d3a04d1bde0f69fde4e}
+      \strng{bibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authorbibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authornamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authorfullhash}{ba32133e59725d3a04d1bde0f69fde4e}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Report of the xAOD Design Group}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/1598793/files/ATL-COM-SOFT-2013-022.pdf
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/1598793/files/ATL-COM-SOFT-2013-022.pdf
+      \endverb
+    \endentry
+    \entry{Buckley_2015}{article}{}
+      \name{author}{11}{}{%
+        {{hash=2914a2575bda7d21604d8d93cbec8450}{%
+           family={Buckley},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=36f26e0c338475417702cfb205340058}{%
+           family={Eifert},
+           familyi={E\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=419c369760dd9dfd1eee84b37c333e21}{%
+           family={Elsing},
+           familyi={E\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e7646167b3cc11ba916490df0d4d84f7}{%
+           family={Gillberg},
+           familyi={G\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bf0dbb9efcfb9349e016f6560967bc6b}{%
+           family={Koeneke},
+           familyi={K\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0d35a488929834faf44b72d3031ce1c}{%
+           family={Krasznahorkay},
+           familyi={K\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3efdec65543778c5361133e575eb989e}{%
+           family={Moyse},
+           familyi={M\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b72351089b9a49daeed38cc66ccde2b9}{%
+           family={Nowak},
+           familyi={N\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=04f25ef56145796479b1d816b69c6344}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d6b07f28298803390b9d085f997fb7ca}{%
+           family={Gemmeren},
+           familyi={G\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=bcd9b07dda13b51d23799ee3deebe951}{%
+           family={ATLAS\bibnamedelima Collaboration).},
+           familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={(For},
+           giveni={(\bibinitperiod},
+           prefix={the},
+           prefixi={t\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{fullhash}{74ae9c0d5baaa5417d72597aba2bc1fb}
+      \strng{bibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authorbibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authornamehash}{76d2c1d0a7bf71502eccc157feea837d}
+      \strng{authorfullhash}{74ae9c0d5baaa5417d72597aba2bc1fb}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{During the 2013-2014 shutdown of the Large Hadron Collider, ATLAS switched to a new event data model for analysis, called the xAOD. A key feature of this model is the separation of the object data from the objects themselves (the ‘auxiliary store’). Rather than being stored as member variables of the analysis classes, all object data are stored separately, as vectors of simple values. Thus, the data are stored in a ‘structure of arrays’ format, while the user still can access it as an ‘array of structures’. This organization allows for on-demand partial reading of objects, the selective removal of object properties, and the addition of arbitrary user- defined properties in a uniform manner. It also improves performance by increasing the locality of memory references in typical analysis code. The resulting data structures can be written to ROOT files with data properties represented as simple ROOT tree branches. This paper focuses on the design and implementation of the auxiliary store and its interaction with ROOT.}
+      \field{journaltitle}{Journal of Physics: Conference Series}
+      \field{month}{12}
+      \field{number}{7}
+      \field{title}{Implementation of the ATLAS Run 2 event data model}
+      \field{volume}{664}
+      \field{year}{2015}
+      \field{pages}{072045}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/664/7/072045
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1742-6596/664/7/072045
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1742-6596/664/7/072045
+      \endverb
+    \endentry
     \entry{athena}{misc}{}
       \name{author}{1}{}{%
         {{hash=a019aa0836c410317d8dbfe3ac3878fc}{%
@@ -5082,159 +5235,6 @@
       \endverb
       \verb{url}
       \verb https://dx.doi.org/10.1088/1742-6596/513/3/032052
-      \endverb
-    \endentry
-    \entry{Athena_xAOD_design}{misc}{}
-      \name{author}{7}{}{%
-        {{hash=2914a2575bda7d21604d8d93cbec8450}{%
-           family={Buckley},
-           familyi={B\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=36f26e0c338475417702cfb205340058}{%
-           family={Eifert},
-           familyi={E\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=419c369760dd9dfd1eee84b37c333e21}{%
-           family={Elsing},
-           familyi={E\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=e7646167b3cc11ba916490df0d4d84f7}{%
-           family={Gillberg},
-           familyi={G\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=151ebaa38ced3936fa5a69c9c053c6b4}{%
-           family={Köneke},
-           familyi={K\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
-        {{hash=e0d35a488929834faf44b72d3031ce1c}{%
-           family={Krasznahorkay},
-           familyi={K\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=3efdec65543778c5361133e575eb989e}{%
-           family={Moyse},
-           familyi={M\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{fullhash}{ba32133e59725d3a04d1bde0f69fde4e}
-      \strng{bibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{authorbibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{authornamehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{authorfullhash}{ba32133e59725d3a04d1bde0f69fde4e}
-      \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Report of the xAOD Design Group}
-      \field{year}{2013}
-      \verb{urlraw}
-      \verb https://cds.cern.ch/record/1598793/files/ATL-COM-SOFT-2013-022.pdf
-      \endverb
-      \verb{url}
-      \verb https://cds.cern.ch/record/1598793/files/ATL-COM-SOFT-2013-022.pdf
-      \endverb
-    \endentry
-    \entry{Buckley_2015}{article}{}
-      \name{author}{11}{}{%
-        {{hash=2914a2575bda7d21604d8d93cbec8450}{%
-           family={Buckley},
-           familyi={B\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=36f26e0c338475417702cfb205340058}{%
-           family={Eifert},
-           familyi={E\bibinitperiod},
-           given={T},
-           giveni={T\bibinitperiod}}}%
-        {{hash=419c369760dd9dfd1eee84b37c333e21}{%
-           family={Elsing},
-           familyi={E\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=e7646167b3cc11ba916490df0d4d84f7}{%
-           family={Gillberg},
-           familyi={G\bibinitperiod},
-           given={D},
-           giveni={D\bibinitperiod}}}%
-        {{hash=bf0dbb9efcfb9349e016f6560967bc6b}{%
-           family={Koeneke},
-           familyi={K\bibinitperiod},
-           given={K},
-           giveni={K\bibinitperiod}}}%
-        {{hash=e0d35a488929834faf44b72d3031ce1c}{%
-           family={Krasznahorkay},
-           familyi={K\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
-        {{hash=3efdec65543778c5361133e575eb989e}{%
-           family={Moyse},
-           familyi={M\bibinitperiod},
-           given={E},
-           giveni={E\bibinitperiod}}}%
-        {{hash=b72351089b9a49daeed38cc66ccde2b9}{%
-           family={Nowak},
-           familyi={N\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=04f25ef56145796479b1d816b69c6344}{%
-           family={Snyder},
-           familyi={S\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=d6b07f28298803390b9d085f997fb7ca}{%
-           family={Gemmeren},
-           familyi={G\bibinitperiod},
-           given={P},
-           giveni={P\bibinitperiod},
-           prefix={van},
-           prefixi={v\bibinitperiod}}}%
-        {{hash=bcd9b07dda13b51d23799ee3deebe951}{%
-           family={ATLAS\bibnamedelima Collaboration).},
-           familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod},
-           given={(For},
-           giveni={(\bibinitperiod},
-           prefix={the},
-           prefixi={t\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{fullhash}{74ae9c0d5baaa5417d72597aba2bc1fb}
-      \strng{bibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{authorbibnamehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{authornamehash}{76d2c1d0a7bf71502eccc157feea837d}
-      \strng{authorfullhash}{74ae9c0d5baaa5417d72597aba2bc1fb}
-      \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{During the 2013-2014 shutdown of the Large Hadron Collider, ATLAS switched to a new event data model for analysis, called the xAOD. A key feature of this model is the separation of the object data from the objects themselves (the ‘auxiliary store’). Rather than being stored as member variables of the analysis classes, all object data are stored separately, as vectors of simple values. Thus, the data are stored in a ‘structure of arrays’ format, while the user still can access it as an ‘array of structures’. This organization allows for on-demand partial reading of objects, the selective removal of object properties, and the addition of arbitrary user- defined properties in a uniform manner. It also improves performance by increasing the locality of memory references in typical analysis code. The resulting data structures can be written to ROOT files with data properties represented as simple ROOT tree branches. This paper focuses on the design and implementation of the auxiliary store and its interaction with ROOT.}
-      \field{journaltitle}{Journal of Physics: Conference Series}
-      \field{month}{12}
-      \field{number}{7}
-      \field{title}{Implementation of the ATLAS Run 2 event data model}
-      \field{volume}{664}
-      \field{year}{2015}
-      \field{pages}{072045}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1088/1742-6596/664/7/072045
-      \endverb
-      \verb{urlraw}
-      \verb https://dx.doi.org/10.1088/1742-6596/664/7/072045
-      \endverb
-      \verb{url}
-      \verb https://dx.doi.org/10.1088/1742-6596/664/7/072045
       \endverb
     \endentry
     \entry{RUCIO_citation}{article}{}
