@@ -13,7 +13,7 @@ An EDM allows those developers to more easily debug and communicate issues when 
 
 \subsection{Transient/Persistent (T/P) EDM}
 ATLAS used an EDM schema for Run-1 which had a separate transient and persistent status of the AOD.
-AODs would often be converted to an ``ntuple" based D3DP format allowed for fast readability and partial read for efficient analysis in ROOT, though it left the files disconnected from the reconstruction tools found in Athena.\cite{Athena_xAOD_design}
+AODs would often be converted to an ``ntuple" based format that allowed for fast readability and partial read for efficient analysis in ROOT, though it left the files disconnected from the reconstruction tools found in Athena.\cite{Athena_xAOD_design}
 When transient data was present in memory, it could have information attached to the object and gain in complexity the more it was used.
 Transient data needed to be simplified before it could become persistent into long-term storage (sent to disk). 
 ROOT had trouble handling the complex inheritance models that would come up the more developers used this EDM. 
@@ -23,10 +23,12 @@ Additionally, converting from transient to persistent data was an excessive step
 
 
 \subsection{xAOD EDM}
-The xAOD EDM is the successor to the T/P EDM and brings a number of improvements.\cite{Buckley_2015}
-This EDM, unlike T/P, is usable both on Athena and ROOT.
-It's easier to pick up for analysis and reconstruction. 
-The xAOD EDM has the ability to add and remove variables within an \verb|ItemList| at runtime, specified in the CA script, these variables are ``decorations."
+While the T/P EDM still remains functional in Athena, the xAOD EDM has been adopted as of Run 2. 
+The xAOD EDM is an iteration to the T/P EDM and brings a variety of improvements.\cite{Buckley_2015}
+This EDM, unlike T/P, is not strictly separated into transient or persistent data.
+Rather, xAOD primarily separates data into interface objects and its corresponding auxiliary data stores.
+The xAOD EDM has built-in functionality to add and remove dynamic attributes configured during job steering.
+These dynamic attributes to xAOD objects are called decorations.
 
 The xAOD EDM use two types of objects that handle data, interface objects and payload objects. 
 Interfaces act as an interface for the user to access the object but without its stored data. 
