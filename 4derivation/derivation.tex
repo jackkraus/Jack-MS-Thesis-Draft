@@ -136,9 +136,8 @@ If pre-derivation branches are larger than necessary, there should be an opportu
 % 4.9 Label :  \label{Tab: 24.0.16-MC-PHYSLITE-default-top-compfs}
 % 4.10 Label :  \label{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-compfs}
 
-Tables \ref{Tab:ducky} - \ref{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-compfs} look into some highly compressible branches that might lead to areas where simulation might save some space. 
-An immediate observation: with the omission of the Athena basket limit (solely relying on ROOTs $1.3$ MB basket limit), the compression factor increases. 
-This is inline with the original expectation that an increased buffer size limit correlate to better compression. 
+Tables \ref{Tab: 24.0.16-MC-PHYSLITE-default-top-CF} - \ref{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-compfs} look into some highly compressible branches that might lead to areas where simulation might save some space. 
+An immediate observation: with the omission of the Athena basket limit (solely relying on ROOTs $1.3$ MB basket limit), compression increases.   
 $\textit{PrimaryVerticesAuxDyn.trackParticleLinks}$ is a branch where, among each configuration of Athena MC derivation, has the highest compression factor of any branch in this dataset. 
 Some branches, like \textit{HLTNav Summary DAODSlimmedAuxDyn.linkColNames} show highly compressible behavior and are consistent with the other job configurations (data, MC, PHYS, and PHYSLITE). 
 Further work could investigate these branches for further areas of optimization for long term storage and better memory usage during derivation.

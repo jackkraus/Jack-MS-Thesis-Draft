@@ -75,8 +75,8 @@ One extra step taken during this phase of testing is the disabling of \verb|Auto
     ...
 \end{lstlisting}
 Disabling \verb|AutoFlush| allows for more consistent compression across the various sizes of branch baskets. 
-The toy model needed this consistency more than the later tests as these early tests were solely focused on mimicking data procured by the detector and event simulation. 
-The derivation production jobs tested in Chapter $\ref{chap:DAODProd}$ were tested with \verb|AutoFlush| enabled because those tests are not as concerned with compression as they are with memory and disk usage.
+If \verb|AutoFlush| were enabled, then across the various branch types, as in \ref{fig:toymodel_compF_rndm_vectors}, ROOT would decide when to compress each branch basket preventing a consistent compression configuration for the toy model.  
+The derivation production jobs tested in Chapter $\ref{chap:DAODProd}$ were tested with \verb|AutoFlush| enabled because those tests are focused on memory and disk usage as opposed to mimicing real or MC data, which they are already using.
 Following branch initialization comes the event loop where data is generated and emplaced into vectors.
 
 \begin{lstlisting}[language=C]  
