@@ -1,7 +1,7 @@
 \hspace *{\fill }Page\par 
 \contentsline {chapter}{List of Tables}{vi}{chapter*.4}%
-\contentsline {chapter}{List of Figures}{viii}{chapter*.5}%
-\contentsline {chapter}{List of Appendices}{x}{chapter*.6}%
+\contentsline {chapter}{List of Figures}{vii}{chapter*.5}%
+\contentsline {chapter}{List of Appendices}{viii}{chapter*.6}%
 \noindent Chapter\par 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}LHC and The ATLAS Detector}{1}{section.1.1}%

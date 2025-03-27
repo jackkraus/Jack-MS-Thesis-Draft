@@ -143,7 +143,7 @@ As illustrated, the \verb|TTree| is written to the file which allows for the las
 \end{lstlisting}
 
 Upon reading back the ROOT file, the user can view the original size of the file (Total-file-size), the compressed file size (File-size), the ratio between Total-file-size and File-size (Compression Factor), the number of baskets per branch, the basket size, and other information. 
-Filling vectors with entirely random values was believed to yield compression ratios close to real data, but the results in Figure \ref{fig:toymodel_compF_rndm_vectors} show changes needed to be made to bring the branches closer to a compression ratio of $\mathcal{O}(5)$.  
+Filling vectors with entirely random values was believed to yield compression ratios close to real data, but the results in Figure \ref{fig:toymodel_compF_rndm_vectors} show changes needed to be made to bring the branches closer to a compression ratio of $\mathcal{O}(5)$.\footnote{This compression factor comes as the average branch compression factor post-derivation job, which is discussed in Section \ref{section: ATLASIO_Derivation}} 
 It is evident that branches containing vectors with purely random floats are more difficult to compress due to the high level of randomization.
 
 \begin{figure}[h]
@@ -218,7 +218,7 @@ Mixing of random floats and repeated integer values takes the same script struct
   }
 \end{lstlisting}
 
-As shown in the \verb|if|-statements in lines \verb|14|, \verb|25|, \verb|36| and \verb|47|, if the iterator was less than half of the total number of entries in the vector then that entry had a randomized float put in that spot in the vector, otherwise it would be filled with the integer \verb|1|.
+As shown in the \verb|if|-statements in line \verb|25|, if the iterator was less than half of the total number of entries in the vector then that entry had a randomized float put in that spot in the vector, otherwise it would be filled with the integer \verb|1|.
 Having a mixture of half random floats and half integer \verb|1| led to the larger branches still seeing poor compression, so a new mixture of 1/4 random data was introduced. 
 Even though $N=10^5$ had the larger branches closer to the desired compression ratio, testing at $N=10^6$ events improves the accuracy of the overall file size to more closely resemble real data.
 
