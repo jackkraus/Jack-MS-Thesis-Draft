@@ -276,7 +276,7 @@ For baskets smaller than 16 kB, it is necessary to have as many baskets as event
 For a mixed-content vector with one thousand entries, containing 500 floats and 500 integers (both are 4 bytes each), its size is approximately 4 kB.
 ROOT creates baskets of at least the size of the smallest branch entry, in this case the size of a single vector.
 So even though the basket size was set to 1 or 2 kB, ROOT created baskets of 4 kB.
-These baskets $\leq 4$kB have a significantly worse compression than the baskets $\geq 4$kB in size, so the focus was shifted toward baskets.  
+These baskets less than or equal to $4$kB have a significantly worse compression than the baskets greater than $4$kB in size, so the focus was shifted toward baskets.  
 Once the basket size is larger than the size of a single vector, more than one vector can be stored in a single basket and the total number of baskets is reduced.
 
 There were different types of configuration to the toy model investigated by this study. 
