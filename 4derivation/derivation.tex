@@ -19,11 +19,9 @@ The MC job comes from a 2023 $t\bar{t}$ standard sample simulation job with six 
 The datasets are noted in Appendix \ref{app: deriv job dataset}.
 
 \subsection{Derivation Job Configuration}
-To run a derivation job, AODs need to be downloaded by a data-management service, such as Rucio, to a user's local machine.\cite{RUCIO_citation} 
+To run a derivation job for testing purposes, AODs need to be downloaded by a data-management service, such as Rucio, to a machine dedicated to manually run tests.\cite{RUCIO_citation} 
 Rucio is the data-management solution used for this project to procure the various AOD input files used for the derivation jobs.
 The machine running the Rucio client will need to have a valid proxy added for Rucio to run correctly.  
-
-The machine used to run these derivation tests was a CERN based machine, using an $\textsc{AMD EPYC}$ 7302 16-Core Processor, supplied with 258 GB of memory, on version 9.4 of the AlmaLinux distribution. 
 
 A sample command would look like:
 \begin{lstlisting}[language=bash]
@@ -53,10 +51,10 @@ The \verb|--outputDAODFile| is the output file for the derivation job, in this c
 The \verb|--formats PHYSLITE| flag allows the job to use the PHYSLITE format for the DAOD.
 Here is where the user may choose to include PHYS or PHYSLITE simply by inlusion of one or both.
 The \verb|--maxEvents| flag allows one to specify the maximum number of events to run the job on.
-The \verb|--sharedWriter True| flag allows the job to utilize SharedWriter. 
 The \verb|--multiprocess True| flag allows the job to use AthenaMP tools.
-
-
+AthenaMP is a mode of operation that allows for multi-process parallelism in many workflows since Run 2.\cite{SerhanMete:20223X} 
+The \verb|--sharedWriter True| flag allows the job to utilize SharedWriter, which is a memory allocation mechanism as part of AthenaMP which allows for multiple workers to share allocated memory in the writing process. 
+The machine used to run these derivation tests was a CERN based machine, using an $\textsc{AMD EPYC}$ 7302 16-Core Processor, supplied with 258 GB of memory, on version 9.4 of the AlmaLinux distribution. 
 
 
 The input files for both data and MC jobs were ran with various configurations of Athena by modifying the basket buffer limit. 
@@ -95,15 +93,17 @@ However, since derivation production (or any job for that matter) is memory boun
 Pre-existing derivation jobs were ran for data and MC simulations to compare between configurations of differing basket sizes limits. 
 The results for this set of testing are found from Table \ref{Tab: 24.0.16-data-outputfs} through Table \ref{Tab: 24.0.16-mc-outputfs}. 
 The following tables are the DAOD output-file sizes of the various Athena configurations for PHYS/PHYSLITE over their respective data/MC AOD input files. 
-
+% One Table: 4.3
 \input{content/tables/data-fs-tables}
 % Label:     \label{Tab: 24.0.16-data-outputfs}
+% ---------------------------------------------
+% One Table: 4.4
 \input{content/tables/mc-fs-tables.tex}
 % Label:     \label{Tab: 24.0.16-mc-outputfs}
 
 
 ``Max PSS" refers to the maximum proportional set size, which is the maximum memory usage of the job.
-Table \ref{Tab: 24.0.16-data-outputfs} tells us that with this $t\bar{t}$ data sample, there are marginal changes in both the memory usage for the job and the output file size of the DAODs. 
+Table \ref{Tab: 24.0.16-mc-outputfs} uses data from a 2022 dataset with four input files and shows there are marginal changes in both the memory usage for the job and the output file size of the DAODs. 
 Whereas Table \ref{Tab: 24.0.16-mc-outputfs} shows a much more drastic change, with a 5.6\% reduction in output file size for the MC PHYSLITE DAOD when compared to the default Athena configuration.
 While there's a 5.6\% reduction in output file size for the MC PHYSLITE DAOD, there's also a 11.3\% increase in memory usage. 
 
@@ -156,5 +156,5 @@ With the removal of an upper-limit to the basket size, ATLAS stands to gain a 5\
 
 By looking at the branches per configuration, specifically in MC PHYSLITE output DAOD, highly compressible branches emerge. 
 The branches inside the MC PHYSLITE DAOD are suboptimal as they do not conserve disk space; instead, they consume memory inefficiently. 
-As seen from Table \ref{Tab: 24.0.16-MC-PHYSLITE-default-top-CF} through \ref{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-compfs}, we have plenty of branches in MC PHYSLITE that are seemingly empty--as indicated by the compression factor being $\mathcal{O}(10)$. 
+As seen from Table \ref{Tab: 24.0.16-MC-PHYSLITE-default-top-CF} through \ref{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-compfs}, we have plenty of branches in MC PHYSLITE that are full of seemingly duplicated data--as their compression factor is greater than $\mathcal{O}(10)$, showing the extent to which they are able to be compressed. 
 Reviewing and optimizing the branch data could further reduce GRID load during DAOD production by reducing the increased memory-usage while keeping the effects of decreased disk-space. 

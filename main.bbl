@@ -5422,6 +5422,41 @@
       \endverb
       \warn{\item article entry 'RUCIO_citation' (main.bib): Invalid format '2019/08/09' of date field 'date' - ignoring}
     \endentry
+    \entry{SerhanMete:20223X}{article}{}
+      \name{author}{2}{}{%
+        {{hash=695076f61432ce1ca79109788144d166}{%
+           family={Serhan\bibnamedelima Mete},
+           familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Alaettin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=32368325d5351ce553dae08bba02a1c6}{%
+           family={Gemmeren},
+           familyi={G\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d7e4b0db920bcbb172f9caf9cf5d4b5}
+      \strng{fullhash}{2d7e4b0db920bcbb172f9caf9cf5d4b5}
+      \strng{bibnamehash}{2d7e4b0db920bcbb172f9caf9cf5d4b5}
+      \strng{authorbibnamehash}{2d7e4b0db920bcbb172f9caf9cf5d4b5}
+      \strng{authornamehash}{2d7e4b0db920bcbb172f9caf9cf5d4b5}
+      \strng{authorfullhash}{2d7e4b0db920bcbb172f9caf9cf5d4b5}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PoS}
+      \field{title}{Shared I/O Developments for Run 3 in the ATLAS Experiment}
+      \field{volume}{ICHEP2022}
+      \field{year}{2022}
+      \field{pages}{219}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.22323/1.414.0219
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
