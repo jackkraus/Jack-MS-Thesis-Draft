@@ -18,7 +18,7 @@ The data derivation job comes from a 2022 dataset with four input files and 160,
 The MC job comes from a 2023 $t\bar{t}$ standard sample simulation job with six input files and 140,000 events. 
 The datasets are noted in Appendix \ref{app: deriv job dataset}.
 
-\subsection{Derivation Job Command}
+\subsection{Derivation Job Configuration}
 To run a derivation job, AODs need to be downloaded by a data-management service, such as Rucio, to a user's local machine.\cite{RUCIO_citation} 
 Rucio is the data-management solution used for this project to procure the various AOD input files used for the derivation jobs.
 The machine running the Rucio client will need to have a valid proxy added for Rucio to run correctly.  
@@ -120,17 +120,26 @@ The compressed file size is the size of the branch that is permanently saved int
 Branches with highly repetitive data are better compressed than non-repetitive data, leading to high compression factors--the initial size of the branch contains more data than it needs pre-derivation. 
 If pre-derivation branches are larger than necessary, there should be an opportunity to save memory usage during the derivation job. 
 
-Tables \ref{Tab: 24.0.16-MC-PHYS-default-top-CF} - \ref{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-compfs} look into some highly compressible branches that might lead to areas where simulation might save some space. 
+
+% Two Tables: 4.5 and 4.6
+\input{content/tables/top-ten/mc/mc-physlite-CF}
+% 4.5 Label: \label{Tab: 24.0.16-MC-PHYSLITE-default-top-CF}
+% 4.6 Label: \label{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-CF}
+% --------------------------------------------------
+% Two Tables: 4.7 and 4.8
+\input{content/tables/top-ten/mc/mc-physlite-total}
+% 4.7 Label: \label{Tab: 24.0.16-MC-PHYSLITE-default-top-totalfs}
+% 4.8 Label: \label{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-totalfs}
+% --------------------------------------------------
+% Two Tables: 4.9 and 4.10
+\input{content/tables/top-ten/mc/mc-physlite-compressed}
+% 4.9 Label :  \label{Tab: 24.0.16-MC-PHYSLITE-default-top-compfs}
+% 4.10 Label :  \label{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-compfs}
+
+Tables \ref{Tab:ducky} - \ref{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-compfs} look into some highly compressible branches that might lead to areas where simulation might save some space. 
 An immediate observation: with the omission of the Athena basket limit (solely relying on ROOTs $1.3$ MB basket limit), the compression factor increases. 
 This is inline with the original expectation that an increased buffer size limit correlate to better compression. 
 $\textit{PrimaryVerticesAuxDyn.trackParticleLinks}$ is a branch where, among each configuration of Athena MC derivation, has the highest compression factor of any branch in this dataset. 
-
-\input{content/tables/top-ten/mc/mc-physlite-CF}
-% Label: \label{Tab: 24.0.16-MC-PHYS-default-top-CF}
-\input{content/tables/top-ten/mc/mc-physlite-total}
-\input{content/tables/top-ten/mc/mc-physlite-compressed}
-% Label :  \label{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-compfs}  
-
 Some branches, like \textit{HLTNav Summary DAODSlimmedAuxDyn.linkColNames} show highly compressible behavior and are consistent with the other job configurations (data, MC, PHYS, and PHYSLITE). 
 Further work could investigate these branches for further areas of optimization for long term storage and better memory usage during derivation.
 
@@ -147,5 +156,5 @@ With the removal of an upper-limit to the basket size, ATLAS stands to gain a 5\
 
 By looking at the branches per configuration, specifically in MC PHYSLITE output DAOD, highly compressible branches emerge. 
 The branches inside the MC PHYSLITE DAOD are suboptimal as they do not conserve disk space; instead, they consume memory inefficiently. 
-As seen from Table \ref{Tab: 24.0.16-MC-PHYLITE-default-top-CF} through \ref{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-compfs}, we have plenty of branches in MC PHYSLITE that are seemingly empty--as indicated by the compression factor being $\mathcal{O}(10)$. 
+As seen from Table \ref{Tab: 24.0.16-MC-PHYSLITE-default-top-CF} through \ref{Tab: 24.0.16-MC-PHYSLITE-no-lim-top-compfs}, we have plenty of branches in MC PHYSLITE that are seemingly empty--as indicated by the compression factor being $\mathcal{O}(10)$. 
 Reviewing and optimizing the branch data could further reduce GRID load during DAOD production by reducing the increased memory-usage while keeping the effects of decreased disk-space. 
