@@ -33,7 +33,7 @@ These dynamic attributes to xAOD objects are called decorations.
 The xAOD EDM use two types of objects that handle data, interface objects and payload objects. 
 Interfaces act as an interface for the user to access the object but without its stored data. 
 This differs from T/P where the user wants to load an object into memory to access the object. 
-If the user wanted to delay the loading of data into memory, they could use the interface object to do so. 
+If the user wanted to read the data, they could use the interface object to do so, protecting the user from changes to the payload in the process. 
 The payload object contains the data for the interface object and allocates contiguous blocks of memory. 
 Payload classes are often referred to as auxiliary storage. 
 
@@ -158,7 +158,7 @@ Figure \ref{fig:IO_tt_PHYS_vs_PHYSLITE} shows the object composition of a PHYS a
 \end{figure}
 PHYS output files, at 40.0 kB per event, is predominantly made of jet collections, while PHYSLITE, at 16.1 kB per event, has more trigger and track information.
 
-These jobs can demand heavy resource usage on the GRID, so optimization of the AOD/DAODs for derivation jobs can be vital. 
+Derivation production jobs for both PHYS and PHYSLITE can demand heavy resource usage on the GRID, so optimization of the AOD/DAODs for these jobs are vital. 
 
 \begin{figure}[h]
     \centering
@@ -168,8 +168,8 @@ These jobs can demand heavy resource usage on the GRID, so optimization of the A
 \end{figure}
 
 The derivation framework is sequence of steps that are performed on the AODs to create the DAODs.
-Skimming is the first step in the derivation framework, and is responsible for removing whole events based on pre-defined criteria.
-Thinning is the second step, and it removes whole objects based on pre-defined criteria.
+Skimming is the first step in the derivation framework, and is responsible for removing whole events based on pre-defined (or augmented) criteria.
+Thinning is the second step, and it removes whole objects based on similarly pre-defined or augmentable criteria.
 Lastly slimming removes variables from objects uniformly across events. 
 
 
