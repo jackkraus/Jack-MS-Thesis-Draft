@@ -11,7 +11,8 @@ These toy model mixtures provide an avenue to test opportunities for optimizing 
 \subsection{Random Float Branches} \label{sec:toy_compression_random_float_branches}
 There were a number of iterations to the toy model, but the first was constructed by filling a TTree with branches that each have vectors with varying number of random floats to write and read.
 Vectors are used in this toy model, as opposed to arrays, because vectors are dynamically allocated and deallocated, which allows for more flexibility when synthesizing AODs. 
-This original model had four distinct branches, each with a set number of events (\verb|N=1000|), and each event having a number of entries, vectors with 1, 10, 100, and 1000 floats each.
+This original model had four distinct branches, each with a set number of events (\verb|N=1000|), and each event haivng a branch with a vector. 
+Depending on the kind of branch, a vector would have either 1, 10, 100, or 1000 floating point vector-entries.
 The script can be compiled with \verb|gcc| or \verb|g++| and it requires all of the dependencies that come with ROOT. 
 Alternatively, the script can be run directly within ROOT.
 
@@ -167,7 +168,7 @@ This is the leading indication that there needs to be more compressible data wit
 The branches needed to have some balance between compressible and incompressible data to mimic the compression ratio found in real data.
 How this was achieved was by filling each vector with different ratios of random floats and repeating integers, which will now be described in detail.
 
-The first change was increasing the total number of events per branch from $N = 10^4$ to $N = 10^5$. 
+The first change was increasing the total number of events from $N = 10^4$ to $N = 10^5$. 
 Mixing of random floats and repeated integer values takes the same script structure as Section \ref{sec:toy_compression_random_float_branches} but adjusts the event generation loop.
 \begin{lstlisting}[language=C]  
   void VectorTree() {

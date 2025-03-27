@@ -1,4 +1,4 @@
-\noindent Table\hfill Page\@@@par 
+\noindent Table\hfill Page\par 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -14,7 +14,7 @@
 \contentsline {table}{\numberline {4.9}{\ignorespaces Top 10 branches sorted by compressed file size in bytes, MC PHYSLITE [Athena v24.0.16 default configuration.]\relax }}{39}{table.caption.31}%
 \contentsline {table}{\numberline {4.10}{\ignorespaces Top 10 branches sorted by compressed file size in bytes, MC PHYSLITE [Athena v24.0.16 without limit to the basket buffer.]\relax }}{40}{table.caption.32}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces List of unit tests in the AthenaPoolExample package that are currently executed during a nightly build.\relax }}{44}{table.caption.34}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces List of unit tests in the AthenaPoolExample package that are currently executed during a nightly build. The unit tests marked by the `*' are the tests produced for this thesis.\relax }}{44}{table.caption.34}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

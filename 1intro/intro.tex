@@ -18,12 +18,14 @@ The Large Hadron Collider (LHC), shown in Figure \ref{fig:intro_LHC_sites},  is 
 The ATLAS experiment, shown in Figure \ref{fig:intro_ATLAS_detector}, is the largest LHC general purpose detector, and the largest detector ever made for particle collision experiments. 
 The detector lies in a cavern 92.5 m underground at a length of 46 m, height and width of 25 m.\cite{ATLAS_Tech_Proposal}
 A quadrant of the detector is shown in Figure \ref{fig:ATLAS_quadrant}, where $\eta$ is a measure of the pseudo-rapidity.
-Pseudo-rapidity is a parameter representing the the angle relative to the beamline and is defined as
+Pseudo-rapidity is a parameter representing the angle relative to the beamline and is defined as
 \begin{equation}
     \eta \equiv -\ln\left[ \tan\left(\frac{\theta}{2}\right)\right],
 \end{equation}  
 where if $\theta = 0$ then $\eta = \infty$ and if $\theta = \frac{\pi}{2}$ then $\eta = 0$.
-Pseudo-rapidity is used, as opposed to traditional Cartesian angles, because it's Lorentz invariant under boosts along the beam axis, making it easier to identify tracks due to symmetry of the collision.  
+
+Pseudo-rapidity is used, as opposed to traditional Cartesian angles, as it's an approximation of rapidity when the particles measured either have no mass and/or small angles. 
+Pseudo-rapidity is also useful since momentum inbalances along the beamline might be present, which is common in $pp$-collisions, and the difference in rapidity allow for boost invariance.      
 \begin{figure}[h!]
     \centering
     \includegraphics[width=.8\textwidth]{content/img/ATLAS qudrant labelled MS.png}
@@ -141,7 +143,7 @@ Further discussion on the production of DAOD can be found in Section \ref{sectio
 \section{ATLAS Software and Computing Needs}
 The High-Luminosity LHC (HL-LHC) is the upgrade to LHC that anticipates more events and more data taken than ever before.
 % How does high luminosity affect the number of collisions? 
-The goal is to reach a luminosity of $350 fb^{-1}$, which is forecasted to be reached gradually by around 2040.\cite{HL-LHC_Tech_design}
+The plan is to reach a luminosity of $3 ab^{-1}$ for Run 3.\cite{HL-LHC_Tech_design}
 The HL-LHC era will start sooner than that, and has been projected to demand anywhere from 6-10 times data stored per year, so any attempt to save on disk storage should be investigated.\cite{ATLAS_HL-LHC_projections}
 Increasing data means more resources from the Grid will be used, so optimization across files and software is an essential part of ensuring scalability of the data taken in by the detector.
 Figure \ref{fig:intro_computing_models} illustrates the projections of the HL-LHC era long-term storage usage for both disk and tape. 

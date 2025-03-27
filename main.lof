@@ -1,4 +1,4 @@
-\noindent Figure\hfill Page\@@@par 
+\noindent Figure\hfill Page\par 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of the LHC experiment sites on the France-Switzerland border.\blx@tocontentsinit {0}\cite {LHC_Illustration}\relax }}{2}{figure.caption.7}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces One quadrant of the ATLAS detector. The components of the Muon Spectrometer are labelled \blx@tocontentsinit {0}\cite {Hough_Transform_CSC}\relax }}{3}{figure.caption.8}%
@@ -21,7 +21,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces The framework between interface objects and the static/dynamic auxiliary data store for a collection of xAOD::ExampleElectrons.\relax }}{43}{figure.caption.33}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces WritexAODElectron ItemList for the OutputStreamCfg parameter. Showing how to select dynamic attributes at the CA level.\relax }}{44}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces WritexAODElectron ItemList for the OutputStreamCfg parameter. Showing how to select dynamic attributes at the CA level.\relax }}{45}{figure.caption.35}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces WriteExampleElectronheader file setup\relax }}{45}{figure.caption.36}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Algorithm to initialize and write T/P data (ExampleTracks) to an xAOD object container (ExampleElectronContainer).\relax }}{46}{figure.caption.37}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Writing of dynamic variables for each of the ExampleElectron objects.\relax }}{47}{figure.caption.38}%

@@ -58,13 +58,13 @@ These tests are executed in this order, as the objects created in one might be u
         \hline
         ReadWriteNext & ReadData, ReWriteData & ($\text{ExampleHit}$, EventInfo), $\left[\text{ExampleTrack}\right]$ \\
         \hline
-      WritexAODElectron & ReadData, WriteExampleElectron & ($\text{ExampleTrack}$), $\left[xAOD::ExampleElectrons, decorations \right]$ \\
+      *WritexAODElectron & ReadData, WriteExampleElectron & ($\text{ExampleTrack}$), $\left[xAOD::ExampleElectrons, decorations \right]$ \\
         \hline
-        ReadxAODElectron & ReadExampleElectron & (xAOD::ExampleElectrons, decorations) \\
+        *ReadxAODElectron & ReadExampleElectron & (xAOD::ExampleElectrons, decorations) \\
         \hline
     \end{tabular}
     }
-    \caption{List of unit tests in the AthenaPoolExample package that are currently executed during a nightly build.}
+    \caption{List of unit tests in the AthenaPoolExample package that are currently executed during a nightly build. The unit tests marked by the `*' are the tests produced for this thesis.}
     \label{tab:CI_Unit_Tests}
 \end{table}
 
