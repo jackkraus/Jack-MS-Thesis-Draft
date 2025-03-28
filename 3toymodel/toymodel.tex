@@ -249,13 +249,14 @@ With these mixtures added to the toy model, we can start looking at varying the 
 
 Investigating how compression is affected by the basket size requires us to change the basket size, refill the branch and read it out.
 Changing the basket buffer size was done at the script level with a simple setting after the branch initialization and before the event loop the following code:
+\pagebreak
 \begin{lstlisting}
     int basketSize = 8192000; // 8 MB
     tree->SetBasketSize("*",basketSize);
 \end{lstlisting}
 This ROOT-level setting was sufficient for the case of the toy model; testing of the basket size setting both at the ROOT- and Athena-level would be done later using derivation production jobs in Section \ref{sec:DAODProd_Analysis}.
 The lower bound set for the basket size was 1 kB and the upper bound was 16 MB.
-The first branch looked at closely was the branch with a thousand vectors with half of them being random floats, see Figure \ref{fig:toymodel_CFvsBranchSize_1/2mixture}.
+The first branch looked at closely was the branch with a thousand vector-entries with half of them being random floats, see Figure \ref{fig:toymodel_CFvsBranchSize_1/2mixture}.
 
 \begin{figure}[h]
     \centering
