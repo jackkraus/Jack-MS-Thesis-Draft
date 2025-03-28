@@ -1,7 +1,7 @@
 Particle physics is the branch of physics that studies the fundamental constituents of matter and the forces governing their interactions.  
 The field started as studies in electromagnetism, radiation, and further developed with the discovery of the electron.
-What followed was more experiments to search for new particles, new models to describe the results, and new search techniques which demanded more data.
-The balance in resources for an experiment bottlenecks how much data can be taken, so steps need to be taken to identify interesting interactions and optimize the storage and processing of this data.
+What followed was more experiments to search for new particles, new models to describe the results, and new detectors which demand more data.
+The balance in resources for an experiment bottlenecks how much data can be taken, so steps need to be taken to identify interesting interactions and optimize the storage and processing of experimental data.
 This thesis investigates software performance optimization of the ATLAS experiment at CERN. 
 Specifically, ways to modernize and optimize areas of the software framework, Athena, to improve input/output (I/O) performance during derivation production and create new tests that catch when specific core I/O functionality is broken.
 
@@ -67,7 +67,6 @@ Particles with relativistic velocities have higher Lorentz $\gamma$-factors,
 \end{equation}
 The TRT uses varying materials to discriminate between heavier particles, which have low $\gamma$ and radiate less, and lighter particles, which have higher $\gamma$ and radiate more.\cite{Mindur:2139567}
 
-\pagebreak
 \noindent\textbf{Calorimeters}
 
 There are two main calorimeters for ATLAS, the Liquid Argon (LAr) calorimeter and the Tile Hadronic calorimeter.
@@ -85,7 +84,7 @@ Through this mechanism, these decay products will continue until the energy has 
 
 The MS sits at the end of the ATLAS detector and is designed to identify muon tracks and momentum to high-resolution, its components are shown in Figure \ref{fig:ATLAS_quadrant}.
 Monitored Drift Tube (MDT) chambers are used for precision measurement of muon tracks in the principle bending direction of the magnetic fields over a large $\eta$.
-The MDT lie in the endcaps and barrel regions covering the pseudorapidity regions $0 < |\eta| < 2.7$, where the the tubes run perpendicular to the beam and in-line with the magnetic field lines.
+The MDT lie in the endcaps and barrel regions covering the pseudo-rapidity regions $0 < |\eta| < 2.7$, where the the tubes run perpendicular to the beam and in-line with the magnetic field lines.
 Single cell resolution for these drift tubes can reach $60 \mu m$.\cite{ATLAS_Tech_Proposal}
 The area of highest particle flux is the region of pseudo-rapidity $2 < |\eta| < 2.7$, here is where the cathode strip chambers lie.\cite{muonSpec}
 Cathode strip chambers (CSCs) are layered to determine track vectors and use multi-wire chambers to achieve a resolution up to $50 \mu m$. 
@@ -102,7 +101,7 @@ The accuracy of identifying the correct bunch crossing with TGCs is 99\% and the
 
 The LHC produces $pp$-collisions at a rate of 40 MHz, each collision is an ``event". 
 More specifically, around $10^{11}$ protons are accelerated in one ``bunch" with around 2800 bunches per proton beam, spaced around 25 ns apart from each other. 
-Each beam is then concentrated to the width of $64 \mu m$ at the interaction point where about 20 collisions happen at one bunch crossing. 
+Each beam is then concentrated to the width of $64 \mu m$ at the interaction point where about 40-50 collisions happen at one bunch crossing. 
 ``Pile-up'' is the result of multiple collisions occurring from one bunch crossing.
 
 % What is the ATLAS Trigger Systems
@@ -143,10 +142,10 @@ Further discussion on the production of DAOD can be found in Section \ref{sectio
 \section{ATLAS Software and Computing Needs}
 The High-Luminosity LHC (HL-LHC) is the upgrade to LHC that anticipates more events and more data taken than ever before.
 % How does high luminosity affect the number of collisions? 
-The plan is to reach a luminosity of $3 ab^{-1}$ for Run 3.\cite{HL-LHC_Tech_design}
+The plan is to reach a luminosity of $3 \text{ ab}^{-1}$ for Run 3.\cite{HL-LHC_Tech_design}
 The HL-LHC era will start sooner than that, and has been projected to demand anywhere from 6-10 times data stored per year, so any attempt to save on disk storage should be investigated.\cite{ATLAS_HL-LHC_projections}
 Increasing data means more resources from the Grid will be used, so optimization across files and software is an essential part of ensuring scalability of the data taken in by the detector.
-Figure \ref{fig:intro_computing_models} illustrates the projections of the HL-LHC era long-term storage usage for both disk and tape. 
+Figure \ref{fig:intro_computing_models} illustrates the projections of the HL-LHC era long-term storage for both disk and tape. 
 
 \begin{figure}[h]
     \centering

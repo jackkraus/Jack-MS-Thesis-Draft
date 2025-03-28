@@ -1,10 +1,9 @@
 Building a toy model for derivation production jobs offers a simplified framework to effectively simulate and analyze the behavior of real and Monte Carlo (MC) data.
 A toy model collection of data can mimic commonalities in both data and MC by filling in branches with a mixture of position coordinate information, momenta, or other details about the detector.  
 
-Integers that are repeated can be easier to compress than floating-point numbers of increased precision, so adjusting the ratio of integers to floats creates a mixture which can yield compression ratios closer to real and MC data.  
-Replicating this mixture in a branch give us an effective model that resembles how current derivation jobs act on real and MC simulated data. 
-These toy model mixtures provide an avenue to test opportunities for optimizing the memory and storage demands of the GRID by first looking at limiting basket sizes and their effects on compression of branches. 
-
+Integers that are repeated can be easier to compress than floating-point numbers of increased precision, so adjusting the ratio of integers to floats creates a mixture which can yield compression ratios closer to real experimental and MC simulated data.  
+Replicating this mixture in a branch give us an effective model that resembles how basket buffer optimization might affect the compression of real and MC simulated data. 
+In other words, these toy model mixtures provide an avenue to test opportunities for optimizing the memory and storage demands of the GRID by first looking at limiting basket sizes and their effects on the compression of branches. 
 
 \section{Toy Model Compression}
 
@@ -242,7 +241,7 @@ Figure \ref{fig:toymodel_compF_1e5_mix_random} shows a compression ratio hoverin
 \end{figure}
 
 Unlike the mixture of branches having 1/2 random data, the 1/4 mixture does not see the same compression effect, but with this mixture we see a compression ratio that is in-line with real data.
-This is inline with expectation, more repeated integers within the mixture makes the branch more compressible, and the more random floats in the mixture will make the branch more difficult to compress.
+The more repeated integers within the mixture the easier it is to compress the branch, versus, the more random floating point numbers in the mixture more difficult the branch will be to compress.
 With these mixtures added to the toy model, we can start looking at varying the basket sizes to see how they affect compression.
 
 \section{Basket-Size Investigation}

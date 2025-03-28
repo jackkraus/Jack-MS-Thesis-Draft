@@ -11,21 +11,21 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Object composition of a PHYS and PHYSLITE $t\bar {t}$ MC simulated sample from Run 3.\relax }}{18}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Derivation production from Reconstruction to Final N-Tuple\blx@tocontentsinit {0}\cite {DAOD_Laycock_2014}\relax }}{18}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Compression factors of $N=1000$ entries per branch with random-valued vectors of varying size.\relax }}{24}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^6$ events)\relax }}{27}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^5$ events)\relax }}{28}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Compression Factors vs Branch Size (1000 entries per vector, 1/2 Mixture $N=10^6$ events)\relax }}{29}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Number of Baskets vs Branch Size (1000 entries per vector, 1/2 Mixture $N=10^6$ events)\relax }}{30}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Varying Mixtures in 8 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{31}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{32}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Compression factors of $N=1000$ entries per branch with random-valued vectors of varying size.\relax }}{25}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^6$ events)\relax }}{28}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Compression Ratios for ($\frac {1}{2}$ random) and ($\frac {1}{4}$ random) branches at ($N=10^5$ events)\relax }}{29}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Compression Factors vs Branch Size (1000 entries per vector, 1/2 Mixture $N=10^6$ events)\relax }}{30}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Number of Baskets vs Branch Size (1000 entries per vector, 1/2 Mixture $N=10^6$ events)\relax }}{31}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Varying Mixtures in 8 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{32}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Varying Mixtures in 16 point precision - Number of Baskets vs Branch Size ($N=10^6$ events)\relax }}{33}{figure.caption.22}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The framework between interface objects and the static/dynamic auxiliary data store for a collection of xAOD::ExampleElectrons.\relax }}{43}{figure.caption.33}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces WritexAODElectron ItemList for the OutputStreamCfg parameter. Showing how to select dynamic attributes at the CA level.\relax }}{45}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces WriteExampleElectronheader file setup\relax }}{45}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Algorithm to initialize and write T/P data (ExampleTracks) to an xAOD object container (ExampleElectronContainer).\relax }}{46}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Writing of dynamic variables for each of the ExampleElectron objects.\relax }}{47}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces ReadHandleKey for the container of ExampleElectrons\relax }}{47}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The framework between interface objects and the static/dynamic auxiliary data store for a collection of xAOD::ExampleElectrons.\relax }}{44}{figure.caption.33}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces WritexAODElectron ItemList for the OutputStreamCfg parameter. Showing how to select dynamic attributes at the CA level.\relax }}{46}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces WriteExampleElectronheader file setup\relax }}{46}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Algorithm to initialize and write T/P data (ExampleTracks) to an xAOD object container (ExampleElectronContainer).\relax }}{47}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Writing of dynamic variables for each of the ExampleElectron objects.\relax }}{48}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces ReadHandleKey for the container of ExampleElectrons\relax }}{48}{figure.caption.39}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

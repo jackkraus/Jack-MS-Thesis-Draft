@@ -1,7 +1,7 @@
 % CHAPTER START
 The Trigger/DAQ system sends and saves data from the detector to a persistent data storage solution.
 The data at this stage needs to be reconstructed and consolidated into physics objects, or Analysis Object Data (AOD) files.
-Creating AODs from data requires significant computation power and is undertaken by a software framework maintained by ATLAS, Athena.
+Creating AODs from data requires significant computation power and is undertaken by a software framework maintained by ATLAS called Athena.
 This chapter will cover important tools and concepts used by ATLAS to run derivation jobs, as well as introduce data structures that represent event information. 
 
 \section{Event Data Models} \label{sec:IO_EDM}
@@ -12,15 +12,14 @@ It's useful to have an EDM because it brings a commonality to the code, aiding d
 An EDM allows those developers to more easily debug and communicate issues when they arise.  
 
 \subsection{Transient/Persistent (T/P) EDM}
-ATLAS used an EDM schema for Run-1 which had a separate transient and persistent status of the AOD.
+ATLAS used an EDM schema for Run-1 which had a separate transient and persistent status of the AODs.
 AODs would often be converted to an ``ntuple" based format that allowed for fast readability and partial read for efficient analysis in ROOT, though it left the files disconnected from the reconstruction tools found in Athena.\cite{Athena_xAOD_design}
-When transient data was present in memory, it could have information attached to the object and gain in complexity the more it was used.
+When transient data was present in memory, it could have information attached to the object and gain complexity the more it was used.
 Transient data needed to be simplified before it could become persistent into long-term storage (sent to disk). 
 ROOT had trouble handling the complex inheritance models that would come up the more developers used this EDM. 
 Before the successor to the T/P EDM was created, ATLAS physicists would convert data samples using the full EDM to a simpler one that would be directly readable by ROOT.
 This would lead to duplication of data and made it challenging to develop and maintain the analysis tools to be used on both the full EDM and the reduced ones.
-Additionally, converting from transient to persistent data was an excessive step which was eventually removed by the adoption of using an EDM that blends the two stages of data together, this was dubbed the xAOD EDM.
-
+Additionally, converting from transient to persistent data was an excessive step which was eventually no longer needed with the creation of an EDM that blends the two stages of data together, this is the xAOD EDM.
 
 \subsection{xAOD EDM}
 While the T/P EDM still remains functional in Athena, the xAOD EDM has been adopted as of Run 2. 
@@ -30,15 +29,14 @@ Rather, xAOD primarily separates data into interface objects and its correspondi
 The xAOD EDM has built-in functionality to add and remove dynamic attributes configured during job steering.
 These dynamic attributes to xAOD objects are called decorations.
 
-The xAOD EDM use two types of objects that handle data, interface objects and payload objects. 
-Interfaces act as an interface for the user to access the object but without its stored data. 
+The xAOD EDM use two types of objects to handle data, interface and payload. 
+Interfaces act as an access point for the user to call an object but without its stored data subsequently occupying space in memory. 
 This differs from T/P where the user wants to load an object into memory to access the object. 
 If the user wanted to read the data, they could use the interface object to do so, protecting the user from changes to the payload in the process. 
 The payload object contains the data for the interface object and allocates contiguous blocks of memory. 
 Payload classes are often referred to as auxiliary storage. 
 
 The specific data structure used by ATLAS is the ROOT TTree, but the EDM is agnostic to the type of data structure used. 
-The ROOT TTree is discussed further in the next section.
 ATLAS specific libraries are not required to handle files written in the xAOD format since the payload can be read directly from the contiguous allocation of memory, a central tenent of the xAOD EDM.
 This allows for the separation of ATLAS specific analysis frameworks and the preferred analysis tool of the user.
 More information on how the xAOD EDM is deployed into unit tests in Section \ref{sec:Mod_utests_xAOD_object}.
@@ -46,19 +44,17 @@ More information on how the xAOD EDM is deployed into unit tests in Section \ref
 \section{Athena and ROOT}
 % \subsection{What is Athena}
 Athena is the open-source software framework for the ATLAS experiment.\cite{athena}
-It is based off the Gaudi project and uses ROOT and other software as part of the LHC Computing Grid (LCG) software stack.\cite{WLCG_Tech_design_report}
+It is based off the Gaudi project and uses ROOT and other software from the LHC Computing Grid (LCG) software stack.\cite{WLCG_Tech_design_report}
 The LCG software stack is a set of software frameworks that provide general solutions for the LHC experiment's computing needs. 
 It contains on the order of 500 packages, which include binary builders and compilers, language libraries and dependencies, simulation and analysis software, and more.
 Athena also provides some in-house based analysis tools as well as tools for specifically ROOT based analysis.
 
 An Athena application relies on $\textit{components}$: Algorithms, Tools, Services and Properties. \cite{Aad:2895022}  
-Each component plays a role in executing an Athena application or job, where $\textsc{Python}$ is used.
-ATLAS uses $\textsc{Python}$ for job configuration and steering.\footnote{Job transforms are $\textsc{Python}$ scripts that steer Athena production jobs by configuring arguments that would alter low-level behavior of the entire job. }
+Each component plays a role in executing an Athena application or job, where $\textsc{Python}$ is used for job configuration and steering.\footnote{Job transforms are $\textsc{Python}$ scripts that steer Athena production jobs by configuring arguments that would alter low-level behavior of the entire job. }
 Specifically, an Algorithm accesses data objects in the event store, as shown with the solid lines in Figure \ref{fig:ATLAS_Athena_Job_flow}, but does not own or provide any data itself.
 Algorithms can ``own" Tools, which serve as helpers exclusive to Algorithms or other components that call them.\footnote{``Ownership" here refers to the components' exclusive access or control of a Tool or Service.} 
 Services are not as exclusive with its access, as they can be used by other components to provide a service such as Athena-ROOT conversion, random number generators, and others. 
 Properties are able to be called at initialization of the job configuration and include flag definitions, input and output file names, and other algorithm specific options.
-\verb|ComponentAccumulator| (CA) is a python class that put into Athena production as a way to prevent extra calls of setting flags during configuration. 
 
 \begin{figure}[ht]
   \centering
@@ -67,6 +63,7 @@ Properties are able to be called at initialization of the job configuration and 
   \label{fig:ATLAS_Athena_Job_flow}
 \end{figure}
 
+\verb|ComponentAccumulator| (CA) is a python class that put into Athena production as a way to prevent extra calls of setting flags during configuration. 
 An important step throughout the development of Athena is to ensure any new changes to the codebase will not overrule the functionality of core features to the present workflows.
 One of the areas needed to be tested before and upon merging of any new changes to Athena is the I/O functionality, or the performance of reading and writing of stored objects within a broader context of various jobs, i.e. reconstruction or derivation.
 While CA is a more general mechanism to run many kinds of job with Athena, the scope of this thesis is using CA to test core I/O functionality of the new event data model. 
@@ -90,9 +87,10 @@ One function relevant to TTree is \verb|Fill()|.
 \verb|Fill()| will loop over all of the branches in the TTree and compresses the baskets that make up the branch.\cite{ROOT_TTree}
 This initiates the data in memory to start filling a branch's basket buffer (or just ``baskets").
 While this first buffer is always unoptimized, it allows opportunity to calculate an optimal basket buffer size.
-At regular intervals, dictated either by number of bytes written or by number of entries written, \verb|AutoFlush| will start moving basket buffers from memory and saving them to disk. 
+At regular intervals, dictated either by number of bytes written or by number of entries written, \verb|AutoFlush| will compress the buffers, store them into baskets, and move them from memory to disk. 
 It's this ``flushing" mechanism that allows for easy access to the branch data as each of the baskets will be stored contiguously in memory.
-The Athena default basket maximum size at present is 128 kB, and the default minimum number of entries is 10.
+
+The Athena default maximum basket size at present is 128 kB, and the default minimum number of entries is 10.
 The minimum number of entries helps reduce processing on every entry which might be empty, and the maximum basket size is in place to prevent baskets from using too much memory throughout a Grid job.  
 Prior to this thesis, the original implementation of both the basket size and minimum number of entries had not yet been fully investigated for avenues of optimization, this is explored in Section \ref{sec:DAODProd_Analysis}.
 
@@ -115,6 +113,7 @@ It was eventually discontinued by other experiments in favor of a newer persiste
 ATLAS then became the sole supporter of POOL and integrated it within Athena to support persistent navigation of the ROOT storage layer.
 Now, Athena has both the original PF POOL functionality and a separate modern AthenaPool functionality. 
 AthenaPool resides in the ATLAS I/O framework and controls ROOT TTree and TBranch properties such as compression and basket buffer sizing.
+Within the subset of AthenaPool packages resides unit tests which will be expanded upon in Chapter \ref{chap:Modernize}.
 
 % What we looked at/How we used it
 
@@ -136,7 +135,7 @@ A derivation production job takes AODs, which comes from the reconstruction step
 Derivation production is a necessary step to make all data accessible for physicists doing analysis as well as reducing the amount of data that needs to be processed.
 While derivations are reduced AODs, they often contain additional information useful for analysis, such as jet collections and high-level discriminants.\cite{PHYSLITE_A_new_2024}
 The two mainstream output file formats Athena is capable of handling are PHYS and PHYSLITE.  
-Figure \ref{fig:IO_tt_PHYS_vs_PHYSLITE} shows the object composition of a PHYS and PHYSLITE $t\bar{t}$ sample. 
+Derivation production jobs for both PHYS and PHYSLITE can demand heavy resource usage on the GRID, so optimization of the AOD/DAODs for these jobs are vital. 
 
 % TODO: How does MC differ from Data in terms of composition? 
 \begin{figure}[h]
@@ -156,9 +155,9 @@ Figure \ref{fig:IO_tt_PHYS_vs_PHYSLITE} shows the object composition of a PHYS a
     \caption{Object composition of a PHYS and PHYSLITE $t\bar{t}$ MC simulated sample from Run 3.}
     \label{fig:IO_tt_PHYS_vs_PHYSLITE}
 \end{figure}
-PHYS output files, at 40.0 kB per event, is predominantly made of jet collections, while PHYSLITE, at 16.1 kB per event, has more trigger and track information.
-
-Derivation production jobs for both PHYS and PHYSLITE can demand heavy resource usage on the GRID, so optimization of the AOD/DAODs for these jobs are vital. 
+Figure \ref{fig:IO_tt_PHYS_vs_PHYSLITE} shows the object composition of a PHYS and PHYSLITE $t\bar{t}$ simulated sample. 
+In this instance, PHYS output files, at 40.0 kB per event, are predominantly made of jet collections, while PHYSLITE files, at 16.1 kB per event, have more trigger-related and track information.
+The composition of DAODs, both PHYS and PHYSLITE, produced by derivation jobs may change over time, but the overall size per event for each format is sought to remain the same. 
 
 \begin{figure}[h]
     \centering
