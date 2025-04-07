@@ -5,8 +5,8 @@
 \noindent Chapter\par 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}LHC and The ATLAS Detector}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}ATLAS Trigger/Data Acquisition (TDAQ)}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}ATLAS Software and Computing Needs}{9}{section.1.3}%
+\contentsline {section}{\numberline {1.2}ATLAS Trigger/Data Acquisition (TDAQ)}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}ATLAS Software and Computing Needs}{8}{section.1.3}%
 \contentsline {chapter}{\numberline {2}I/O Tools}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Event Data Models}{11}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Transient/Persistent (T/P) EDM}{11}{subsection.2.1.1}%
@@ -26,7 +26,7 @@
 \contentsline {subsection}{\numberline {4.2.1}Presence of basket-cap and presence of minimum number of entries}{37}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Comparing different basket sizes}{38}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Monte Carlo PHYSLITE branch comparison}{39}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Conclusion to derivation job optimization}{41}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Conclusion to derivation job optimization}{42}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Modernizing I/O Unit-Tests}{43}{chapter.5}%
 \contentsline {section}{\numberline {5.1}xAOD Test Object}{43}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Unit Tests}{44}{section.5.2}%

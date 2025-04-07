@@ -78,8 +78,10 @@ Event data could range from information about a specific type of interaction, th
 
 \begin{figure}[ht]
   \centering
+  \vspace{20px}
   \includegraphics[width=\textwidth]{content/img/branches_in_TTree.png}
   \caption{A snapshot of the TBranches composing a TTree, from a PHYSLITE DAOD}
+  \vspace{20px}
   \label{fig:Branches_in_TTree}
 \end{figure}
 
@@ -138,38 +140,41 @@ The two mainstream output file formats Athena is capable of handling are PHYS an
 Derivation production jobs for both PHYS and PHYSLITE can demand heavy resource usage on the GRID, so optimization of the AOD/DAODs for these jobs are vital. 
 
 % TODO: How does MC differ from Data in terms of composition? 
-\begin{figure}[h]
-    \centering
-    \begin{subfigure}{.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{content/img/tt_PHYS.png}
-        % \caption{A subfigure}
-        \label{fig:IO_tt_PHYS_subA}
-      \end{subfigure}%     
-      \begin{subfigure}{.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{content/img/tt_PHYSLITE.png}
-        % \caption{B subfigure}
-        \label{fig:IO_tt_PHYSLITE_subB}
-      \end{subfigure}% 
-    \caption{Object composition of a PHYS and PHYSLITE $t\bar{t}$ MC simulated sample from Run 3.}
-    \label{fig:IO_tt_PHYS_vs_PHYSLITE}
-\end{figure}
+
 Figure \ref{fig:IO_tt_PHYS_vs_PHYSLITE} shows the object composition of a PHYS and PHYSLITE $t\bar{t}$ simulated sample. 
 In this instance, PHYS output files, at 40.0 kB per event, are predominantly made of jet collections, while PHYSLITE files, at 16.1 kB per event, have more trigger-related and track information.
 The composition of DAODs, both PHYS and PHYSLITE, produced by derivation jobs may change over time, but the overall size per event for each format is sought to remain the same. 
 
 \begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{content/img/catmore-derivation.png}
-    \caption{Derivation production from Reconstruction to Final N-Tuple\cite{DAOD_Laycock_2014}}
-    \label{fig:IO_derivation_framework}
+  \centering
+  \vspace{20px}
+  \begin{subfigure}{.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{content/img/tt_PHYS.png}
+      % \caption{A subfigure}
+      \label{fig:IO_tt_PHYS_subA}
+    \end{subfigure}%     
+    \begin{subfigure}{.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{content/img/tt_PHYSLITE.png}
+      % \caption{B subfigure}
+      \label{fig:IO_tt_PHYSLITE_subB}
+    \end{subfigure}% 
+  \caption{Object composition of a PHYS and PHYSLITE $t\bar{t}$ MC simulated sample from Run 3.}
+  \vspace{10px}
+  \label{fig:IO_tt_PHYS_vs_PHYSLITE}
 \end{figure}
 
-The derivation framework is sequence of steps that are performed on the AODs to create the DAODs.
+
+The derivation framework, seen in Figure \ref{fig:IO_derivation_framework}, is sequence of steps that are performed on the AODs to create the DAODs.
 Skimming is the first step in the derivation framework, and is responsible for removing whole events based on pre-defined (or augmented) criteria.
 Thinning is the second step, and it removes whole objects based on similarly pre-defined or augmentable criteria.
 Lastly slimming removes variables from objects uniformly across events. 
 
 
-
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{content/img/catmore-derivation.png}
+  \caption{Derivation production from Reconstruction to Final N-Tuple\cite{DAOD_Laycock_2014}}
+  \label{fig:IO_derivation_framework}
+\end{figure}

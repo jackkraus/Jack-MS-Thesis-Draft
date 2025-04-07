@@ -6,12 +6,12 @@
 \contentsline {table}{\numberline {4.1}{\ignorespaces Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for data jobs while varying the presence of features in Athena PoolWriteConfig.py for 160327 entries.\relax }}{37}{table.caption.23}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for MC jobs while varying the presence of features in Athena PoolWriteConfig.py for 140000 entries.\relax }}{37}{table.caption.24}%
 \contentsline {table}{\numberline {4.3}{\ignorespaces Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for Data jobs over various Athena configurations for 160327 entries.\relax }}{38}{table.caption.25}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for MC jobs over various Athena configurations for 140000 entries.\relax }}{38}{table.caption.26}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Top 10 branches sorted by compression factor, MC PHYSLITE [Athena v24.0.16 default configuration.]\relax }}{39}{table.caption.27}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for MC jobs over various Athena configurations for 140000 entries.\relax }}{39}{table.caption.26}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Top 10 branches sorted by compression factor, MC PHYSLITE [Athena v24.0.16 default configuration.]\relax }}{40}{table.caption.27}%
 \contentsline {table}{\numberline {4.6}{\ignorespaces Top 10 branches sorted by compression factor, MC PHYSLITE [Athena v24.0.16 without limit to the basket buffer.]\relax }}{40}{table.caption.28}%
 \contentsline {table}{\numberline {4.7}{\ignorespaces Top 10 branches sorted by total file size in bytes, MC PHYSLITE [Athena v24.0.16 default configuration.]\relax }}{40}{table.caption.29}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Top 10 branches sorted by total file size in bytes, MC PHYSLITE [Athena v24.0.16 without limit to the basket buffer.]\relax }}{40}{table.caption.30}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Top 10 branches sorted by compressed file size in bytes, MC PHYSLITE [Athena v24.0.16 default configuration.]\relax }}{40}{table.caption.31}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Top 10 branches sorted by total file size in bytes, MC PHYSLITE [Athena v24.0.16 without limit to the basket buffer.]\relax }}{41}{table.caption.30}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Top 10 branches sorted by compressed file size in bytes, MC PHYSLITE [Athena v24.0.16 default configuration.]\relax }}{41}{table.caption.31}%
 \contentsline {table}{\numberline {4.10}{\ignorespaces Top 10 branches sorted by compressed file size in bytes, MC PHYSLITE [Athena v24.0.16 without limit to the basket buffer.]\relax }}{41}{table.caption.32}%
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces List of unit tests in the AthenaPoolExample package that are currently executed during a nightly build. The unit tests marked by the `*' are the tests produced for this thesis.\relax }}{45}{table.caption.34}%
