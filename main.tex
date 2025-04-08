@@ -12,6 +12,7 @@
 \usepackage{hyperref}
 \usepackage{pdflscape}
 \usepackage{soul}
+\usepackage{setspace}
 
 
 \usepackage{listings}
@@ -139,8 +140,16 @@ These new unit tests also include and omit select dynamic attributes to object d
 
 
 % ===== PRINT BIBLIOGRAPHY =====  
-\printbibliography
 
+\begingroup
+\setstretch{1}
+\setlength\bibitemsep{20pt}
+\addcontentsline{main.toc}{chapter}{REFERENCES}
+\printbibliography[
+    heading=bibintoc,
+    title={REFERENCES}
+]
+\endgroup
 %-------------------------------------------------------------------------------
 \clearpage
 \appendix

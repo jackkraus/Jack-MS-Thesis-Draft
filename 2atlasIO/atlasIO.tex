@@ -63,7 +63,7 @@ Properties are able to be called at initialization of the job configuration and 
   \label{fig:ATLAS_Athena_Job_flow}
 \end{figure}
 
-\verb|ComponentAccumulator| (CA) is a python class that put into Athena production as a way to prevent extra calls of setting flags during configuration. 
+\verb|ComponentAccumulator| (CA) is a $\textsc{Python}$ class that put into Athena production as a way to prevent extra calls of setting flags during configuration. 
 An important step throughout the development of Athena is to ensure any new changes to the codebase will not overrule the functionality of core features to the present workflows.
 One of the areas needed to be tested before and upon merging of any new changes to Athena is the I/O functionality, or the performance of reading and writing of stored objects within a broader context of various jobs, i.e. reconstruction or derivation.
 While CA is a more general mechanism to run many kinds of job with Athena, the scope of this thesis is using CA to test core I/O functionality of the new event data model. 
@@ -75,15 +75,26 @@ ROOT largely revolves around organization and manipulation of TFiles and TTrees 
 A TTree represents a columnar dataset, and the list of columns are called branches. 
 A TTree is a ROOT object that organizes physically distinct types of event data into TBranches, or just branches.
 Event data could range from information about a specific type of interaction, this includes tracks, position of particles at one point in the detector. 
+An example of a ROOT file and its contents are shown in Table \ref{tab:Branches_in_TTree}. 
 
-\begin{figure}[ht]
+\begin{table}[!ht]
   \centering
   \vspace{20px}
-  \includegraphics[width=\textwidth]{content/img/branches_in_TTree.png}
-  \caption{A snapshot of the TBranches composing a TTree, from a PHYSLITE DAOD}
+  \caption{A snapshot of TBranches composing a TTree, from a PHYSLITE DAOD}
+  \label{tab:Branches_in_TTree}
+  \resizebox{\textwidth}{!}{
+      \begin{tabular}{|c|c|c|c|l|}
+      \hline
+      Mem Size (MB) & Disk Size (MB) & Size/Evt (kB) & Items & (X) Container Name (X=Tree|Branch)                           \\ \hline
+      108.3             & 74.7               & 0.530             & 140000    & (B) EventInfoAuxDyn.mcEventWeights                               \\ \hline
+      703.8             & 75.8               & 0.541             & 140000    & (B) AntiKt4TruthDressedWZJetsAux.                                \\ \hline
+      937.5             & 84.7               & 0.605             & 12816     & (T) DataHeaderForm                                               \\ \hline
+      156.6             & 136.6              & 0.976             & 140000    & (B) InDetTrackParticlesAuxDyn.definingParameters... \\ \hline
+      1907.7            & 447.1              & 3.194             & 140000    & (B) HLTNav\_Summary\_DAODSlimmedAuxDyn.decisions                 \\ \hline
+      \end{tabular}
+  }
   \vspace{20px}
-  \label{fig:Branches_in_TTree}
-\end{figure}
+\end{table}
 
 One function relevant to TTree is \verb|Fill()|. 
 \verb|Fill()| will loop over all of the branches in the TTree and compresses the baskets that make up the branch.\cite{ROOT_TTree}

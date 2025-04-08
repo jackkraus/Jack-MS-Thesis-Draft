@@ -34,5 +34,6 @@
 \contentsline {subsection}{\numberline {5.2.2}ReadxAODElectron.py}{47}{subsection.5.2.2}%
 \contentsline {section}{\numberline {5.3}Results}{48}{section.5.3}%
 \contentsline {chapter}{\numberline {6}Conclusion}{50}{chapter.6}%
-\contentsline {chapter}{Appendices}{56}{chapter*.40}%
+\contentsline {chapter}{REFERENCES}{51}{chapter*.40}%
+\contentsline {chapter}{Appendices}{55}{chapter*.40}%
 \contentsfinish 
