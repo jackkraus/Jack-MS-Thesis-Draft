@@ -4,21 +4,6 @@
 % input file: # TODO
 % PHYS/PHYSLITE
 
-\begin{table}[!ht]
-    \centering
-    \label{Tab: night-data-outputfs}
-    \caption{Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for data jobs while varying the presence of features in Athena PoolWriteConfig.py for 160327 entries.}
-    \resizebox{\textwidth}{!}{
-        \begin{tabular}{|c|c|c|c|}
-            \hline
-                Presence of features (Data) & Max PSS (MB) ($\Delta$\% default) & PHYS outFS (GB) ($\Delta$\%) & PHYSLITE outFS (GB) ($\Delta$\%) \\ \hline
-                basket-cap, min-num-entries (default)  & 27.1 ( + 0.0 \%) & 3.22 ( + 0.0 \%) & 1.03 ( + 0.0 \%) \\ \hline
-                \st{basket-cap} \st{min-num-entries} & 27.8 ( + 2.5 \%) & 3.22 ( + 0.2 \%) & 1.04 ( + 0.2 \%) \\ \hline
-                \st{basket-cap} min-num-entries & 27.8  ( + 2.5 \%) & 3.22 ( - 0.0 \%) & 1.03 ( - 0.4 \%) \\ \hline
-                basket-cap,  \st{min-num-entries} & 27.3 ( + 0.7 \%) & 3.22 ( + 0.2 \%) & 1.04 ( + 0.7 \%) \\ \hline
-            \end{tabular}
-    }
-\end{table}
 
 % Data file sizes 
 % Athena version: Nightly v22.0.16 

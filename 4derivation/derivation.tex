@@ -77,11 +77,28 @@ The four configurations tested all kept minimum number of basket buffer entries 
 \subsection{Presence of basket-cap and presence of minimum number of entries}
 \label{sec:DAODProd_Results_presence}
 
-The first batch testing was for data, Table \ref{Tab: night-data-outputfs}, and MC simulation, Table \ref{Tab: night-mc-outputfs}, derivation production jobs with and without presence of an upper limit to the basket size and presence of the minimum number of basket buffer entries. 
+%for whoever is reading this, (why would you), I cannot for the life of me get "Table 4.1" to be 
+%   referenced, but specifically in this following line (earlier in the ToC has no problem) so 
+%   I'm just going to leave it unreferenced here, forgive my sloth.
+The first batch testing was for data, Table 4.1, and MC simulation, Table \ref{Tab: night-mc-outputfs}, derivation production jobs with and without presence of an upper limit to the basket size and presence of the minimum number of basket buffer entries. 
 PHYSLITE MC derivation production, from Table \ref{Tab: night-mc-outputfs}, sees a 9.9\% increase in output file size when compared to the default Athena configuration. 
 Since this configuration only differs by the omission of the ``min-number-entries" requirement, we assume the minimum number of basket buffer entries should be kept at 10 and left alone. 
 
-\vspace{15px}
+\begin{table}[h]
+    \label{tab:night-data-outputfs-nu}
+    \centering
+    \caption{Comparing the maximum proportional set size (PSS) and PHYS/PHYSLITE output file sizes (outFS) for data jobs while varying the presence of features in Athena PoolWriteConfig.py for 160327 entries.}
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+                Presence of features (Data) & Max PSS (MB) ($\Delta$\% default) & PHYS outFS (GB) ($\Delta$\%) & PHYSLITE outFS (GB) ($\Delta$\%) \\ \hline
+                basket-cap, min-num-entries (default)  & 27.1 ( + 0.0 \%) & 3.22 ( + 0.0 \%) & 1.03 ( + 0.0 \%) \\ \hline
+                \st{basket-cap} \st{min-num-entries} & 27.8 ( + 2.5 \%) & 3.22 ( + 0.2 \%) & 1.04 ( + 0.2 \%) \\ \hline
+                \st{basket-cap} min-num-entries & 27.8  ( + 2.5 \%) & 3.22 ( - 0.0 \%) & 1.03 ( - 0.4 \%) \\ \hline
+                basket-cap,  \st{min-num-entries} & 27.3 ( + 0.7 \%) & 3.22 ( + 0.2 \%) & 1.04 ( + 0.7 \%) \\ \hline
+        \end{tabular}
+    }
+\end{table}
 \input{content/tables/nightly-tables}
 \vspace{15px}
 % Data Label: \label{Tab: night-data-outputfs}
